@@ -24,6 +24,7 @@
   * [闭包](js-gai-nian/bi-bao.md)
   * [Event-loop](js-gai-nian/event-loop.md)
   * [跨域](js-gai-nian/kua-yu.md)
+  * [void 0](js-gai-nian/void-0.md)
 * [JS陷阱](js-xian-jing/README.md)
   * [相等](js-xian-jing/xiang-deng.md)
   * [连等赋值](js-xian-jing/lian-deng-fu-zhi.md)
