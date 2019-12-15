@@ -10,4 +10,7 @@ description: 需要整理的知识清单
 * [x] reduce
 * [x] slice
 * [ ] 微前端
+* [ ] sentry 源码学习
+* [ ] axios 源码学习
+* [ ] vue compile-core 学习
 
