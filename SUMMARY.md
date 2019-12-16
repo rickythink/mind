@@ -77,6 +77,7 @@
   * [async](es6-1/async.md)
   * [装饰器](es6-1/zhuang-shi-qi.md)
   * [模块](es6-1/mo-kuai.md)
+  * [WeakMap](es6-1/weakmap.md)
 * [ES6 函数](es6-han-shu/README.md)
   * [reduce](es6-han-shu/reduce.md)
   * [slice](es6-han-shu/slice.md)
