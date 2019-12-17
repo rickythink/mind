@@ -9,11 +9,12 @@ description: 需要整理的知识清单
 * [x] ES6 WeakMap
 * [x] reduce
 * [x] slice
+* [ ] splice
 * [ ] 微前端
 * [ ] sentry 源码学习
 * [x] axios 源码学习
 * [ ] vue compile-core 学习
-* [ ] 自己造一个 webpack  热更新的轮子
+* [x] 自己造一个 webpack  热更新的轮子
 * [ ] webpack 5
 * [ ] koa 源码学习
 
