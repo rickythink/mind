@@ -98,6 +98,32 @@ if (config.cancelToken) {
 request.send()
 ```
 
+## 外部调用
+
+```javascript
+// axios用于取消请求的类
+const CancelToken = axios.CancelToken
+// source方法会返回一个对象，对象包含
+// {
+  // token, 添加到请求的config，用于标识请求
+  // cancel, 调用cancel方法取消请求
+// }
+const source = CancelToken.source()
+
+axios.get('/info', {
+  cancelToken: source.token
+}).catch(function(error) {
+  if (axios.isCancel(error)) {
+    console.log('取消请求的错误')
+  } else {
+    // 其他错误
+  }
+})
+
+// 调用source.cancel可以取消axios.get('/info')的请求
+source.cancel('取消请求')
+```
+
 ## 总结机制
 
 CancelToken，创建了一个额外的PromiseA，并将PromiseA挂载到config中，同时将该PromiseA的resolve方法暴露出去。我们在调用send方法前（发送请求前）添加对PromiseA的状态进行监听，当PromiseA的状态被修改，我们会在PromiseA的callback中取消请求，并且将axios返回的PromiseB的状态置为reject。从而达到取消请求的目的
