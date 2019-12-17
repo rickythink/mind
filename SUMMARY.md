@@ -64,6 +64,7 @@
 * [Axios](axios-1/README.md)
   * [axios避免重复请求](axios-1/axios-bi-mian-zhong-fu-qing-qiu.md)
   * [运行机制](axios-1/yun-hang-ji-zhi.md)
+  * [取消源码](axios-1/qu-xiao-yuan-ma.md)
 * [ES6](es6-1/README.md)
   * [Let  知识点](es6-1/let-zhi-shi-dian.md)
   * [块级作用域](es6-1/kuai-ji-zuo-yong-yu.md)
