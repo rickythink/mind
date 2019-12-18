@@ -19,4 +19,7 @@ description: 需要整理的知识清单
 * [ ] koa 源码学习
 * [ ] vue diff原理
 * [x] 浏览器缓存策略
+* [ ] ES8
+* [ ] ES9
+* [ ] ES10
 
