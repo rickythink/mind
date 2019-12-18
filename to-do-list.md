@@ -18,5 +18,5 @@ description: 需要整理的知识清单
 * [ ] webpack 5
 * [ ] koa 源码学习
 * [ ] vue diff原理
-* [ ] 浏览器缓存策略
+* [x] 浏览器缓存策略
 
