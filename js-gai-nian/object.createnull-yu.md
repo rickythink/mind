@@ -1,5 +1,15 @@
 # Object.create\(null\)与{}
 
+## Object.create实现
+
+```javascript
+Object.create = funtion(o){
+  var f = function(){};
+  f.prototype = o;
+  return new f();
+}
+```
+
 ## Object.create\(null\)输出
 
 ```javascript
