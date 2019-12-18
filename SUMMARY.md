@@ -145,6 +145,7 @@
 * [Hexo](hexo-1/README.md)
   * [常用Hexo插件记录](hexo-1/chang-yong-hexo-cha-jian-ji-lu.md)
 * [浏览器](liu-lan-qi/README.md)
+  * [缓存](liu-lan-qi/huan-cun.md)
   * [Preload, Prefetech,DNS Prefetching](liu-lan-qi/preload-prefetech-dns-prefetching.md)
   * [前端监控异常捕捉](liu-lan-qi/qian-duan-jian-kong-yi-chang-bu-zhuo.md)
   * [内存泄露](liu-lan-qi/nei-cun-xie-lu.md)
