@@ -168,6 +168,7 @@
   * [svg](kai-yuan-xiang-mu/svg.md)
 * [yarn](yarn/README.md)
   * [yarn link](yarn/yarn-link.md)
-* [Koa2](koa2.md)
+* [Koa2](koa2/README.md)
+  * [compose](koa2/compose.md)
 * [to-do-list](to-do-list.md)
 
