@@ -1,2 +1,8 @@
-# 热更新的原理
+# HMR
+
+\(HMR \)Hot Module Replacement 热更新是webpack最重要的功能之一
+
+![](../.gitbook/assets/image%20%2873%29.png)
+
+![](../.gitbook/assets/image%20%2868%29.png)
 
