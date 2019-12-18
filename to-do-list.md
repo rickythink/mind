@@ -22,5 +22,5 @@ description: 需要整理的知识清单
 * [ ] ES8
 * [ ] ES9
 * [ ] ES10
-* [ ] koa2 + ts
+* [ ] ~~koa2 + ts~~ **了解**[**daruk**](https://github.com/darukjs/daruk)\*\*\*\*
 
