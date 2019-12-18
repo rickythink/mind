@@ -16,10 +16,11 @@ description: 需要整理的知识清单
 * [ ] vue compile-core 学习
 * [x] 自己造一个 webpack  热更新的轮子
 * [ ] webpack 5
-* [ ] koa2 源码学习
+* [x] koa2 源码学习
 * [ ] vue diff原理
 * [x] 浏览器缓存策略
 * [ ] ES8
 * [ ] ES9
 * [ ] ES10
+* [ ] koa2 + ts
 
