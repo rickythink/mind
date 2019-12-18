@@ -9,7 +9,7 @@ description: 需要整理的知识清单
 * [x] ES6 WeakMap
 * [x] reduce
 * [x] slice
-* [ ] splice
+* [x] splice
 * [ ] 微前端
 * [ ] sentry 源码学习
 * [x] axios 源码学习
