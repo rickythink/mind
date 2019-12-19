@@ -10,7 +10,7 @@ description: 需要整理的知识清单
 * [x] reduce
 * [x] slice
 * [x] splice
-* [ ] 微前端
+* [ ] 微前端 看这个仓库 [qiankun](https://github.com/umijs/qiankun)
 * [ ] sentry 源码学习
 * [x] axios 源码学习
 * [ ] 学习axios的相关项目 [umi-request](https://github.com/umijs/umi-request)
