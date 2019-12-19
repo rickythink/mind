@@ -14,7 +14,7 @@ description: 需要整理的知识清单
 * [ ] sentry 源码学习
 * [x] axios 源码学习
 * [ ] 学习axios的相关项目 [umi-request](https://github.com/umijs/umi-request)
-* [ ] 自己封装一个 axios
+* [ ] 基于axios 实现 重放的多种策略
 * [ ] vue compile-core 学习
 * [x] 自己造一个 webpack  热更新的轮子
 * [ ] webpack 5

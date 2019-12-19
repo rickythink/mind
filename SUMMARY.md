@@ -172,5 +172,6 @@
   * [yarn link](yarn/yarn-link.md)
 * [Koa2](koa2/README.md)
   * [compose](koa2/compose.md)
-* [to-do-list](to-do-list.md)
+* [to-do-list](to-do-list/README.md)
+  * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
 
