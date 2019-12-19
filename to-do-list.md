@@ -29,4 +29,5 @@ description: 需要整理的知识清单
 * [ ] URL到页面发生了什么
 * [ ] HTTPS与HTTP
 * [ ] 图片懒加载
+* [ ] service worker
 
