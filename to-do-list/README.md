@@ -12,7 +12,9 @@ description: 需要整理的知识清单
 * [x] splice
 * [ ] 微前端 看这个仓库 [qiankun](https://github.com/umijs/qiankun)
 * [ ] sentry 源码学习
-* [x] axios 源码学习
+* [ ] axios 源码学习
+  * [x] promise链
+  * [ ] 如何做到多种调用方式？
 * [ ] 学习axios的相关项目 [umi-request](https://github.com/umijs/umi-request)
 * [ ] 基于axios 实现 重放的多种策略 [见子页](axios-zhong-fang-duo-zhong-ce-lve.md)
 * [ ] vue compile-core 学习
