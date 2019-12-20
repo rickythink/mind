@@ -23,9 +23,9 @@ description: 需要整理的知识清单
 * [x] koa2 源码学习
 * [ ] vue diff原理
 * [x] 浏览器缓存策略
-* [ ] ES8
-* [ ] ES9
-* [ ] ES10
+* [x] ES8
+* [x] ES9
+* [x] ES10
 * [ ] ~~koa2 + ts~~ **了解**[**daruk**](https://github.com/darukjs/daruk)\*\*\*\*
 * [ ] 浏览器的本地存储
 * [ ] URL到页面发生了什么
