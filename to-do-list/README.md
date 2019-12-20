@@ -28,7 +28,7 @@ description: 需要整理的知识清单
 * [x] ES10
 * [ ] ~~koa2 + ts~~ **了解**[**daruk**](https://github.com/darukjs/daruk)\*\*\*\*
 * [ ] 浏览器的本地存储
-* [ ] URL到页面发生了什么
+* [x] URL到页面发生了什么
 * [ ] HTTPS与HTTP
 * [ ] 图片懒加载
 * [ ] service worker
