@@ -30,9 +30,10 @@ description: 需要整理的知识清单
 * [x] 浏览器的本地存储
 * [x] URL到页面发生了什么
 * [x] HTTPS与HTTP
-* [ ] 图片懒加载
+* [x] 图片懒加载
 * [ ] service worker
 * [ ] Deno
 * [ ] 实现destructuringArray：destructuringArray\( \[1,\[2,4\],3\], "\[a,\[b\],c\]" \) ==&gt; { a:1, b:2, c:3 }
 * [ ] jest
+* [ ] nuxt
 
