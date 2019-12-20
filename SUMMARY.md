@@ -150,6 +150,7 @@
   * [常用Hexo插件记录](hexo-1/chang-yong-hexo-cha-jian-ji-lu.md)
 * [浏览器](liu-lan-qi/README.md)
   * [缓存](liu-lan-qi/huan-cun.md)
+  * [浏览器的本地存储](liu-lan-qi/liu-lan-qi-de-ben-di-cun-chu.md)
   * [输入URL到页面加载发生了什么](liu-lan-qi/shu-ru-url-dao-ye-mian-jia-zai-fa-sheng-le-shen-me.md)
   * [Preload, Prefetech,DNS Prefetching](liu-lan-qi/preload-prefetech-dns-prefetching.md)
   * [前端监控异常捕捉](liu-lan-qi/qian-duan-jian-kong-yi-chang-bu-zhuo.md)
