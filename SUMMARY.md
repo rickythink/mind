@@ -35,6 +35,7 @@
   * [引用传参](js-xian-jing/yin-yong-chuan-can.md)
 * [JS开发知识点](js-kai-fa-zhi-shi-dian/README.md)
   * [html classlist](js-kai-fa-zhi-shi-dian/html-classlist.md)
+  * [图片懒加载](js-kai-fa-zhi-shi-dian/tu-pian-lan-jia-zai.md)
 * [常见函数](chang-jian-han-shu/README.md)
   * [Debounce](chang-jian-han-shu/debounce.md)
   * [Throttle](chang-jian-han-shu/throttle.md)
