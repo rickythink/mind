@@ -8,13 +8,13 @@
 
 `width = content`，不包含 `border + padding`
 
-![](../.gitbook/assets/image%20%2842%29.png)
+![](../.gitbook/assets/image%20%2843%29.png)
 
 ## **IE盒模型**
 
 `width = border + padding + content`
 
-![](../.gitbook/assets/image%20%2849%29.png)
+![](../.gitbook/assets/image%20%2850%29.png)
 
 ## **相互转换**
 
