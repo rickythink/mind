@@ -183,6 +183,7 @@
   * [笔试](tou-tiao-mian-jing/bi-shi/README.md)
     * [153812.7 转化153,812.7](tou-tiao-mian-jing/bi-shi/153812.7-zhuan-hua-153812.7.md)
     * [日期转化为2小时前，1分钟前等](tou-tiao-mian-jing/bi-shi/ri-qi-zhuan-hua-wei-2-xiao-shi-qian-1-fen-zhong-qian-deng.md)
+    * [实现Promise.all](tou-tiao-mian-jing/bi-shi/shi-xian-promise.all.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
 
