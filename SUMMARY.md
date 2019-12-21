@@ -65,6 +65,8 @@
   * [Object.defineProperty与Proxy区别](vue3/object.defineproperty-yu-proxy-qu-bie.md)
 * [React](react/README.md)
   * [无法preventDefault](react/wu-fa-preventdefault.md)
+* [Fetch](fetch/README.md)
+  * [Fetch取消请求](fetch/fetch-qu-xiao-qing-qiu.md)
 * [Axios](axios-1/README.md)
   * [axios避免重复请求](axios-1/axios-bi-mian-zhong-fu-qing-qiu.md)
   * [运行机制](axios-1/yun-hang-ji-zhi.md)
