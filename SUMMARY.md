@@ -22,6 +22,7 @@
   * [内存](js-gai-nian/nei-cun.md)
   * [原型链](js-gai-nian/yuan-xing-lian.md)
   * [词法作用域](js-gai-nian/ci-fa-zuo-yong-yu.md)
+  * [事件委托](js-gai-nian/shi-jian-wei-tuo.md)
   * [This](js-gai-nian/this.md)
   * [闭包](js-gai-nian/bi-bao.md)
   * [Event-loop](js-gai-nian/event-loop.md)
