@@ -8,6 +8,8 @@ HTTPS：是以安全为目标的HTTP通道，简单讲是HTTP的安全版，即H
 
 ![](../.gitbook/assets/image%20%2812%29.png)
 
+![](../.gitbook/assets/image%20%2882%29.png)
+
 **1、客户端发起HTTPS请求**
 
 用户在浏览器里输入一个https网址，然后连接到server的443端口。
