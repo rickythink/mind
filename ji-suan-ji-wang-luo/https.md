@@ -4,6 +4,10 @@
 
 HTTPS：是以安全为目标的HTTP通道，简单讲是HTTP的安全版，即HTTP下加入SSL层，HTTPS的安全基础是SSL，因此加密的详细内容就需要SSL。
 
+#### TLS
+
+刚开始听到`TLS`的时候，你可能还不太熟悉，但是说起`SSL`你可能就觉得好耳熟了。其实`TLS`就是从`SSL`发展而来的，只是`SSL`发展到3.0版本后改成了`TLS`。
+
 ## 工作原理
 
 ![](../.gitbook/assets/image%20%2812%29.png)
