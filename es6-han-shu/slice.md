@@ -37,3 +37,13 @@ var citrus = fruits.slice(1, 3);
 // citrus contains ['Orange','Lemon']
 ```
 
+## 一个常见应用
+
+很多时候会看见这样的的代码
+
+```javascript
+[xxx].slice()
+```
+
+这样可以拷贝生成一个新数组
+
