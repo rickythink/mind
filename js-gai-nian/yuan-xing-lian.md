@@ -30,3 +30,20 @@ Foo instanceof Foo;//false
 
 **`instanceof`** **运算符**用于检测构造函数的 `prototype` 属性是否出现在某个实例对象的原型链上。
 
+```javascript
+// 模拟实现 右边变量的原型存在于左边变量的原型链上
+function instanceOf(left, right) {
+  let leftValue = left.__proto__
+  let rightValue = right.prototype
+  while (true) {
+    if (leftValue === null) {
+      returnfalse
+    }
+    if (leftValue === right) {
+      returntrue
+    }
+    leftValue = leftValue.__proto__
+  }
+}
+```
+
