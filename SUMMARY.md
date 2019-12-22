@@ -193,6 +193,7 @@
     * [实现Promise.all](tou-tiao-mian-jing/bi-shi/shi-xian-promise.all.md)
     * [实现sum\(1\)\(2\)\(3\) = 6](tou-tiao-mian-jing/bi-shi/shi-xian-sum123-6.md)
     * [最多频次](tou-tiao-mian-jing/bi-shi/zui-duo-pin-ci.md)
+    * [前端请求并发控制](tou-tiao-mian-jing/bi-shi/qian-duan-qing-qiu-bing-fa-kong-zhi.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
 
