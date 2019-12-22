@@ -36,4 +36,5 @@ description: 需要整理的知识清单
 * [ ] 实现destructuringArray：destructuringArray\( \[1,\[2,4\],3\], "\[a,\[b\],c\]" \) ==&gt; { a:1, b:2, c:3 }
 * [ ] jest
 * [ ] nuxt
+* [ ] 整理 [30s JS ](https://www.30secondsofcode.org/)
 
