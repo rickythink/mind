@@ -27,6 +27,7 @@
   * [闭包](js-gai-nian/bi-bao.md)
   * [Event-loop](js-gai-nian/event-loop.md)
   * [跨域](js-gai-nian/kua-yu.md)
+  * [arguments](js-gai-nian/arguments.md)
   * [void 0](js-gai-nian/void-0.md)
   * [Object.create\(null\)与{}](js-gai-nian/object.createnull-yu.md)
   * [柯里化1](js-gai-nian/ke-li-hua.md)
