@@ -69,6 +69,7 @@
   * [集中变量管理](vue-1/ji-zhong-bian-liang-guan-li/README.md)
     * [Flux](vue-1/ji-zhong-bian-liang-guan-li/flux.md)
     * [Redux](vue-1/ji-zhong-bian-liang-guan-li/redux.md)
+    * [Vuex](vue-1/ji-zhong-bian-liang-guan-li/vuex.md)
 * [Vue3](vue3/README.md)
   * [Object.defineProperty与Proxy区别](vue3/object.defineproperty-yu-proxy-qu-bie.md)
 * [React](react/README.md)
