@@ -2,7 +2,7 @@
 
 ##  域
 
-![](../.gitbook/assets/image%20%2831%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 ## 跨域
 
@@ -10,7 +10,7 @@
 
 所谓同源是指，协议，域名，端口均相同。
 
-![](../.gitbook/assets/image%20%2878%29.png)
+![](../.gitbook/assets/image%20%2886%29.png)
 
 ## JSONP
 

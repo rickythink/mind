@@ -195,6 +195,7 @@
     * [最多频次](tou-tiao-mian-jing/bi-shi/zui-duo-pin-ci.md)
     * [类继承面试](tou-tiao-mian-jing/bi-shi/lei-ji-cheng-mian-shi.md)
     * [前端请求并发控制](tou-tiao-mian-jing/bi-shi/qian-duan-qing-qiu-bing-fa-kong-zhi.md)
+    * [CSS画三角形](tou-tiao-mian-jing/bi-shi/css-hua-san-jiao-xing.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
 
