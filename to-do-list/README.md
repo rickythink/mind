@@ -41,4 +41,5 @@ description: 需要整理的知识清单
 * [ ] 手写 new
 * [ ] 了解一下 bluebird
 * [ ] webpack 优化相关
+* [ ] 实现一个eventbus
 
