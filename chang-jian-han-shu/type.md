@@ -38,7 +38,7 @@ typeof null === "object"; // true
 typeof function () {} === "function"; // true
 ```
 
-![](../.gitbook/assets/image%20%2827%29.png)
+![](../.gitbook/assets/image%20%2829%29.png)
 
 ### 为什么 typeof null === 'object'
 
@@ -77,7 +77,7 @@ function checkType() {
 checkType(number, string, boolean, und, nul, obj, array, date, error, reg, func)
 ```
 
-![](../.gitbook/assets/image%20%2880%29.png)
+![](../.gitbook/assets/image%20%2884%29.png)
 
 ## 实现
 
