@@ -77,7 +77,7 @@ function checkType() {
 checkType(number, string, boolean, und, nul, obj, array, date, error, reg, func)
 ```
 
-![](../.gitbook/assets/image%20%2878%29.png)
+![](../.gitbook/assets/image%20%2880%29.png)
 
 ## 实现
 
