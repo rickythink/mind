@@ -65,6 +65,7 @@
   * [长列表性能优化](vue-1/chang-lie-biao-xing-neng-you-hua.md)
   * [mixin](vue-1/mixin.md)
   * [vue中的柯里化闭包](vue-1/vue-zhong-de-ke-li-hua-bi-bao.md)
+  * [vue-router原理](vue-1/vuerouter-yuan-li.md)
 * [Vue3](vue3/README.md)
   * [Object.defineProperty与Proxy区别](vue3/object.defineproperty-yu-proxy-qu-bie.md)
 * [React](react/README.md)
