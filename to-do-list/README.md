@@ -44,4 +44,6 @@ description: 需要整理的知识清单
 * [ ] 实现一个eventbus 参考 [https://github.com/tbreuss/eventbus](https://github.com/tbreuss/eventbus)
 * [ ] 新生代+旧生代的详细算法补充一下
 * [ ] Array some
+* [ ] vue router 简版实现
+* [ ] vue router 原理理解
 
