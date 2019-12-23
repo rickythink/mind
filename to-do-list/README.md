@@ -42,4 +42,5 @@ description: 需要整理的知识清单
 * [ ] 了解一下 bluebird
 * [ ] webpack 优化相关
 * [ ] 实现一个eventbus 参考 [https://github.com/tbreuss/eventbus](https://github.com/tbreuss/eventbus)
+* [ ] 新生代+旧生代的详细算法补充一下
 
