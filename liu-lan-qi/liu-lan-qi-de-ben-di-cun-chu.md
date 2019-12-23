@@ -40,7 +40,7 @@ HTML5新方法，不过**IE8及以上**浏览器都兼容。
 
 * 用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。也就是说只要这个浏览器窗口没有关闭，即使刷新页面或进入同源另一页面，数据仍然存在。关闭窗口后，sessionStorage即被销毁，或者在新窗口打开同源的另一个页面，sessionStorage也是没有的。
 
-## 三者的区别
+### 上诉三者的区别
 
 ### 相同
 
@@ -71,4 +71,18 @@ IndexedDB 鼓励使用的基本模式如下所示：
 * 构建一个请求来执行一些数据库操作，像增加或提取数据等。
 * 通过监听正确类型的 DOM 事件以等待操作完成。
 * 在操作结果上进行一些操作（可以在 request 对象中找到）
+
+## Application Cache
+
+Application Cache 是一种允许浏览器通过manifest 配置文件在本地有选择性地存储JavaScript、CSS、图片等静态资源的文件级缓存机制。当页面不是首次打开时，通过一个特定的manifest文件配置描述来选择读取本地Application Cache里面的文件。
+
+Application Cache 已经开始慢慢被弃用，被 Service Worker 取代。
+
+## cacheStorage
+
+cacheStorage是在ServiceWorker规范中定义的，可用于保存每个ServiceWorker声明的Cache对象，是未来可能用来代替Application Cache的离线方案。
+
+
+
+
 
