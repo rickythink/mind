@@ -178,6 +178,7 @@
   * [HTTP1/2/3](ji-suan-ji-wang-luo/http2.md)
   * [HTTPS](ji-suan-ji-wang-luo/https.md)
   * [http的方法](ji-suan-ji-wang-luo/http-de-fang-fa.md)
+  * [HTTP状态码](ji-suan-ji-wang-luo/http-zhuang-tai-ma.md)
 * [面试题](mian-shi-ti/README.md)
   * [Set、Map、WeakSet 和 WeakMap 的区别？](mian-shi-ti/setmapweakset-he-weakmap-de-qu-bie.md)
   * [Map+ParseInt](mian-shi-ti/map+parseint.md)
