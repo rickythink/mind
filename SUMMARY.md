@@ -220,6 +220,8 @@
   * [远程面](teng-xun-mian-jing/yuan-cheng-mian/README.md)
     * [new和instanceof的内部机制](teng-xun-mian-jing/yuan-cheng-mian/new-he-instanceof-de-nei-bu-ji-zhi.md)
     * [typeof 和 instanceof 区别](teng-xun-mian-jing/yuan-cheng-mian/typeof-he-instanceof-qu-bie.md)
+    * [flex-grow和flex-shrink属性有什么用？](teng-xun-mian-jing/yuan-cheng-mian/flexgrow-he-flexshrink-shu-xing-you-shen-me-yong.md)
+    * [for..in 与 for..of的区别](teng-xun-mian-jing/yuan-cheng-mian/for..in-yu-for..of-de-qu-bie.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
 

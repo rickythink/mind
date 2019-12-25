@@ -12,7 +12,7 @@ HTTPS：是以安全为目标的HTTP通道，简单讲是HTTP的安全版，即H
 
 ![](../.gitbook/assets/image%20%2815%29.png)
 
-![](../.gitbook/assets/image%20%28101%29.png)
+![](../.gitbook/assets/image%20%28102%29.png)
 
 **1、客户端发起HTTPS请求**
 
