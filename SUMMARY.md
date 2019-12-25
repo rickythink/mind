@@ -217,6 +217,8 @@
 * [腾讯面经](teng-xun-mian-jing/README.md)
   * [电话面试](teng-xun-mian-jing/dian-hua-mian-shi/README.md)
     * [window的onload事件和domcontentloaded顺序](teng-xun-mian-jing/dian-hua-mian-shi/window-de-onload-shi-jian-he-domcontentloaded-shun-xu.md)
+  * [远程面](teng-xun-mian-jing/yuan-cheng-mian/README.md)
+    * [typeof 和 instanceof 区别](teng-xun-mian-jing/yuan-cheng-mian/typeof-he-instanceof-qu-bie.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
 
