@@ -185,6 +185,8 @@
     * [SRP \| The Single Responsibility Principle](ji-suan-ji-li-lun/solid-yuan-ze/srp.md)
     * [OCP \| The Open Closed Principle](ji-suan-ji-li-lun/solid-yuan-ze/ocp.md)
     * [LSP \| The Liskov Substitution Principle](ji-suan-ji-li-lun/solid-yuan-ze/lsp-or-the-liskov-substitution-principle.md)
+    * [ISP \| The interface Segregation Principle](ji-suan-ji-li-lun/solid-yuan-ze/isp-or-the-interface-segregation-principle.md)
+    * [DIP \| The Dependency Inversion Principle](ji-suan-ji-li-lun/solid-yuan-ze/dip-or-the-dependency-inversion-principle.md)
 * [面试题](mian-shi-ti/README.md)
   * [Set、Map、WeakSet 和 WeakMap 的区别？](mian-shi-ti/setmapweakset-he-weakmap-de-qu-bie.md)
   * [Map+ParseInt](mian-shi-ti/map+parseint.md)
