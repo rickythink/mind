@@ -1,6 +1,7 @@
 # 缓存
 
-> [https://github.com/ljianshu/Blog/issues/23](https://github.com/ljianshu/Blog/issues/23)
+> 1. [https://github.com/ljianshu/Blog/issues/23](https://github.com/ljianshu/Blog/issues/23)
+> 2. [https://juejin.im/post/5c136bd16fb9a049d37efc47](https://juejin.im/post/5c136bd16fb9a049d37efc47)
 
 ![](../.gitbook/assets/image%20%2833%29.png)
 
