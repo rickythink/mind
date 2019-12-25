@@ -214,6 +214,9 @@
     * [CSS画三角形](tou-tiao-mian-jing/bi-shi/css-hua-san-jiao-xing.md)
     * [下载页面的所有图片](tou-tiao-mian-jing/bi-shi/xia-zai-ye-mian-de-suo-you-tu-pian.md)
     * [实现链式调用](tou-tiao-mian-jing/bi-shi/shi-xian-lian-shi-tiao-yong.md)
+* [腾讯面经](teng-xun-mian-jing/README.md)
+  * [电话面试](teng-xun-mian-jing/dian-hua-mian-shi/README.md)
+    * [window的onload事件和domcontentloaded顺序](teng-xun-mian-jing/dian-hua-mian-shi/window-de-onload-shi-jian-he-domcontentloaded-shun-xu.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
 
