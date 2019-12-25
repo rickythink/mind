@@ -1,6 +1,4 @@
-# SRP
-
-## SRP \| The Single Responsibility Principle
+# SRP \| The Single Responsibility Principle
 
 **单一功能原则**（Single responsibility principle）规定每个类都应该有一个单一的功能，并且该功能应该由这个类完全封装起来。所有它的（这个类的）服务都应该严密的和该功能平行（功能平行，意味着没有依赖）。
 
