@@ -75,6 +75,7 @@
   * [Object.defineProperty与Proxy区别](vue3/object.defineproperty-yu-proxy-qu-bie.md)
 * [React](react/README.md)
   * [无法preventDefault](react/wu-fa-preventdefault.md)
+  * [Parent控制Child\(Lifting state up\)](react/parent-kong-zhi-childlifting-state-up.md)
 * [Fetch](fetch/README.md)
   * [Fetch取消请求](fetch/fetch-qu-xiao-qing-qiu.md)
 * [Axios](axios-1/README.md)
