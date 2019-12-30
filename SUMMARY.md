@@ -231,4 +231,5 @@
     * [for..in 与 for..of的区别](teng-xun-mian-jing/yuan-cheng-mian/for..in-yu-for..of-de-qu-bie.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
+  * [vue面试清单](to-do-list/vue-mian-shi-qing-dan.md)
 
