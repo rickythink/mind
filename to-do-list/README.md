@@ -16,7 +16,7 @@ description: 需要整理的知识清单
 * [ ] axios 源码学习
   * [x] promise链
   * [ ] 如何做到多种调用方式？
-* [ ] 学习axios的相关项目 [umi-request](https://github.com/umijs/umi-request)
+* [x] 学习axios的相关项目 [umi-request](https://github.com/umijs/umi-request)
 * [ ] 基于axios 实现 重放的多种策略 [见子页](axios-zhong-fang-duo-zhong-ce-lve.md)
 * [ ] vue compile-core 学习
 * [x] 自己造一个 webpack  热更新的轮子
