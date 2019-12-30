@@ -5,6 +5,7 @@ description: 需要整理的知识清单
 # to-do-list
 
 * [ ] CSS3
+* [ ] 移动端布局
 * [x] vue mixin
 * [x] ES6 WeakMap
 * [x] reduce
