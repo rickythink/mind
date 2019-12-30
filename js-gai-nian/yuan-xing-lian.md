@@ -4,7 +4,7 @@
 
 {% embed url="https://github.com/mqyqingfeng/Blog/issues/2" %}
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](../.gitbook/assets/image%20%2810%29.png)
 
 
 

@@ -67,6 +67,7 @@
   * [mixin](vue-1/mixin.md)
   * [vue中的柯里化闭包](vue-1/vue-zhong-de-ke-li-hua-bi-bao.md)
   * [vue-router原理](vue-1/vuerouter-yuan-li.md)
+  * [Vue diff原理](vue-1/vue-diff-yuan-li.md)
   * [集中变量管理](vue-1/ji-zhong-bian-liang-guan-li/README.md)
     * [Flux](vue-1/ji-zhong-bian-liang-guan-li/flux.md)
     * [Redux](vue-1/ji-zhong-bian-liang-guan-li/redux.md)
