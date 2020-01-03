@@ -64,6 +64,8 @@
       * [单链表](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/lian-biao/dan-lian-biao.md)
       * [双向链表](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/lian-biao/shuang-xiang-lian-biao.md)
       * [循环列表](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/lian-biao/xun-huan-lie-biao.md)
+    * [集合](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/ji-he.md)
+    * [字典](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/zi-dian.md)
   * [Leetcode](suan-fa-yu-shu-ju-jie-gou/leetcode/README.md)
     * [1. 两数之和](suan-fa-yu-shu-ju-jie-gou/leetcode/1.-liang-shu-zhi-he.md)
     * [2. 两数相加](suan-fa-yu-shu-ju-jie-gou/leetcode/2.-liang-shu-xiang-jia.md)
