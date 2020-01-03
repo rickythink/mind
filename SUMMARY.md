@@ -225,7 +225,7 @@
   * [compose](koa2/compose.md)
 * [Node](node/README.md)
   * [API 网关](node/api-wang-guan.md)
-* [Linux](linux/README.md)
+* [Linux常用操作](linux/README.md)
   * [免密登陆](linux/mian-mi-deng-lu.md)
 * [头条面经](tou-tiao-mian-jing/README.md)
   * [笔试](tou-tiao-mian-jing/bi-shi/README.md)
