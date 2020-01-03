@@ -56,6 +56,8 @@
 * [算法与数据结构](suan-fa-yu-shu-ju-jie-gou/README.md)
   * [基础知识](suan-fa-yu-shu-ju-jie-gou/ji-chu-zhi-shi/README.md)
     * [大O表示法](suan-fa-yu-shu-ju-jie-gou/ji-chu-zhi-shi/daobiao-shi-fa.md)
+  * [数据结构](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/README.md)
+    * [数组](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/shu-zu.md)
   * [Leetcode](suan-fa-yu-shu-ju-jie-gou/leetcode/README.md)
     * [1. 两数之和](suan-fa-yu-shu-ju-jie-gou/leetcode/1.-liang-shu-zhi-he.md)
     * [2. 两数相加](suan-fa-yu-shu-ju-jie-gou/leetcode/2.-liang-shu-xiang-jia.md)
