@@ -224,6 +224,7 @@
   * [API 网关](node/api-wang-guan.md)
 * [Linux常用操作](linux/README.md)
   * [免密登陆](linux/mian-mi-deng-lu.md)
+  * [Mac终端代理](linux/mac-zhong-duan-dai-li.md)
 * [面试真经](mian-shi-ti/README.md)
   * [Set、Map、WeakSet 和 WeakMap 的区别？](mian-shi-ti/setmapweakset-he-weakmap-de-qu-bie.md)
   * [Map+ParseInt](mian-shi-ti/map+parseint.md)
