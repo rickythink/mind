@@ -38,11 +38,11 @@ description: 需要整理的知识清单
 * [ ] jest
 * [ ] nuxt
 * [ ] 整理 [30s JS ](https://www.30secondsofcode.org/)
-* [ ] 手写 Promise
+* [x] 手写 Promise
 * [x] 手写 new
 * [ ] 了解一下 bluebird
 * [ ] webpack 优化相关
-* [ ] 实现一个eventbus 参考 [https://github.com/tbreuss/eventbus](https://github.com/tbreuss/eventbus)
+* [x] 实现一个eventbus 参考 [https://github.com/tbreuss/eventbus](https://github.com/tbreuss/eventbus)
 * [ ] 新生代+旧生代的详细算法补充一下
 * [x] Array some
 * [ ] vue router 简版实现
