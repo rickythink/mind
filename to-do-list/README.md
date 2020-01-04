@@ -39,7 +39,7 @@ description: 需要整理的知识清单
 * [ ] nuxt
 * [ ] 整理 [30s JS ](https://www.30secondsofcode.org/)
 * [ ] 手写 Promise
-* [ ] 手写 new
+* [x] 手写 new
 * [ ] 了解一下 bluebird
 * [ ] webpack 优化相关
 * [ ] 实现一个eventbus 参考 [https://github.com/tbreuss/eventbus](https://github.com/tbreuss/eventbus)
