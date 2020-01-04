@@ -11,7 +11,7 @@ description: 需要整理的知识清单
 * [x] reduce
 * [x] slice
 * [x] splice
-* [ ] 微前端 看这个仓库 [qiankun](https://github.com/umijs/qiankun)
+* [ ] 微前端 看这个仓库 [qiankun](https://github.com/umijs/qiankun)，qiankun是基于[single-spa](https://github.com/CanopyTax/single-spa)
 * [ ] sentry 源码学习
 * [ ] axios 源码学习
   * [x] promise链
