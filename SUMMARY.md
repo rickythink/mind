@@ -229,6 +229,7 @@
 * [面试真经](mian-shi-ti/README.md)
   * [Set、Map、WeakSet 和 WeakMap 的区别？](mian-shi-ti/setmapweakset-he-weakmap-de-qu-bie.md)
   * [Map+ParseInt](mian-shi-ti/map+parseint.md)
+  * [红绿灯Promise问题](mian-shi-ti/hong-lv-deng-promise-wen-ti.md)
   * [腾讯面经](mian-shi-ti/teng-xun-mian-jing/README.md)
     * [电话面试](mian-shi-ti/teng-xun-mian-jing/dian-hua-mian-shi/README.md)
       * [window的onload事件和domcontentloaded顺序](mian-shi-ti/teng-xun-mian-jing/dian-hua-mian-shi/window-de-onload-shi-jian-he-domcontentloaded-shun-xu.md)
