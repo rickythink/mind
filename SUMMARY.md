@@ -54,6 +54,7 @@
   * [数组flat](chang-jian-han-shu/shu-zu-flat.md)
   * [数组filter](chang-jian-han-shu/shu-zu-filter.md)
   * [模拟new](chang-jian-han-shu/mo-ni-new.md)
+  * [实现promisify](chang-jian-han-shu/shi-xian-promisify.md)
 * [算法与数据结构](suan-fa-yu-shu-ju-jie-gou/README.md)
   * [基础知识](suan-fa-yu-shu-ju-jie-gou/ji-chu-zhi-shi/README.md)
     * [大O表示法](suan-fa-yu-shu-ju-jie-gou/ji-chu-zhi-shi/daobiao-shi-fa.md)
