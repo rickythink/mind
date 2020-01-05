@@ -5,7 +5,7 @@
 双向链表虽然比单向链表占了更多的内存，但是双向链表最大的好处是删除给定指针操作时不用再遍历一遍找到其 `prev` 指向的节点，所以此时的删除操作单向链表时间复杂度是 `O(n)`，双向链表的时间复杂度是 `O(1)`。  
 
 
-![](../../../.gitbook/assets/image%20%2823%29.png)
+![](../../../.gitbook/assets/image%20%2825%29.png)
 
 ```javascript
 const DoubleLinkedList = (function(){
