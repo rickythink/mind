@@ -261,6 +261,7 @@
     * [函数+模板字符串](mian-shi-ti/javascript-questions/han-shu-+-mo-ban-zi-fu-chuan.md)
     * [对象比较](mian-shi-ti/javascript-questions/dui-xiang-bi-jiao.md)
     * [use strict](mian-shi-ti/javascript-questions/use-strict.md)
+    * [声明提升相关](mian-shi-ti/javascript-questions/sheng-ming-ti-sheng-xiang-guan.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
   * [vue面试清单](to-do-list/vue-mian-shi-qing-dan.md)
