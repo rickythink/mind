@@ -259,6 +259,7 @@
       * [实现链式调用](mian-shi-ti/tou-tiao-mian-jing/bi-shi/shi-xian-lian-shi-tiao-yong.md)
   * [javascript-questions](mian-shi-ti/javascript-questions/README.md)
     * [函数+模板字符串](mian-shi-ti/javascript-questions/han-shu-+-mo-ban-zi-fu-chuan.md)
+    * [对象比较](mian-shi-ti/javascript-questions/dui-xiang-bi-jiao.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
   * [vue面试清单](to-do-list/vue-mian-shi-qing-dan.md)
