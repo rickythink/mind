@@ -264,6 +264,7 @@
     * [声明提升相关](mian-shi-ti/javascript-questions/sheng-ming-ti-sheng-xiang-guan.md)
     * [对象键值存储](mian-shi-ti/javascript-questions/dui-xiang-jian-zhi-cun-chu.md)
     * [target与事件冒泡](mian-shi-ti/javascript-questions/target-yu-shi-jian-mao-pao.md)
+    * [call与bind](mian-shi-ti/javascript-questions/call-yu-bind.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
   * [vue面试清单](to-do-list/vue-mian-shi-qing-dan.md)
