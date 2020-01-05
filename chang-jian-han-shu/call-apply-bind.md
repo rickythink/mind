@@ -5,6 +5,8 @@ Call, Apply 和 Bind 都能用来改变this的指向。它们之间的区别是�
 * call 用来明确参数个数确定的情况
 * apply 用在参数个数不明确的情况
 * bind 是传递对象
+* call和apply都会立即执行
+* bind是创建一个新的函数副本
 
 ## Call 和 Apply
 
@@ -110,11 +112,9 @@ Function.prototype.bind2 = function (context) {
 }
 ```
 
-
-
 #### ES6 实现
 
-```text
+```javascript
 // formerArgs 为传递给 bind 函数的第二个到之后的参数
 Function.prototype.bind = function (ctx, ...formerArgs) {
     let _this = this
@@ -150,7 +150,7 @@ Function.prototype.call2 = function (context) {
 
 其中
 
-```text
+```javascript
 var args = [];
 for(var i = 1, len = arguments.length; i < len; i++) {
         args.push('arguments[' + i + ']');
@@ -159,19 +159,19 @@ for(var i = 1, len = arguments.length; i < len; i++) {
 
 最终的数组为：
 
-```text
+```javascript
 var args = [arguments[1], arguments[2], ...]
 ```
 
 然后
 
-```text
+```javascript
  var result = eval('context.fn(' + args +')');
 ```
 
 在eval中，args 自动调用 args.toString\(\)方法，eval的效果如 jawil所说，最终的效果相当于：
 
-```text
+```javascript
  var result = context.fn(arguments[1], arguments[2], ...);
 ```
 
