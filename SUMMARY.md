@@ -109,6 +109,7 @@
   * [axios做到多种调用方式](axios-1/axios-zuo-dao-duo-zhong-tiao-yong-fang-shi.md)
 * [ES6](es6-1/README.md)
   * [ES6/ES7/ES8/ES9索引](es6-1/es6es7es8es9-suo-yin.md)
+  * [+，-，\*\* 运算符](es6-1/+-yun-suan-fu.md)
   * [Let  知识点](es6-1/let-zhi-shi-dian.md)
   * [块级作用域](es6-1/kuai-ji-zuo-yong-yu.md)
   * [Const知识点](es6-1/const-zhi-shi-dian.md)
