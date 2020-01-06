@@ -57,6 +57,12 @@ description: 需要整理的知识清单
 * [ ] 轮播
 * [ ] 返回顶部与取消
 * [ ] 图片懒加载
+* [ ] sourcemap
+* [ ] requestAnimationFrame
+* [ ] 登录相关
+  * [ ] 统一登陆
+  * [ ] 记住登陆
+  * [ ] oauth
 
 
 
