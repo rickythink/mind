@@ -23,6 +23,7 @@
   * [原型链](js-gai-nian/yuan-xing-lian.md)
   * [继承](js-gai-nian/ji-cheng/README.md)
     * [类式继承](js-gai-nian/ji-cheng/lei-shi-ji-cheng.md)
+    * [构造函数继承](js-gai-nian/ji-cheng/gou-zao-han-shu-ji-cheng.md)
   * [词法作用域](js-gai-nian/ci-fa-zuo-yong-yu.md)
   * [事件委托](js-gai-nian/shi-jian-wei-tuo.md)
   * [Falsy](js-gai-nian/falsy.md)
