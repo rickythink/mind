@@ -141,6 +141,7 @@
   * [坐标系](svg/zuo-biao-xi.md)
   * [g元素](svg/g-yuan-su.md)
   * [实现缩放](svg/shi-xian-suo-fang.md)
+  * [react typescript svg相关](svg/react-typescript-svg-xiang-guan.md)
 * [Typescript](typescript/README.md)
   * [使用](typescript/shi-yong/README.md)
     * [基础类型](typescript/shi-yong/ji-chu-lei-xing.md)
