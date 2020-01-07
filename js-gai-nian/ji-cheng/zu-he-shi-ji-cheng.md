@@ -9,7 +9,7 @@ SuperClass.prototype.getBooks = function() {
     console.log(this.books);
 }
 function SubClass(name,time) {
-  SuperClass.call(this,name);
+  SuperClass.call(this,name); // 拥有 name和 books
   this.time = time;
 }
 SubClass.prototype = new SuperClass();
