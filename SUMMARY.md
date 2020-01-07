@@ -74,6 +74,7 @@
     * [选择排序](suan-fa-yu-shu-ju-jie-gou/pai-xu/xuan-ze-pai-xu.md)
     * [插入排序](suan-fa-yu-shu-ju-jie-gou/pai-xu/cha-ru-pai-xu.md)
     * [前三种总结](suan-fa-yu-shu-ju-jie-gou/pai-xu/qian-san-zhong-zong-jie.md)
+    * [快速排序](suan-fa-yu-shu-ju-jie-gou/pai-xu/kuai-su-pai-xu.md)
   * [数据结构](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/README.md)
     * [数组](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/shu-zu.md)
     * [栈](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/zhan.md)
