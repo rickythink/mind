@@ -130,6 +130,8 @@
   * [slice](es6-han-shu/slice.md)
   * [splice](es6-han-shu/splice.md)
   * [Array.some](es6-han-shu/array.some.md)
+  * [Array.prototype.includes](es6-han-shu/array.prototype.includes.md)
+  * [Object.entries/Object.values/Object.keys](es6-han-shu/object.entries-object.values-object.keys.md)
 * [V8](v8/README.md)
   * [垃圾回收](v8/la-ji-hui-shou.md)
 * [DOM](dom-1/README.md)
