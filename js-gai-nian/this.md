@@ -246,6 +246,23 @@ bar.call(obj2); // 2，不是3！
 
 `foo()`内部创建的箭头函数会捕获调用时`foo()`的`this`。由于`foo()`的`this`绑定到`obj1`，`bar`的`this`也会绑定到`obj1`，箭头函数的绑定无法被修改（`new`也不行）
 
+```javascript
+let obj = {
+  name: "Nealyang",
+  func: (a,b) => {
+      console.log(this.name,a,b);
+  }
+};
+obj.func(1,2); // undefined 1 2
+let func = obj.func;
+func(1,2); // undefined  1 2
+let func_ = func.bind(obj);
+func_(1,2);// undefined 1 2
+func(1,2);//  undefined 1 2
+func.call(obj,1,2);// undefined 1 2
+func.apply(obj,[1,2]);// undefined 1 2
+```
+
 ## 题目
 
 ```javascript
