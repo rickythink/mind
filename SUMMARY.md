@@ -69,6 +69,8 @@
 * [算法与数据结构](suan-fa-yu-shu-ju-jie-gou/README.md)
   * [基础知识](suan-fa-yu-shu-ju-jie-gou/ji-chu-zhi-shi/README.md)
     * [大O表示法](suan-fa-yu-shu-ju-jie-gou/ji-chu-zhi-shi/daobiao-shi-fa.md)
+  * [排序](suan-fa-yu-shu-ju-jie-gou/pai-xu/README.md)
+    * [冒泡排序](suan-fa-yu-shu-ju-jie-gou/pai-xu/mao-pao-pai-xu.md)
   * [数据结构](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/README.md)
     * [数组](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/shu-zu.md)
     * [栈](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/zhan.md)
