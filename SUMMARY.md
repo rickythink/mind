@@ -60,7 +60,7 @@
   * [数组flat](chang-jian-han-shu/shu-zu-flat.md)
   * [数组filter](chang-jian-han-shu/shu-zu-filter.md)
   * [模拟new](chang-jian-han-shu/mo-ni-new.md)
-  * [Object.create\(null\)与{}](js-gai-nian/object.createnull-yu.md)
+  * [Object.create\(null\)与{}](chang-jian-han-shu/object.createnull-yu.md)
   * [实现promisify](chang-jian-han-shu/shi-xian-promisify.md)
   * [实现Promise.all](chang-jian-han-shu/shi-xian-promise.all.md)
   * [实现Promise.race](chang-jian-han-shu/shi-xian-promise.race.md)

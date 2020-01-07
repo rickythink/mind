@@ -2,7 +2,7 @@
 
 Vuex 主要用于 Vue，和 Flux，Redux 的思想很类似。
 
-![](../../.gitbook/assets/image%20%28125%29.png)
+![](../../.gitbook/assets/image%20%28127%29.png)
 
 每一个 Vuex 里面有一个全局的 Store，包含着应用中的状态 State，这个 State 只是需要在组件中共享的数据，不用放所有的 State，没必要。这个 State 是单一的，和 Redux 类似，所以，一个应用仅会包含一个 Store 实例。单一状态树的好处是能够直接地定位任一特定的状态片段，在调试的过程中也能轻易地取得整个当前应用状态的快照。
 
