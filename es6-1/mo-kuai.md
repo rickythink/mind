@@ -1,3 +1,7 @@
+---
+description: CMD/AMD/UMD/ES6
+---
+
 # 模块
 
 AMD 与 CMD：
@@ -30,7 +34,7 @@ UMD与AMD/CMD
 
 ### umd 模块（通用模块） <a id="articleHeader0"></a>
 
-```text
+```javascript
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
@@ -45,6 +49,8 @@ UMD与AMD/CMD
 所以现在前端大多数的库最后打包都使用的是 `UMD` 规范
 
 ### CommonJS
+
+`CommonJS` 是 JavaScript 的一个模块化规范，主要用于服务端Nodejs 中，当然，通过转换打包，也可以运行在浏览器端。毕竟服务端加载的模块都是存放于本地磁盘中，所以加载起来比较快，不需要考虑异步方式。
 
 * 导出使用module.exports，也可以exports。就是在此对象上挂属性。exports指向module.exports，即exports= module.exports
 * 加载模块使用require\('xxx'\)。相对、绝对路径均可。默认引用js，可以不写.js后缀
@@ -64,6 +70,15 @@ console.log(common.add(1));
 ```
 
 ### AMD/RequireJS
+
+Asynchronous Module Definition：异步模块定义。
+
+也就是解决我们上面说的 CommonJS 在浏览器端致命的问题：假死。
+
+CommonJS规范加载模块是同步的，也就是说，只有加载完成，才能执行后面的操作。AMD规范则是异步加载模块，允许指定回调函数。
+
+由于这并非原生 js 所支持的那种写法。所以使用 AMD 规范开发的时候就需要大名鼎鼎的函数库 `require.js` 的支持了。  
+
 
 * 定义模块：define\(id?, dependencies?, factory\)
   * 依赖有三个默认的，即"require", "exports", "module"。顺序个数均可视情况
@@ -104,6 +119,8 @@ require(['a', 'b'], function(a, b) {
 
 ### CMD/SeaJS
 
+CMD是阿里的玉伯提出来的（大神的成长故事可在公众号回复【大佬】），js 的函数为 `sea.js`,它和 AMD 其实非常的相似，文件即为模块，但是其最主要的区别是实现了按需加载。推崇依赖就近的原则，模块延迟执行
+
 * 定义模块：define\(factory\)
   * require, exports, module参数顺序不可乱
   * 暴露api方法可以使用exports、module.exports、return
@@ -112,7 +129,7 @@ require(['a', 'b'], function(a, b) {
 * 定义模块无需列依赖，它会调用factory的toString方法对其进行正则匹配以此分析依赖
 * 预先下载，延迟执行
 
-```text
+```javascript
 // a.js
 define(function(require, exports, module) {
     console.log('a.js执行');
@@ -134,13 +151,13 @@ define(function(require) {
     console.log(a);
     console.log(b);
 })
-复制代码
 ```
 
-* ES Module
-  * 输出/export
-  * 输入/import
-  * 输入的模块变量是不可重新赋值的，它只是个可读引用，不过却可以改写属性
+### ES Module
+
+* 输出/export
+* 输入/import
+* 输入的模块变量是不可重新赋值的，它只是个可读引用，不过却可以改写属性
 
 ```javascript
 // 报错1
@@ -178,7 +195,7 @@ import './module';
 import * as module from './module';
 ```
 
-* 总结:
+### 总结:
 
 | 区别项 | es模块化 | commonJS | AMD |
 | :--- | :--- | :--- | :--- |
@@ -205,6 +222,11 @@ import * as module from './module';
 * `CommonJs`是单个值导出，`ES6 Module`可以导出多个
 * `CommonJs`是动态语法可以写在判断里，`ES6 Module`静态语法只能写在顶层
 * `CommonJs`的 `this` 是当前模块，`ES6 Module`的 `this` 是 `undefined`
+
+核心区别：
+
+* **CommonJS 模块输出的是一个值的拷贝，ES6 模块输出的是值的引用**。
+* **CommonJS 模块是运行时加载，ES6 模块是编译时输出接口**。
 
 ### ES6 import 的顺序？
 
