@@ -26,6 +26,7 @@
     * [构造函数继承](js-gai-nian/ji-cheng/gou-zao-han-shu-ji-cheng.md)
     * [组合式继承](js-gai-nian/ji-cheng/zu-he-shi-ji-cheng.md)
     * [寄生继承](js-gai-nian/ji-cheng/ji-sheng-ji-cheng.md)
+    * [寄生组合](js-gai-nian/ji-cheng/ji-sheng-zu-he.md)
   * [词法作用域](js-gai-nian/ci-fa-zuo-yong-yu.md)
   * [事件委托](js-gai-nian/shi-jian-wei-tuo.md)
   * [Falsy](js-gai-nian/falsy.md)
