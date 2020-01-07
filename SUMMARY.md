@@ -269,6 +269,7 @@
       * [下载页面的所有图片](mian-shi-ti/tou-tiao-mian-jing/bi-shi/xia-zai-ye-mian-de-suo-you-tu-pian.md)
       * [实现链式调用](mian-shi-ti/tou-tiao-mian-jing/bi-shi/shi-xian-lian-shi-tiao-yong.md)
   * [javascript-questions](mian-shi-ti/javascript-questions/README.md)
+    * [原型链与new优先级](mian-shi-ti/javascript-questions/yuan-xing-lian-yu-new-you-xian-ji.md)
     * [函数+模板字符串](mian-shi-ti/javascript-questions/han-shu-+-mo-ban-zi-fu-chuan.md)
     * [对象引用](mian-shi-ti/javascript-questions/dui-xiang-bi-jiao.md)
     * [use strict](mian-shi-ti/javascript-questions/use-strict.md)
