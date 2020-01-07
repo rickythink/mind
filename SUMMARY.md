@@ -194,6 +194,7 @@
 * [Webpack](webpack-1/README.md)
   * [基础概念](webpack-1/ji-chu-gai-nian.md)
   * [配置记录](webpack-1/pei-zhi-ji-lu.md)
+  * [sourcemap](webpack-1/sourcemap.md)
   * [常用Webpack插件记录](webpack-1/chang-yong-webpack-cha-jian-ji-lu.md)
   * [webpack相关竞品](webpack-1/webpack-xiang-guan-jing-pin.md)
   * [HMR](webpack-1/re-geng-xin-de-yuan-li.md)
