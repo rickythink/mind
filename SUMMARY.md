@@ -96,6 +96,7 @@
     * [8. 字符串转换整数](suan-fa-yu-shu-ju-jie-gou/leetcode/8.-zi-fu-chuan-zhuan-huan-zheng-shu.md)
     * [15. 三数之和](suan-fa-yu-shu-ju-jie-gou/leetcode/15.-san-shu-zhi-he.md)
 * [Vue](vue-1/README.md)
+  * [基础知识](vue-1/ji-chu-zhi-shi.md)
   * [长列表性能优化](vue-1/chang-lie-biao-xing-neng-you-hua.md)
   * [mixin](vue-1/mixin.md)
   * [vue中的柯里化闭包](vue-1/vue-zhong-de-ke-li-hua-bi-bao.md)

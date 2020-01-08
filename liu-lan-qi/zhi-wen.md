@@ -68,7 +68,7 @@ function getCanvasFingerprint () {
 }
 ```
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](../.gitbook/assets/image%20%2816%29.png)
 
 在画布上渲染一些文字，再用**toDataURL**转换出来，即便开启了隐私模式一样可以相同的值  
 
@@ -85,7 +85,7 @@ WebRTC（网页实时通信，Web Real Time Communication），是可以让浏�
 
 综上提到的浏览器指纹都是从同一个浏览器上获得。但是很多特征值都是不稳定的，例如UA、cavans指纹在相同设备的不同浏览器打开会完全不一样。 同一套浏览器指纹算法在不同浏览器（本小结所说的不同浏览器是指同一台设备上的不同浏览器）上也就不可用了。
 
-![](../.gitbook/assets/image%20%28131%29.png)
+![](../.gitbook/assets/image%20%28134%29.png)
 
 
 
