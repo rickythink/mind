@@ -16,7 +16,7 @@
 
 ![&#x539F;&#x578B;&#x7684;&#x539F;&#x578B; \| Person.prototype.\_\_proto\_\_ === Object.prototype](../.gitbook/assets/image%20%2820%29.png)
 
-![&#x84DD;&#x8272;&#x7EBF;&#x5C31;&#x662F;&#x539F;&#x578B;&#x94FE; \| Object&#x7684;&#x539F;&#x578B;&#x7684;&#x539F;&#x578B;&#x4E3A;&#x7A7A; \| Object.prototype.\_\_proto\_\_ === null](../.gitbook/assets/image%20%28113%29.png)
+![&#x84DD;&#x8272;&#x7EBF;&#x5C31;&#x662F;&#x539F;&#x578B;&#x94FE; \| Object&#x7684;&#x539F;&#x578B;&#x7684;&#x539F;&#x578B;&#x4E3A;&#x7A7A; \| Object.prototype.\_\_proto\_\_ === null](../.gitbook/assets/image%20%28114%29.png)
 
 ## 真的是继承吗？
 
