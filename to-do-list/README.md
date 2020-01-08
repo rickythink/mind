@@ -70,6 +70,7 @@ description: 需要整理的知识清单
 * [ ] 正则
 * [ ] 蒙版的css
 * [ ] Array.reduce实现一个Array.map和Array.filter
+* [ ] vue与react对比
 
 
 
