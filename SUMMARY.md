@@ -80,6 +80,7 @@
   * [递归](suan-fa-yu-shu-ju-jie-gou/di-gui/README.md)
     * [深拷贝](suan-fa-yu-shu-ju-jie-gou/di-gui/shen-kao-bei.md)
     * [Array.flat 实现](suan-fa-yu-shu-ju-jie-gou/di-gui/array.flat-shi-xian.md)
+    * [爬楼梯](suan-fa-yu-shu-ju-jie-gou/di-gui/pa-lou-ti.md)
   * [数据结构](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/README.md)
     * [数组](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/shu-zu.md)
     * [栈](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/zhan.md)
