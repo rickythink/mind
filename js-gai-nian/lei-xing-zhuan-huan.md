@@ -18,7 +18,7 @@ JS中类型转换只有三种情况，分别是：
 注意图中有一个错误，Boolean 转字符串这行结果我指的是 true 转字符串的例子，不是说 Boolean、函数、Symblo 转字符串都是 `true`
 {% endhint %}
 
-![](../.gitbook/assets/image%20%2860%29.png)
+![](../.gitbook/assets/image%20%2861%29.png)
 
 #### 对象转原始类型
 
