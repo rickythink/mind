@@ -66,7 +66,7 @@ description: 需要整理的知识清单
 * [ ] OKR
 * [ ] 文件上传断点、续传
 * [x] !!
-* [ ] 性能优化\(重要\)
+* [x] 性能优化\(重要\)
 * [ ] 正则
 * [ ] 蒙版的css
 * [ ] Array.reduce实现一个Array.map和Array.filter
