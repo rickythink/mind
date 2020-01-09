@@ -20,7 +20,7 @@ addEventListener有三个参数：
 第三个参数默认值是false，表示在**事件冒泡阶段**调用事件处理函数，如果参数为true，则表示在**事件捕获阶段**调用处理函数。
 {% endhint %}
 
-![](../.gitbook/assets/image%20%2866%29.png)
+![](../.gitbook/assets/image%20%2867%29.png)
 
 ## 事件委托的优点
 

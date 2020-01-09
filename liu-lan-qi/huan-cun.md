@@ -3,7 +3,7 @@
 > 1. [https://github.com/ljianshu/Blog/issues/23](https://github.com/ljianshu/Blog/issues/23)
 > 2. [https://juejin.im/post/5c136bd16fb9a049d37efc47](https://juejin.im/post/5c136bd16fb9a049d37efc47)
 
-![](../.gitbook/assets/image%20%2845%29.png)
+![](../.gitbook/assets/image%20%2846%29.png)
 
 ## 缓存位置
 
@@ -51,7 +51,7 @@ Expires 是 HTTP/1 的产物，受限于本地时间，如果修改了本地时�
 Cache-Control:max-age=300
 ```
 
-![](../.gitbook/assets/image%20%2864%29.png)
+![](../.gitbook/assets/image%20%2865%29.png)
 
 #### Expires和Cache-Control的区别
 

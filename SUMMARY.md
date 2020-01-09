@@ -222,6 +222,7 @@
   * [浏览器的本地存储](liu-lan-qi/liu-lan-qi-de-ben-di-cun-chu.md)
   * [输入URL到页面加载发生了什么](liu-lan-qi/shu-ru-url-dao-ye-mian-jia-zai-fa-sheng-le-shen-me.md)
   * [Preload, Prefetech,DNS Prefetching](liu-lan-qi/preload-prefetech-dns-prefetching.md)
+  * [defer, async 脚本](liu-lan-qi/defer-async-jiao-ben.md)
   * [前端监控异常捕捉](liu-lan-qi/qian-duan-jian-kong-yi-chang-bu-zhuo.md)
   * [内存泄露](liu-lan-qi/nei-cun-xie-lu.md)
   * [指纹](liu-lan-qi/zhi-wen.md)
