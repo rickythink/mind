@@ -20,6 +20,25 @@ const f = (str) => {
 }
 ```
 {% endtab %}
+
+{% tab title="答案2" %}
+```javascript
+const f = (num) => {
+  if(typeof num !== 'number') throw Error('not number input')
+  const str = `${num}`
+  let count = 0, ret = []
+  for(let i=str.length-1; i>=0 ; i--) {
+    count++
+    ret.unshift(str[i])
+    if(count === 3 && i !=0) { 
+      ret.unshift(',')
+      count = 0
+    }
+  }
+  return ret.join('')
+}
+```
+{% endtab %}
 {% endtabs %}
 
 运用到的知识点：
