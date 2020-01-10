@@ -2,7 +2,7 @@
 
 ## MVC
 
-![](../.gitbook/assets/image%20%28138%29.png)
+![](../.gitbook/assets/image%20%28139%29.png)
 
 MVC允许在不改变视图的情况下改变视图对用户输入的响应方式，用户把对View的操作交给了Controller处理，在Controller中响应View的事件调用Model的接口对数据进行操作，一旦Model发生变化便通知相关视图进行更新。
 
