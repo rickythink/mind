@@ -11,7 +11,7 @@
 
   从vue compile-dom 原理说起，有key的dom diff性能会更好
 
-* [ ] 谈一谈 nextTick 的原理
+* [x] 谈一谈 nextTick 的原理
 * [ ] vue 是如何对数组方法进行变异的 ?
 * [x] Vue 组件 data 为什么必须是函数?
 
