@@ -4,9 +4,6 @@
 * [x] computed实现原理
 * [x] computed和watch有什么区别和运用场景
 * [x] 为什么在 Vue3.0 采用了 Proxy,抛弃了 Object.defineProperty？
-
-  Object.defineProperty是可以检测数组下标加入新元素的，proxy应该是性能更好
-
 * [x] Vue 中的 key 到底有什么用？
 
   从vue compile-dom 原理说起，有key的dom diff性能会更好
