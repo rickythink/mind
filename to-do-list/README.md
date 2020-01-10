@@ -71,7 +71,8 @@ description: 需要整理的知识清单
 * [ ] 蒙版的css
 * [ ] Array.reduce实现一个Array.map和Array.filter
 * [ ] vue与react对比
-* [ ] 0.1 + 0.2
+* [x] 0.1 + 0.2 
+  * [ ] 学习理解 [number-precision](https://github.com/nefe/number-precision)
 
 
 
