@@ -73,6 +73,5 @@ description: 需要整理的知识清单
 * [ ] vue与react对比
 * [x] 0.1 + 0.2 
   * [ ] 学习理解 [number-precision](https://github.com/nefe/number-precision)
-
-
+* [ ] osi 七层模型
 

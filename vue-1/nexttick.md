@@ -4,6 +4,22 @@
 
 在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM
 
+### 用法
+
+```javascript
+// 修改数据
+vm.msg = 'Hello';
+// DOM 还没有更新
+Vue.nextTick(function() {
+  // DOM 更新了
+});
+
+// 作为一个 Promise 使用
+Vue.nextTick().then(function() {
+  // DOM 更新了
+});
+```
+
 ## 能力检测
 
 按照优先级检测
@@ -136,7 +152,21 @@ export function nextTick (cb?: Function, ctx?: Object) {
 }
 ```
 
+## MutationObserver
 
+ MutationObserver 如何模拟 nextTick 这点，其实就是创建一个 TextNode 并监听内容变化，然后要 nextTick 的时候去改一下这个节点的文本内容：
+
+```javascript
+const observer = new MutationObserver(flushCallbacks)
+  const textNode = document.createTextNode(String(counter))
+  observer.observe(textNode, {
+    characterData: true
+  })
+  timerFunc = () => {
+    counter = (counter + 1) % 2
+    textNode.data = String(counter)
+  }
+```
 
 
 
