@@ -275,6 +275,7 @@
   * [Map+ParseInt](mian-shi-ti/map+parseint.md)
   * [红绿灯Promise问题](mian-shi-ti/hong-lv-deng-promise-wen-ti.md)
   * [0.1 + 0.2](mian-shi-ti/0.1-+-0.2.md)
+  * [vue面试清单](mian-shi-ti/vue-mian-shi-qing-dan.md)
   * [腾讯面经](mian-shi-ti/teng-xun-mian-jing/README.md)
     * [电话面试](mian-shi-ti/teng-xun-mian-jing/dian-hua-mian-shi/README.md)
       * [window的onload事件和domcontentloaded顺序](mian-shi-ti/teng-xun-mian-jing/dian-hua-mian-shi/window-de-onload-shi-jian-he-domcontentloaded-shun-xu.md)
@@ -307,5 +308,4 @@
     * [map, reduce和正则](mian-shi-ti/javascript-questions/map-reduce-he-zheng-ze.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
-  * [vue面试清单](to-do-list/vue-mian-shi-qing-dan.md)
 
