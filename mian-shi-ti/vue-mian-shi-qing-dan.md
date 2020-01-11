@@ -17,5 +17,6 @@
 * [x] 谈谈 Vue 事件机制,手写on,off,emit,once
 * [x] 说说 Vue 的渲染过程
 * [x] 聊聊 keep-alive 的实现原理和缓存策略?
-* [ ] vm.$set\(\)实现原理是什么?
+
+
 
