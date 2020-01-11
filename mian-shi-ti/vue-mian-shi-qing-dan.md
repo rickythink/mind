@@ -14,8 +14,8 @@
 
   Object是引用，对于组件的实例，一个实例改变了data会影响到另外一个实例
 
-* [ ] 谈谈 Vue 事件机制,手写on,off,emit,once
-* [ ] 说说 Vue 的渲染过程
+* [x] 谈谈 Vue 事件机制,手写on,off,emit,once
+* [x] 说说 Vue 的渲染过程
 * [ ] 聊聊 keep-alive 的实现原理和缓存策略?
 * [ ] vm.$set\(\)实现原理是什么?
 
