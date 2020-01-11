@@ -107,6 +107,7 @@
   * [mixin](vue-1/mixin.md)
   * [vue中的柯里化闭包](vue-1/vue-zhong-de-ke-li-hua-bi-bao.md)
   * [vue 渲染过程](vue-1/vue-xuan-ran-guo-cheng.md)
+  * [keep-alive](vue-1/keep-alive.md)
   * [nextTick](vue-1/nexttick.md)
   * [vue 数组变异](vue-1/vue-shu-zu-bian-yi.md)
   * [vue-computed原理](vue-1/vuecomputed-yuan-li.md)
