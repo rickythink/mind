@@ -150,6 +150,7 @@
   * [模块](es6-1/mo-kuai.md)
   * [WeakMap](es6-1/weakmap.md)
   * [模块](es6-1/mo-kuai-1.md)
+  * [尾调用优化](es6-1/wei-tiao-yong-you-hua.md)
 * [ES6 函数](es6-han-shu/README.md)
   * [reduce](es6-han-shu/reduce.md)
   * [slice](es6-han-shu/slice.md)
