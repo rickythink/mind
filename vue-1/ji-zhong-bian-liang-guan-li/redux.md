@@ -4,7 +4,7 @@ Flux 有一些缺点（特点），比如一个应用可以拥有多个 Store，
 
 所以大家在使用的时候，一般会用 Redux，他和 Flux 思想比较类似，也有差别。
 
-![](../../.gitbook/assets/image%20%2865%29.png)
+![](../../.gitbook/assets/image%20%2866%29.png)
 
 1、用户通过 View 发出 Action：
 
