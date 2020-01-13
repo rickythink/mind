@@ -6,17 +6,17 @@
 
 ## 上面参考中递进的图片实例
 
-![&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x5B9E;&#x4F8B;&#x539F;&#x578B;](../.gitbook/assets/image%20%2895%29.png)
+![&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x5B9E;&#x4F8B;&#x539F;&#x578B;](../.gitbook/assets/image%20%2894%29.png)
 
-![&#x6BCF;&#x4E00;&#x4E2A;JavaScript&#x5BF9;&#x8C61;\(&#x9664;&#x4E86; null \)&#x90FD;&#x5177;&#x6709;&#x7684;\_\_proto\_\_&#x5C5E;&#x6027; \| person.\_\_proto\_\_ === Person.prototype](../.gitbook/assets/image%20%2862%29.png)
+![&#x6BCF;&#x4E00;&#x4E2A;JavaScript&#x5BF9;&#x8C61;\(&#x9664;&#x4E86; null \)&#x90FD;&#x5177;&#x6709;&#x7684;\_\_proto\_\_&#x5C5E;&#x6027; \| person.\_\_proto\_\_ === Person.prototype](../.gitbook/assets/image%20%2861%29.png)
 
-![&#x6BCF;&#x4E2A;&#x539F;&#x578B;&#x90FD;&#x6709;&#x4E00;&#x4E2A; constructor &#x5C5E;&#x6027;&#x6307;&#x5411;&#x5173;&#x8054;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570; \| Person === Person.prototype.constructor](../.gitbook/assets/image%20%2875%29.png)
+![&#x6BCF;&#x4E2A;&#x539F;&#x578B;&#x90FD;&#x6709;&#x4E00;&#x4E2A; constructor &#x5C5E;&#x6027;&#x6307;&#x5411;&#x5173;&#x8054;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570; \| Person === Person.prototype.constructor](../.gitbook/assets/image%20%2874%29.png)
 
 > 一个构造函数可以生成多个实例, 因此没有原型指向实例的箭头
 
-![&#x539F;&#x578B;&#x7684;&#x539F;&#x578B; \| Person.prototype.\_\_proto\_\_ === Object.prototype](../.gitbook/assets/image%20%2824%29.png)
+![&#x539F;&#x578B;&#x7684;&#x539F;&#x578B; \| Person.prototype.\_\_proto\_\_ === Object.prototype](../.gitbook/assets/image%20%2823%29.png)
 
-![&#x84DD;&#x8272;&#x7EBF;&#x5C31;&#x662F;&#x539F;&#x578B;&#x94FE; \| Object&#x7684;&#x539F;&#x578B;&#x7684;&#x539F;&#x578B;&#x4E3A;&#x7A7A; \| Object.prototype.\_\_proto\_\_ === null](../.gitbook/assets/image%20%28123%29.png)
+![&#x84DD;&#x8272;&#x7EBF;&#x5C31;&#x662F;&#x539F;&#x578B;&#x94FE; \| Object&#x7684;&#x539F;&#x578B;&#x7684;&#x539F;&#x578B;&#x4E3A;&#x7A7A; \| Object.prototype.\_\_proto\_\_ === null](../.gitbook/assets/image%20%28122%29.png)
 
 ## 真的是继承吗？
 
