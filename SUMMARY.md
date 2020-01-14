@@ -89,6 +89,7 @@
     * [后序遍历](suan-fa-yu-shu-ju-jie-gou/er-cha-shu-zhuan-ti/hou-xu-bian-li.md)
     * [重建二叉树](suan-fa-yu-shu-ju-jie-gou/er-cha-shu-zhuan-ti/zhong-jian-er-cha-shu.md)
     * [求二叉树的遍历](suan-fa-yu-shu-ju-jie-gou/er-cha-shu-zhuan-ti/qiu-er-cha-shu-de-bian-li.md)
+  * [动态规划](suan-fa-yu-shu-ju-jie-gou/dong-tai-gui-hua.md)
   * [数据结构](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/README.md)
     * [数组](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/shu-zu.md)
     * [栈](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/zhan.md)
