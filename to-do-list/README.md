@@ -76,7 +76,9 @@ description: 需要整理的知识清单
 * [ ] osi 七层模型
 * [ ] tcp拥塞控制和流量控制
 * [ ] 三次握手四次挥手，为什么三次和四次
-* [ ] em和rem的区别
+* [x] em和rem的区别
 * [x] 尾递归优化
 * [ ] XMLHttpRequest
+
+
 
