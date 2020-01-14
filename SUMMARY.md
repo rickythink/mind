@@ -85,6 +85,7 @@
   * [二叉树专题](suan-fa-yu-shu-ju-jie-gou/er-cha-shu-zhuan-ti/README.md)
     * [前序遍历](suan-fa-yu-shu-ju-jie-gou/er-cha-shu-zhuan-ti/qian-xu-bian-li.md)
     * [中序遍历](suan-fa-yu-shu-ju-jie-gou/er-cha-shu-zhuan-ti/zhong-xu-bian-li.md)
+    * [后序遍历](suan-fa-yu-shu-ju-jie-gou/er-cha-shu-zhuan-ti/hou-xu-bian-li.md)
   * [数据结构](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/README.md)
     * [数组](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/shu-zu.md)
     * [栈](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/zhan.md)
