@@ -4,7 +4,7 @@
 
 栈是一种后入先出的有序集合，例如 js 的执行栈。
 
-![](../../.gitbook/assets/image%20%28112%29.png)
+![](../../.gitbook/assets/image%20%28113%29.png)
 
 ## 实现
 

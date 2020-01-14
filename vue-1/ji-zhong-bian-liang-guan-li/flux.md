@@ -7,7 +7,7 @@ Flux把一个应用分成了4个部分：
 * Dispatcher
 * Store
 
-![](../../.gitbook/assets/image%20%28127%29.png)
+![](../../.gitbook/assets/image%20%28129%29.png)
 
 这个过程有几个需要注意的点：
 
