@@ -64,7 +64,7 @@ description: 需要整理的知识清单
   * [ ] 记住登陆
   * [ ] oauth
 * [ ] OKR
-* [ ] 文件上传断点、续传 [掘金连接](https://juejin.im/post/5dff8a26e51d4558105420ed#heading-26)
+* [x] 文件上传断点、续传 [掘金连接](https://juejin.im/post/5dff8a26e51d4558105420ed#heading-26)
 * [x] !!
 * [x] 性能优化\(重要\)
 * [x] 正则
@@ -78,4 +78,5 @@ description: 需要整理的知识清单
 * [ ] 三次握手四次挥手，为什么三次和四次
 * [ ] em和rem的区别
 * [x] 尾递归优化
+* [ ] XMLHttpRequest
 
