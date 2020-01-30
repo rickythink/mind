@@ -81,6 +81,7 @@ description: 需要整理的知识清单
 * [ ] XMLHttpRequest
 * [ ] 01背包、红黑树、二叉树增删改查、n+m=k
 * [ ] websocket
+* [ ] base64
 
 
 
