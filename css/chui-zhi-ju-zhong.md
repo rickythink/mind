@@ -8,7 +8,7 @@
 
 2\) 若元素是行内块级元素, 基本思想是使用display: inline-block, vertical-align: middle和一个伪元素让内容块处于容器中央.
 
-```text
+```css
 .parent::after, .son{
     display:inline-block;
     vertical-align:middle;
@@ -37,7 +37,7 @@ IE6~7, 甚至IE8 beta中无效.
 
 父元素做如下设置即可保证子元素垂直居中:
 
-```text
+```css
 .parent {
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@ IE6~7, 甚至IE8 beta中无效.
 
 5\) 使用flex 2009版.
 
-```text
+```css
 .parent {
       display: box;
       box-orient: vertical;
@@ -75,7 +75,7 @@ IE6~7, 甚至IE8 beta中无效.
 
 6\) 可用 **transform** , 设置父元素相对定位\(position:relative\), 子元素如下css样式:
 
-```text
+```css
 .son{
     position:absolute;
     top:50%;
@@ -97,7 +97,7 @@ IE8不支持, 属性需要追加浏览器厂商前缀, 可能干扰其他 transf
 
 7\) 设置父元素相对定位\(position:relative\), 子元素如下css样式:
 
-```text
+```css
 .son{
     position:absolute;
     top:50%;
@@ -116,7 +116,7 @@ IE8不支持, 属性需要追加浏览器厂商前缀, 可能干扰其他 transf
 
 8\) 设置父元素相对定位\(position:relative\), 子元素如下css样式:
 
-```text
+```css
 .son{
     position:absolute;
     height:固定;
