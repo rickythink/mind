@@ -1,6 +1,6 @@
 # vue 渲染过程
 
-![](../.gitbook/assets/image%20%28159%29.png)
+![](../.gitbook/assets/image%20%28160%29.png)
 
 ![](../.gitbook/assets/image%20%28109%29.png)
 
