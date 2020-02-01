@@ -32,7 +32,7 @@ addEventListener有三个参数：
 
 新增的子元素也可一并监听到
 
-## 原声实现事件委托
+## 原生实现事件委托
 
 ```javascript
 function delegate(agent,type,selctor,fn) {
