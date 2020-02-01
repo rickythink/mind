@@ -128,6 +128,62 @@ new Promise((resolve, reject) => {
 })
 ```
 
+## 浏览器操作与requestAnimationFrame
+
+假设有这样的一些`DOM`结构：
+
+```markup
+<style>
+  #outer {
+    padding: 20px;
+    background: #616161;
+  }
+
+  #inner {
+    width: 100px;
+    height: 100px;
+    background: #757575;
+  }
+</style>
+<div id="outer">
+  <div id="inner"></div>
+</div>
+```
+
+```javascript
+const $inner = document.querySelector('#inner')
+const $outer = document.querySelector('#outer')
+
+function handler () {
+  console.log('click') // 直接输出
+
+  Promise.resolve().then(_ => console.log('promise')) // 注册微任务
+
+  setTimeout(_ => console.log('timeout')) // 注册宏任务
+
+  requestAnimationFrame(_ => console.log('animationFrame')) // 注册宏任务
+
+  $outer.setAttribute('data-random', Math.random()) // DOM属性修改，触发微任务
+}
+
+new MutationObserver(_ => {
+  console.log('observer')
+}).observe($outer, {
+  attributes: true
+})
+
+$inner.addEventListener('click', handler)
+$outer.addEventListener('click', handler)
+```
+
+如果点击`#inner`，其执行顺序一定是：`click` -&gt; `promise` -&gt; `observer` -&gt; `click` -&gt; `promise` -&gt; `observer` -&gt; `animationFrame` -&gt; `animationFrame` -&gt; `timeout` -&gt; `timeout`。
+
+因为一次`I/O`创建了一个宏任务，也就是说在这次任务中会去触发`handler`。  
+按照代码中的注释，在同步的代码已经执行完以后，这时就会去查看是否有微任务可以执行，然后发现了`Promise`和`MutationObserver`两个微任务，遂执行之。  
+因为`click`事件会冒泡，所以对应的这次`I/O`会触发两次`handler`函数\(\_一次在`inner`、一次在`outer`\_\)，所以会优先执行冒泡的事件\(\_早于其他的宏任务\_\)，也就是说会重复上述的逻辑。  
+在执行完同步代码与微任务以后，这时继续向后查找有木有宏任务。  
+需要注意的一点是，因为我们触发了`setAttribute`，实际上修改了`DOM`的属性，这会导致页面的重绘，而这个`set`的操作是同步执行的，也就是说`requestAnimationFrame`的回调会早于`setTimeout`所执行。
+
   
 
 
