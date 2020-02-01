@@ -8,8 +8,26 @@
 
 > 一个掘金的老哥（ssssyoki）的文章摘要： 那么如此看来我给的答案还是对的。但是js异步有一个机制，就是遇到宏任务，先执行宏任务，将宏任务放入eventqueue，然后在执行微任务，将微任务放入eventqueue最骚的是，这两个queue不是一个queue。当你往外拿的时候先从微任务里拿这个回掉函数，然后再从宏任务的queue上拿宏任务的回掉函数。 我当时看到这我就服了还有这种骚操作。
 
-* 而宏任务一般是：包括整体代码script，setTimeout，setInterval、setImmediate。
+* 而宏任务一般是：包括整体代码script，setTimeout，setInterval、setImmediate、requestAnimationFrame。
 * 微任务：原生Promise\(有些实现的promise将then方法放到了宏任务中\)、process.nextTick、Object.observe\(已废弃\)、 MutationObserver 记住就行了。
+
+## 宏任务
+
+| \# | 浏览器 | Node |
+| :--- | :--- | :--- |
+| `I/O` | ✅ | ✅ |
+| `setTimeout` | ✅ | ✅ |
+| `setInterval` | ✅ | ✅ |
+| `setImmediate` | ❌ | ✅ |
+| `requestAnimationFrame` | ✅ | ❌ |
+
+## 微任务
+
+| \# | 浏览器 | Node |
+| :--- | :--- | :--- |
+| `process.nextTick` | ❌ | ✅ |
+| `MutationObserver` | ✅ | ❌ |
+| `Promise.then catch finally` | ✅ | ✅ |
 
 ## 题目
 
