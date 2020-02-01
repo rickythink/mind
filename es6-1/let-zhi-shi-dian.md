@@ -42,7 +42,7 @@ console.log(window.c) // undefined
 
 let声明的变量只在代码块中有效
 
-```text
+```javascript
 {
   let a = 10;
   var b = 1;
@@ -56,7 +56,7 @@ b // 1
 
 `var`的声明在for循环中是全局式的
 
-```text
+```javascript
 var a = [];
 for (var i = 0; i < 10; i++) {
   a[i] = function () {
@@ -68,7 +68,7 @@ a[6](); // 10
 
 因此let更适合在for循环中使用
 
-```text
+```javascript
 for (let i = 0; i < 10; i++) {
   // ...
 }
@@ -79,7 +79,7 @@ console.log(i);
 
 因此`let`声明下，最后可以输出正确的值；此外，注意下面的`i`虽然每次赋值，但是JavaScript能记住上次的值
 
-```text
+```javascript
 var a = [];
 for (let i = 0; i < 10; i++) {
   a[i] = function () {
@@ -91,7 +91,7 @@ a[6](); // 6
 
 此外, `for`的括号和方括号可以是两个独立的子作用域
 
-```text
+```javascript
 for (let i = 0; i < 3; i++) {
   let i = 'abc';
   console.log(i);
@@ -105,21 +105,21 @@ for (let i = 0; i < 3; i++) {
 
 使用var时，如果变量在声明之前使用，会发生变量提升，导致报错输出undefiend
 
-```text
+```javascript
 console.log(foo); // 输出undefined
 var foo = 2;
 ```
 
 使用let时，会报错为ReferenceError
 
-```text
+```javascript
 console.log(bar); // 报错ReferenceError
 let bar = 2;
 ```
 
 变量提升带来的传统错误例子：
 
-```text
+```javascript
 var tmp = new Date();
 
 function f() {
@@ -138,7 +138,7 @@ f(); // undefined
 
 块级作用域中存在let命令时，变量就绑定在当前域，不受外部影响
 
-```text
+```javascript
 var tmp = 123;
 
 if (true) {
@@ -149,7 +149,7 @@ if (true) {
 
 ### 比较隐蔽的死区
 
-```text
+```javascript
 function bar(x = y, y = 2) {
   return [x, y];
 }
@@ -161,7 +161,7 @@ bar(); // 报错
 
 同样，还有这样的语句
 
-```text
+```javascript
 // 不报错
 var x = x;
 
