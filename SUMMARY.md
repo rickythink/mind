@@ -110,6 +110,7 @@
     * [7. 整数反转](suan-fa-yu-shu-ju-jie-gou/leetcode/7.-zheng-shu-fan-zhuan.md)
     * [8. 字符串转换整数](suan-fa-yu-shu-ju-jie-gou/leetcode/8.-zi-fu-chuan-zhuan-huan-zheng-shu.md)
     * [15. 三数之和](suan-fa-yu-shu-ju-jie-gou/leetcode/15.-san-shu-zhi-he.md)
+* [JS Worker](js-worker.md)
 * [Vue](vue-1/README.md)
   * [基础知识](vue-1/ji-chu-zhi-shi.md)
   * [长列表性能优化](vue-1/chang-lie-biao-xing-neng-you-hua.md)
