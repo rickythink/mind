@@ -8,7 +8,7 @@ CSRF（Cross-site request forgery）跨站请求伪造：攻击者诱导受害�
 
 * [受害者登录a.com](http://xn--a-f38al5vkzdt61bv7l.com)，并保留了登录凭证（Cookie）。
 * [攻击者引诱受害者访问了b.com](http://xn--b-nv6ao4io8bp6po6e00mu47cda4311avpa330h.com)。
-* [b.com](http://b.com) 向 [a.com](http://a.com) 发送了一个请求：[a.com/act=xx。浏览器会…](http://a.com/act=xx%E3%80%82%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BC%9A%E9%BB%98%E8%AE%A4%E6%90%BA%E5%B8%A6a.com%E7%9A%84Cookie%E3%80%82)
+* [b.com](http://b.com) 向 [a.com](http://a.com) 发送了一个请求：a.com/act=xx。浏览器会默认携带a.com的cookie
 * a.com接收到请求后，对请求进行验证，并确认是受害者的凭证，误以为是受害者自己发送的请求。
 * a.com以受害者的名义执行了act=xx。
 * 攻击完成，攻击者在受害者不知情的情况下，冒充受害者，让a.com执行了自己定义的操作。
