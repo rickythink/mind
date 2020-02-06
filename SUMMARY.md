@@ -13,6 +13,7 @@
   * [主题切换](css/zhu-ti-qie-huan.md)
   * [权重](css/quan-zhong.md)
   * [px, em, rem](css/px-em-rem.md)
+  * [flex 布局](css/flex-bu-ju.md)
 * [CSS3](css3/README.md)
   * [calc](css3/calc.md)
 * [SCSS](scss/README.md)
@@ -326,6 +327,7 @@
     * [call与bind](mian-shi-ti/javascript-questions/call-yu-bind.md)
     * [falsy](mian-shi-ti/javascript-questions/falsy.md)
     * [map, reduce和正则](mian-shi-ti/javascript-questions/map-reduce-he-zheng-ze.md)
+    * [event-loop与promise](mian-shi-ti/javascript-questions/eventloop-yu-promise.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
 

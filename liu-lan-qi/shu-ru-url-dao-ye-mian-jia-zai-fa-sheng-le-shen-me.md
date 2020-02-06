@@ -9,13 +9,13 @@
 5. 浏览器解析渲染
 6. 结束
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](../.gitbook/assets/image%20%2831%29.png)
 
 ## 具体
 
 ### DNS查询
 
-![](../.gitbook/assets/image%20%28151%29.png)
+![](../.gitbook/assets/image%20%28153%29.png)
 
 网址的解析是一个从右向左的过程: com -&gt; google.com -&gt; www.google.com。但是你是否发现少了点什么，根域名服务器的解析过程呢？事实上，真正的网址是www.google.com.，并不是我多打了一个.，这个.对应的就是根域名服务器，默认情况下所有的网址的最后一位都是.，既然是默认情况下，为了方便用户，通常都会省略，浏览器在请求DNS的时候会自动加上，所有网址真正的解析过程为: . -&gt; .com -&gt; google.com. -&gt; www.google.com.。
 
@@ -39,7 +39,7 @@ DNS可以返回一个合适的机器的IP给用户，例如可以根据每台机
 
 拿到了要请求的资源服务器IP后，浏览器通过操作OS的socket与服务器进行TCP连接（一般来说操作系统已经封装好了TCP/IP等协议，提供套接字给应用去使用。
 
-* [ ] 总结TCP三次握手
+* [x] 总结TCP三次握手
 
 ### HTTP请求与相应
 
@@ -82,7 +82,7 @@ DNS可以返回一个合适的机器的IP给用户，例如可以根据每台机
 7. 渲染页面，构建DOM树。
 8. 关闭TCP连接（四次挥手）。
 
-![](../.gitbook/assets/image%20%28152%29.png)
+![](../.gitbook/assets/image%20%28154%29.png)
 
 
 
