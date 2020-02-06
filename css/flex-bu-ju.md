@@ -26,26 +26,5 @@ Flex 布局是轴线布局，只能指定"项目"针对轴线的位置，可以�
 
 ![](../.gitbook/assets/image%20%2822%29.png)
 
-## 属性
-
-容器可以设置 6 个属性
-
-* flex-direction
-* flex-wrap
-* flex-flow
-* justify-content
-* align-items
-* align-content
-
-### flex-direction 
-
-决定主轴项目的排列方向
-
-```css
-.box {
-  flex-direction: row | row-reverse | column | column-reverse;
-}
-```
-
-![](../.gitbook/assets/image%20%2852%29.png)
+![](../.gitbook/assets/flex-bu-ju.png)
 
