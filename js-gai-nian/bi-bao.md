@@ -16,7 +16,7 @@ function foo() {
 foo();
 ```
 
-上例函数 foo + foo 函数访问的自由变量 a也算是闭包。所以在《JavaScript权威指南》中就讲到：从技术的角度讲，所有的JavaScript函数都是闭包。
+上例函数 foo + foo 函数访问的自由变量 a也算是闭包。所以在《JavaScript权威指南》中就讲到：**从技术的角度讲，所有的JavaScript函数都是闭包**。
 
 但是从实践上意义的闭包定义为：
 
