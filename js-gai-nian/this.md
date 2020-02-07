@@ -220,7 +220,7 @@ var bar = foo\(\)
 
 ## 箭头函数的this
 
-箭头函数是根据外层（函数或者全局）作用域来决定`this`
+箭头函数是根据词法作用域来决定`this`
 
 ```javascript
 function foo(){
