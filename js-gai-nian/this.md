@@ -218,6 +218,10 @@ var bar = obj1.foo\(\)
 
 var bar = foo\(\)
 
+### 记忆
+
+非箭头函数的调用顺序是 NCMD = new &gt; call &gt; method &gt; default
+
 ## 箭头函数的this
 
 箭头函数是根据词法作用域来决定`this`
