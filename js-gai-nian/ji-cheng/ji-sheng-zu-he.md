@@ -52,7 +52,7 @@ var instance2 = new SubClass('Js','2018/22/33');
 
 instance1.books.push('test book');
 
-console.log(tance1.bostance1.books,instance2.books);
+console.log(instance1.books,instance2.books);
 instance1.getName();
 instance2.getTime();
 ```
