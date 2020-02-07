@@ -69,3 +69,26 @@ function instanceOf(left, right) {
 }
 ```
 
+## 只有函数有原型链
+
+```javascript
+let a = {}
+let b = function () { }
+console.log(a.prototype) // undefined
+console.log(b.prototype) // { constructor: function(){...} }
+```
+
+## 不要再使用 \_\_proto\_\_ 
+
+`__proto__`属性没有写入 ES6 的正文，而是写入了附录。
+
+原因是它本质上是一个内部属性，而**不是一个正式的对外的 API，只是由于浏览器广泛支持，才被加入了 ES6**。
+
+标准明确规定，只有浏览器必须部署这个属性，**其他运行环境不一定需要部署，而且新的代码最好认为这个属性是不存在的**。
+
+### 推荐使用 Object.getPrototypeOf  Object.setPrototypeOf Object.create
+
+所以无论从语义的角度，还是从兼容性的角度，都不要使用这个属性，应该使用：`Object.getPrototypeOf(target)`（读操作）、`Object.setPrototypeOf(target)`（写操作）、`Object.create(target)`（生成操作）代替
+
+
+
