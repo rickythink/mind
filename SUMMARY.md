@@ -63,6 +63,7 @@
   * [数组flat](chang-jian-han-shu/shu-zu-flat.md)
   * [数组filter](chang-jian-han-shu/shu-zu-filter.md)
   * [模拟new](chang-jian-han-shu/mo-ni-new.md)
+  * [模拟instance of](chang-jian-han-shu/mo-ni-instance-of.md)
   * [Object.create\(null\)与{}](chang-jian-han-shu/object.createnull-yu.md)
   * [实现promisify](chang-jian-han-shu/shi-xian-promisify.md)
   * [实现Promise.all](chang-jian-han-shu/shi-xian-promise.all.md)
