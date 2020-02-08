@@ -37,6 +37,9 @@
 
 ![](../.gitbook/assets/image%20%2844%29.png)
 
-  
+### 数组
 
+在JavaScript中，类型相同的数组是连续内存，类型不同的数组是非连续内存。
+
+> [https://juejin.im/post/5d2832a5f265da1bc07e669e](https://juejin.im/post/5d2832a5f265da1bc07e669e)
 
