@@ -239,6 +239,7 @@
   * [Tree-shaking的原理](webpack-1/treeshaking-de-yuan-li.md)
   * [Long Term Cache](webpack-1/long-term-cache.md)
   * [Code Splitting](webpack-1/code-splitting.md)
+* [Babel](babel.md)
 * [Hexo](hexo-1/README.md)
   * [常用Hexo插件记录](hexo-1/chang-yong-hexo-cha-jian-ji-lu.md)
 * [浏览器](liu-lan-qi/README.md)
