@@ -129,6 +129,7 @@
   * [vue-router原理](vue-1/vuerouter-yuan-li.md)
   * [Vue diff原理](vue-1/vue-diff-yuan-li.md)
   * [集中变量管理](vue-1/ji-zhong-bian-liang-guan-li/README.md)
+    * [程序化的事件侦听器](vue-1/ji-zhong-bian-liang-guan-li/cheng-xu-hua-de-shi-jian-zhen-ting-qi.md)
     * [Flux](vue-1/ji-zhong-bian-liang-guan-li/flux.md)
     * [Redux](vue-1/ji-zhong-bian-liang-guan-li/redux.md)
     * [Vuex](vue-1/ji-zhong-bian-liang-guan-li/vuex.md)
