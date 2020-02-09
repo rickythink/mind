@@ -1,5 +1,7 @@
 # vue-computed原理
 
+> [https://juejin.im/post/5afbfce56fb9a07ac0226f21](https://juejin.im/post/5afbfce56fb9a07ac0226f21)
+
 ## 为什么computed可以缓存
 
 vue2.0中，computed是基于watch的。

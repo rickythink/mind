@@ -8,18 +8,20 @@ keep-alive是一个抽象组件：它自身不会渲染一个 DOM 元素，也�
 
 * 在动态组件中的应用
 
-```markup
+```text
 <keep-alive :include="whiteList" :exclude="blackList" :max="amount">
   <component :is="currentComponent"></component>
 </keep-alive>
+复制代码
 ```
 
 * 在vue-router中的应用
 
-```markup
+```text
 <keep-alive :include="whiteList" :exclude="blackList" :max="amount">
   <router-view></router-view>
 </keep-alive>
+复制代码
 ```
 
 `include`定义缓存白名单，keep-alive会缓存命中的组件；`exclude`定义缓存黑名单，被命中的组件将不会被缓存；`max`定义缓存组件上限，超出上限使用[LRU的策略](https://baike.baidu.com/item/LRU)置换缓存数据。  
