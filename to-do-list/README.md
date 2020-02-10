@@ -53,7 +53,7 @@ description: 需要整理的知识清单
 * [ ] mobx
 * [x] HTTP 状态码
 * [x] 链表
-* [ ] 二叉树
+* [x] 二叉树
 * [ ] 轮播
 * [ ] 返回顶部与取消
 * [ ] 图片懒加载
@@ -75,12 +75,12 @@ description: 需要整理的知识清单
   * [ ] 学习理解 [number-precision](https://github.com/nefe/number-precision)
 * [ ] osi 七层模型
 * [ ] tcp拥塞控制和流量控制
-* [ ] 三次握手四次挥手，为什么三次和四次
+* [x] 三次握手四次挥手，为什么三次和四次
 * [x] em和rem的区别
 * [x] 尾递归优化
 * [ ] XMLHttpRequest
 * [ ] 01背包、红黑树、二叉树增删改查、n+m=k
-* [ ] websocket
+* [x] websocket
 * [ ] base64
 
 
