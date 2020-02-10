@@ -269,6 +269,7 @@
   * [HTTPS](ji-suan-ji-wang-luo/https.md)
   * [http的方法](ji-suan-ji-wang-luo/http-de-fang-fa.md)
   * [HTTP状态码](ji-suan-ji-wang-luo/http-zhuang-tai-ma.md)
+  * [websocket](ji-suan-ji-wang-luo/websocket.md)
 * [计算机理论](ji-suan-ji-li-lun/README.md)
   * [solid原则](ji-suan-ji-li-lun/solid-yuan-ze/README.md)
     * [SRP \| The Single Responsibility Principle](ji-suan-ji-li-lun/solid-yuan-ze/srp.md)

@@ -47,3 +47,32 @@ const postOrder = function (root) {
 }
 ```
 
+## 更好的实现，双栈
+
+```javascript
+/**
+ * 后序遍历
+ * 非递归方式
+ *
+ * 双栈，一个栈用来按顺序记录左右孩子，一个栈用来弹栈输出结果
+ * @param {树} root
+ */
+export function backNoRecursive(root) {
+  const result = [];
+  const stack1 = [];
+  const stack2 = [];
+  let current = root;
+  stack1.push(current);
+  while (current || stack1.length > 0) {
+    current = stack1.pop();
+    stack2.push(current);
+    if (current.left) stack1.push(current.left);
+    if (current.right) stack1.push(current.right);
+  }
+  while (stack2.length > 0) {
+    result.push(stack2.pop());
+  }
+  return result;
+}
+```
+
