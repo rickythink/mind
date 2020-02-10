@@ -101,6 +101,7 @@
   * [动态规划](suan-fa-yu-shu-ju-jie-gou/dong-tai-gui-hua/README.md)
     * [回溯法](suan-fa-yu-shu-ju-jie-gou/dong-tai-gui-hua/hui-su-fa.md)
     * [爬楼梯](suan-fa-yu-shu-ju-jie-gou/dong-tai-gui-hua/pa-lou-ti.md)
+  * [二分搜索](suan-fa-yu-shu-ju-jie-gou/er-fen-sou-suo.md)
   * [数据结构](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/README.md)
     * [数组](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/shu-zu.md)
     * [栈](suan-fa-yu-shu-ju-jie-gou/shu-ju-jie-gou/zhan.md)
