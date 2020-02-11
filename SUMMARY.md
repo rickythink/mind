@@ -43,6 +43,7 @@
   * [void 0](js-gai-nian/void-0.md)
   * [柯里化1](js-gai-nian/ke-li-hua.md)
   * [柯里化2](js-gai-nian/ke-li-hua-2.md)
+  * [异常](js-gai-nian/yi-chang.md)
 * [JS陷阱](js-xian-jing/README.md)
   * [相等](js-xian-jing/xiang-deng.md)
   * [连等赋值](js-xian-jing/lian-deng-fu-zhi.md)
