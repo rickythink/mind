@@ -64,6 +64,7 @@
   * [数组乱序](chang-jian-han-shu/shu-zu-luan-xu.md)
   * [数组去重](chang-jian-han-shu/shu-zu-qu-zhong.md)
   * [数组flat](chang-jian-han-shu/shu-zu-flat.md)
+  * [实现 map](chang-jian-han-shu/shi-xian-map.md)
   * [数组filter](chang-jian-han-shu/shu-zu-filter.md)
   * [模拟new](chang-jian-han-shu/mo-ni-new.md)
   * [模拟instance of](chang-jian-han-shu/mo-ni-instance-of.md)
