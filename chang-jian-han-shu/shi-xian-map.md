@@ -18,3 +18,26 @@
   }
 ```
 
+使用 reduce 来实现 map
+
+```javascript
+Array.prototype.map = function(fn, context = this){
+	return (list) =>{
+  	if (typeof fn !== 'function') {
+      throw new TypeError(fn + 'is not a function'); 
+    }
+    if (!Array.isArray(list)) {
+      throw new TypeError('list must be a Array');
+    }
+    if (list.length === 0) return [];
+    return list.reduce((acc, value, index) => {
+      // fix稀疏数组的情况
+      if (index in list) {
+        acc[index] = fn.call(context, value, index, list);
+      }
+      return acc;
+    }, []); // 注意这里的[]不能省
+  }
+}
+```
+
