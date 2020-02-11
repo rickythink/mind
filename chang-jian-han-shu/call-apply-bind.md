@@ -121,7 +121,9 @@ Function.prototype.bind = function (ctx, ...formerArgs) {
     
     // laterArgs 为传递给原函数的参数
     return (...laterArgs) => {
-        // bind 函数的不定参数在原函数参数之前，formerArgs 本身就是数组，可以直接调用数组的 concat 方法，无需借助 call 或 apply
+        // bind 函数的不定参数在原函数参数之前
+        // formerArgs 本身就是数组，可以直接调用数组的 concat 方法
+        // 无需借助 call 或 apply
         return _this.apply(ctx, formerArgs.concat(laterArgs))
     }
 }
