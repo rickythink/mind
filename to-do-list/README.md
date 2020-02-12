@@ -42,9 +42,9 @@ description: 需要整理的知识清单
 * [x] 手写 Promise
 * [x] 手写 new
 * [ ] 了解一下 bluebird
-* [ ] webpack 优化相关
+* [x] webpack 优化相关
 * [x] 实现一个eventbus 参考 [https://github.com/tbreuss/eventbus](https://github.com/tbreuss/eventbus)
-* [ ] 新生代+旧生代的详细算法补充一下
+* [x] 新生代+旧生代的详细算法补充一下
 * [x] Array some
 * [ ] vue router 简版实现
 * [ ] vue router 原理理解
@@ -90,6 +90,9 @@ description: 需要整理的知识清单
 * [ ] 路由守卫
 * [ ] `(a ==1 && a== 2 && a==3)` 可能为 true 吗
 * [ ] 代码var a = {name: 'a'} a.x = a = {} 问 a.x 是多少？
+* [ ] 用正则实现trim\(\) 清除字符串两端空格
+
+
 
 
 
