@@ -51,6 +51,7 @@
   * [改变数组的length](js-xian-jing/gai-bian-shu-zu-de-length.md)
   * [引用传参](js-xian-jing/yin-yong-chuan-can.md)
   * [new Number vs Number](js-xian-jing/new-number-vs-number.md)
+  * [new Object vs Object vs Object.create\(null\)](js-xian-jing/new-object-vs-object-vs-object.create-null.md)
 * [JS开发知识点](js-kai-fa-zhi-shi-dian/README.md)
   * [html classlist](js-kai-fa-zhi-shi-dian/html-classlist.md)
   * [图片懒加载](js-kai-fa-zhi-shi-dian/tu-pian-lan-jia-zai.md)
