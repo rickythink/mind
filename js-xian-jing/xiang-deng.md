@@ -47,11 +47,19 @@ a == c // => a == false
 2. 再尝试使用toString\(\)
 3. 最后尝试toNumber\(\)
 
-\[ \] =&gt; " " =&gt; 0
+整理就是
 
-而 false =&gt; 0
+1. 隐式调用Boolean转型函数，对空数组转换成Boolean值，再对结果取反。此时比较\[\] == false
+2. 隐式调用Number转型函数，将false转换为数值0，此时比较\[\] == 0
+3. 调用valueOf方法和toString方法，此时\[\].toString\(\) 为空字符串，比较 '' == 0
+4. 隐式调用Number转型函数，将空字符串转换为0，比较 0 == 0
+5. 最后返回true
 
 所以 \[ \] == false 为true
+
+## {} == !{} / {} == false
+
+分析与\[\]的前两步都相同，但是{}.toString\(\)会转换为'\[object Object\]'，因此第4步会比较'\[object Object\]' == 0,这必然为 false
 
 ## \[ \] == \[ \] / \[ \] == { }
 
