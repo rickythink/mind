@@ -31,7 +31,7 @@ var Vnode = {
 
 ## 流程图
 
-![](../.gitbook/assets/image%20%28139%29.png)
+![](../.gitbook/assets/image%20%28138%29.png)
 
 ## 代码部分
 
@@ -145,5 +145,5 @@ oldS = b, oldE = d；S = c, E = b
 * `oldS > oldE` 表示 `oldCh` 先遍历完，那么就将多余的 `vCh` 根据 `index` 添加到 `dom` 中去（如上图）
 * `S > E` 表示 `vCh` 先遍历完，那么就在真实 `dom` 中将区间为`[oldS, oldE]`的多余节点删掉
 
-![](../.gitbook/assets/image%20%28152%29.png)
+![](../.gitbook/assets/image%20%28151%29.png)
 

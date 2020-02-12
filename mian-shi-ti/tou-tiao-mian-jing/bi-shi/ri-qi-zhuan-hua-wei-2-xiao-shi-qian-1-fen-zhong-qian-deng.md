@@ -35,7 +35,6 @@ function getDateDiff(dateTimeStamp){
   result="发表于"+ parseInt(minC) +"分钟前";
   }else
   result="刚刚发表";
- return result;
-}
+return result;
 ```
 
