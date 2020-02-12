@@ -234,6 +234,7 @@
     * [转换为驼峰命名法](zheng-ze/ti-mu/zhuan-huan-wei-tuo-feng-ming-ming-fa.md)
     * [JS实现千位分隔符](zheng-ze/ti-mu/js-shi-xian-qian-wei-fen-ge-fu.md)
     * [获取 url 参数](zheng-ze/ti-mu/huo-qu-url-can-shu.md)
+    * [用正则实现trim\(\) 清除字符串两端空格](zheng-ze/ti-mu/yong-zheng-ze-shi-xian-trim-qing-chu-zi-fu-chuan-liang-duan-kong-ge.md)
 * [设计模式](she-ji-mo-shi-1/README.md)
   * [简单工厂模式](she-ji-mo-shi-1/jian-dan-gong-chang-mo-shi.md)
   * [抽象工厂模式](she-ji-mo-shi-1/chou-xiang-gong-chang-mo-shi.md)
