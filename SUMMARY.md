@@ -76,6 +76,7 @@
   * [实现Promise.resolve/reject](chang-jian-han-shu/shi-xian-promise.resolvereject.md)
   * [实现Promise](chang-jian-han-shu/shi-xian-promise.md)
   * [实现foreach](chang-jian-han-shu/shi-xian-foreach.md)
+  * [实现parseInt](chang-jian-han-shu/shi-xian-parseint.md)
 * [算法与数据结构](suan-fa-yu-shu-ju-jie-gou/README.md)
   * [基础知识](suan-fa-yu-shu-ju-jie-gou/ji-chu-zhi-shi/README.md)
     * [大O表示法](suan-fa-yu-shu-ju-jie-gou/ji-chu-zhi-shi/daobiao-shi-fa.md)
