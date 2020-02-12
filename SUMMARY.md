@@ -130,6 +130,7 @@
   * [长列表性能优化](vue-1/chang-lie-biao-xing-neng-you-hua.md)
   * [mixin](vue-1/mixin.md)
   * [渲染函数](vue-1/xuan-ran-han-shu.md)
+  * [组件间通信](vue-1/zu-jian-jian-tong-xin.md)
   * [vue中的柯里化闭包](vue-1/vue-zhong-de-ke-li-hua-bi-bao.md)
   * [vue 渲染过程](vue-1/vue-xuan-ran-guo-cheng.md)
   * [keep-alive](vue-1/keep-alive.md)
