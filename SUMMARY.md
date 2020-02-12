@@ -338,6 +338,7 @@
       * [CSS画三角形](mian-shi-ti/tou-tiao-mian-jing/bi-shi/css-hua-san-jiao-xing.md)
       * [下载页面的所有图片](mian-shi-ti/tou-tiao-mian-jing/bi-shi/xia-zai-ye-mian-de-suo-you-tu-pian.md)
       * [实现链式调用](mian-shi-ti/tou-tiao-mian-jing/bi-shi/shi-xian-lian-shi-tiao-yong.md)
+      * [100 \* 100 的 Canvas 占内存多大](mian-shi-ti/tou-tiao-mian-jing/bi-shi/100-100-de-canvas-zhan-nei-cun-duo-da.md)
   * [javascript-questions](mian-shi-ti/javascript-questions/README.md)
     * [原型链与new优先级](mian-shi-ti/javascript-questions/yuan-xing-lian-yu-new-you-xian-ji.md)
     * [函数+模板字符串](mian-shi-ti/javascript-questions/han-shu-+-mo-ban-zi-fu-chuan.md)
