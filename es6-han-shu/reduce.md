@@ -77,9 +77,5 @@ var flattened = [[0, 1], [2, 3], [4, 5]].reduce(
 
 reduce 是一个函数式编程的概念，经常和 map 放在一起说，简单来说，map 就是映射，reduce 就是归纳。映射就是把一个列表按照一定规则映射成另一个列表，而 reduce 是把一个列表通过一定规则进行合并，也可以理解为对初始值进行一系列的操作，返回一个新的值。
 
-## reduceRight
-
-reduce是正序执行，reduceRight是逆序执行
-
 
 
