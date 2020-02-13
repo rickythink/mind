@@ -15,17 +15,11 @@ function removeDup(arr){
 }
 ```
 
-```javascript
-function Uniq(arr = []) {
-    return arr.reduce((t, v) => t.includes(v) ? t : [...t, v], []);
-}
-```
-
-```javascript
+```text
 Array.from(new Set(arr))
 ```
 
-```javascript
+```text
 [...new Set(arr)]
 ```
 

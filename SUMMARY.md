@@ -3,6 +3,7 @@
 * [知食记](README.md)
 * [CSS](css/README.md)
   * [盒模型](css/he-mo-xing.md)
+  * [清除浮动](css/qing-chu-fu-dong.md)
   * [html5的语义化标签](css/html5-de-yu-yi-hua-biao-qian.md)
   * [水平居中](css/shui-ping-ju-zhong.md)
   * [垂直局中](css/chui-zhi-ju-zhong.md)
