@@ -110,6 +110,10 @@ CORS 的优缺点：
 2. 支持 POST 请求方式
 3. CORS 是一种新型的跨域问题的解决方案，存在兼容问题，仅支持 IE 10 以上
 
+与JSONP对比
+
+JSONP只支持`GET`请求，CORS支持所有类型的HTTP请求。JSONP的优势在于支持老式浏览器，以及可以向不支持CORS的网站请求数据。
+
 ## location.hash
 
 在 url 中，`http://www.baidu.com#helloworld` 的 "\#helloworld" 就是 location.hash，改变 hash 值不会导致页面刷新，所以可以利用 hash 值来进行数据的传递，当然数据量是有限的。
