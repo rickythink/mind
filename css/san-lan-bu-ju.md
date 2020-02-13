@@ -86,3 +86,36 @@ body,html{
 }
 ```
 
+**第四种：grid**
+
+```css
+<section class="layout grid">
+  <style media="screen">
+    .layout.grid .left-center-right{
+      display:grid;
+      width:100%;
+      grid-template-rows:100px;
+      grid-template-columns:300px auto 300px;
+    }
+    .layout.grid .left{
+      background:red;
+    }
+    .layout.grid .center{
+      background:yellow;
+    }
+    .layout.grid .right{
+      background:blue;
+    }
+  </style>
+  <article class="left-center-right">
+    <div class="left"></div>
+    <div class="center">
+      <h2>网格布局解决方案</h2>
+      1.这是三蓝布局中间部分
+      2.这是三蓝布局中间部分
+    </div>
+    <div class="right"></div>
+  </article>
+</section>
+```
+
