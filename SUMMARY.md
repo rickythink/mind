@@ -286,6 +286,7 @@
   * [HTTP状态码](ji-suan-ji-wang-luo/http-zhuang-tai-ma.md)
   * [CORS](ji-suan-ji-wang-luo/cors.md)
   * [Referer](ji-suan-ji-wang-luo/referer.md)
+  * [referer, host, origin对比](ji-suan-ji-wang-luo/referer-host-origin-dui-bi.md)
   * [websocket](ji-suan-ji-wang-luo/websocket.md)
 * [计算机理论](ji-suan-ji-li-lun/README.md)
   * [solid原则](ji-suan-ji-li-lun/solid-yuan-ze/README.md)
