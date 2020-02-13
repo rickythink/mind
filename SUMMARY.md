@@ -285,6 +285,7 @@
   * [http的方法](ji-suan-ji-wang-luo/http-de-fang-fa.md)
   * [HTTP状态码](ji-suan-ji-wang-luo/http-zhuang-tai-ma.md)
   * [CORS](ji-suan-ji-wang-luo/cors.md)
+  * [Referer](ji-suan-ji-wang-luo/referer.md)
   * [websocket](ji-suan-ji-wang-luo/websocket.md)
 * [计算机理论](ji-suan-ji-li-lun/README.md)
   * [solid原则](ji-suan-ji-li-lun/solid-yuan-ze/README.md)
