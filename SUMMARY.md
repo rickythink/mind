@@ -1,6 +1,7 @@
 # Table of contents
 
 * [知食记](README.md)
+* [思维导图](si-wei-dao-tu.md)
 * [CSS](css/README.md)
   * [盒模型](css/he-mo-xing.md)
   * [清除浮动](css/qing-chu-fu-dong.md)
