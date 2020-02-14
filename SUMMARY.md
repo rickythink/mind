@@ -144,6 +144,7 @@
   * [vue 数组变异](vue-1/vue-shu-zu-bian-yi.md)
   * [vue-computed原理](vue-1/vuecomputed-yuan-li.md)
   * [vue-router原理](vue-1/vuerouter-yuan-li.md)
+  * [vue-router权限控制](vue-1/vuerouter-quan-xian-kong-zhi.md)
   * [Vue diff原理](vue-1/vue-diff-yuan-li.md)
   * [集中变量管理](vue-1/ji-zhong-bian-liang-guan-li/README.md)
     * [程序化的事件侦听器](vue-1/ji-zhong-bian-liang-guan-li/cheng-xu-hua-de-shi-jian-zhen-ting-qi.md)
