@@ -49,6 +49,12 @@ factorial(5) // 120
 
 如果改写成尾递归，只保留一个调用记录，复杂度 O\(1\) 。
 
+{% hint style="info" %}
+**尾调用优化核心理解**
+
+就是看一个函数在调用另一个函数得时候，**本身是否可以被“释放”**
+{% endhint %}
+
 ```javascript
 function factorial(n, total) {
   if (n === 1) return total;
