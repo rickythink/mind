@@ -2,7 +2,7 @@
 
 ##  域
 
-![](../.gitbook/assets/image%20%2856%29.png)
+![](../.gitbook/assets/image%20%2858%29.png)
 
 ## 跨域
 
@@ -10,7 +10,7 @@
 
 所谓同源是指，协议，域名，端口均相同。
 
-![](../.gitbook/assets/image%20%28151%29.png)
+![](../.gitbook/assets/image%20%28159%29.png)
 
 ## JSONP
 
@@ -63,7 +63,9 @@ console.log('启动服务，监听 127.0.0.1:3000');
 
 CORS 是一个 W3C 标准，全称是"跨域资源共享"（Cross-origin resource sharing）它允许浏览器向跨源服务器，发出 XMLHttpRequest 请求，从而克服了 ajax 只能同源使用的限制。
 
-CORS 需要浏览器和服务器同时支持才可以生效，对于开发者来说，CORS 通信与同源的 ajax 通信没有差别，代码完全一样。浏览器一旦发现 ajax 请求跨源，就会自动添加一些附加的头信息，有时还会多出一次附加的请求，但用户不会有感觉。
+CORS需要浏览器和服务器同时支持。目前，所有浏览器都支持该功能，IE浏览器不能低于IE10。
+
+对于开发者来说，CORS 通信与同源的 ajax 通信没有差别，代码完全一样。浏览器一旦发现 ajax 请求跨源，就会自动添加一些附加的头信息，有时还会多出一次附加的请求，但用户不会有感觉。
 
 因此，实现 CORS 通信的关键是服务器。只要服务器实现了 CORS 接口，就可以跨域通信。
 
@@ -100,13 +102,17 @@ require('http').createServer((req, res) => {
 console.log('启动服务，监听 127.0.0.1:3000');
 ```
 
-关键是在于设置相应头中的 Access-Control-Allow-Origin，该值要与请求头中 Origin 一致才能生效，否则将跨域失败。
+关键是在于设置相应头中的 **Access-Control-Allow-Origin**，该值要与请求头中 Origin 一致才能生效，否则将跨域失败。
 
 CORS 的优缺点：
 
 1. 使用简单方便，更为安全
 2. 支持 POST 请求方式
 3. CORS 是一种新型的跨域问题的解决方案，存在兼容问题，仅支持 IE 10 以上
+
+与JSONP对比
+
+JSONP只支持`GET`请求，CORS支持所有类型的HTTP请求。JSONP的优势在于支持老式浏览器，以及可以向不支持CORS的网站请求数据。
 
 ## location.hash
 

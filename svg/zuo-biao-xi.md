@@ -2,7 +2,7 @@
 
 在SVG坐标系中，x=0,y=0点在**左上角**。
 
-![](../.gitbook/assets/image%20%2852%29.png)
+![](../.gitbook/assets/image%20%2854%29.png)
 
 
 

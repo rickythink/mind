@@ -6,22 +6,19 @@
 
 虽然近几年来网络带宽增长非常快，然而我们却并没有看到网络延迟有对应程度的降低。**网络延迟问题主要由于队头阻塞\(Head-Of-Line Blocking\),导致带宽无法被充分利用**。
 
-![](https://user-gold-cdn.xitu.io/2019/10/9/16dac2ad1e9cb617?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
-
 队头阻塞是指当顺序发送的请求序列中的一个请求因为某种原因被阻塞时，在后面排队的所有请求也一并被阻塞，会导致客户端迟迟收不到数据。针对队头阻塞,人们尝试过以下办法来解决:
 
 * 将同一页面的资源分散到不同域名下，提升连接上限。 **Chrome有个机制，对于同一个域名，默认允许同时建立 6 个 TCP持久连接**，使用持久连接时，虽然能公用一个TCP管道，**但是在一个管道中同一时刻只能处理一个请求**，在当前的请求没有结束之前，其他的请求只能处于阻塞状态。另外如果在同一个域名下同时有10个请求发生，那么其中4个请求会进入排队等待状态，直至进行中的请求完成。
 * Spriting合并多张小图为一张大图,再用JavaScript或者CSS将小图重新“切割”出来的技术。
 * 内联\(Inlining\)是另外一种防止发送很多小图请求的技巧，将图片的原始数据嵌入在CSS文件里面的URL里，减少网络请求次数。
 
-```text
+```css
 .icon1 {
     background: url(data:image/png;base64,<data>) no-repeat;
   }
 .icon2 {
     background: url(data:image/png;base64,<data>) no-repeat;
   }
-复制代码
 ```
 
 * 拼接\(Concatenation\)将多个体积较小的JavaScript使用webpack等工具打包成1个体积更大的JavaScript文件,但如果其中1个文件的改动就会导致大量数据被重新下载多个文件。
@@ -29,8 +26,6 @@
 ### 2.无状态特性--带来的巨大HTTP头部
 
 由于报文Header一般会携带"User Agent""Cookie""Accept""Server"等许多固定的头字段（如下图），多达几百字节甚至上千字节，但Body却经常只有几十字节（比如GET请求、 204/301/304响应），成了不折不扣的“大头儿子”。Header里携带的内容过大，在一定程度上增加了传输的成本。更要命的是，成千上万的请求响应报文里有很多字段值都是重复的，非常浪费。
-
-![](https://user-gold-cdn.xitu.io/2019/10/11/16db88a2046de4bd?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 ### 3.明文传输--带来的不安全性
 
@@ -46,7 +41,7 @@ HTTP/1.1在传输数据时，所有传输的内容都是明文，客户端和服
 
 上面我们提到,由于HTTP/1.x的缺陷，我们会引入雪碧图、将小图内联、使用多个域名等等的方式来提高性能。不过这些优化都绕开了协议，直到2009年，谷歌公开了自行研发的 SPDY 协议，主要解决HTTP/1.1效率不高的问题。谷歌推出SPDY，才算是正式改造HTTP协议本身。降低延迟，压缩header等等，SPDY的实践证明了这些优化的效果，也最终带来HTTP/2的诞生。
 
-![](https://user-gold-cdn.xitu.io/2019/10/9/16db12f4a7f9db84?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../.gitbook/assets/image%20%28160%29.png)
 
 **HTTP/1.1有两个主要的缺点：安全不足和性能不高**，由于背负着 HTTP/1.x 庞大的历史包袱,所以协议的修改,兼容性是首要考虑的目标，否则就会破坏互联网上无数现有的资产。如上图所示, SPDY位于HTTP之下，TCP和SSL之上，这样可以轻松兼容老版本的HTTP协议\(将HTTP1.x的内容封装成一种新的frame格式\)，同时可以使用已有的SSL功能。
 
@@ -69,7 +64,7 @@ HTTP/2由两个规范（Specification）组成：
 
 它把TCP协议的部分特性挪到了应用层，把原来的"Header+Body"的消息"打散"为数个小片的二进制"帧"\(Frame\),用"HEADERS"帧存放头数据、"DATA"帧存放实体数据。HTP/2数据分帧后"Header+Body"的报文结构就完全消失了，协议看到的只是一个个的"碎片"。
 
-![](https://user-gold-cdn.xitu.io/2019/2/28/16934b619431d975?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../.gitbook/assets/image%20%2890%29.png)
 
 HTTP/2 中，同域名下所有通信都在单个连接上完成，该连接可以承载任意数量的双向数据流。每个数据流都以消息的形式发送，而消息又由一个或多个帧组成。**多个帧之间可以乱序发送，根据帧首部的流标识可以重新组装**。
 
@@ -85,15 +80,13 @@ HTTP/2并没有使用传统的压缩算法，而是开发了专门的"HPACK”�
 
 例如下图中的两个请求， 请求一发送了所有的头部字段，第二个请求则只需要发送差异数据，这样可以减少冗余数据，降低开销
 
-![](https://user-gold-cdn.xitu.io/2019/2/28/16934a8dc2cde720?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../.gitbook/assets/image%20%2895%29.png)
 
 ### 3.多路复用
 
 在 HTTP/2 中引入了多路复用的技术。多路复用很好的解决了浏览器限制同一个域名下的请求数量的问题，同时也接更容易实现全速传输，毕竟新开一个 TCP 连接都需要慢慢提升传输速度。
 
 大家可以通过 [该链接](https://http2.akamai.com/demo) 直观感受下 HTTP/2 比 HTTP/1 到底快了多少。 在 HTTP/2 中，有了二进制分帧之后，HTTP /2 不再依赖 TCP 链接去实现多流并行了，在 HTTP/2中,
-
-![](https://user-gold-cdn.xitu.io/2019/2/14/168ec90846f566fb?imageslim)
 
 * 同域名下所有通信都在单个连接上完成。
 * 单个连接可以承载任意数量的双向数据流。
@@ -105,7 +98,7 @@ HTTP/2并没有使用传统的压缩算法，而是开发了专门的"HPACK”�
 * 并行交错地发送多个请求/响应，请求/响应之间互不影响。
 * 在HTTP/2中，每个请求都可以带一个31bit的优先值，0表示最高优先级， 数值越大优先级越低。有了这个优先值，客户端和服务器就可以在处理不同的流时采取不同的策略，以最优的方式发送流、消息和帧。
 
-![](https://user-gold-cdn.xitu.io/2019/2/27/1692fa29e41348f7?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../.gitbook/assets/image%20%2839%29.png)
 
 如上图所示，多路复用的技术可以只通过一个 TCP 连接就可以传输所有的请求数据。
 
@@ -115,7 +108,7 @@ HTTP2还在一定程度上改变了传统的“请求-应答”工作模式，�
 
 例如下图所示,服务端主动把JS和CSS文件推送给客户端，而不需要客户端解析HTML时再发送这些请求。
 
-![](https://user-gold-cdn.xitu.io/2019/2/28/16934a8dd0ad7485?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../.gitbook/assets/image%20%28144%29.png)
 
 另外需要补充的是,服务端可以主动推送，客户端也有权利选择是否接收。如果服务端推送的资源已经被浏览器缓存过，浏览器可以通过发送RST\_STREAM帧来拒收。主动推送也遵守同源策略，换句话说，服务器不能随便将第三方资源推送给客户端，而必须是经过双方确认才行。
 
@@ -125,7 +118,7 @@ HTTP2还在一定程度上改变了传统的“请求-应答”工作模式，�
 
 但由于HTTPS已经是大势所趋，而且主流的浏览器Chrome、Firefox等都公开宣布只支持加密的HTTP/2，**所以“事实上”的HTTP/2是加密的**。也就是说，互联网上通常所能见到的HTTP/2都是使用"https”协议名，跑在TLS上面。HTTP/2协议定义了两个字符串标识符：“h2"表示加密的HTTP/2，“h2c”表示明文的HTTP/2。
 
-![](https://user-gold-cdn.xitu.io/2019/10/15/16dcd65b07b762b9?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../.gitbook/assets/image%20%2843%29.png)
 
 ## HTTP/3 新特性
 
@@ -147,7 +140,7 @@ HTTP/2使用TCP协议来传输的，而如果使用HTTPS的话，还需要使用
 
 上文我们提到在HTTP/2中，多个请求是跑在一个TCP管道中的。但当出现了丢包时，HTTP/2 的表现反倒不如 HTTP/1 了。因为TCP为了保证可靠传输，有个特别的“丢包重传”机制，丢失的包必须要等待重新传输确认，HTTP/2出现丢包时，整个 TCP 都要开始等待重传，那么就会阻塞该TCP连接中的所有请求（如下图）。而对于 HTTP/1.1 来说，可以开启多个 TCP 连接，出现这种情况反到只会影响其中一个连接，剩余的 TCP 连接还可以正常传输数据。
 
-![](https://user-gold-cdn.xitu.io/2019/10/15/16dd01ce6dc2315d?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../.gitbook/assets/image%20%2868%29.png)
 
 读到这里，可能就会有人考虑为什么不直接去修改 TCP 协议？其实这已经是一件不可能完成的任务了。因为 TCP 存在的时间实在太长，已经充斥在各种设备中，并且这个协议是由操作系统实现的，更新起来不大现实。
 
@@ -155,7 +148,7 @@ HTTP/2使用TCP协议来传输的，而如果使用HTTPS的话，还需要使用
 
 Google 在推SPDY的时候就已经意识到了这些问题，于是就另起炉灶搞了一个基于 UDP 协议的“QUIC”协议，让HTTP跑在QUIC上而不是TCP上。 而这个“HTTP over QUIC”就是HTTP协议的下一个大版本，HTTP/3。它在HTTP/2的基础上又实现了质的飞跃，真正“完美”地解决了“队头阻塞”问题。
 
-![](https://user-gold-cdn.xitu.io/2019/10/15/16dcd72a656d904d?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../.gitbook/assets/image%20%2874%29.png)
 
 QUIC 虽然基于 UDP，但是在原本的基础上新增了很多功能，接下来我们重点介绍几个QUIC新功能。不过HTTP/3目前还处于草案阶段，正式发布前可能会有变动，所以本文尽量不涉及那些不稳定的细节。
 
@@ -179,7 +172,7 @@ QUIC 虽然基于 UDP，但是在原本的基础上新增了很多功能，接�
 
 和TCP不同，QUIC实现了在同一物理连接上可以有多个独立的逻辑数据流（如下图）。实现了数据流的单独传输，就解决了TCP中队头阻塞的问题。
 
-![](https://user-gold-cdn.xitu.io/2019/10/15/16dd01e459dcc11b?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](../.gitbook/assets/image%20%28101%29.png)
 
 ## 总结
 
