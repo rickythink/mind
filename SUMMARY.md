@@ -361,6 +361,7 @@
     * [falsy](mian-shi-ti/javascript-questions/falsy.md)
     * [map, reduce和正则](mian-shi-ti/javascript-questions/map-reduce-he-zheng-ze.md)
     * [event-loop与promise](mian-shi-ti/javascript-questions/eventloop-yu-promise.md)
+    * [变量提升和声明作用域](mian-shi-ti/javascript-questions/bian-liang-ti-sheng-he-sheng-ming-zuo-yong-yu.md)
 * [to-do-list](to-do-list/README.md)
   * [axios 重放多种策略](to-do-list/axios-zhong-fang-duo-zhong-ce-lve.md)
 
