@@ -71,6 +71,8 @@ a == c // => a == false
 
 这里也在考察隐式变换，== 能把隐式转换 == 两边的类型相等
 
+### 方法1
+
 ```javascript
 const a = {
   i: 1,
@@ -80,7 +82,26 @@ const a = {
 }
 ```
 
+### 方法2
 
+```javascript
+// 利用数据劫持(proxy/Object.defineProperty)
+let i = 1;
+let a = new Proxy({}, {
+    i: 1,
+    get: function() {
+        return () => this.i++;
+    }
+})
+```
+
+### 方法3
+
+```javascript
+// 数组的toString接口默认调用数组的join方法，重新join方法
+let a = [1,2,3];
+a.join = a.shift；
+```
 
 
 
