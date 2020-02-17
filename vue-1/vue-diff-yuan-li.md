@@ -27,11 +27,11 @@ var Vnode = {
 
 ### 仅在同层比较，不会跨层级比较
 
-![](../.gitbook/assets/image%20%28134%29.png)
+![](../.gitbook/assets/image%20%28136%29.png)
 
 ## 流程图
 
-![](../.gitbook/assets/image%20%28148%29.png)
+![](../.gitbook/assets/image%20%28150%29.png)
 
 ## 代码部分
 
@@ -95,7 +95,7 @@ patchVnode (oldVnode, vnode) {
 
 ### updateChildern\(核心\)
 
-![&#x7C89;&#x7EA2;&#x8272;&#x7684;&#x90E8;&#x5206;&#x4E3A; oldCh \| &#x9EC4;&#x8272;&#x90E8;&#x5206;&#x4E3A; vCh](../.gitbook/assets/image%20%28114%29.png)
+![&#x7C89;&#x7EA2;&#x8272;&#x7684;&#x90E8;&#x5206;&#x4E3A; oldCh \| &#x9EC4;&#x8272;&#x90E8;&#x5206;&#x4E3A; vCh](../.gitbook/assets/image%20%28115%29.png)
 
 我们将它们取出来并分别用 s 和 e 指针指向它们的头 `child` 和尾 `child`
 
@@ -114,7 +114,7 @@ patchVnode (oldVnode, vnode) {
 再配个图（假设下图中的所有节点都是有 `key` 的，且 `key` 为自身的值）  
 
 
-![](../.gitbook/assets/image%20%28112%29.png)
+![](../.gitbook/assets/image%20%28113%29.png)
 
 * 1.第一步
 
@@ -145,5 +145,5 @@ oldS = b, oldE = d；S = c, E = b
 * `oldS > oldE` 表示 `oldCh` 先遍历完，那么就将多余的 `vCh` 根据 `index` 添加到 `dom` 中去（如上图）
 * `S > E` 表示 `vCh` 先遍历完，那么就在真实 `dom` 中将区间为`[oldS, oldE]`的多余节点删掉
 
-![](../.gitbook/assets/image%20%28162%29.png)
+![](../.gitbook/assets/image%20%28164%29.png)
 

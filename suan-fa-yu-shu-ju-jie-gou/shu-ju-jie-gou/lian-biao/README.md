@@ -10,5 +10,5 @@
 2. 双链表
 3. 循环单链表
 
-![](../../../.gitbook/assets/image%20%28125%29.png)
+![](../../../.gitbook/assets/image%20%28126%29.png)
 

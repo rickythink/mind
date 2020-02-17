@@ -10,7 +10,7 @@
 
 所谓同源是指，协议，域名，端口均相同。
 
-![](../.gitbook/assets/image%20%28159%29.png)
+![](../.gitbook/assets/image%20%28161%29.png)
 
 ## JSONP
 
