@@ -149,5 +149,36 @@ f2();  // 2
 
 其本质区别为， Foo变成立即运行函数，已经生成了确定的匿名函数地址，再分别分配给 f1和 f2
 
+## 闭包的应用场景
 
+vue 源码中 全局Api中的$watch方法中使用闭包
+
+```javascript
+// 根据Vue的$watch原理实现的简易版$watch
+Vue.prototype.$watch = function(exp, cb, options = {immediate: true, deep: false}) {
+    let watcher = new Watcher(this, exp, cb, options);
+    return () => {
+        watcher.unWatch();
+    };
+}
+```
+
+应用
+
+```javascript
+let obj = {
+	name: 'kiner',
+	age: 20
+};
+ 
+//  监听obj.name的改变
+let unWatchName = this.$watch("obj.name",function(newVal, oldVal){
+	console.log(`新值：${newVal};旧值：${oldVal}；`);
+});
+ 
+// 取消监听，取消后，obj.name的改变不再会通知
+unWatchName()
+```
+
+这样实现的巧妙之处在于，我们无须关心要调用谁去取消监听，你怎么监听的，他就给你返回一个取消监听的方法，直接调用这个方法取消就可以了。
 
