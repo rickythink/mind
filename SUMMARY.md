@@ -328,6 +328,7 @@
   * [红绿灯Promise问题](mian-shi-ti/hong-lv-deng-promise-wen-ti.md)
   * [0.1 + 0.2](mian-shi-ti/0.1-+-0.2.md)
   * [vue面试清单](mian-shi-ti/vue-mian-shi-qing-dan.md)
+  * [状态码问题 301 302](mian-shi-ti/zhuang-tai-ma-wen-ti-301-302.md)
   * [算法和数据结构清单](mian-shi-ti/suan-fa-he-shu-ju-jie-gou-qing-dan.md)
   * [腾讯面经](mian-shi-ti/teng-xun-mian-jing/README.md)
     * [电话面试](mian-shi-ti/teng-xun-mian-jing/dian-hua-mian-shi/README.md)
