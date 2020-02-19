@@ -8,7 +8,7 @@
 4. 接着进入布局（Layout）阶段，也就是为每个节点分配一个应出现在屏幕上的确切坐标
 5. 随后调用GPU进行绘制（Paint），遍历Render Tree的节点，并将元素呈现出来
 
-![Webkit &#x6D41;&#x7A0B;&#x793A;&#x610F;&#x56FE;](../.gitbook/assets/image%20%2862%29.png)
+![Webkit &#x6D41;&#x7A0B;&#x793A;&#x610F;&#x56FE;](../.gitbook/assets/image%20%2863%29.png)
 
 ## 浏览器如何解析CSS？
 
@@ -20,7 +20,7 @@ DOM Tree与Style Rules合成为 Render Tree，实际上是需要将_Style Rules_
 .mod-nav h3 span {font-size: 16px;}
 ```
 
-![&#x5BF9;&#x5E94;&#x7684;DOM Tree](../.gitbook/assets/image%20%2861%29.png)
+![&#x5BF9;&#x5E94;&#x7684;DOM Tree](../.gitbook/assets/image%20%2862%29.png)
 
 从右至左的匹配过程是：
 
@@ -35,7 +35,7 @@ DOM Tree与Style Rules合成为 Render Tree，实际上是需要将_Style Rules_
 3. 构建Nodes: 对Node添加特定的属性，通过指针确定 Node 的父、子、兄弟关系和所属 treeScope
 4. 生成DOM Tree: 通过node包含的指针确定的关系构建出DOM Tree
 
-![](../.gitbook/assets/image%20%2893%29.png)
+![](../.gitbook/assets/image%20%2894%29.png)
 
 ## 浏览器重绘与重排的区别？
 
@@ -63,7 +63,7 @@ DOM Tree与Style Rules合成为 Render Tree，实际上是需要将_Style Rules_
 2. 使用DocumentFragment
 3. 提升为合成层
 
-![](../.gitbook/assets/image%20%2837%29.png)
+![](../.gitbook/assets/image%20%2838%29.png)
 
 
 

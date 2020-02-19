@@ -319,6 +319,7 @@
   * [防止表单重复提交](ye-wu-kai-fa/fang-zhi-biao-dan-zhong-fu-ti-jiao.md)
   * [性能监控](ye-wu-kai-fa/xing-neng-jian-kong/README.md)
     * [performance 分析](ye-wu-kai-fa/xing-neng-jian-kong/performance-fen-xi.md)
+    * [上报](ye-wu-kai-fa/xing-neng-jian-kong/shang-bao.md)
 * [微前端](wei-qian-duan/README.md)
   * [微前端实施方式](wei-qian-duan/wei-qian-duan-shi-shi-fang-shi.md)
   * [single-spa重要概念](wei-qian-duan/singlespa-zhong-yao-gai-nian.md)
