@@ -32,7 +32,7 @@ HTTP状态码列表:
 | 100 | Continue | 继续。[客户端](http://www.dreamdu.com/webbuild/client_vs_server/)应继续其请求 |
 | 101 | Switching Protocols | 切换协议。服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到HTTP的新版本协议 |
 | 200 | OK | 请求成功。一般用于GET与POST请求 |
-| 201 | Created | 已创建。成功请求并创建了新的资源 |
+| **201** | **Created** | **已创建。成功请求并创建了新的资源** |
 | 202 | Accepted | 已接受。已经接受请求，但未处理完成 |
 | 203 | Non-Authoritative Information | 非授权信息。请求成功。但返回的meta信息不在原始的服务器，而是一个副本 |
 | 204 | No Content | 无内容。服务器成功处理，但未返回内容。在未更新网页的情况下，可确保浏览器继续显示当前文档 |
@@ -77,7 +77,7 @@ HTTP状态码列表:
 
  
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](../.gitbook/assets/image%20%2818%29.png)
 
-![](../.gitbook/assets/image%20%28133%29.png)
+![](../.gitbook/assets/image%20%28135%29.png)
 

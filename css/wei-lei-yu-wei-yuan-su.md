@@ -2,11 +2,11 @@
 
 ## 伪类
 
-![](../.gitbook/assets/image%20%28177%29.png)
+![](../.gitbook/assets/image%20%28179%29.png)
 
 ## 伪元素
 
-![](../.gitbook/assets/image%20%2847%29.png)
+![](../.gitbook/assets/image%20%2848%29.png)
 
 ## 区别
 
