@@ -9,6 +9,7 @@
   * [水平居中](css/shui-ping-ju-zhong.md)
   * [垂直局中](css/chui-zhi-ju-zhong.md)
   * [水平垂直居中](css/shui-ping-chui-zhi-ju-zhong.md)
+  * [Sticky Footer](css/sticky-footer.md)
   * [三栏布局](css/san-lan-bu-ju.md)
   * [文本截断省略号](css/wen-ben-jie-duan-sheng-lve-hao.md)
   * [伪类与伪元素](css/wei-lei-yu-wei-yuan-su.md)
