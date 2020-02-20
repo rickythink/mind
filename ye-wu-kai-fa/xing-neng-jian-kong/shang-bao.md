@@ -17,3 +17,25 @@ window.addEventListener('unload', function () {
 }, false)
 ```
 
+## 错误监听
+
+1）js error  
+监听 window.onerror 事件  
+2）promise reject 的异常  
+监听 unhandledrejection 事件
+
+```javascript
+window.addEventListener("unhandledrejection", function (event) {
+    console.warn("WARNING: Unhandled promise rejection. Shame on you! Reason: "
+        + event.reason);
+});
+```
+
+3）资源加载失败  
+window.addEventListener\('error'\)  
+4）网络请求失败  
+重写 window.XMLHttpRequest 和 window.fetch 捕获请求错误  
+5）iframe 异常  
+window.frames\[0\].onerror  
+6）window.console.error
+
