@@ -4,7 +4,7 @@
 
 一个正常的矩形是下面这样的
 
-![](../../../.gitbook/assets/image%20%28153%29.png)
+![](../../../.gitbook/assets/image%20%28154%29.png)
 
 当这样设置时，能得到一个梯形
 
@@ -33,7 +33,7 @@ border-width: 10px 0px 150px 100px;
 width: 0px;
 ```
 
-![](../../../.gitbook/assets/image%20%28143%29.png)
+![](../../../.gitbook/assets/image%20%28144%29.png)
 
 ## 利用skew\(\)
 
