@@ -8,13 +8,13 @@
 
 `width = content`，不包含 `border + padding`
 
-![](../.gitbook/assets/image%20%2887%29.png)
+![](../.gitbook/assets/image%20%2888%29.png)
 
 ## **IE盒模型**
 
 `width = border + padding + content`
 
-![](../.gitbook/assets/image%20%2897%29.png)
+![](../.gitbook/assets/image%20%2898%29.png)
 
 ## **相互转换**
 
@@ -55,7 +55,7 @@ inline-block的元素的内部是一个BFC，但是它本身可以和其它inlin
 
 ## 关于浮动与BFC
 
-![](../.gitbook/assets/image%20%28145%29.png)
+![](../.gitbook/assets/image%20%28146%29.png)
 
 > [https://segmentfault.com/a/1190000009545742](https://segmentfault.com/a/1190000009545742)
 >
