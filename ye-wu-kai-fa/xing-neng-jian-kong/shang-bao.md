@@ -19,9 +19,14 @@ window.addEventListener('unload', function () {
 
 ## 错误监听
 
-1）js error  
-监听 window.onerror 事件  
-2）promise reject 的异常  
+### 利用 window.onerror 监听 js error
+
+window.onerror 函数只有在返回 true 的时候，异常才不会向上抛出，否则即使是知道异常的发生控制台还是会显示 Uncaught Error: xxxxx。
+
+window.onerror 是无法捕获到网络异常的错误。由于网络请求异常不会事件冒泡。
+
+### promise reject 的异常
+
 监听 unhandledrejection 事件
 
 ```javascript
@@ -31,11 +36,38 @@ window.addEventListener("unhandledrejection", function (event) {
 });
 ```
 
-3）资源加载失败  
-window.addEventListener\('error'\)  
-4）网络请求失败  
-重写 window.XMLHttpRequest 和 window.fetch 捕获请求错误  
-5）iframe 异常  
-window.frames\[0\].onerror  
-6）window.console.error
+### iframe 异常
+
+#### 同域
+
+```markup
+<iframe src="./iframe.html" frameborder="0"></iframe>
+<script>
+  window.frames[0].onerror = function (msg, url, row, col, error) {
+    console.log('我知道 iframe 的错误了，也知道错误信息');
+    console.log({
+      msg,  url,  row, col, error
+    })
+    return true;
+  };
+</script>
+```
+
+#### 非同域
+
+涉及使用 postMessage
+
+### 资源加载失败
+
+window.addEventListener\('error'\)
+
+### 网络请求失败
+
+重写 window.XMLHttpRequest 和 window.fetch 捕获请求错误
+
+### window.console.error
+
+
+
+
 
