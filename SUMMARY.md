@@ -78,6 +78,7 @@
   * [实现Promise.all](chang-jian-han-shu/shi-xian-promise.all.md)
   * [实现Promise.race](chang-jian-han-shu/shi-xian-promise.race.md)
   * [实现Promise.resolve/reject](chang-jian-han-shu/shi-xian-promise.resolvereject.md)
+  * [实现Promise.finnaly](chang-jian-han-shu/shi-xian-promise.finnaly.md)
   * [实现Promise](chang-jian-han-shu/shi-xian-promise.md)
   * [实现foreach](chang-jian-han-shu/shi-xian-foreach.md)
   * [实现parseInt](chang-jian-han-shu/shi-xian-parseint.md)
