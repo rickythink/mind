@@ -219,6 +219,12 @@ addSub (sub: Watcher) {
 
 如果有render-watcher监听。那么在nextTick后，对所有的wacher queue进行排序。因为render-watcher id一定大于computed, 会在computed-watcher反复进行watch.run后（也仅设置dirty为true）最后的render-watch执行evaluate, 完成this.get\(\)的读取。
 
+## 参考
+
+> [https://juejin.im/post/5d538d27f265da03e3697803\#heading-6](https://juejin.im/post/5d538d27f265da03e3697803#heading-6)
+>
+> [https://ustbhuangyi.github.io/vue-analysis/v2/reactive/computed-watcher.html\#computed](https://ustbhuangyi.github.io/vue-analysis/v2/reactive/computed-watcher.html#computed)
+
 
 
 
