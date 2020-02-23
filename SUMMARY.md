@@ -72,6 +72,7 @@
   * [实现 map](chang-jian-han-shu/shi-xian-map.md)
   * [数组filter](chang-jian-han-shu/shu-zu-filter.md)
   * [模拟new](chang-jian-han-shu/mo-ni-new.md)
+  * [模拟实现async](chang-jian-han-shu/mo-ni-shi-xian-async.md)
   * [模拟instance of](chang-jian-han-shu/mo-ni-instance-of.md)
   * [Object.create\(null\)与{}](chang-jian-han-shu/object.createnull-yu.md)
   * [实现promisify](chang-jian-han-shu/shi-xian-promisify.md)
