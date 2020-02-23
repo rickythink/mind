@@ -2,16 +2,13 @@
 
 ```javascript
 function removeDup(arr){
-    var result = [];
-    var hashMap = {};
-    for(var i = 0; i < arr.length; i++){
-        var temp = arr[i]
-        if(!(temp in hashMap)){
-            hashMap[temp] = true
-            result.push(temp)
-        }
+  const ret = []
+  for(let i = 0; i < arr.length; i ++){
+    if(ret.indexOf(arr[i]) < 0){
+      ret.push(arr[i])
     }
-    return result;
+  }
+  return ret
 }
 ```
 
