@@ -49,10 +49,17 @@ XSS攻击能让攻击者在受害者的浏览器中执行js脚本，并劫持用
 
 ## XSS预防 <a id="XSS&#x9884;&#x9632;"></a>
 
-因为XSS的根本就是向网站插入脚本代码，并使它运行的一种手段。防御方法分为两种，服务端防御和客户端防御。  
-服务端防御：
+因为XSS的根本就是向网站插入脚本代码，并使它运行的一种手段。防御方法分为两种，服务端防御和客户端防御。
 
-1. **HttpOnly** 可以限制javascript不能读取cookie，防止会话ID泄露
+**cookie** **secure属性**  
+当设置为true时，表示创建的 Cookie 会被以安全的形式向服务器传输（ssl），即只能在 HTTPS 连接中被浏览器传递到服务器端进行会话验证，如果是 HTTP 连接则不会传递该信息，所以不会被窃取到Cookie 的具体内容。
+
+**cookie** **HttpOnly属性**  
+如果在Cookie中设置了"HttpOnly"属性，那么通过程序\(JS脚本、Applet等\)将无法读取到Cookie信息
+
+服务器设置
+
+1. **设置cookir HttpOnly,secure** 可以限制javascript不能读取cookie，防止会话ID泄露
 2. **处理富文本** 过滤掉富文本中的敏感标签如（script、iframe、form），还有敏感词（javascript:） 等等
 
 客户端防御：
