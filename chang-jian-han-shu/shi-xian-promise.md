@@ -123,6 +123,7 @@ class Promise{
 
 1. catch也是接收一个函数
 2. catch会挂载一个onError, 然后注册到then作为下一个微任务执行
+3. **为什么class是一个callbacks数组。这里就是callback数组会有两个callback了。一个是then注册的，一个是catch注册的。其他的then都是注册一个新的实例**
 
 ```javascript
 class Promise{
@@ -159,13 +160,77 @@ class Promise{
 		cb(ret)
 	}
 	then(onFulfilled = null, onRejected = null){
+		// 每次 then 都会创建新的 Promise 实例
 		return new Promise((resolve, reject) => {
 				this._handle(onFulfilled, onRejected, resolve, reject)	
 			}
 	}
 	catch(onError){
+		// onFulfill为null，仅在onReject里面被调用
 		return this.then(null, onError)
 	}
+}
+```
+
+## 实现静态方法
+
+1. Promise.resolve对于一个promise实例，会直接返回该实例，因为它自身就有then方法
+2. Promise.resolve对于一个对象属性then为函数的，会创建新Promise实例，把这个函数then 传入resolve
+3. Promise.resolve对于一个值\(即使是函数），会创建新Promise实例，并resolve这个值
+
+{% hint style="info" %}
+thenable函数为：A = { then : function\(onFulfilled, onRejected\){...}}
+{% endhint %}
+
+```javascript
+class Promise {
+	static resolve(value) {
+		if(value && value instanceof Promise){
+			return value
+		} else if( value && typeof value === 'object' && typeof value.then === 'function') {
+			const then = value.then
+			return new Promise( resolve => then(resolve))
+		} else {
+			return new Promise(resolve => resolve(value))
+		} 
+	}
+}
+```
+
+## 实现finally
+
+1. finally 不管是onFulfilled 还是 onRejected 都会被调用，因为内部注册到then 上要挂载 两个函数
+
+```javascript
+class Promise {
+	static resolve(value) {
+		if(value && value instanceof Promise){
+			return value
+		} else if( value && typeof value === 'object' && typeof value.then === 'function') {
+			const then = value.then
+			return new Promise( resolve => then(resolve))
+		}  else {
+			return new Promise(resolve => resolve())
+		}
+	}
+	static reject(value) {
+    if (value && typeof value === 'object' && typeof value.then === 'function') {
+      let then = value.then;
+      return new Promise((resolve, reject) => {
+        then(reject);
+      });
+
+    } else {
+      return new Promise((resolve, reject) => reject(value));
+    }
+  }
+  finally(onDone) {
+    const Promise = this.constructor;
+    return this.then(
+      value => Promise.resolve(onDone()).then(() => value),
+      reason => Promise.resolve(onDone()).then(() => { throw reason })
+    );
+  }
 }
 ```
 
