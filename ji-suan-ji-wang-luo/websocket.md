@@ -41,3 +41,7 @@ ws.onclose = function(evt) {
 };      
 ```
 
+## websocket 连接建立
+
+建立TCP连接之后，开始建立WebSocket连接，上文说过WebSocket连接只需一次成功握手即可建立。
+
