@@ -289,6 +289,7 @@
   * [问题清单](liu-lan-qi/wen-ti-qing-dan/README.md)
     * [为什么 Javascript 是单线程的？](liu-lan-qi/wen-ti-qing-dan/wei-shen-me-javascript-shi-dan-xian-cheng-de.md)
 * [计算机网络](ji-suan-ji-wang-luo/README.md)
+  * [基础知识](ji-suan-ji-wang-luo/ji-chu-zhi-shi.md)
   * [代理](ji-suan-ji-wang-luo/dai-li.md)
   * [HTTP1/2/3](ji-suan-ji-wang-luo/http2.md)
   * [HTTPS](ji-suan-ji-wang-luo/https.md)
