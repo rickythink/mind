@@ -48,6 +48,21 @@ Foo instanceof Function;//true
 Foo instanceof Foo;//false
 ```
 
+自己总结
+
+```javascript
+function A(){}
+const a = new A()
+
+a.__proto__ === A.prototype
+A.__proto__ === Function.prototype
+Function.__proto__ === Function.prototype
+Object.__proto__ === Function.prototype
+
+Function.prototype.__proto__ === Object.prototype
+Object.prototype.__proto__ === null
+```
+
 ## instanceof
 
 **`instanceof`** **运算符**用于检测构造函数的 `prototype` 属性是否出现在某个实例对象的原型链上。
