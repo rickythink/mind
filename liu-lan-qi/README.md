@@ -56,6 +56,9 @@ DOM Tree与Style Rules合成为 Render Tree，实际上是需要将_Style Rules_
 * 移动或者给页面中的DOM节点添加动画
 * 添加一个样式表，调整样式属性
 * 用户行为，例如调整窗口大小，改变字号，或者滚动。
+* 查询某些属性或调用某些方法。比如说：
+
+  offsetTop、offsetLeft、 offsetWidth、offsetHeight、scrollTop、scrollLeft、scrollWidth、scrollHeight、clientTop、clientLeft、clientWidth、clientHeight
 
 ## 如何避免重绘或者重排？
 
