@@ -40,11 +40,3 @@ TCP 连接的端点叫套接字\(socket\)
 TCP 连接 = { socket1, socket2 } = { \(IP1:port\), \(IP2:port\) }
 {% endhint %}
 
-### 为什么会有四次挥手？
-
-> [https://hit-alibaba.github.io/interview/basic/network/TCP.html](https://hit-alibaba.github.io/interview/basic/network/TCP.html)
-
-因为TCP是双向通信的，断开连接设计上是从全联通到半联通的设计。
-
-A跟B发出断开连接时，仅表示A不再发送数据，但是还可以接受数据。B回复确认表示知道A要断开。在B发送完应该发的数据后，A依然可以收到。最后在B没有数据发送后，再次发送请求，A回应确认。A会在超时等待没有B额外的请求后认为服务器端已经正常关闭连接，于是自己也关闭连接。
-
