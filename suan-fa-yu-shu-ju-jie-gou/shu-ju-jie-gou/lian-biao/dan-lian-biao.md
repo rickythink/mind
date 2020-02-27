@@ -2,7 +2,7 @@
 
 顾名思义，单向链表是指只有 `next` 没有 `prev` 的链表数据结构。单向链表详细实现如下
 
-![](../../../.gitbook/assets/image%20%2889%29.png)
+![](../../../.gitbook/assets/image%20%2893%29.png)
 
 ```javascript
 const LinkedList = (function() {

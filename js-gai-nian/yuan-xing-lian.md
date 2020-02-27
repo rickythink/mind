@@ -6,17 +6,17 @@
 
 ## 上面参考中递进的图片实例
 
-![&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x5B9E;&#x4F8B;&#x539F;&#x578B;](../.gitbook/assets/image%20%28109%29.png)
+![&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x5B9E;&#x4F8B;&#x539F;&#x578B;](../.gitbook/assets/image%20%28113%29.png)
 
-![&#x6BCF;&#x4E00;&#x4E2A;JavaScript&#x5BF9;&#x8C61;\(&#x9664;&#x4E86; null \)&#x90FD;&#x5177;&#x6709;&#x7684;\_\_proto\_\_&#x5C5E;&#x6027; \| person.\_\_proto\_\_ === Person.prototype](../.gitbook/assets/image%20%2871%29.png)
+![&#x6BCF;&#x4E00;&#x4E2A;JavaScript&#x5BF9;&#x8C61;\(&#x9664;&#x4E86; null \)&#x90FD;&#x5177;&#x6709;&#x7684;\_\_proto\_\_&#x5C5E;&#x6027; \| person.\_\_proto\_\_ === Person.prototype](../.gitbook/assets/image%20%2873%29.png)
 
-![&#x6BCF;&#x4E2A;&#x539F;&#x578B;&#x90FD;&#x6709;&#x4E00;&#x4E2A; constructor &#x5C5E;&#x6027;&#x6307;&#x5411;&#x5173;&#x8054;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570; \| Person === Person.prototype.constructor](../.gitbook/assets/image%20%2886%29.png)
+![&#x6BCF;&#x4E2A;&#x539F;&#x578B;&#x90FD;&#x6709;&#x4E00;&#x4E2A; constructor &#x5C5E;&#x6027;&#x6307;&#x5411;&#x5173;&#x8054;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570; \| Person === Person.prototype.constructor](../.gitbook/assets/image%20%2889%29.png)
 
 > 一个构造函数可以生成多个实例, 因此没有原型指向实例的箭头
 
-![&#x539F;&#x578B;&#x7684;&#x539F;&#x578B; \| Person.prototype.\_\_proto\_\_ === Object.prototype](../.gitbook/assets/image%20%2827%29.png)
+![&#x539F;&#x578B;&#x7684;&#x539F;&#x578B; \| Person.prototype.\_\_proto\_\_ === Object.prototype](../.gitbook/assets/image%20%2829%29.png)
 
-![&#x84DD;&#x8272;&#x7EBF;&#x5C31;&#x662F;&#x539F;&#x578B;&#x94FE; \| Object&#x7684;&#x539F;&#x578B;&#x7684;&#x539F;&#x578B;&#x4E3A;&#x7A7A; \| Object.prototype.\_\_proto\_\_ === null](../.gitbook/assets/image%20%28143%29.png)
+![&#x84DD;&#x8272;&#x7EBF;&#x5C31;&#x662F;&#x539F;&#x578B;&#x94FE; \| Object&#x7684;&#x539F;&#x578B;&#x7684;&#x539F;&#x578B;&#x4E3A;&#x7A7A; \| Object.prototype.\_\_proto\_\_ === null](../.gitbook/assets/image%20%28147%29.png)
 
 ## 真的是继承吗？
 
@@ -26,7 +26,7 @@
 
 
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](../.gitbook/assets/image%20%2818%29.png)
 
 
 
@@ -46,6 +46,21 @@ Function instanceof Object;//true
 Foo instanceof Object; //true
 Foo instanceof Function;//true 
 Foo instanceof Foo;//false
+```
+
+自己总结
+
+```javascript
+function A(){}
+const a = new A()
+
+a.__proto__ === A.prototype
+A.__proto__ === Function.prototype
+Function.__proto__ === Function.prototype
+Object.__proto__ === Function.prototype
+
+Function.prototype.__proto__ === Object.prototype
+Object.prototype.__proto__ === null
 ```
 
 ## instanceof

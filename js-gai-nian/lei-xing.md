@@ -35,7 +35,7 @@
 
 基础原始类型存在栈\(stack\)中，对象类型存在堆\(Heap\)中
 
-![](../.gitbook/assets/image%20%2849%29.png)
+![](../.gitbook/assets/image%20%2851%29.png)
 
 ### 数组
 
