@@ -59,9 +59,9 @@ description: 需要整理的知识清单
 * [ ] 图片懒加载
 * [x] sourcemap
 * [ ] requestAnimationFrame
-* [ ] 登录相关
-  * [ ] 统一登陆
-  * [ ] 记住登陆
+* [x] 登录相关
+  * [x] 统一登陆
+  * [x] 记住登陆
   * [ ] oauth
 * [ ] OKR
 * [x] 文件上传断点、续传 [掘金连接](https://juejin.im/post/5dff8a26e51d4558105420ed#heading-26)
@@ -87,15 +87,15 @@ description: 需要整理的知识清单
 * [x] 取1000个数字里面的质数
 * [x] http报文头部有哪些字段
 * [x] 100 \* 100 的 Canvas 占内存多大？
-* [ ] 路由守卫
+* [x] 路由守卫
 * [x] `(a ==1 && a== 2 && a==3)` 可能为 true 吗
 * [x] 用正则实现trim\(\) 清除字符串两端空格
 * [x] CORS ****更深入的了解
 * [x] OPTION请求
 * [x] 如何阻止表单重复提交
-* [ ] SEO
+* [x] SEO
 * [x] Referer
-* [ ] 证书和证书中心
+* [x] 证书和证书中心
 
 
 
