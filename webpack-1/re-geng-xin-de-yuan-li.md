@@ -2,7 +2,7 @@
 
 \(HMR \)Hot Module Replacement 热更新是webpack最重要的功能之一
 
-![](../.gitbook/assets/image%20%28188%29.png)
+![](../.gitbook/assets/image%20%28189%29.png)
 
-![](../.gitbook/assets/image%20%28172%29.png)
+![](../.gitbook/assets/image%20%28173%29.png)
 

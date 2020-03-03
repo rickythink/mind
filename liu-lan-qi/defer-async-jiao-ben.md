@@ -1,6 +1,6 @@
 # defer, async 脚本
 
-![&#x84DD;&#x8272;&#x7EBF;&#x4EE3;&#x8868;&#x7F51;&#x7EDC;&#x8BFB;&#x53D6;&#xFF0C;&#x7EA2;&#x8272;&#x7EBF;&#x4EE3;&#x8868;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF0C;&#x7EFF;&#x8272;&#x7EBF;&#x4EE3;&#x8868; HTML &#x89E3;&#x6790;&#x3002;](../.gitbook/assets/image%20%288%29.png)
+![&#x84DD;&#x8272;&#x7EBF;&#x4EE3;&#x8868;&#x7F51;&#x7EDC;&#x8BFB;&#x53D6;&#xFF0C;&#x7EA2;&#x8272;&#x7EBF;&#x4EE3;&#x8868;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF0C;&#x7EFF;&#x8272;&#x7EBF;&#x4EE3;&#x8868; HTML &#x89E3;&#x6790;&#x3002;](../.gitbook/assets/image%20%289%29.png)
 
 ## defer
 

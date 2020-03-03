@@ -10,9 +10,9 @@ HTTPS：是以安全为目标的HTTP通道，简单讲是HTTP的安全版，即H
 
 ## 工作原理
 
-![](../.gitbook/assets/image%20%2826%29.png)
+![](../.gitbook/assets/image%20%2827%29.png)
 
-![](../.gitbook/assets/image%20%28187%29.png)
+![](../.gitbook/assets/image%20%28188%29.png)
 
 **1、客户端发起HTTPS请求**
 
@@ -36,7 +36,7 @@ HTTPS：是以安全为目标的HTTP通道，简单讲是HTTP的安全版，即H
 
 第3~第4步
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
 **5、传送加密信息**
 

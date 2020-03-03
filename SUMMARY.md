@@ -92,6 +92,7 @@
     * [选择排序](suan-fa-yu-shu-ju-jie-gou/pai-xu/xuan-ze-pai-xu.md)
     * [插入排序](suan-fa-yu-shu-ju-jie-gou/pai-xu/cha-ru-pai-xu.md)
     * [前三种总结](suan-fa-yu-shu-ju-jie-gou/pai-xu/qian-san-zhong-zong-jie.md)
+    * [归并排序](suan-fa-yu-shu-ju-jie-gou/pai-xu/gui-bing-pai-xu.md)
     * [快速排序](suan-fa-yu-shu-ju-jie-gou/pai-xu/kuai-su-pai-xu.md)
     * [以上总结](suan-fa-yu-shu-ju-jie-gou/pai-xu/yi-shang-zong-jie.md)
   * [递归](suan-fa-yu-shu-ju-jie-gou/di-gui/README.md)
