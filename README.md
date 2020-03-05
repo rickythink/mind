@@ -1,5 +1,7 @@
 # 知食记
 
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/imrickywong/mind)![GitHub repo size](https://img.shields.io/github/repo-size/imrickywong/mind)![Faith](https://img.shields.io/badge/DO%20HAVE%20THE%20FAITH-yes-blue)
+
 ### 关于我
 
 英文名 Ricky, 是一个有一定产品经验、设计基础的全栈工程师 ;
@@ -14,7 +16,7 @@
 
 Gitbook 基于树形结构组织文档，方便系统性的知识梳理。
 
-### 关于“ 知食 ”
+### 关于知食 
 
 知“识”应该是知“食”，从“识”到“食”即是一个看到到咀嚼和品尝的过程。
 
