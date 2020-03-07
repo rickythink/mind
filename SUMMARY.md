@@ -2,8 +2,8 @@
 
 * [知食记](README.md)
 * [思维导图](si-wei-dao-tu.md)
-* [文章](wen-zhang/README.md)
-  * [如何解除端口占用？](wen-zhang/ru-he-jie-chu-duan-kou-zhan-yong.md)
+* [博客](blog/README.md)
+  * [如何解除端口占用？](blog/ru-he-jie-chu-duan-kou-zhan-yong.md)
 
 ## CSS
 
