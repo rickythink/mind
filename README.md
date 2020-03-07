@@ -1,3 +1,7 @@
+---
+description: 给岁月以文明，而不是给文明以岁月
+---
+
 # 知食记
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/imrickywong/mind)![GitHub repo size](https://img.shields.io/github/repo-size/imrickywong/mind)![Faith](https://img.shields.io/badge/DO%20HAVE%20THE%20FAITH-yes-blue)
