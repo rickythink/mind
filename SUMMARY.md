@@ -244,10 +244,10 @@
 
 ## HTML
 
-* [DOM](html/dom-1/README.md)
-  * [MutationObserver](html/dom-1/mutationobserver.md)
-  * [node.contains](html/dom-1/node.contains.md)
-* [svg](html/svg/README.md)
+* [DOM](html/dom/README.md)
+  * [MutationObserver](html/dom/mutationobserver.md)
+  * [node.contains](html/dom/node.contains.md)
+* [SVG](html/svg/README.md)
   * [坐标系](html/svg/zuo-biao-xi.md)
   * [g元素](html/svg/g-yuan-su.md)
   * [实现缩放](html/svg/shi-xian-suo-fang.md)
@@ -289,6 +289,7 @@
   * [Referer](network/ji-suan-ji-wang-luo/referer.md)
   * [referer, host, origin对比](network/ji-suan-ji-wang-luo/referer-host-origin-dui-bi.md)
   * [websocket](network/ji-suan-ji-wang-luo/websocket.md)
+  * [CDN](network/ji-suan-ji-wang-luo/cdn.md)
 
 ## 前端生态 <a id="frontend-ecosystem"></a>
 

@@ -55,7 +55,7 @@ inline-block的元素的内部是一个BFC，但是它本身可以和其它inlin
 
 ## 关于浮动与BFC
 
-![](../../.gitbook/assets/image%20%28153%29.png)
+![](../../.gitbook/assets/image%20%28154%29.png)
 
 > [https://segmentfault.com/a/1190000009545742](https://segmentfault.com/a/1190000009545742)
 >
