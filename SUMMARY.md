@@ -109,6 +109,7 @@
   * [Iterator](javascript/es6-1/iterator.md)
   * [For-of](javascript/es6-1/for-of.md)
   * [for..in 与 for..of的区别](javascript/es6-1/for..in-yu-for..of-de-qu-bie.md)
+  * [Iterator](javascript/es6-1/iterator-2.md)
   * [Generator函数](javascript/es6-1/generator-han-shu.md)
   * [async](javascript/es6-1/async.md)
   * [装饰器](javascript/es6-1/zhuang-shi-qi.md)
