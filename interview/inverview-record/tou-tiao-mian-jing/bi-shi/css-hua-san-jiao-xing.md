@@ -4,7 +4,7 @@
 
 一个正常的矩形是下面这样的
 
-![](../../../../.gitbook/assets/image%20%28164%29.png)
+![](../../../../.gitbook/assets/image%20%28165%29.png)
 
 当这样设置时，能得到一个梯形
 
@@ -13,7 +13,7 @@ border-color: transparent transparent rgb(0,0,0) transparent;
 border-width: 10px 10px 10px 10px
 ```
 
-![](../../../../.gitbook/assets/image%20%28133%29.png)
+![](../../../../.gitbook/assets/image%20%28134%29.png)
 
 当把div的宽度缩小为0时，三角形就会出来
 
@@ -23,7 +23,7 @@ border-width: 10px 100px 150px 100px;
 width: 0px;
 ```
 
-![](../../../../.gitbook/assets/image%20%2879%29.png)
+![](../../../../.gitbook/assets/image%20%2880%29.png)
 
 不同的border-width控制了三角形的形状，设置如下的css可以生成直角三角形
 
@@ -33,7 +33,7 @@ border-width: 10px 0px 150px 100px;
 width: 0px;
 ```
 
-![](../../../../.gitbook/assets/image%20%28152%29.png)
+![](../../../../.gitbook/assets/image%20%28153%29.png)
 
 ## 利用skew\(\)
 
@@ -57,5 +57,5 @@ width: 0px;
 </div>
 ```
 
-![](../../../../.gitbook/assets/image%20%28110%29.png)
+![](../../../../.gitbook/assets/image%20%28111%29.png)
 
