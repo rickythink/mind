@@ -2,7 +2,7 @@
 
 ## 伪类
 
-![](../../.gitbook/assets/image%20%28194%29.png)
+![](../../.gitbook/assets/image%20%28195%29.png)
 
 ## 伪元素
 
