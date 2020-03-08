@@ -2,6 +2,7 @@
 
 * [知食记](README.md)
 * [思维导图](mind-maps.md)
+* [归档](archive.md)
 * [博客](blog/README.md)
   * [如何解除端口占用？](blog/ru-he-jie-chu-duan-kou-zhan-yong.md)
 

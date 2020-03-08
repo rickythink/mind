@@ -2,7 +2,7 @@
 
 performance.getEntriesByType\("navigation"\);
 
-![&#x8BB0;&#x4E0B;&#x8FD9;&#x79CD;&#x56FE;&#xFF0C;&#x5BF9;&#x7406;&#x89E3;&#x524D;&#x7AEF;&#x6027;&#x80FD;&#x5E2E;&#x52A9;&#x5F88;&#x5927;](../../../.gitbook/assets/image%20%28143%29.png)
+![&#x8BB0;&#x4E0B;&#x8FD9;&#x79CD;&#x56FE;&#xFF0C;&#x5BF9;&#x7406;&#x89E3;&#x524D;&#x7AEF;&#x6027;&#x80FD;&#x5E2E;&#x52A9;&#x5F88;&#x5927;](../../../.gitbook/assets/image%20%28144%29.png)
 
 不同阶段之间是连续的吗? —— 不连续 
 
