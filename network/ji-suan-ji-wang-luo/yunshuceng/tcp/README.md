@@ -40,6 +40,10 @@ TCP 连接的端点叫套接字\(socket\)
 TCP 连接 = { socket1, socket2 } = { \(IP1:port\), \(IP2:port\) }
 {% endhint %}
 
+{% hint style="success" %}
+socket是在应用层和传输层之间的一个抽象层，它把TCP/IP层复杂的操作抽象为几个简单的接口供应用层调用已实现进程在网络中通信。
+{% endhint %}
+
 ### 为什么会有四次挥手？
 
 > [https://hit-alibaba.github.io/interview/basic/network/TCP.html](https://hit-alibaba.github.io/interview/basic/network/TCP.html)
