@@ -172,6 +172,7 @@
   * [vue-computed原理](framework/vue-1/vuecomputed-yuan-li.md)
   * [vue-router原理](framework/vue-1/vuerouter-yuan-li.md)
   * [vue-router权限控制](framework/vue-1/vuerouter-quan-xian-kong-zhi.md)
+  * [路由懒加载](framework/vue-1/lu-you-lan-jia-zai.md)
   * [Vue diff原理](framework/vue-1/vue-diff-yuan-li.md)
   * [computed如何与视图绑定](framework/vue-1/computed-ru-he-yu-shi-tu-bang-ding.md)
   * [scope css](framework/vue-1/scope-css.md)
