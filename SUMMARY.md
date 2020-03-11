@@ -13,7 +13,7 @@
 
 * [CSS基础](css/css-basis/README.md)
   * [盒模型](css/css-basis/bfc.md)
-  * [清除浮动](css/css-basis/qing-chu-fu-dong.md)
+  * [清除浮动](css/css-basis/clear-float.md)
   * [html5的语义化标签](css/css-basis/html5-de-yu-yi-hua-biao-qian.md)
   * [水平居中](css/css-basis/shui-ping-ju-zhong.md)
   * [垂直局中](css/css-basis/chui-zhi-ju-zhong.md)
