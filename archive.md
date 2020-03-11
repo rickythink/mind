@@ -1,5 +1,7 @@
 # 归档
 
+{% page-ref page="blog/become-a-tech-master.md" %}
+
 {% page-ref page="blog/vue-lifecycle-hook.md" %}
 
 {% page-ref page="blog/modify-gitbook.md" %}
