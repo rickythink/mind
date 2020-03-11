@@ -96,6 +96,7 @@ description: 需要整理的知识清单
 * [x] SEO
 * [x] Referer
 * [x] 证书和证书中心
+* [ ] JSONP 安全
 
 
 
