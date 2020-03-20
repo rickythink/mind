@@ -259,6 +259,7 @@
 * [DOM](html/dom/README.md)
   * [MutationObserver](html/dom/mutationobserver.md)
   * [node.contains](html/dom/node.contains.md)
+  * [readystate](html/dom/readystate.md)
 * [SVG](html/svg/README.md)
   * [坐标系](html/svg/zuo-biao-xi.md)
   * [g元素](html/svg/g-yuan-su.md)
