@@ -353,6 +353,8 @@
 * [Node](backend/node/README.md)
   * [nodejs的应用](backend/node/nodejs-de-ying-yong.md)
   * [API 网关](backend/node/api-wang-guan.md)
+* [Python](backend/python/README.md)
+  * [Pyenv](backend/python/pyenv.md)
 
 ## 🕹️面试 <a id="interview"></a>
 
