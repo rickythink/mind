@@ -324,6 +324,8 @@
   * [运行机制](frontend-ecosystem/axios-1/yun-hang-ji-zhi.md)
   * [取消源码](frontend-ecosystem/axios-1/qu-xiao-yuan-ma.md)
   * [axios做到多种调用方式](frontend-ecosystem/axios-1/axios-zuo-dao-duo-zhong-tiao-yong-fang-shi.md)
+* [Npm](frontend-ecosystem/npm/README.md)
+  * [npx](frontend-ecosystem/npm/npx.md)
 * [Yarn](frontend-ecosystem/yarn/README.md)
   * [yarn link](frontend-ecosystem/yarn/yarn-link.md)
 * [开源项目](frontend-ecosystem/kai-yuan-xiang-mu/README.md)
