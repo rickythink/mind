@@ -8,7 +8,6 @@
   * [Vue lifecycle hook little trick](blog/vue-lifecycle-hook.md)
   * [利用 Cloudflare Worker 定制 Gitbook](blog/modify-gitbook.md)
   * [如何解除端口占用？](blog/how-to-free-port.md)
-* [LeetCode](https://leetcode.ricky.moe)
 
 ## 🎃CSS
 
@@ -340,6 +339,7 @@
   * [大文件上传与断点续传](frontend-ecosystem/ye-wu-kai-fa/da-wen-jian-shang-chuan-yu-duan-dian-xu-chuan.md)
   * [防止表单重复提交](frontend-ecosystem/ye-wu-kai-fa/fang-zhi-biao-dan-zhong-fu-ti-jiao.md)
   * [扫码登录如何实现的](frontend-ecosystem/ye-wu-kai-fa/sao-ma-deng-lu-ru-he-shi-xian-de.md)
+  * [高性能网站标准](frontend-ecosystem/ye-wu-kai-fa/standard-for-high-performance-website.md)
   * [性能监控](frontend-ecosystem/ye-wu-kai-fa/xing-neng-jian-kong/README.md)
     * [performance 分析](frontend-ecosystem/ye-wu-kai-fa/xing-neng-jian-kong/performance-fen-xi.md)
     * [上报](frontend-ecosystem/ye-wu-kai-fa/xing-neng-jian-kong/shang-bao.md)
