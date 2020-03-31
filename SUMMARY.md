@@ -410,6 +410,7 @@
   * [免密登陆](other/linux/mian-mi-deng-lu.md)
   * [Mac终端代理](other/linux/mac-zhong-duan-dai-li.md)
 * [Git](other/git/README.md)
+  * [创建 ssh rsa](other/git/git-ssh-rsa.md)
   * [删除分支](other/git/shan-chu-fen-zhi.md)
   * [覆盖已有提交](other/git/fu-gai-yi-you-ti-jiao.md)
   * [合并多个commit](other/git/he-bing-duo-ge-commit.md)
