@@ -325,6 +325,7 @@
   * [axios做到多种调用方式](frontend-ecosystem/axios-1/axios-zuo-dao-duo-zhong-tiao-yong-fang-shi.md)
 * [Npm](frontend-ecosystem/npm/README.md)
   * [npx](frontend-ecosystem/npm/npx.md)
+  * [镜像源](frontend-ecosystem/npm/npm-mirror.md)
 * [Yarn](frontend-ecosystem/yarn/README.md)
   * [yarn link](frontend-ecosystem/yarn/yarn-link.md)
 * [开源项目](frontend-ecosystem/kai-yuan-xiang-mu/README.md)
