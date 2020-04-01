@@ -6,11 +6,11 @@ description: 给岁月以文明，而不是给文明以岁月
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/imrickywong/mind)![GitHub repo size](https://img.shields.io/github/repo-size/imrickywong/mind)![Faith](https://img.shields.io/badge/DO%20HAVE%20THE%20FAITH-yes-blue)
 
-### 目录
+### [目录](https://gstatic.gitbook.com/js/326.ab6c3df3.js)
 
-[思维导图](mind-maps.md) / [归档](archive.md) / [博客](blog/) / [CSS](css/css-basis/) / [JavaScript](javascript/js-concept/) / [框架](framework/vue-1/) / [算法](algorithm/suan-fa-yu-shu-ju-jie-gou/) / [HTML](html/dom/) / [计算机网络](network/liu-lan-qi/) / [前端生态](frontend-ecosystem/webpack/) / [后端](backend/node/) / 
+[思维导图 / 归档 / 博客 / CSS / JavaScript / 框架 / 算法 / HTML / 计算机网络 / 前端生态 / 后端 / ](https://gstatic.gitbook.com/js/326.ab6c3df3.js)
 
-[面试](interview/inverview-record/) / [其他](other/linux/)
+[面试 / 其他](https://gstatic.gitbook.com/js/326.ab6c3df3.js)
 
 ### 关于我
 
