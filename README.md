@@ -6,11 +6,17 @@ description: 给岁月以文明，而不是给文明以岁月
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/imrickywong/mind)![GitHub repo size](https://img.shields.io/github/repo-size/imrickywong/mind)![Faith](https://img.shields.io/badge/DO%20HAVE%20THE%20FAITH-yes-blue)
 
-### [目录](https://gstatic.gitbook.com/js/326.ab6c3df3.js)
+### 目录
 
-[思维导图 / 归档 / 博客 / CSS / JavaScript / 框架 / 算法 / HTML / 计算机网络 / 前端生态 / 后端 / ](https://gstatic.gitbook.com/js/326.ab6c3df3.js)
+思维导图 / 归档 / 博客 
 
-[面试 / 其他](https://gstatic.gitbook.com/js/326.ab6c3df3.js)
+#### CSS
+
+CSS 基础 / CSS3 / SCSS
+
+####  JavaScript 
+
+JS 概念 / JS 陷阱 / JS 开发知识点 / 实现 JS 常见函数 / JS Worker / ES6 / ES6 函数 / TypeScript / V8
 
 ### 关于我
 
