@@ -22,7 +22,7 @@ description: 给岁月以文明，而不是给文明以岁月
 
 ### 🎯算法
 
-[算法与数据结构](algorithm/suan-fa-yu-shu-ju-jie-gou/)
+[算法与数据结构](algorithm/algorithm-and-data-structure/)
 
 ### 🎁HTML
 
