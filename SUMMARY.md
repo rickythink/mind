@@ -328,12 +328,6 @@
   * [镜像源](frontend-ecosystem/npm/npm-mirror.md)
 * [Yarn](frontend-ecosystem/yarn/README.md)
   * [yarn link](frontend-ecosystem/yarn/yarn-link.md)
-* [开源项目](frontend-ecosystem/kai-yuan-xiang-mu/README.md)
-  * [Hooks](frontend-ecosystem/kai-yuan-xiang-mu/hooks.md)
-  * [开发流程](frontend-ecosystem/kai-yuan-xiang-mu/kai-fa-liu-cheng.md)
-  * [前端监控](frontend-ecosystem/kai-yuan-xiang-mu/qian-duan-jian-kong.md)
-  * [模板](frontend-ecosystem/kai-yuan-xiang-mu/mo-ban.md)
-  * [svg](frontend-ecosystem/kai-yuan-xiang-mu/svg.md)
 * [业务开发](frontend-ecosystem/ye-wu-kai-fa/README.md)
   * [记住登陆](frontend-ecosystem/ye-wu-kai-fa/deng-lu.md)
   * [统一登录/单点登录/SSO](frontend-ecosystem/ye-wu-kai-fa/tong-yi-deng-lu-dan-dian-deng-lu-sso.md)
@@ -406,6 +400,15 @@
     * [变量提升和声明作用域](interview/inverview-record/javascript-questions/bian-liang-ti-sheng-he-sheng-ming-zuo-yong-yu.md)
 * [To-do](interview/to-do/README.md)
   * [axios 重放多种策略](interview/to-do/axios-zhong-fang-duo-zhong-ce-lve.md)
+
+## 🤖开源 <a id="open-source"></a>
+
+* [开源项目](open-source/open-source-project/README.md)
+  * [Hooks](open-source/open-source-project/hooks.md)
+  * [开发流程](open-source/open-source-project/kai-fa-liu-cheng.md)
+  * [前端监控](open-source/open-source-project/qian-duan-jian-kong.md)
+  * [模板](open-source/open-source-project/mo-ban.md)
+  * [svg](open-source/open-source-project/svg.md)
 
 ## 🧸其他 <a id="other"></a>
 
