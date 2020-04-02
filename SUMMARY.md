@@ -405,6 +405,7 @@
 
 * [开源项目](open-source/open-source-project/README.md)
   * [Hooks](open-source/open-source-project/hooks.md)
+  * [论坛](open-source/open-source-project/forum.md)
   * [开发流程](open-source/open-source-project/kai-fa-liu-cheng.md)
   * [前端监控](open-source/open-source-project/qian-duan-jian-kong.md)
   * [模板](open-source/open-source-project/mo-ban.md)
