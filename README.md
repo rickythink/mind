@@ -4,13 +4,11 @@ description: 给岁月以文明，而不是给文明以岁月
 
 # 知食记
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/imrickywong/mind)![GitHub repo size](https://img.shields.io/github/repo-size/imrickywong/mind)![Faith](https://img.shields.io/badge/DO%20HAVE%20THE%20FAITH-yes-blue)
-
-### 目录
+## 目录
 
 [思维导图](mind-maps.md) / [归档 ](archive.md)/ [博客](blog/) 
 
-#### 🎃CSS
+### 🎃CSS
 
 [CSS 基础 ](css/css-basis/)/ [CSS3](css/css3/) / [SCSS](css/scss/)
 
@@ -18,43 +16,43 @@ description: 给岁月以文明，而不是给文明以岁月
 
 [JS 概念](javascript/js-concept/) / [JS 陷阱](javascript/js-trap/) / [JS 开发知识点](javascript/js-kai-fa-zhi-shi-dian/) / [实现 JS 常见函数](javascript/chang-jian-han-shu/) / [JS Worker](javascript/js-worker/) / [ES6](javascript/es6-1/) / [ES6 函数](javascript/es6-han-shu/) / [TypeScript](javascript/typescript/) / [V8](javascript/v8/)
 
-#### 🕹️框架
+### 🕹️框架
 
 [Vue](framework/vue-1/) / [Vue3](framework/vue3/) / [React](framework/react/) / [Nuxt](framework/nuxt/) / [Koa2](framework/koa2/)
 
-#### 🎯算法
+### 🎯算法
 
 [算法与数据结构](algorithm/suan-fa-yu-shu-ju-jie-gou/)
 
-#### 🎁HTML
+### 🎁HTML
 
 [DOM](html/dom/) / [SVG](html/svg/)
 
-#### 🏈计算机网络
+### 🏈计算机网络
 
 [浏览器](network/liu-lan-qi/) / [计算机网络](network/ji-suan-ji-wang-luo/)
 
-#### 🥊前端生态
+### 🥊前端生态
 
 [Webpack](frontend-ecosystem/webpack/) / [Babel](frontend-ecosystem/babel.md) / [Fetch](frontend-ecosystem/fetch/) / [Axios](frontend-ecosystem/axios-1/) / [Npm](frontend-ecosystem/npm/) / [Yarn](frontend-ecosystem/yarn/) / [开源项目](open-source/open-source-project/) / [业务开发](frontend-ecosystem/ye-wu-kai-fa/) / [微前端](frontend-ecosystem/wei-qian-duan/) / [Hexo](frontend-ecosystem/hexo-1/) 
 
-#### 🏀后端
+### 🏀后端
 
 [Node](backend/node/) / [Java](backend/java/) / [Python](backend/python/)
 
-#### 🕹️面试
+### 🕹️面试
 
 [面试真经](interview/inverview-record/)
 
-#### 🤖开源
+### 🤖开源
 
 [开源项目](open-source/open-source-project/)
 
-#### 🧸其他
+### 🧸其他
 
 [Linux](other/linux/) / [Git](other/git/) / [正则](other/zheng-ze/) / [设计模式](other/she-ji-mo-shi-1/) / [计算机理论](other/ji-suan-ji-li-lun/)
 
-### 关于我
+## 关于我
 
 英文名 Ricky, 是一个有一定产品经验、设计基础的全栈工程师 ;
 
@@ -62,19 +60,19 @@ description: 给岁月以文明，而不是给文明以岁月
 
 目前在从 1 到 N 的路上不断修行。
 
-### 关于本站
+## 关于本站
 
 本站基于 [Gitbook](https://gitbook.com) 编辑生成 Markdown 文件，并托管在 GitHub 上。
 
 Gitbook 基于树形结构组织文档，方便系统性的知识梳理。
 
-### 关于知食 
+## 关于知食 
 
 知“识”应该是知“食”，从“识”到“食”即是一个看到到咀嚼和品尝的过程。
 
 借以知食的名义，梳理我对各种知识点的理解。
 
-### 关于积累
+## 关于积累
 
 为什么会有这个站？ 
 
