@@ -108,6 +108,7 @@
   * [Class](javascript/es6-1/class.md)
   * [Proxy](javascript/es6-1/proxy.md)
   * [Reflect](javascript/es6-1/reflect.md)
+  * [Symbol](javascript/es6-1/symbol.md)
   * [Promise](javascript/es6-1/promise.md)
   * [Iterator](javascript/es6-1/iterator.md)
   * [For-of](javascript/es6-1/for-of.md)
