@@ -156,6 +156,7 @@
     * [编译器](javascript/typescript/bian-yi-yuan-li/bian-yi-qi.md)
   * [设计工具类型\(重要）](javascript/typescript/she-ji-gong-ju-lei-xing-zhong-yao.md)
 * [V8](javascript/v8/README.md)
+  * [JS 数组](javascript/v8/v8-js-array.md)
   * [垃圾回收](javascript/v8/la-ji-hui-shou.md)
 
 ## 🕹️框架 <a id="framework"></a>
