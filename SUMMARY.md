@@ -4,6 +4,7 @@
 * [思维导图](mind-maps.md)
 * [归档](archive.md)
 * [博客](blog/README.md)
+  * [工程师段位记](blog/engineer-level.md)
   * [Jest 内部原理剖析](blog/how-does-jest-work-inside.md)
   * [如何成为技术高手](blog/become-a-tech-master.md)
   * [Vue lifecycle hook little trick](blog/vue-lifecycle-hook.md)
