@@ -328,6 +328,7 @@
   * [取消源码](frontend-ecosystem/axios-1/qu-xiao-yuan-ma.md)
   * [axios做到多种调用方式](frontend-ecosystem/axios-1/axios-zuo-dao-duo-zhong-tiao-yong-fang-shi.md)
 * [Npm](frontend-ecosystem/npm/README.md)
+  * [全局安装目录](frontend-ecosystem/npm/npm-global-path.md)
   * [npx](frontend-ecosystem/npm/npx.md)
   * [镜像源](frontend-ecosystem/npm/npm-mirror.md)
 * [Yarn](frontend-ecosystem/yarn/README.md)
