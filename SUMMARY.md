@@ -83,6 +83,7 @@
   * [isEuqal](javascript/chang-jian-han-shu/iseuqal.md)
   * [数组乱序](javascript/chang-jian-han-shu/shu-zu-luan-xu.md)
   * [数组去重](javascript/chang-jian-han-shu/shu-zu-qu-zhong.md)
+  * [实现 merge](javascript/chang-jian-han-shu/shi-xian-merge.md)
   * [数组flat](javascript/chang-jian-han-shu/shu-zu-flat.md)
   * [实现 map](javascript/chang-jian-han-shu/shi-xian-map.md)
   * [数组filter](javascript/chang-jian-han-shu/shu-zu-filter.md)
