@@ -58,7 +58,9 @@
       <td style="text-align:left">Node &#x5BB9;&#x6613;&#x5F62;&#x6210;&#x6027;&#x80FD;&#x74F6;&#x9888;</td>
     </tr>
   </tbody>
-</table>## 首屏白屏
+</table>
+
+## 首屏白屏
 
 浏览器渲染包含 HTML 解析、DOM 树构建、CSSOM 构建、JavaScript 解析、布局、绘制等等，大致如下图所示：
 

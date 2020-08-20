@@ -4,6 +4,7 @@
 * [思维导图](mind-maps.md)
 * [归档](archive.md)
 * [博客](blog/README.md)
+  * [实现 JavaScript 数组的逆序索引](blog/shi-xian-javascript-shu-zu-de-ni-xu-suo-yin.md)
   * [工程师段位记](blog/engineer-level.md)
   * [Jest 内部原理剖析](blog/how-does-jest-work-inside.md)
   * [如何成为技术高手](blog/become-a-tech-master.md)
