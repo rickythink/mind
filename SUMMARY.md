@@ -431,6 +431,7 @@
   * [删除分支](other/git/shan-chu-fen-zhi.md)
   * [覆盖已有提交](other/git/fu-gai-yi-you-ti-jiao.md)
   * [合并多个commit](other/git/he-bing-duo-ge-commit.md)
+  * [撤销merge](other/git/abort-git-merge.md)
 * [正则](other/zheng-ze/README.md)
   * [题目](other/zheng-ze/ti-mu/README.md)
     * [转换为驼峰命名法](other/zheng-ze/ti-mu/zhuan-huan-wei-tuo-feng-ming-ming-fa.md)
