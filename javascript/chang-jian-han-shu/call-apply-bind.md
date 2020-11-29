@@ -181,7 +181,7 @@ var args = [arguments[1], arguments[2], ...]
 
 ```javascript
 Function.prototype.call = function (context, ...args) {
-  // 检查调用```apply```的对象是否为函数
+  // 检查调用```call```的对象是否为函数
   if (typeof this !== 'function') {
     throw new TypeError('not a function')
   }
