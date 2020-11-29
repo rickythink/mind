@@ -204,6 +204,7 @@
   * [基础概念](framework/react-redux/react-redux-basic-concept.md)
   * [mapStateToProps](framework/react-redux/mapstatetoprops.md)
   * [mapDispatchToProps](framework/react-redux/mapdispatchtoprops.md)
+  * [Provider](framework/react-redux/provider.md)
 * [Nuxt](framework/nuxt/README.md)
   * [SSR 与 预渲染](framework/nuxt/ssr-yu-yu-xuan-ran.md)
 * [Koa2](framework/koa2/README.md)
