@@ -177,6 +177,25 @@ var args = [arguments[1], arguments[2], ...]
  var result = context.fn(arguments[1], arguments[2], ...);
 ```
 
+#### call 第二种实现方式
+
+```javascript
+Function.prototype.call = function (context, ...args) {
+  // 检查调用```apply```的对象是否为函数
+  if (typeof this !== 'function') {
+    throw new TypeError('not a function')
+  }
+
+  // 将函数作为传入的```context```对象的一个属性，调用该函数
+  const fn = Symbol()
+  context[fn] = this
+  context[fn](...args)
+
+  // 不要忘了调用之后删除该属性
+  delete context[fn]
+}
+```
+
 ### Apply
 
 ```javascript
@@ -201,5 +220,22 @@ Function.prototype.apply = function (context, arr) {
 }
 ```
 
+#### apply 第二种实现方式
 
+```javascript
+Function.prototype.apply = function (context, args) {
+  // 检查调用```apply```的对象是否为函数
+  if (typeof this !== 'function') {
+    throw new TypeError('not a function')
+  }
+
+  // 将函数作为传入的```context```对象的一个属性，调用该函数
+  const fn = Symbol()
+  context[fn] = this
+  context[fn](...args)
+
+  // 不要忘了调用之后删除该属性
+  delete context[fn]
+}
+```
 
