@@ -202,6 +202,7 @@
   * [定义固定长度的数组](framework/react/ding-yi-gu-ding-chang-du-de-shu-zu.md)
 * [React-Redux](framework/react-redux/README.md)
   * [基础概念](framework/react-redux/react-redux-basic-concept.md)
+  * [mapStateToProps](framework/react-redux/mapstatetoprops.md)
 * [Nuxt](framework/nuxt/README.md)
   * [SSR 与 预渲染](framework/nuxt/ssr-yu-yu-xuan-ran.md)
 * [Koa2](framework/koa2/README.md)
