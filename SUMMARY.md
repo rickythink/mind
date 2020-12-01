@@ -4,6 +4,7 @@
 * [思维导图](mind-maps.md)
 * [归档](archive.md)
 * [博客](blog/README.md)
+  * [this 陷阱与原理](blog/trap-and-principle-of-this.md)
   * [时间戳与时区](blog/timestamp-timezone.md)
   * [vue-cli 项目添加 tailwind.css](blog/vue-cli-tailwind.md)
   * [实现 JavaScript 数组的逆序索引](blog/shi-xian-javascript-shu-zu-de-ni-xu-suo-yin.md)
