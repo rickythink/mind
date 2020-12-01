@@ -1,5 +1,7 @@
 # 归档
 
+{% page-ref page="blog/trap-and-principle-of-this.md" %}
+
 {% page-ref page="blog/timestamp-timezone.md" %}
 
 {% page-ref page="blog/vue-cli-tailwind.md" %}
