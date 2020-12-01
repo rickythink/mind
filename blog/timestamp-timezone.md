@@ -18,7 +18,7 @@ console.log(Date.now());
 
 同一时间戳在不同时区所表示的日期是不同的, 比如下面的代码
 
-```text
+```javascript
 const time = new Date(1556074515196);
 console.log(time.getFullYear());
 console.log(time.getMonth());
