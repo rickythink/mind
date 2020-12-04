@@ -1,5 +1,7 @@
 # useState
 
+## 基本
+
 ```javascript
 const [n, setN] = React.useState(0)
 const [user, setUser] = React.useState({name: 'Jack', age: 18})
@@ -38,5 +40,14 @@ function App(){
 }
 ```
 
+## 函数参数
 
+useState 和 setState 都可以传入函数参数。
+
+```javascript
+// 初始化 state 为 initialState
+const [state, setSate] = useState(() => initialState) 
+// 取到最新的 state 并加一后进行 setState
+setState(state => state + 1)
+```
 
