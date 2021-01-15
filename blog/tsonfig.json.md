@@ -180,8 +180,6 @@ TypeScript 还包括与你指定的 target 选项相匹配的较新的 JS 特性
 * `preserve`: 不对 JSX 进行改变并生成 `.jsx` 文件。
 * `react-native`: 不对 JSX 进行改变并生成 `.js` 文件。
 
-#### 例
-
 示例代码：
 
 ```text
@@ -323,6 +321,173 @@ exports.twoPi = void 0;
 const constants_1 = require("./constants");
 exports.twoPi = constants_1.valueOfPi * 2;
 ```
+
+**默认值**
+
+如果`target` 为 ES3 或者 ES5，默认值为 `CommonJS`
+
+如果`target` 为 ES6 或者更高，则默认值为 `ES6`/`ES2015`
+
+### moduleResolution
+
+指定模块解析策略：'node' （Node.js） 或 'classic' （在 TypeScript 1.6 版本之前使用）。 你可能不需要在新代码中使用 classic。
+
+**默认值**
+
+如果`module`为`AMD`/`UMD`/`System`/`ES6`, 则为 `Classic`
+
+其他情况下为 `Node`
+
+### noEmit
+
+是否禁止编译生成文件。如果你想使用`babel`来编译`TypeScript`，可以设置这个选项为`true`
+
+**默认值**
+
+false
+
+### outDir
+
+指定编译输出的目录。若没有指定，`.js` 将被生成至于生成它们的 `.ts` 文件相同的目录中：
+
+```text
+$ tsc
+
+example
+├── index.js
+└── index.ts
+```
+
+使用类似这样的 `tsconfig.json`：
+
+```text
+{
+  "compilerOptions": {
+    "outDir": "dist"
+  }
+}
+```
+
+使用这些配置运行 `tsc` 时，会将文件移动到指定的 `dist` 文件夹中：
+
+```text
+$ tsc
+
+example
+├── dist
+│   └── index.js
+├── index.ts
+└── tsconfig.json
+```
+
+**默认值**
+
+n/a
+
+### outFile
+
+设置打包输出至单个文件中。
+
+除非`module`为`None`, `System`或`AMD`，否则不能使用 `outFile`
+
+**默认值**
+
+n/a
+
+### plugins
+
+设置编辑器内运行的语言服务插件列表
+
+语言服务插件是一种基于现有 TypeScript 文件向用户提供额外信息的方法。它们可以改进 TypeScript 和编辑器之间的现有信息，或提供自己的错误信息。
+
+* [ts-sql-plugin](https://github.com/xialvjun/ts-sql-plugin#readme) — 增加了用模板字符串做 SQL 构建器时的风格检查。
+* [typescript-styled-plugin](https://github.com/Microsoft/typescript-styled-plugin) — 在目标字符串中提供 CSS 风格检查。
+* [typescript-eslint-language-service](https://github.com/Quramy/typescript-eslint-language-service) — 在编译器的输出中提供 eslint 的错误信息和修复信息。
+* [ts-graphql-plugin](https://github.com/Quramy/ts-graphql-plugin) — 在 GraphQL 查询目标字符串中提供验证和补全。
+
+### removeComments
+
+设置当打包 JavaScript 时，忽略所有 TypeScript 文件中的注释。
+
+例如，这是一个有 JSDoc 注释的 TypeScript 文件：
+
+```text
+/** 'Hello world' 的葡萄牙语翻译 */
+export const helloWorldPTBR = "Olá Mundo";
+```
+
+当然 `removeComments` 被设置为 `true`：
+
+```text
+export const helloWorldPTBR = "Olá Mundo";Try
+```
+
+未设置 `removeComments` 或被设置为 `false`：
+
+```text
+/** 'Hello world' 的葡萄牙语翻译 */
+export const helloWorldPTBR = "Olá Mundo";Try
+```
+
+这意味着你的注释将呈现在 JavaScript 中。
+
+**默认值**
+
+false
+
+### rootDir
+
+设定 TypeScript 打包输出的根文件目录。
+
+这么说有点抽象。举例来说，假设你有一些输入文件：
+
+```text
+MyProj
+├── tsconfig.json
+├── core
+│   ├── a.ts
+│   ├── b.ts
+│   ├── sub
+│   │   ├── c.ts
+├── types.d.ts
+```
+
+`rootDir` 推断的结构是所有非声明输入文件的最长公共路径，在例子中为 `core/`。
+
+如果你的 `outDir` 是 `dist`，TypeScript 将会生成这样的文件树：
+
+```text
+MyProj
+├── dist
+│   ├── a.ts
+│   ├── b.ts
+│   ├── sub
+│   │   ├── c.ts
+```
+
+但你可能希望让 `core` 成为输出目录结构的一部分。 通过在 `tsconfig.json` 中指定 `rootDir: "."`，TypeScript 将会生成这样的文件树：
+
+```text
+MyProj
+├── dist
+│   ├── core
+│   │   ├── a.js
+│   │   ├── b.js
+│   │   ├── sub
+│   │   │   ├── c.js
+```
+
+**注意**
+
+rootDir 不会影响哪些文件被包含在编译中。如果设置了`rootDir`，但是程序又依赖了`rootDir` 之外的文件，这个文件会被输出至`outDir`外。因此，`rootDir`务必要保证依赖的文件都在`rootDir`下
+
+### sourceMap
+
+是否生成sourcemap
+
+**默认值**
+
+false
 
 ## 严格检查
 
