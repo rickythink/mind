@@ -67,6 +67,7 @@
   * [柯里化1](javascript/js-concept/ke-li-hua.md)
   * [柯里化2](javascript/js-concept/ke-li-hua-2.md)
   * [异常](javascript/js-concept/yi-chang.md)
+  * [协程](javascript/js-concept/coroutine.md)
 * [JS陷阱](javascript/js-trap/README.md)
   * [相等](javascript/js-trap/xiang-deng.md)
   * [连等赋值](javascript/js-trap/lian-deng-fu-zhi.md)
