@@ -6,7 +6,7 @@
 
 1. Promise可以new, 所以它是一个类
 2. new Promise 传入一个函数，所以constructor是fn
-3. fn中会有resolve，我们需要自己定义\_resolve传进去作为方法，因此有fn\(this.\_resolve.bind\(this\)\)
+3. fn中会有resolve，我们需要自己定义\_resolve传进去作为方法，因此有fn(this.\_resolve.bind(this))
 4. new Promise的实例还可以.then，因此then是Promise的方法
 5. 内部维护一个callback，作为传入fn的管理，在调用resolve的时候全部遍历执行
 
@@ -176,10 +176,10 @@ class Promise{
 
 1. Promise.resolve对于一个promise实例，会直接返回该实例，因为它自身就有then方法
 2. Promise.resolve对于一个对象属性then为函数的，会创建新Promise实例，把这个函数then 传入resolve
-3. Promise.resolve对于一个值\(即使是函数），会创建新Promise实例，并resolve这个值
+3. Promise.resolve对于一个值(即使是函数），会创建新Promise实例，并resolve这个值
 
 {% hint style="info" %}
-thenable函数为：A = { then : function\(onFulfilled, onRejected\){...}}
+thenable函数为：A = { then : function(onFulfilled, onRejected){...}}
 {% endhint %}
 
 ```javascript
@@ -233,4 +233,3 @@ class Promise {
   }
 }
 ```
-

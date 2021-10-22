@@ -41,4 +41,3 @@ typeof window.b; // => 'number'
 `typeof a` 是 `'undefined'`。变量 `a` 仅在 `foo()` 作用域中声明，在外部作用域内不可用。
 
 `typeof b` 结果是 `'number'`。`b` 是一个值为 `0` 的全局变量
-

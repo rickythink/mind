@@ -80,4 +80,3 @@ assert (F.b.d === 'dag');
 assert (F.b.e === 'ok')
 assert (F.b.f === 'two')
 ```
-

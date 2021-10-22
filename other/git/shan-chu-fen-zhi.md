@@ -8,5 +8,3 @@ git branch -D <branchName>
 git push origin --delete <branchName>
 ```
 
-
-

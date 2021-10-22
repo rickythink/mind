@@ -2,7 +2,7 @@
 
 ### 什么是时间戳
 
-`时间戳` 指的就是Unix时间戳\(Unix timestamp\)。它也被称为Unix时间\(Unix time\)、POSIX时间\(POSIX time\)，是一种时间表示方式，定义为从格林威治时间1970年01月01日00时00分00秒起至现在的总秒数
+`时间戳` 指的就是Unix时间戳(Unix timestamp)。它也被称为Unix时间(Unix time)、POSIX时间(POSIX time)，是一种时间表示方式，定义为从格林威治时间1970年01月01日00时00分00秒起至现在的总秒数
 
 `时间戳` 在地球的每一个角落都是相同的, 可以尝试修改不同时区查看下面代码结果
 
@@ -50,4 +50,3 @@ function transformToLocalTime(timestamp, timeZone = -8) {
     return timestamp;
 }
 ```
-

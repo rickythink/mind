@@ -31,4 +31,3 @@ function assigned (a: number, b?: number, c?: number, d?: any) {
 ```
 
 传入不同数量的参数，发现只有三个参数的情况下报错了.
-

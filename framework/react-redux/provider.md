@@ -68,6 +68,4 @@ VisibleTodoList.contextTypes = {
 }
 ```
 
-`React-Redux`自动生成的容器组件的代码，就类似上面这样，从而拿到`store`。  
-
-
+`React-Redux`自动生成的容器组件的代码，就类似上面这样，从而拿到`store`。\

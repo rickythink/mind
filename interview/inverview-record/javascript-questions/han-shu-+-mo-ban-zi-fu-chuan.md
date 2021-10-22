@@ -29,5 +29,3 @@ getPersonInfo`${person} is ${age} years old`
 {% endtab %}
 {% endtabs %}
 
-
-

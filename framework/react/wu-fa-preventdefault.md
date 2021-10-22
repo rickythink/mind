@@ -1,8 +1,8 @@
 # 无法preventDefault
 
-Chrome 51默认设定注入`scroll` 事件的`passive` 变量为`true` 。而React的设计原则是跟随chrome的设定。因此在React设计的**合成事件\(**SyntheticEvent**\)**,  无法实现 `e.preventDefault()` 
+Chrome 51默认设定注入`scroll` 事件的`passive` 变量为`true` 。而React的设计原则是跟随chrome的设定。因此在React设计的**合成事件(**SyntheticEvent**)**,  无法实现` e.preventDefault()`&#x20;
 
-目前的解决方案是，自行绑定dom元素，添加`addEventListener` 
+目前的解决方案是，自行绑定dom元素，添加`addEventListener`&#x20;
 
 ```javascript
 import React, { useRef, useEffect } from 'react'
@@ -30,4 +30,3 @@ const Main = () => (
   </BlockPageScroll>
 )
 ```
-

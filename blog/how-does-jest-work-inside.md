@@ -2,11 +2,11 @@
 
 
 
-![](../.gitbook/assets/image%20%28204%29.png)
+![](<../.gitbook/assets/image (204).png>)
 
-Jest 是 Facebook 开源的一个 JavaScript 测试框架，已经应用在  [Babel](https://babeljs.io/) / [TypeScript](https://www.typescriptlang.org/) / [Node](https://nodejs.org/en/) /  [React](https://reactjs.org/) /  [Angular](https://angular.io/) /  [Vue](https://vuejs.org/) 等项目中。
+Jest 是 Facebook 开源的一个 JavaScript 测试框架，已经应用在  [Babel](https://babeljs.io) / [TypeScript](https://www.typescriptlang.org) / [Node](https://nodejs.org/en/) /  [React](https://reactjs.org) /  [Angular](https://angular.io) /  [Vue](https://vuejs.org) 等项目中。
 
-在愉悦地编写 Jest 测试代码后，你是否会好奇 `test` /  `expect` / `mock` / `spyOn` 这些内置方法是如何实现的呢？下面我们一起来看一下。
+在愉悦地编写 Jest 测试代码后，你是否会好奇 `test` / ` expect` / `mock` / `spyOn` 这些内置方法是如何实现的呢？下面我们一起来看一下。
 
 ## Test
 
@@ -59,7 +59,7 @@ test('Multipling 3 by 4 is 12', () => {
    // Received: 12
 ```
 
-注意到`expect` 的返回值具备一个可以调用的方法`toBe` ，那么我们可以这样模拟`expect` 
+注意到`expect` 的返回值具备一个可以调用的方法`toBe` ，那么我们可以这样模拟`expect`&#x20;
 
 ```javascript
 function expect(current) {
@@ -110,7 +110,7 @@ test('Returns 7♥', () => {
 })
 ```
 
-为了实现上面的效果，我们可以这样模拟定义`jest.fn` 和 `expect` 
+为了实现上面的效果，我们可以这样模拟定义`jest.fn` 和 `expect`&#x20;
 
 ```javascript
 // jest.fn
@@ -147,4 +147,3 @@ function expect(current) {
   }
 }
 ```
-

@@ -21,4 +21,3 @@ function promisify(original) {
 ```
 
 完整的可以参考 [es6-promisif](https://github.com/digitaldesignlabs/es6-promisify/blob/master/lib/promisify.js)
-

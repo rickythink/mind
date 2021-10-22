@@ -15,5 +15,3 @@ function instance_of(left, right) {
 }
 ```
 
-
-

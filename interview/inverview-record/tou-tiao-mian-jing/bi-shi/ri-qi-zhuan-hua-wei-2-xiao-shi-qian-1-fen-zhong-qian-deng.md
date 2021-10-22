@@ -38,4 +38,3 @@ function getDateDiff(dateTimeStamp){
  return result;
 }
 ```
-

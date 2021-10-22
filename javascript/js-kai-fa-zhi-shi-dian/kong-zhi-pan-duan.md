@@ -6,7 +6,7 @@
 
 ## 空对象判断
 
-### Object.keys\(\) 的长度为 0
+### Object.keys() 的长度为 0
 
 ```javascript
 var obj = {}
@@ -21,12 +21,10 @@ var a = JSON.stringify(obj)
 a === "{}" // true
 ```
 
-### Object.getOwnPropertyNames\(\) 长度为空
+### Object.getOwnPropertyNames() 长度为空
 
 ```javascript
 var obj = {}
 Object.getOwnPropertyNames(obj).length === 0; // true
 ```
-
-
 

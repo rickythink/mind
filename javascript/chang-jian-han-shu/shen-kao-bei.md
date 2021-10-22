@@ -2,7 +2,7 @@
 
 ## 参考来源
 
-[https://juejin.im/post/5d6aa4f96fb9a06b112ad5b1\#heading-0](https://juejin.im/post/5d6aa4f96fb9a06b112ad5b1#heading-0)
+[https://juejin.im/post/5d6aa4f96fb9a06b112ad5b1#heading-0](https://juejin.im/post/5d6aa4f96fb9a06b112ad5b1#heading-0)
 
 ## 乞丐版
 
@@ -83,7 +83,7 @@ function clone(target, map = new Map()) {
 };
 ```
 
-### Map -&gt; Weakmap
+### Map -> Weakmap
 
 weakmap是弱引用。Map是强引用。在下面的场景中，强引用的数据并没有被释放
 
@@ -132,4 +132,3 @@ function cloneFunction(func) {
     }
 }
 ```
-

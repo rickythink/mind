@@ -30,9 +30,9 @@ const a = require('./xxx')
 
 ## **加载机制的差异**
 
-在 CommonJS 的模块中, require 是动态\(运行时\)加载的；在 ES6 的模块中, import 是静态\(编译时\)加载的。
+在 CommonJS 的模块中, require 是动态(运行时)加载的；在 ES6 的模块中, import 是静态(编译时)加载的。
 
-> ES6 [import\(\) 动态加载的提案](https://github.com/tc39/proposal-dynamic-import) 目前已到第 3 阶段。
+> ES6 [import() 动态加载的提案](https://github.com/tc39/proposal-dynamic-import) 目前已到第 3 阶段。
 
 ## **获取模块的差异**
 
@@ -81,4 +81,3 @@ console.log(a)
 
 // 在浏览器中输出结果为 1 2
 ```
-

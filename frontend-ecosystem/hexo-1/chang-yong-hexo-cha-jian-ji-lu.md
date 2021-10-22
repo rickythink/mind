@@ -12,5 +12,3 @@
 
 {% embed url="https://www.npmjs.com/package/hexo-neat" %}
 
-
-

@@ -8,7 +8,7 @@ const [user, setUser] = React.useState({name: 'Jack', age: 18})
 ```
 
 {% hint style="info" %}
-如果state是一个对象，能否部分setState？ 
+如果state是一个对象，能否部分setState？&#x20;
 
 答案是不行，因为setState不会帮我们合并属性
 
@@ -50,4 +50,3 @@ const [state, setSate] = useState(() => initialState)
 // 取到最新的 state 并加一后进行 setState
 setState(state => state + 1)
 ```
-

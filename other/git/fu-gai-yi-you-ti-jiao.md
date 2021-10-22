@@ -10,5 +10,3 @@ git commit -m 'fix'
 git push -f
 ```
 
-
-

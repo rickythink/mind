@@ -41,4 +41,3 @@ const proxyAddAll = (function(){
 ![](https://user-gold-cdn.xitu.io/2019/4/3/169e33b9b6895e00?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 我们发现 proxyAddAll 针对重复的入参只会计算一次，这将大大节省计算过程中的时间开销。现在我们有 6 个入参，可能还看不出来，当我们针对大量入参、做反复计算时，缓存代理的优势将得到更充分的凸显。
-

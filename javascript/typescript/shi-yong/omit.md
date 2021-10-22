@@ -36,5 +36,3 @@ type QuantumPerson = {
 type QuantumPersion = Omit<Person, "location">
 ```
 
-
-

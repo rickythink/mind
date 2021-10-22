@@ -12,7 +12,7 @@
 
 ## JavaScript代码实现
 
-```text
+```
 const Singleton = function() {};
 
 Singleton.getInstance = (function() {
@@ -32,4 +32,3 @@ let s2 = Singleton.getInstance();
 
 console.log(s1 === s2);
 ```
-

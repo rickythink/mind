@@ -6,7 +6,7 @@
 
 ## 语法
 
-```text
+```
 arr.slice([begin[, end]])
 ```
 
@@ -53,10 +53,10 @@ var citrus = fruits.slice(1, 3);
 let args = [].slice.call(arguments, 1)
 ```
 
-首先`slice` 返回里一个函数，`[]` 只是起到`这是Array的一个实例对象` 而已，也就是说`[].slice` 等于`Array.prototype.slice` 
+首先`slice` 返回里一个函数，`[]` 只是起到`这是Array的一个实例对象` 而已，也就是说`[].slice` 等于`Array.prototype.slice`&#x20;
 
 {% hint style="info" %}
-\[\].slice的好处是，Array是可以重写的，并且这样写也比较简单
+\[].slice的好处是，Array是可以重写的，并且这样写也比较简单
 {% endhint %}
 
 至于`call` 函数，再温习一遍。这是Javascript比较魔法的地方，不同对象之间可以**借用方法**运行。实例
@@ -79,5 +79,4 @@ object2 = {
 object1.greet.call(object2); // will show an alert with 'hello andy'
 ```
 
-因此，这里就比较明显了。传入的`arguments` 从索引1到结尾的数据范围赋值给了`args` 
-
+因此，这里就比较明显了。传入的`arguments` 从索引1到结尾的数据范围赋值给了`args`&#x20;

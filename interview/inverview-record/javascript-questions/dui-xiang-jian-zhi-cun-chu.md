@@ -60,4 +60,3 @@ console.log(a[b])
 然后，我们打印 `a[b]`，也就是 `a["[object Object]"]`。之前刚设置为 `456`，因此返回的是 `456`。
 {% endtab %}
 {% endtabs %}
-

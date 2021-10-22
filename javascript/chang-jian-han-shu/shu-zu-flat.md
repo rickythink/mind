@@ -31,4 +31,3 @@ function flat(arr){
       return result;
   }
 ```
-

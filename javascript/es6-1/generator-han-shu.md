@@ -58,7 +58,7 @@ setTimeout(function () {
 
 上面代码中，函数`f`如果是普通函数，在为变量`generator`赋值时就会执行。但是，函数`f`是一个 Generator 函数，就变成只有调用`next`方法时，函数`f`才会执行。
 
-## next\(\)
+## next()
 
 next 方法可以带有一个参数，该参数会被当做上一条 yield 语句的返回值。
 
@@ -79,4 +79,3 @@ b.next() // { value:6, done:false }
 b.next(12) // { value:8, done:false }
 b.next(13) // { value:42, done:true }
 ```
-

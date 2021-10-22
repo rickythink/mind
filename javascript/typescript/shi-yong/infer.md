@@ -20,7 +20,7 @@ type ParamType<T> = T extends (param: infer P) => any ? P : T;
 
 在这个条件语句 `T extends (param: infer P) => any ? P : T` 中，`infer P` 表示待推断的函数参数。
 
-整句表示为：如果 T 能赋值给 \(param: infer P\) =&gt; any，则结果是 \(param: infer P\) =&gt; any 类型中的参数 P，否则返回为 T。
+整句表示为：如果 T 能赋值给 (param: infer P) => any，则结果是 (param: infer P) => any 类型中的参数 P，否则返回为 T。
 
 ```javascript
 interface User {
@@ -33,4 +33,3 @@ type Func = (user: User) => void
 type Param = ParamType<Func>;   // Param = User
 type AA = ParamType<string>;    // string
 ```
-

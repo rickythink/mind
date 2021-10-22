@@ -10,5 +10,3 @@ demo: [http://www.vleo.net/docs/projects/SVGPan/tiger.svg](http://www.vleo.net/d
 
 {% embed url="https://github.com/chrvadala/react-svg-pan-zoom" %}
 
-
-

@@ -59,4 +59,3 @@ Array.from({ length: 5 }).reduce(
 ```
 {% endtab %}
 {% endtabs %}
-

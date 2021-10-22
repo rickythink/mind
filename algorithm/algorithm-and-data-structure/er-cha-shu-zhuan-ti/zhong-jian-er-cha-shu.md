@@ -13,12 +13,12 @@
 根据上面的规律：
 
 * 前序遍历找到根结点`root`
-* 找到`root`在中序遍历的位置 -&gt; 左子树的长度和右子树的长度
+* 找到`root`在中序遍历的位置 -> 左子树的长度和右子树的长度
 * 截取左子树的中序遍历、右子树的中序遍历
 * 截取左子树的前序遍历、右子树的前序遍历
 * 递归重建二叉树
 
-![](../../../.gitbook/assets/image%20%28178%29.png)
+![](<../../../.gitbook/assets/image (159).png>)
 
 ```javascript
 // pre 是前序数组 
@@ -42,4 +42,3 @@ function reConstruct(pre, vin) {
     return node;
 }
 ```
-

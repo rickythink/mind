@@ -51,7 +51,7 @@ Window ... // 严格模式下指向 undefined
 const obj = { foo: 5 }
 ```
 
-![](../.gitbook/assets/image%20%28209%29.png)
+![](<../.gitbook/assets/image (207).png>)
 
 JavaScript 引擎会先在内存里面，生成一个对象{ foo: 5 }，然后把这个对象的内存地址赋值给变量obj
 
@@ -59,7 +59,7 @@ JavaScript 引擎会先在内存里面，生成一个对象{ foo: 5 }，然后�
 
 原始的对象以字典结构保存，每一个属性名都对应一个属性描述对象。举例来说，上面例子的foo属性，实际上是以下面的形式保存的。
 
-![](../.gitbook/assets/image%20%28210%29.png)
+![](<../.gitbook/assets/image (208).png>)
 
 {% hint style="info" %}
 在 ES5 中模拟实现 const，也即通过 Object.defineProperty 来改变 writable 属性
@@ -71,7 +71,7 @@ JavaScript 引擎会先在内存里面，生成一个对象{ foo: 5 }，然后�
 const obj = { foo: function () {} }
 ```
 
-![](../.gitbook/assets/image%20%28207%29.png)
+![](<../.gitbook/assets/image (209).png>)
 
 ### 实际示例
 
@@ -95,20 +95,20 @@ obj.f() // 2
 
 #### 单独运行
 
-![](../.gitbook/assets/image%20%28212%29.png)
+![](<../.gitbook/assets/image (210).png>)
 
 #### 对象运行
 
-![](../.gitbook/assets/image%20%28206%29.png)
+![](<../.gitbook/assets/image (211).png>)
 
 ## 总结
 
-回到本文开头提出的问题，`obj.foo()`是通过obj找到foo，所以就是在obj环境执行。一旦`var foo = obj.foo`，变量foo就直接指向函数的地址，所以foo\(\)就变成在全局环境执行。
+回到本文开头提出的问题，`obj.foo()`是通过obj找到foo，所以就是在obj环境执行。一旦`var foo = obj.foo`，变量foo就直接指向函数的地址，所以foo()就变成在全局环境执行。
 
 ## 延伸1 - this 的优先级
 
 {% hint style="info" %}
-new &gt; call / apply / bind \(显示绑定\) &gt; obj call \(隐式绑定\)&gt; function call \(默认绑定\)
+new > call / apply / bind (显示绑定) > obj call (隐式绑定)> function call (默认绑定)
 {% endhint %}
 
 下面将阐述为什么有这样的优先级。
@@ -132,7 +132,7 @@ obj.foo.call(this) // window
 
 模拟实现 call
 
-```javascript
+````javascript
 Function.prototype.call = function (context, ...args) {
   // 检查调用```call```的对象是否为函数
   if (typeof this !== 'function') {
@@ -147,7 +147,7 @@ Function.prototype.call = function (context, ...args) {
   // 不要忘了调用之后删除该属性
   delete context[fn]
 }
-```
+````
 
 ### new
 
@@ -259,7 +259,7 @@ doFoo('show a again', myFoo ) // "oops, global"
 {% endhint %}
 
 {% hint style="info" %}
-箭头函数中的this是在定义函数的时候绑定\(词法作用域\)，而不是在执行函数的时候绑定
+箭头函数中的this是在定义函数的时候绑定(词法作用域)，而不是在执行函数的时候绑定
 {% endhint %}
 
 ```javascript
@@ -355,4 +355,3 @@ doFoo('show a again', myFoo ) // "oops, global"
 1. this 指向当前运行环境下调用的对象
 2. this 的执行可以被 call/apply/bind 改写
 3. 箭头函数从句法上定义 this 指向，不能被 call/apply/bind 修改
-

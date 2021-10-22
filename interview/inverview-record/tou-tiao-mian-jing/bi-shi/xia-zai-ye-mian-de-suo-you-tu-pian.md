@@ -55,4 +55,3 @@ for (var i = 0; i < imgs.length; i++) {
 } 
 console.log("已下载："+monitorObj.imgLoaded + "/" + monitorObj.imgTotal);
 ```
-

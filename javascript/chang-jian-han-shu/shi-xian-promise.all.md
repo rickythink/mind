@@ -3,7 +3,7 @@
 ## 思路
 
 1. 传入的一定是数组
-2. Promise.resolve包裹\(元素不是 `Promise` 对象，则使用 `Promise.resolve` 转成 `Promise` 对象
+2. Promise.resolve包裹(元素不是 `Promise` 对象，则使用 `Promise.resolve` 转成 `Promise` 对象
 3. 全部成功，返回resolve
 4. 只要有一个失败，返回reject
 
@@ -34,4 +34,3 @@ function promiseAll(promises) {
   })
 }
 ```
-

@@ -2,7 +2,7 @@
 
 ### `Array.prototype.includes()`
 
-`includes` 返回`true` 如果数组中存在某个元素
+`includes `返回`true` 如果数组中存在某个元素
 
 ```javascript
 let array = [1,2,4,5];
@@ -31,6 +31,4 @@ array.includes(1,-1);
 array.includes(11,-3);
 // true
 ```
-
-
 

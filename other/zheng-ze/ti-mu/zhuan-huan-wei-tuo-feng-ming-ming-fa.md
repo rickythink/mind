@@ -25,9 +25,8 @@ str.replace(regexp|substr, newSubstr|function)
 
 其中`function` 的回调参数有
 
-| `match` | The matched substring. \(Corresponds to $& a`bove.)` |
-| :--- | :--- |
-| `p1, p2, ...` | The _n_th string found by a parenthesized capture group, provided the first argument to `replace()` was a [`RegExp`](https://devdocs.io/javascript/global_objects/regexp) object. \(Corresponds to `$1`, `$2`, etc. above.\) For example, if `/(\a+)(\b+)/`, was given, `p1` is the match for `\a+`, and `p2` for `\b+`. |
-| `offset` | The offset of the matched substring within the whole string being examined. \(For example, if the whole string was `'abcd'`, and the matched substring was `'bc'`, then this argument will be 1.\) |
-| `string` | The whole string being examined. |
-
+| `match`       | The matched substring. (Corresponds to $& a`bove.)`                                                                                                                                                                                                                                                                     |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `p1, p2, ...` | The _n_th string found by a parenthesized capture group, provided the first argument to `replace()` was a [`RegExp`](https://devdocs.io/javascript/global\_objects/regexp) object. (Corresponds to `$1`, `$2`, etc. above.) For example, if `/(\a+)(\b+)/`, was given, `p1` is the match for `\a+`, and `p2` for `\b+`. |
+| `offset`      | The offset of the matched substring within the whole string being examined. (For example, if the whole string was `'abcd'`, and the matched substring was `'bc'`, then this argument will be 1.)                                                                                                                        |
+| `string`      | The whole string being examined.                                                                                                                                                                                                                                                                                        |

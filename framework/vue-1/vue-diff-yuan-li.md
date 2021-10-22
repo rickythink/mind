@@ -14,7 +14,7 @@
 </div>
 ```
 
-Virtual DOM（伪代码\)
+Virtual DOM（伪代码)
 
 ```javascript
 var Vnode = {
@@ -27,15 +27,15 @@ var Vnode = {
 
 ### 仅在同层比较，不会跨层级比较
 
-![](../../.gitbook/assets/image%20%28152%29.png)
+![](<../../.gitbook/assets/image (107).png>)
 
 ## 流程图
 
-![](../../.gitbook/assets/image%20%28168%29.png)
+![](<../../.gitbook/assets/image (108).png>)
 
 ## 代码部分
 
-### patch 
+### patch&#x20;
 
 ```javascript
 function patch(oldVnode, vnode) {
@@ -93,13 +93,13 @@ patchVnode (oldVnode, vnode) {
 5. 如果 `oldVnode` 没有子节点而 `Vnode` 有，则将 `Vnode` 的子节点真实化之后添加到 `el`
 6. 如果两者都有子节点，则执行 `updateChildren` 函数比较子节点，这一步很重要
 
-### updateChildern\(核心\)
+### updateChildern(核心)
 
-![&#x7C89;&#x7EA2;&#x8272;&#x7684;&#x90E8;&#x5206;&#x4E3A; oldCh \| &#x9EC4;&#x8272;&#x90E8;&#x5206;&#x4E3A; vCh](../../.gitbook/assets/image%20%28128%29.png)
+![粉红色的部分为 oldCh | 黄色部分为 vCh](<../../.gitbook/assets/image (109).png>)
 
 我们将它们取出来并分别用 s 和 e 指针指向它们的头 `child` 和尾 `child`
 
-![](../../.gitbook/assets/image%20%2866%29.png)
+![](<../../.gitbook/assets/image (111).png>)
 
 
 
@@ -111,10 +111,10 @@ patchVnode (oldVnode, vnode) {
   * 如果新旧子节点都存在 `key`，那么会根据 `oldChild` 的 `key` 生成一张 `hash` 表，用 `S` 的 `key` 与 `hash` 表做匹配，匹配成功就判断 `S` 和匹配节点是否为 `sameNode`，如果是，就在真实 `dom` 中将成功的节点移到最前面，否则，将 `S` 生成对应的节点插入到 `dom` 中对应的 `oldS` 位置，`oldS` 和 `S` 指针向中间移动。
   * 如果没有 `key`,则直接将 `S` 生成新的节点插入真实 `DOM`（ps：**这下可以解释为什么 `v-for` 的时候需要设置 `key` 了，如果没有 `key` 那么就只会做四种匹配，就算指针中间有可复用的节点都不能被复用了**）
 
-再配个图（假设下图中的所有节点都是有 `key` 的，且 `key` 为自身的值）  
+再配个图（假设下图中的所有节点都是有 `key` 的，且 `key` 为自身的值）\
 
 
-![](../../.gitbook/assets/image%20%28126%29.png)
+![](<../../.gitbook/assets/image (113).png>)
 
 * 1.第一步
 
@@ -124,7 +124,7 @@ oldS = a, oldE = d；S = a, E = b;
 
 `oldS` 和 `S` 匹配，则将 `dom` 中的 `a` 节点放到第一个，已经是第一个了就不管了，此时 `dom` 的位置为：a b d
 
-* 2. 第二步
+* 2\. 第二步
 
 ```javascript
 oldS = b, oldE = d；S = c, E = b
@@ -132,18 +132,17 @@ oldS = b, oldE = d；S = c, E = b
 
 `oldS` 和 `E` 匹配，就将原本的 `b` 节点移动到最后，因为 `E` 是最后一个节点，他们位置要一致，这就是上面说的：**当其中两个能匹配上那么真实 `dom` 中的相应节点会移到 Vnode 相应的位置**，此时 dom 的位置为：a d b
 
-* 3. 第三步
+* 3\. 第三步
 
 `oldE` 和 `E` 匹配，位置不变此时 `dom` 的位置为：a d b
 
-* 4. 第四步
+* 4\. 第四步
 
-遍历结束，说明 `oldCh` 先遍历完。就将剩余的 `vCh` 节点根据自己的的 `index` 插入到真实 `dom` 中去，此时 `dom` 位置为：a c d b  
-  
+遍历结束，说明 `oldCh` 先遍历完。就将剩余的 `vCh` 节点根据自己的的 `index` 插入到真实 `dom` 中去，此时 `dom` 位置为：a c d b\
+\
 这个匹配过程的结束有两个条件：
 
 * `oldS > oldE` 表示 `oldCh` 先遍历完，那么就将多余的 `vCh` 根据 `index` 添加到 `dom` 中去（如上图）
 * `S > E` 表示 `vCh` 先遍历完，那么就在真实 `dom` 中将区间为`[oldS, oldE]`的多余节点删掉
 
-![](../../.gitbook/assets/image%20%28186%29.png)
-
+![](<../../.gitbook/assets/image (114).png>)

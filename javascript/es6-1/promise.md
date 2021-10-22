@@ -121,7 +121,7 @@ promise
 
 上面代码中，Promise 在`resolve`语句后面，再抛出错误，不会被捕获，等于没有抛出。因为 Promise 的状态一旦改变，就永久保持该状态，不会再变了。
 
-## Promise.all中如果参数的实例定义了自身的catch，就不会触发Promise.all\(\)的catch方法
+## Promise.all中如果参数的实例定义了自身的catch，就不会触发Promise.all()的catch方法
 
 注意，如果作为参数的 Promise 实例，自己定义了`catch`方法，那么它一旦被`rejected`，并不会触发`Promise.all()`的`catch`方法。
 
@@ -146,23 +146,23 @@ Promise.all([p1, p2])
 
 上面代码中，`p1`会`resolved`，`p2`首先会`rejected`，但是`p2`有自己的`catch`方法，该方法返回的是一个新的 Promise 实例，`p2`指向的实际上是这个实例。该实例执行完`catch`方法后，也会变成`resolved`，导致`Promise.all()`方法参数里面的两个实例都会`resolved`，因此会调用`then`方法指定的回调函数，而不会调用`catch`方法指定的回调函数。
 
-## Promise.resolve\(\)
+## Promise.resolve()
 
 1. 如果参数是 Promise 实例，那么`Promise.resolve`将不做任何修改、原封不动地返回这个实例。
-2. 如果参数是一个原始值，或者是一个不具有`then`方法的对象，则`Promise.resolve`方法返回一个新的 Promise 对象，状态为`resolved`。
+2.  如果参数是一个原始值，或者是一个不具有`then`方法的对象，则`Promise.resolve`方法返回一个新的 Promise 对象，状态为`resolved`。
 
-   ```text
-   const p = Promise.resolve('Hello');
+    ```
+    const p = Promise.resolve('Hello');
 
-   p.then(function (s){
-     console.log(s)
-   });
-   // Hello
-   ```
+    p.then(function (s){
+      console.log(s)
+    });
+    // Hello
+    ```
 
-   上面代码生成一个新的 Promise 对象的实例`p`。由于字符串`Hello`不属于异步操作（判断方法是字符串对象不具有 then 方法），返回 Promise 实例的状态从一生成就是`resolved`，所以回调函数会立即执行。`Promise.resolve`方法的参数，会同时传给回调函数。
+    上面代码生成一个新的 Promise 对象的实例`p`。由于字符串`Hello`不属于异步操作（判断方法是字符串对象不具有 then 方法），返回 Promise 实例的状态从一生成就是`resolved`，所以回调函数会立即执行。`Promise.resolve`方法的参数，会同时传给回调函数。
 
-## Promise.resolve\(\)在event-loop
+## Promise.resolve()在event-loop
 
 立即`resolve()`的 Promise 对象，是在本轮“事件循环”（event loop）的结束时执行，而不是在下一轮“事件循环”的开始时。
 
@@ -184,7 +184,7 @@ console.log('one');
 
 上面代码中，`setTimeout(fn, 0)`在下一轮“事件循环”开始时执行，`Promise.resolve()`在本轮“事件循环”结束时执行，`console.log('one')`则是立即执行，因此最先输出。
 
-## done\(\)
+## done()
 
 ```javascript
 Promise.prototype.done = function (onFulfilled, onRejected) {
@@ -196,7 +196,7 @@ Promise.prototype.done = function (onFulfilled, onRejected) {
 }
 ```
 
-## finally\(\)
+## finally()
 
 ```javascript
 Promise.prototype.finally = function (callback) {
@@ -207,6 +207,4 @@ Promise.prototype.finally = function (callback) {
     )
 }
 ```
-
-
 

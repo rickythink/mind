@@ -59,4 +59,3 @@ run()
 // 易错点 注意 wrap不可以被{}包括。没有{}表示有return
 // 这样可以等待内部的setTimeout的resolve才会return resolve到下一个then
 ```
-

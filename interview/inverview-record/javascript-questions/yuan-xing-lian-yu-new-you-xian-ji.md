@@ -36,21 +36,21 @@ new new Foo().getName();
 {% endtab %}
 
 {% tab title="Second Tab" %}
-Foo.getName\(\) 输出 2
+Foo.getName() 输出 2
 
-getName\(\) 输出 4，原因是5是Function声明会自动提升，4会覆盖掉
+getName() 输出 4，原因是5是Function声明会自动提升，4会覆盖掉
 
-Foo\(\).getName\(\) 是1
+Foo().getName() 是1
 
-getName\(\) 第二次输出 1, 注意，这是因为两个getName，被上一步覆盖了
+getName() 第二次输出 1, 注意，这是因为两个getName，被上一步覆盖了
 
-new Foo.getName\(\) 输出2
+new Foo.getName() 输出2
 
-new Foo\(\).getName\(\) 输出 实际为 \(new Foo\(\)\).getName\(\) 为3
+new Foo().getName() 输出 实际为 (new Foo()).getName() 为3
 
-new new Foo\(\).getName\(\) 输出 new \(new Foo\(\)\).getName\(\)\) 依然为 3
+new new Foo().getName() 输出 new (new Foo()).getName()) 依然为 3
 
-这其中为什么 new Foo\(\) 后的实例是没有Foo\(\)中的getName函数的，如果把Foo改写一下。
+这其中为什么 new Foo() 后的实例是没有Foo()中的getName函数的，如果把Foo改写一下。
 
 ```javascript
 function Foo() {
@@ -66,9 +66,7 @@ const a = new Foo()
 // a =>  Foo { name: 'hello' }
 ```
 
-也就是说，**Foo\(\) 作为构造函数没有绑定到this中返回也是不在实例中可访问的**
+也就是说，**Foo() 作为构造函数没有绑定到this中返回也是不在实例中可访问的**
 {% endtab %}
 {% endtabs %}
-
-
 

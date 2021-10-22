@@ -24,4 +24,3 @@ instance1.showBooks();//TypeError
 ```
 
 `SuperClass.call(this,id)`当然就是构造函数继承的核心语句了.由于父类中给this绑定属性，因此子类自然也就继承父类的共有属性。由于这种类型的继承没有涉及到原型`prototype`，所以父类的原型方法自然不会被子类继承。
-

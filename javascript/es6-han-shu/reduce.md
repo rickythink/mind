@@ -2,7 +2,7 @@
 
 ## 定义
 
-**`reduce()`** 方法对数组中的每个元素执行一个由您提供的**reducer**函数\(升序执行\)，将其结果汇总为单个返回值。  
+**`reduce()`** 方法对数组中的每个元素执行一个由您提供的**reducer**函数(升序执行)，将其结果汇总为单个返回值。\
 
 
 ## 语法
@@ -13,14 +13,14 @@ arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue]
 
 **reducer** 函数接收4个参数:
 
-1. Accumulator \(acc\) \(累计器\)
-2. Current Value \(cur\) \(当前值\)
-3. Current Index \(idx\) \(当前索引\)
-4. Source Array \(src\) \(源数组\)
+1. Accumulator (acc) (累计器)
+2. Current Value (cur) (当前值)
+3. Current Index (idx) (当前索引)
+4. Source Array (src) (源数组)
 
 **reducer** 函数的返回值分配给累计器，该返回值在数组的每个迭代中被记住，并最后成为最终的单个结果值。
 
-`callback`执行数组中每个值 \(如果没有提供 `initialValue则第一个值除外`\)的函数，包含四个参数：
+`callback`执行数组中每个值 (如果没有提供 `initialValue则第一个值除外`)的函数，包含四个参数：
 
 `accumulator`累计器累计回调的返回值; 它是上一次调用回调时返回的累积值，或`initialValue`（见于下方）。
 
@@ -80,6 +80,4 @@ reduce 是一个函数式编程的概念，经常和 map 放在一起说，简�
 ## reduceRight
 
 reduce是正序执行，reduceRight是逆序执行
-
-
 

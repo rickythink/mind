@@ -30,4 +30,3 @@ obj[symbol2]; // 'World'
 ## 参考
 
 1. [https://juejin.im/post/5e89ba2ee51d4547052cf2fa](https://juejin.im/post/5e89ba2ee51d4547052cf2fa)
-

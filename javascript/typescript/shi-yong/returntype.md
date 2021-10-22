@@ -13,4 +13,3 @@ function getInt(a: string) {
 
 type A = ReturnType<typeof getInt>; // => number
 ```
-

@@ -34,4 +34,3 @@ Array.prototype.map = function(fn, context = this){
     }, []); // 注意这里的[]不能省
 }
 ```
-

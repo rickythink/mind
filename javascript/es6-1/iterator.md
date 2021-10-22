@@ -69,4 +69,3 @@ for (var value of range(0, 3)) {
 ```
 
 上面代码是一个类部署 Iterator 接口的写法。`Symbol.iterator`属性对应一个函数，执行后返回当前对象的遍历器对象。
-

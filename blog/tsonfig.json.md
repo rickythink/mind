@@ -8,7 +8,7 @@
 
 设置一个包含文件名的数组或匹配规则，指明那些文件是引入到程序中的。文件名基于包含`tsconfig.json`文件的路径解析
 
-```text
+```
 // settings
 {
 	"include": ["src/**/*", "tests/**/*"]
@@ -53,7 +53,7 @@
 
 设置一个包含文件名的数组，指明包含到程序中的文件。这通常应用于你仅需少量文件时，否则使用`include`是更好的建议
 
-```text
+```
 {
   "compilerOptions": {},
   "files": [
@@ -78,7 +78,7 @@ false
 
 继承通用的设置。如果有重名的设置，则新定义的设置会覆盖被继承的配置。extends 配置对于大型项目的 `tcsonfig.json` 的复用帮助很大
 
-```text
+```
 {
   "compilerOptions": {
     "noImplicitAny": true,
@@ -87,7 +87,7 @@ false
 }
 ```
 
-```text
+```
 {
   "extends": "./configs/base",
   "files": ["main.ts", "supplemental.ts"]
@@ -112,14 +112,14 @@ false
 
 例如，根据 TypeScript 自带的 `parseFloat` 类型定义，这是不正确的 JavaScript：
 
-```text
+```
 // parseFloat 仅接受一个字符串作为参数
 module.exports.pi = parseFloat(3.124);
 ```
 
 当引入到一个 TypeScript 模块：
 
-```text
+```
 // @filename: constants.js
 module.exports.pi = parseFloat(3.124);
 
@@ -140,19 +140,19 @@ false
 
 当 `declaration` 设置为 `true` 时，用编译器执行下面的 TypeScript 代码：
 
-```text
+```
 export let helloWorld = "hi";Try
 ```
 
 将会生成如下这样的 `index.js` 文件：
 
-```text
+```
 export let helloWorld = "hi";Try
 ```
 
 以及一个相应的 `helloWorld.d.ts`：
 
-```text
+```
 export declare let helloWorld: string;
 ```
 
@@ -182,34 +182,34 @@ TypeScript 还包括与你指定的 target 选项相匹配的较新的 JS 特性
 
 示例代码：
 
-```text
+```
 export const helloWorld = () => <h1>Hello world</h1>;
 ```
 
 默认为： `"react"`
 
-```text
+```
 export const helloWorld = () => React.createElement("h1", null, "Hello world");Try
 
 ```
 
 保留: `"preserve"`
 
-```text
+```
 export const helloWorld = () => <h1>Hello world</h1>;Try
 
 ```
 
 React Native: `"react-native"`
 
-```text
+```
 export const helloWorld = () => <h1>Hello world</h1>;Try
 
 ```
 
 React 17 转换: `"react-jsx"`[\[1\]](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html)
 
-```text
+```
 import { jsx as _jsx } from "react/jsx-runtime";
 export const helloWorld = () => _jsx("h1", { children: "Hello world" }, void 0);Try
 
@@ -217,7 +217,7 @@ export const helloWorld = () => _jsx("h1", { children: "Hello world" }, void 0);
 
 React 17 开发模式转换: `"react-jsxdev"`[\[1\]](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html)
 
-```text
+```
 import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
 const _jsxFileName = "/home/runner/work/TypeScript-Website/TypeScript-Website/packages/typescriptlang-org/index.tsx";
 export const helloWorld = () => _jsxDEV("h1", { children: "Hello world" },
@@ -230,7 +230,7 @@ export const helloWorld = () => _jsxDEV("h1", { children: "Hello world" },
 
 示例
 
-```text
+```
 // @filename: index.ts
 import { valueOfPi } from "./constants";
 
@@ -239,7 +239,7 @@ export const twoPi = valueOfPi * 2;
 
 #### CommonJS
 
-```text
+```
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.twoPi = void 0;
@@ -249,7 +249,7 @@ exports.twoPi = constants_1.valueOfPi * 2;
 
 #### UMD
 
-```text
+```
 (function (factory) {
     if (typeof module === "object" && typeof module.exports === "object") {
         var v = factory(require, exports);
@@ -269,7 +269,7 @@ exports.twoPi = constants_1.valueOfPi * 2;
 
 #### AMD
 
-```text
+```
 define(["require", "exports", "./constants"], function (require, exports, constants_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
@@ -280,7 +280,7 @@ define(["require", "exports", "./constants"], function (require, exports, consta
 
 #### System
 
-```text
+```
 System.register(["./constants"], function (exports_1, context_1) {
     "use strict";
     var constants_1, twoPi;
@@ -300,21 +300,21 @@ System.register(["./constants"], function (exports_1, context_1) {
 
 #### ESNext
 
-```text
+```
 import { valueOfPi } from "./constants";
 export const twoPi = valueOfPi * 2;Try
 ```
 
 #### ES2020
 
-```text
+```
 import { valueOfPi } from "./constants";
 export const twoPi = valueOfPi * 2;Try
 ```
 
 #### None
 
-```text
+```
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.twoPi = void 0;
@@ -350,7 +350,7 @@ false
 
 指定编译输出的目录。若没有指定，`.js` 将被生成至于生成它们的 `.ts` 文件相同的目录中：
 
-```text
+```
 $ tsc
 
 example
@@ -360,7 +360,7 @@ example
 
 使用类似这样的 `tsconfig.json`：
 
-```text
+```
 {
   "compilerOptions": {
     "outDir": "dist"
@@ -370,7 +370,7 @@ example
 
 使用这些配置运行 `tsc` 时，会将文件移动到指定的 `dist` 文件夹中：
 
-```text
+```
 $ tsc
 
 example
@@ -411,20 +411,20 @@ n/a
 
 例如，这是一个有 JSDoc 注释的 TypeScript 文件：
 
-```text
+```
 /** 'Hello world' 的葡萄牙语翻译 */
 export const helloWorldPTBR = "Olá Mundo";
 ```
 
 当然 `removeComments` 被设置为 `true`：
 
-```text
+```
 export const helloWorldPTBR = "Olá Mundo";Try
 ```
 
 未设置 `removeComments` 或被设置为 `false`：
 
-```text
+```
 /** 'Hello world' 的葡萄牙语翻译 */
 export const helloWorldPTBR = "Olá Mundo";Try
 ```
@@ -441,7 +441,7 @@ false
 
 这么说有点抽象。举例来说，假设你有一些输入文件：
 
-```text
+```
 MyProj
 ├── tsconfig.json
 ├── core
@@ -456,7 +456,7 @@ MyProj
 
 如果你的 `outDir` 是 `dist`，TypeScript 将会生成这样的文件树：
 
-```text
+```
 MyProj
 ├── dist
 │   ├── a.ts
@@ -467,7 +467,7 @@ MyProj
 
 但你可能希望让 `core` 成为输出目录结构的一部分。 通过在 `tsconfig.json` 中指定 `rootDir: "."`，TypeScript 将会生成这样的文件树：
 
-```text
+```
 MyProj
 ├── dist
 │   ├── core
@@ -490,4 +490,3 @@ rootDir 不会影响哪些文件被包含在编译中。如果设置了`rootDir`
 false
 
 ## 严格检查
-

@@ -1,6 +1,6 @@
 # Reflect
 
-#### Reflect.get\(target, name, receiver\) [§](https://es6.ruanyifeng.com/#docs/reflect#Reflect-gettarget-name-receiver) [⇧](https://es6.ruanyifeng.com/#docs/reflect) <a id="Reflect-gettarget-name-receiver"></a>
+#### Reflect.get(target, name, receiver) [§](https://es6.ruanyifeng.com/#docs/reflect#Reflect-gettarget-name-receiver) [⇧](https://es6.ruanyifeng.com/#docs/reflect) <a href="reflect-gettarget-name-receiver" id="reflect-gettarget-name-receiver"></a>
 
 `Reflect.get`方法查找并返回`target`对象的`name`属性，如果没有该属性，则返回`undefined`。
 
@@ -44,7 +44,7 @@ Reflect.get(1, 'foo') // 报错
 Reflect.get(false, 'foo') // 报错
 ```
 
-#### Reflect.set\(target, name, value, receiver\) <a id="Reflect-settarget-name-value-receiver"></a>
+#### Reflect.set(target, name, value, receiver) <a href="reflect-settarget-name-value-receiver" id="reflect-settarget-name-value-receiver"></a>
 
 `Reflect.set`方法设置`target`对象的`name`属性等于`value`。
 
@@ -84,7 +84,7 @@ myObject.foo // 4
 myReceiverObject.foo // 1
 ```
 
-### 实例：使用 Proxy 实现观察者模式 <a id="&#x5B9E;&#x4F8B;&#xFF1A;&#x4F7F;&#x7528;-Proxy-&#x5B9E;&#x73B0;&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;"></a>
+### 实例：使用 Proxy 实现观察者模式 <a href="shi-li-shi-yong-proxy-shi-xian-guan-cha-zhe-mo-shi" id="shi-li-shi-yong-proxy-shi-xian-guan-cha-zhe-mo-shi"></a>
 
 观察者模式（Observer mode）指的是函数自动观察数据对象，一旦对象有变化，函数就会自动执行。
 
@@ -122,4 +122,3 @@ function set(target, key, value, receiver) {
 ```
 
 上面代码中，先定义了一个`Set`集合，所有观察者函数都放进这个集合。然后，`observable`函数返回原始对象的代理，拦截赋值操作。拦截函数`set`之中，会自动执行所有观察者。
-

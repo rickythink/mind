@@ -7,7 +7,6 @@
 5. 使用纯 Web Components 构建应用
 6. 结合 Web Components 构建
 
-> [https://github.com/phodal/microfrontends\#%E5%AE%9E%E6%96%BD%E5%BE%AE%E5%89%8D%E7%AB%AF%E7%9A%84%E5%85%AD%E7%A7%8D%E6%96%B9%E5%BC%8F](https://github.com/phodal/microfrontends#%E5%AE%9E%E6%96%BD%E5%BE%AE%E5%89%8D%E7%AB%AF%E7%9A%84%E5%85%AD%E7%A7%8D%E6%96%B9%E5%BC%8F)
+> [https://github.com/phodal/microfrontends#%E5%AE%9E%E6%96%BD%E5%BE%AE%E5%89%8D%E7%AB%AF%E7%9A%84%E5%85%AD%E7%A7%8D%E6%96%B9%E5%BC%8F](https://github.com/phodal/microfrontends#%E5%AE%9E%E6%96%BD%E5%BE%AE%E5%89%8D%E7%AB%AF%E7%9A%84%E5%85%AD%E7%A7%8D%E6%96%B9%E5%BC%8F)
 
-![](../../.gitbook/assets/image%20%2820%29.png)
-
+![](<../../.gitbook/assets/image (131).png>)

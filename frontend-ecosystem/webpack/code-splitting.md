@@ -35,7 +35,7 @@ module.exports = {
 
 这会输出如下的编译结果
 
-```text
+```
 ...
             Asset     Size   Chunks             Chunk Names
 another.bundle.js  550 KiB  another  [emitted]  another
@@ -74,6 +74,4 @@ Entrypoint another = another.bundle.js
 +   },
   };
 ```
-
-
 

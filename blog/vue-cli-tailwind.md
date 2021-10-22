@@ -16,7 +16,7 @@ yarn add tailwindcss
 
 如果你希望定制化tailwind.css， 可以试着引入 tailwind 的配置文件
 
-```text
+```
 npx tailwindcss init 
 ```
 
@@ -37,7 +37,7 @@ module.exports = {
 
 你需要添加`PostCSS` 选项来让`tailwind.css` 跑起来
 
-```text
+```
 module.exports = {
   plugins: {
     tailwindcss: {},
@@ -65,4 +65,3 @@ import '@/assets/css/style.css'
 ```
 
 一切顺利的话，你的Vue功能就能使用 tailwind.css 了。以上。
-

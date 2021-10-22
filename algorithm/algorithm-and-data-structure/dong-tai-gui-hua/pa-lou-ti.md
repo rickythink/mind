@@ -4,7 +4,7 @@
 
 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？（给定 n 是一个正整数。）
 
-#### 思路分析： <a id="&#x601D;&#x8DEF;&#x5206;&#x6790;&#xFF1A;"></a>
+#### 思路分析： <a href="si-lu-fen-xi" id="si-lu-fen-xi"></a>
 
 这类题我们首先要来找其中的规律，找到了里面的规律，剩下的就好办了。
 
@@ -19,9 +19,9 @@
 5 = 1*5 = 2+1+2 =2+2+1 = 1+2+2 =1+2+1+1 = 1+1+2+1 = 2+1+1+1 = 1+1+1+2 8种方法
 ```
 
-#### 规律： <a id="&#x89C4;&#x5F8B;&#xFF1A;"></a>
+#### 规律： <a href="gui-lv" id="gui-lv"></a>
 
-这道题的规律实际上跟之前做的[查找斐波纳契数列中第 N 个数](http://obkoro1.com/web_accumulate/algorithm/induction/%E6%9F%A5%E6%89%BE%E6%96%90%E6%B3%A2%E7%BA%B3%E5%A5%91%E6%95%B0%E5%88%97%E4%B8%AD%E7%AC%ACN%E4%B8%AA%E6%95%B0.html)中的规律有点类似。
+这道题的规律实际上跟之前做的[查找斐波纳契数列中第 N 个数](http://obkoro1.com/web\_accumulate/algorithm/induction/%E6%9F%A5%E6%89%BE%E6%96%90%E6%B3%A2%E7%BA%B3%E5%A5%91%E6%95%B0%E5%88%97%E4%B8%AD%E7%AC%ACN%E4%B8%AA%E6%95%B0.html)中的规律有点类似。
 
 斐波纳契数列中第 N 个数的规律
 
@@ -64,4 +64,3 @@ const climb = function(n) {
   return b;
 }
 ```
-

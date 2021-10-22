@@ -30,5 +30,3 @@ function dmatrix2Array(dmatrix: DOMMatrix) {
 }
 ```
 
-
-

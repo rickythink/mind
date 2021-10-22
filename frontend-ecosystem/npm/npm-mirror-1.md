@@ -2,7 +2,6 @@
 
 镜像源对于国内访问的提速相当明显
 
-```text
+```
 npm config set registry https://registry.npm.taobao.org
 ```
-

@@ -141,4 +141,3 @@ function createWebService(baseUrl) {
 ```
 
 同理，Proxy 也可以用来实现数据库的 ORM 层。
-

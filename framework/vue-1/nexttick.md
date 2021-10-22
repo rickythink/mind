@@ -25,11 +25,11 @@ Vue.nextTick().then(function() {
 按照优先级检测
 
 1. native promise
-2. MutationObserver\(非ie\)
+2. MutationObserver(非ie)
 3. setImmediate
 4. setTimeout
 
-官方文档注释中，MutationObserver有更广的适配，但是ie11和UIWebView in iOS &gt;= 9.3.3有严重的bug，所以native promise是第一优先级的
+官方文档注释中，MutationObserver有更广的适配，但是ie11和UIWebView in iOS >= 9.3.3有严重的bug，所以native promise是第一优先级的
 
 ```javascript
 // The nextTick behavior leverages the microtask queue, which can be accessed
@@ -154,7 +154,7 @@ export function nextTick (cb?: Function, ctx?: Object) {
 
 ## MutationObserver
 
- MutationObserver 如何模拟 nextTick 这点，其实就是创建一个 TextNode 并监听内容变化，然后要 nextTick 的时候去改一下这个节点的文本内容：
+&#x20;MutationObserver 如何模拟 nextTick 这点，其实就是创建一个 TextNode 并监听内容变化，然后要 nextTick 的时候去改一下这个节点的文本内容：
 
 ```javascript
 const observer = new MutationObserver(flushCallbacks)
@@ -167,6 +167,4 @@ const observer = new MutationObserver(flushCallbacks)
     textNode.data = String(counter)
   }
 ```
-
-
 

@@ -20,7 +20,7 @@ Object.values(family);
 // ["Jonathan Kent", "Martha Kent", "Clark Kent"]
 ```
 
-Object.entries 返回一个 \[ key, values \] 形式的数组。 数组的顺序和 Object 如何定义的没有联系。
+Object.entries 返回一个 \[ key, values ] 形式的数组。 数组的顺序和 Object 如何定义的没有联系。
 
 ```javascript
 const object1 = {
@@ -47,4 +47,3 @@ console.log(Object.entries('foo')); // [ ['0', 'f'], ['1', 'o'], ['2', 'o'] ]
 // returns an empty array for any primitive type, since primitives have no own properties
 console.log(Object.entries(100)); // [ ]
 ```
-

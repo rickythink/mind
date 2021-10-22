@@ -24,7 +24,7 @@
   * Number
   * BigInt
   * String
-  * Symbol 
+  * Symbol&#x20;
 * 和 Object
 
 函数就是对象的一个子类型（从技术角度来说就是“可调用的对象”）。 JavaScript 中的函 数是“一等公民”，因为它们本质上和普通的对象一样（只是可以调用），所以可以像操作 其他对象一样操作函数（比如当作另一个函数的参数）。
@@ -33,13 +33,12 @@
 
 ### 存储方式
 
-基础原始类型存在栈\(stack\)中，对象类型存在堆\(Heap\)中
+基础原始类型存在栈(stack)中，对象类型存在堆(Heap)中
 
-![](../../.gitbook/assets/image%20%2855%29.png)
+![](<../../.gitbook/assets/image (165).png>)
 
 ### 数组
 
 在JavaScript中，类型相同的数组是连续内存，类型不同的数组是非连续内存。
 
 > [https://juejin.im/post/5d2832a5f265da1bc07e669e](https://juejin.im/post/5d2832a5f265da1bc07e669e)
-

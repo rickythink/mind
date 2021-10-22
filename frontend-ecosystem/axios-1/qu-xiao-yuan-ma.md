@@ -130,5 +130,3 @@ CancelToken，创建了一个额外的PromiseA，并将PromiseA挂载到config�
 
 
 
-
-

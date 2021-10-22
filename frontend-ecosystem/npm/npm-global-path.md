@@ -11,19 +11,18 @@ mkdir ~/.npm-global
 
 配置npm使用新的路径
 
-```text
+```
 vim ~/.zshrc
 ```
 
 在最后一行添加环境变量申明，即可导入 npm global intsall 的全局路径
 
-```text
+```
 export PATH=~/.npm-global/bin:$PATH
 ```
 
 使配置生效
 
-```text
+```
 source ~/.zshrc
 ```
-

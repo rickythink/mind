@@ -4,7 +4,7 @@ Flux 有一些缺点（特点），比如一个应用可以拥有多个 Store，
 
 所以大家在使用的时候，一般会用 Redux，他和 Flux 思想比较类似，也有差别。
 
-![](../../../.gitbook/assets/image%20%2883%29.png)
+![](<../../../.gitbook/assets/image (98).png>)
 
 1、用户通过 View 发出 Action：
 
@@ -24,7 +24,7 @@ let nextState = xxxReducer(previousState, action);
 store.subscribe(listener);
 ```
 
-4、listener可以通过  store.getState\(\)  得到当前状态。如果使用的是 React，这时可以触发重新渲染 View。
+4、listener可以通过  store.getState()  得到当前状态。如果使用的是 React，这时可以触发重新渲染 View。
 
 ```javascript
 function listerner() {
@@ -45,15 +45,13 @@ Redux 有很多的 Reducer，对于大型应用来说，State 必然十分庞大
 
 Redux 中各子 Reducer 都是由根 Reducer 统一管理的，每个子 Reducer 的变化都要经过根 Reducer 的整合：
 
-![image.png \| left \| 827x395](https://user-gold-cdn.xitu.io/2018/12/18/167c11c13fb657b0?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![image.png | left | 827x395](https://user-gold-cdn.xitu.io/2018/12/18/167c11c13fb657b0?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
 简单来说，Redux有三大原则：
 
 * 单一数据源：Flux 的数据源可以是多个。
 * State 是只读的：Flux 的 State 可以随便改。
 * 使用纯函数来执行修改：Flux 执行修改的不一定是纯函数。
-
-
 
 
 

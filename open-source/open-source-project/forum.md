@@ -6,5 +6,3 @@
 
 {% embed url="https://github.com/88250/symphony" %}
 
-
-

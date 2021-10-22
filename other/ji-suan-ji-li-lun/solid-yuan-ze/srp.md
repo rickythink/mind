@@ -1,4 +1,4 @@
-# SRP \| The Single Responsibility Principle
+# SRP | The Single Responsibility Principle
 
 **单一功能原则**（Single responsibility principle）规定每个类都应该有一个单一的功能，并且该功能应该由这个类完全封装起来。所有它的（这个类的）服务都应该严密的和该功能平行（功能平行，意味着没有依赖）。
 
@@ -11,4 +11,3 @@
 第 2 个类应该只解析它接收到的 JSON 数据并以相应的格式返回结果。
 
 第 3 个类应该以相应的格式接收 JSON 数据，并把它保存在本地数据库中。
-

@@ -9,5 +9,3 @@ type Obj =  {
 } // -> { a: any, b: any }
 ```
 
-
-

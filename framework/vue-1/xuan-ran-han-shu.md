@@ -1,6 +1,6 @@
 # 渲染函数
 
-写一个只能通过 `level` prop 动态生成标题 \(heading\) 的组件时，你可能很快想到这样实现：
+写一个只能通过 `level` prop 动态生成标题 (heading) 的组件时，你可能很快想到这样实现：
 
 ```javascript
 <script type="text/x-template" id="anchored-heading-template">
@@ -59,4 +59,3 @@ Vue.component('anchored-heading', {
 ```
 
 看起来简单多了！
-

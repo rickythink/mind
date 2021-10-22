@@ -3,7 +3,7 @@
 ## 简单请求
 
 {% hint style="info" %}
-（1\) 请求方法是以下三种方法之一：
+（1) 请求方法是以下三种方法之一：
 
 * HEAD
 * GET
@@ -35,7 +35,7 @@ User-Agent: Mozilla/5.0...
 
 如果`Origin`指定的域名在许可范围内，服务器返回的响应，会多出几个头信息字段。
 
-```text
+```
 Access-Control-Allow-Origin: http://api.bob.com
 Access-Control-Allow-Credentials: true
 Access-Control-Expose-Headers: FooBar
@@ -66,4 +66,3 @@ User-Agent: Mozilla/5.0...
 "预检"请求用的请求方法是`OPTIONS`，表示这个请求是用来询问的。头信息里面，关键字段是`Origin`，表示请求来自哪个源。
 
 服务器收到"预检"请求以后，检查了`Origin`、`Access-Control-Request-Method`和`Access-Control-Request-Headers`字段以后，确认允许跨源请求，就可以做出回应。
-

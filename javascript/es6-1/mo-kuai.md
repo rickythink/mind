@@ -27,12 +27,12 @@ UMD与AMD/CMD
 
 * UMD（Universal Module Definition）是AMD和CommonJS的糅合，跨平台的解决方案。
 * AMD模块以浏览器第一的原则发展，异步加载模块。
-* CommonJS模块以服务器第一原则发展，选择同步加载，它的模块无需包装\(unwrapped modules\)。
+* CommonJS模块以服务器第一原则发展，选择同步加载，它的模块无需包装(unwrapped modules)。
 * UMD先判断是否支持Node.js的模块（exports）是否存在，存在则使用Node.js模块模式。再判断是否支持AMD（define是否存在），存在则使用AMD方式加载模块。
 
 ## 用法
 
-### umd 模块（通用模块） <a id="articleHeader0"></a>
+### umd 模块（通用模块） <a href="articleheader0" id="articleheader0"></a>
 
 ```javascript
 (function (global, factory) {
@@ -42,10 +42,10 @@ UMD与AMD/CMD
 }(this, (function () { 'use strict';})));
 ```
 
-如果你在`js`文件头部看到这样的代码，那么这个文件使用的就是 `UMD` 规范  
-实际上就是 **amd** + **commonjs** + **全局变量** 这三种风格的结合  
-这段代码就是对当前运行环境的判断，如果是 `Node` 环境 就是使用 `CommonJs` 规范， 如果不是就判断是否为 `AMD` 环境， 最后导出全局变量  
-有了 `UMD` 后我们的代码和同时运行在 `Node` 和 `浏览器上`  
+如果你在`js`文件头部看到这样的代码，那么这个文件使用的就是 `UMD` 规范\
+实际上就是 **amd** + **commonjs** + **全局变量** 这三种风格的结合\
+这段代码就是对当前运行环境的判断，如果是 `Node` 环境 就是使用 `CommonJs` 规范， 如果不是就判断是否为 `AMD` 环境， 最后导出全局变量\
+有了 `UMD` 后我们的代码和同时运行在 `Node` 和 `浏览器上`\
 所以现在前端大多数的库最后打包都使用的是 `UMD` 规范
 
 ### CommonJS
@@ -53,7 +53,7 @@ UMD与AMD/CMD
 `CommonJS` 是 JavaScript 的一个模块化规范，主要用于服务端Nodejs 中，当然，通过转换打包，也可以运行在浏览器端。毕竟服务端加载的模块都是存放于本地磁盘中，所以加载起来比较快，不需要考虑异步方式。
 
 * 导出使用module.exports，也可以exports。就是在此对象上挂属性。exports指向module.exports，即exports= module.exports
-* 加载模块使用require\('xxx'\)。相对、绝对路径均可。默认引用js，可以不写.js后缀
+* 加载模块使用require('xxx')。相对、绝对路径均可。默认引用js，可以不写.js后缀
 
 ```javascript
 // commonjs
@@ -77,14 +77,14 @@ Asynchronous Module Definition：异步模块定义。
 
 CommonJS规范加载模块是同步的，也就是说，只有加载完成，才能执行后面的操作。AMD规范则是异步加载模块，允许指定回调函数。
 
-由于这并非原生 js 所支持的那种写法。所以使用 AMD 规范开发的时候就需要大名鼎鼎的函数库 `require.js` 的支持了。  
+由于这并非原生 js 所支持的那种写法。所以使用 AMD 规范开发的时候就需要大名鼎鼎的函数库 `require.js` 的支持了。\
 
 
-* 定义模块：define\(id?, dependencies?, factory\)
+* 定义模块：define(id?, dependencies?, factory)
   * 依赖有三个默认的，即"require", "exports", "module"。顺序个数均可视情况
   * 如果忽略则factory默认此三个传入参数
   * id一般是不传的，默认是文件名
-* 加载模块：require\(\[module\], factory\)
+* 加载模块：require(\[module], factory)
 
 ```javascript
 // a.js
@@ -121,7 +121,7 @@ require(['a', 'b'], function(a, b) {
 
 CMD是阿里的玉伯提出来的（大神的成长故事可在公众号回复【大佬】），js 的函数为 `sea.js`,它和 AMD 其实非常的相似，文件即为模块，但是其最主要的区别是实现了按需加载。推崇依赖就近的原则，模块延迟执行
 
-* 定义模块：define\(factory\)
+* 定义模块：define(factory)
   * require, exports, module参数顺序不可乱
   * 暴露api方法可以使用exports、module.exports、return
   * 与requirejs不同的是，若是未暴露，则返回{}，requirejs返回undefined
@@ -197,15 +197,15 @@ import * as module from './module';
 
 ### 总结:
 
-| 区别项 | es模块化 | commonJS | AMD |
-| :--- | :--- | :--- | :--- |
-| 可用于服务端还是浏览器 | 服务端和浏览器 | 服务端 | 浏览器 |
-| 模块依赖关系何时确定\(即：何时加载模块\) | 编译时 | 运行时 | 运行时 |
-| 设计思想 | 尽量的静态化 |  |  |
-| 模块是不是对象 | 不是 | 是 |  |
-| 是否整体加载模块\(即加载的所有方法\) | 否 | 是 |  |
-| 是否是动态更新\(即通过接口,可以取到模块内部实时的值\) | 是。es module输出的是值的引用 | 不是。commonJS模块输出的是值的拷贝，不存在动态更新 |  |
-| 模块变量是否是只读的 | v是。原因：ES6 输入的模块变量，只是一个“符号连接”，所以这个变量是只读的，对它进行重新赋值会报错。 |  |  |
+| 区别项                         | es模块化                                                | commonJS                      | AMD |
+| --------------------------- | ---------------------------------------------------- | ----------------------------- | --- |
+| 可用于服务端还是浏览器                 | 服务端和浏览器                                              | 服务端                           | 浏览器 |
+| 模块依赖关系何时确定(即：何时加载模块)        | 编译时                                                  | 运行时                           | 运行时 |
+| 设计思想                        | 尽量的静态化                                               |                               |     |
+| 模块是不是对象                     | 不是                                                   | 是                             |     |
+| 是否整体加载模块(即加载的所有方法)          | 否                                                    | 是                             |     |
+| 是否是动态更新(即通过接口,可以取到模块内部实时的值) | 是。es module输出的是值的引用                                  | 不是。commonJS模块输出的是值的拷贝，不存在动态更新 |     |
+| 模块变量是否是只读的                  | v是。原因：ES6 输入的模块变量，只是一个“符号连接”，所以这个变量是只读的，对它进行重新赋值会报错。 |                               |     |
 
 * commonJS模块就是对象，整体加载模块（即加载的所有方法）
 * ES6 模块不是对象，而是通过export命令显式指定输出的代码，再通过import命令输入。
@@ -214,7 +214,7 @@ import * as module from './module';
 * export命令和import命令可以出现在模块的任何位置，只要处于模块顶层就可以。 如果处于块级作用域内，就会报错，这是因为处于条件代码块之中，就没法做静态优化了，违背了ES6模块的设计初衷。
 * import命令具有提升效果，会提升到整个模块的头部，首先执行。
 
-### CommonJs 和 ES6 Module 的区别 <a id="articleHeader11"></a>
+### CommonJs 和 ES6 Module 的区别 <a href="articleheader11" id="articleheader11"></a>
 
 其实上面我们已经说到了一些区别
 
@@ -231,8 +231,6 @@ import * as module from './module';
 ### ES6 import 的顺序？
 
 {% embed url="https://stackoverflow.com/questions/35551366/what-is-the-defined-execution-order-of-es6-imports" %}
-
-
 
 
 

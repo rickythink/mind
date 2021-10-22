@@ -11,4 +11,3 @@ $ source ~/.zshrc
 $ curl -i http://ip.cn 或者
 $ curl -i cip.cc
 ```
-

@@ -46,7 +46,7 @@ for(keys in bei){
 ```
 
 {% hint style="info" %}
-obj.hasOwnProperty\(keys\)==true 
+obj.hasOwnProperty(keys)==true&#x20;
 
 表示这个属性是对象的成员属性，而不是原型链属性
 {% endhint %}
@@ -56,4 +56,3 @@ obj.hasOwnProperty\(keys\)==true
 一个数据结构只要部署了 Symbol.iterator 属性，就被视为具有 iterator 接口，就可以用 for...of 循环遍历它的成员。也就是说，for...of 循环内部调用的是数据结构的 Symbol.iterator 方法。
 
 对于普通对象，for ... in 循环可以遍历键名，for ... of 循环会报错。
-

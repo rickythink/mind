@@ -8,57 +8,55 @@
 
 vue-router是 Vue.js 官方的路由管理器。它和 Vue.js 的核心深度集成，让构建单页面应用变得易如反掌。这篇文章讲述的主要内容便是vue-router的实现原理，相当于[vue-router源码](https://github.com/vuejs/vue-router)的粗浅理解。行文主要包括vue-router的使用方法、实现原理两大部分，使用方法的介绍是为了辅助实现原理的陈述。
 
-#### 使用方法 <a id="&#x4F7F;&#x7528;&#x65B9;&#x6CD5;"></a>
+#### 使用方法 <a href="shi-yong-fang-fa" id="shi-yong-fang-fa"></a>
 
-1. 注册VueRouter插件:
+1.  注册VueRouter插件:
 
-   ```text
-    import Vue from 'vue'
-    import VueRouter from 'vue-router'
-    Vue.use(VueRouter)
-   ```
+    ```
+     import Vue from 'vue'
+     import VueRouter from 'vue-router'
+     Vue.use(VueRouter)
+    ```
+2.  定义（路由）组件与路由。
 
-2. 定义（路由）组件与路由。
-
-   ```text
-    const User = { template: '<div>用户</div>' }
-    const Role = { template: '<div>角色</div>' }
-    const routes = [
-    { path: '/user', component: User },
-    { path: '/home', component: Home }
-    ]
-   ```
-
+    ```
+     const User = { template: '<div>用户</div>' }
+     const Role = { template: '<div>角色</div>' }
+     const routes = [
+     { path: '/user', component: User },
+     { path: '/home', component: Home }
+     ]
+    ```
 3. 创建 router 实例，并传 `routes` 配置 `const router = new VueRouter({routes })`
-4. 创建和挂载根实例。
+4.  创建和挂载根实例。
 
-   ```text
-    const app = new Vue({
-        router,
-        template: `
-            <div id="app">
-            <h1>Basic</h1>
-            <ul>
-                <li><router-link to="/">/</router-link></li>
-                <li><router-link to="/user">用户</router-link></li>
-                <li><router-link to="/role">角色</router-link></li>
-                <router-link tag="li" to="/user">/用户</router-link>
-            </ul>
-            <router-view class="view"></router-view>
-            </div>
-        `
-    }).$mount('#app')
-   ```
+    ```
+     const app = new Vue({
+         router,
+         template: `
+             <div id="app">
+             <h1>Basic</h1>
+             <ul>
+                 <li><router-link to="/">/</router-link></li>
+                 <li><router-link to="/user">用户</router-link></li>
+                 <li><router-link to="/role">角色</router-link></li>
+                 <router-link tag="li" to="/user">/用户</router-link>
+             </ul>
+             <router-view class="view"></router-view>
+             </div>
+         `
+     }).$mount('#app')
+    ```
 
-#### 实现原理 <a id="&#x5B9E;&#x73B0;&#x539F;&#x7406;"></a>
+#### 实现原理 <a href="shi-xian-yuan-li" id="shi-xian-yuan-li"></a>
 
 每一个工具实现的原理都依赖JS/HTML基本语法，比如Vue的双向数据绑定依赖的是JS的Object.defineProperty。而Vue Router的实现依赖于两种前端路由，即模式history模式和hash模式：
 
 * history模式
-  * HTML5中的两个API：**pushState**和**replaceState**，改变url之后页面不会重新刷新，也不会带有\#号，页面地址美观，url的改变会触发**popState**事件，监听该事件也可以实现根据不同的url渲染对应的页面内容
-  * 但是因为没有\#会导致用户在刷新页面的时候，还会发送请求到服务端，为避免这种情况，需要每次url改变的时候，都将所有的路由重新定位到跟路由下
+  * HTML5中的两个API：**pushState**和**replaceState**，改变url之后页面不会重新刷新，也不会带有#号，页面地址美观，url的改变会触发**popState**事件，监听该事件也可以实现根据不同的url渲染对应的页面内容
+  * 但是因为没有#会导致用户在刷新页面的时候，还会发送请求到服务端，为避免这种情况，需要每次url改变的时候，都将所有的路由重新定位到跟路由下
 * hash模式
-  * url hash: http://foo.com/\#help
+  * url hash: http://foo.com/#help
   * \#后面hash值的改变，并不会重新加载页面，同时hash值的变化会触发**hashchange**事件，该事件可以监听，可根据不同的哈希值渲染不同的页面内容
 
 **1. 插件注册**
@@ -195,5 +193,4 @@ init (app: any /* Vue component instance */) {
 
 **为什么不直接在初始化 HashHistory 的时候监听 hashchange 事件呢？**
 
-这个是为了修复https://github.com/vuejs/vue-router/issues/725 这个 bug 而这样做的，简要来说就是说如果在 beforeEnter 这样的钩子函数中是异步的话，beforeEnter 钩子就会被触发两次，原因是因为在初始化的时候如果此时的 hash 值不是以 / 开头的话就会补上 \#/，这个过程会触发 hashchange 事件，所以会再走一次生命周期钩子，也就意味着会再次调用 beforeEnter 钩子函数。
-
+这个是为了修复https://github.com/vuejs/vue-router/issues/725 这个 bug 而这样做的，简要来说就是说如果在 beforeEnter 这样的钩子函数中是异步的话，beforeEnter 钩子就会被触发两次，原因是因为在初始化的时候如果此时的 hash 值不是以 / 开头的话就会补上 #/，这个过程会触发 hashchange 事件，所以会再走一次生命周期钩子，也就意味着会再次调用 beforeEnter 钩子函数。

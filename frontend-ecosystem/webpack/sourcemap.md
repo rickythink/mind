@@ -18,9 +18,7 @@
 
 * eval： 使用eval包裹模块代码
 * source-map： 产生`.map`文件
-* cheap： 不包含列信息（关于列信息的解释下面会有详细介绍\)也不包含loader的sourcemap
+* cheap： 不包含列信息（关于列信息的解释下面会有详细介绍)也不包含loader的sourcemap
 * module： 包含loader的sourcemap（比如jsx to js ，babel的sourcemap）
 * inline： 将`.map`作为DataURI嵌入，不单独生成`.map`文件（这个配置项比较少见）
-
-
 

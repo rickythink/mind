@@ -1,6 +1,6 @@
 # react typescript svg相关
 
-引入了`svgr` 
+引入了`svgr`&#x20;
 
 ```bash
 yarn add @svgr/webpack -D
@@ -18,7 +18,7 @@ declare module '*.svg' {
 }
 ```
 
-编辑`tsconfig.json` 
+编辑`tsconfig.json`&#x20;
 
 ```javascript
 {
@@ -45,9 +45,8 @@ config.module.rules = config.module.rules.map(data => {
   });
 ```
 
-在另外的工程使用了`parcel` ，也要引入`svgr` 
+在另外的工程使用了`parcel` ，也要引入`svgr`&#x20;
 
 ```javascript
 yarn add @svgr/parcel-plugin-svgr -D
 ```
-

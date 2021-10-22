@@ -1,4 +1,4 @@
-# OCP \| The Open Closed Principle
+# OCP | The Open Closed Principle
 
 软件实体应该是可扩展，而不可修改的。也就是说，对扩展是开放的，而对修改是封闭的。
 
@@ -97,4 +97,3 @@ class Multiplication implements Operation {
 Multiplication multiplication = new Multiplication()
 float prod = calculator.calculate(10, 2, multiplication) // the value of prod is 20
 ```
-

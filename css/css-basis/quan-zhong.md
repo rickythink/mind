@@ -1,20 +1,20 @@
 # 权重
 
-**!important &gt; 内联样式 &gt; ID选择器 &gt; 类选择器 &gt; 标签选择器 &gt; 通配符选择器**
+**!important > 内联样式 > ID选择器 > 类选择器 > 标签选择器 > 通配符选择器**
 
-| 选择器 | 表达式或示例 | 说明 | 权重 |
-| :--- | :--- | :--- | :--- |
-| ID选择器 | \#aaa |  | 100 |
-| 类选择器 | .aaa |  | 10 |
-| 标签选择器 | h1 | 元素的tagName | 1 |
-| 属性选择器 | \[title\] | [详见这里](http://www.cnblogs.com/rubylouvre/archive/2009/10/27/1590102.html) | 10 |
-| 相邻选择器 | selecter + selecter | 拆分为两个选择器再计算 |  |
-| 兄长选择器 | selecter ~ selecter | 拆分为两个选择器再计算 |  |
-| 亲子选择器 | selecter &gt; selecter | 拆分为两个选择器再计算 |  |
-| 后代选择器 | selecter selecter | 拆分为两个选择器再计算 |  |
-| 通配符选择器 | \* |  | 0 |
-| 各种伪类选择器 | 如:link， :visited， :hover， :active， :target， :root， :not等 | 10 |  |
-| 各种伪元素 | 如::first-letter,::first-line,::after,::before,::selection | 1 |  |
+| 选择器     | 表达式或示例                                                    | 说明                                                                        | 权重  |
+| ------- | --------------------------------------------------------- | ------------------------------------------------------------------------- | --- |
+| ID选择器   | #aaa                                                      |                                                                           | 100 |
+| 类选择器    | .aaa                                                      |                                                                           | 10  |
+| 标签选择器   | h1                                                        | 元素的tagName                                                                | 1   |
+| 属性选择器   | \[title]                                                  | [详见这里](http://www.cnblogs.com/rubylouvre/archive/2009/10/27/1590102.html) | 10  |
+| 相邻选择器   | selecter + selecter                                       | 拆分为两个选择器再计算                                                               |     |
+| 兄长选择器   | selecter \~ selecter                                      | 拆分为两个选择器再计算                                                               |     |
+| 亲子选择器   | selecter > selecter                                       | 拆分为两个选择器再计算                                                               |     |
+| 后代选择器   | selecter selecter                                         | 拆分为两个选择器再计算                                                               |     |
+| 通配符选择器  | \*                                                        |                                                                           | 0   |
+| 各种伪类选择器 | 如:link， :visited， :hover， :active， :target， :root， :not等  | 10                                                                        |     |
+| 各种伪元素   | 如::first-letter,::first-line,::after,::before,::selection | 1                                                                         |     |
 
 #### 计算示例
 
@@ -27,7 +27,7 @@
 
 权重计算时，每遇到一个选择器就加上相应的基数，总和大的认为权重更高。如下:
 
-```text
+```
 style=""                    => 1000(一个行内样式)
 #title{}                    => 100(一个ID选择器)
 .root                       => 10(一个类)
@@ -44,9 +44,8 @@ body #title .root p {}      => 112(1+100+10+1，两个元素，一个Id选择器
 #### 其他总结：
 
 1. !important 优先级最高，但也会被权重高的important所覆盖
-2. 行内样式总会覆盖外部样式表的任何样式\(除了!important\)
+2. 行内样式总会覆盖外部样式表的任何样式(除了!important)
 3. 单独使用一个选择器的时候，不能跨等级使css规则生效
 4. 如果两个权重不同的选择器作用在同一元素上，权重值高的css规则生效
 5. 如果两个相同权重的选择器作用在同一元素上：以后面出现的选择器为最后规则.
 6. 权重相同时，与元素距离近的选择器生效
-

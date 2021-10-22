@@ -2,7 +2,7 @@
 
 ## 类的装饰
 
-装饰器\(Decorator\)是一个函数，用来修改类的行为。
+装饰器(Decorator)是一个函数，用来修改类的行为。
 
 ```javascript
 @decortator
@@ -58,4 +58,3 @@ function readonly(target, name, descriptor){
 ## 装饰器不能用于函数
 
 装饰器只能用于类和类的方法，不能用于函数，因为存在函数提升。
-

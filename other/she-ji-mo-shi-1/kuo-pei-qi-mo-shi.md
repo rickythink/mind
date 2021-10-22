@@ -88,4 +88,3 @@ module.exports = function xhrAdapter(config) {
 
 * 两个适配器的入参都是 config；
 * 两个适配器的出参都是一个 Promise。
-

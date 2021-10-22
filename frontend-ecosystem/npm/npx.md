@@ -10,14 +10,14 @@ npx 让 npm 包中的命令行工具和其他可执行文件在使用上变得�
 
 ### 不使用 npx
 
-```text
+```
 npm install -g create-react-app
 create-react-app test-app
 ```
 
-### 使用 npx 
+### 使用 npx&#x20;
 
-```text
+```
 npx create-react-app test-app
 ```
 
@@ -26,4 +26,3 @@ npm他会在本地全局性的安装create-react-app，这个包会存储在node
 
 npx命令他会把create-react-app安装包临时安装上，等项目初始化完成以后，他就删除掉
 {% endhint %}
-

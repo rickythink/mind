@@ -1,4 +1,3 @@
-# ISP \| The interface Segregation Principle
+# ISP | The interface Segregation Principle
 
 不能强迫用户去依赖那些他们不使用的接口。换句话说，使用多个专门的接口比使用单一的总接口总要好。客户模块不应该依赖大的接口，应该裁减为小的接口给客户模块使用，以减少依赖性。
-

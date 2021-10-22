@@ -6,13 +6,13 @@ description: 给岁月以文明，而不是给文明以岁月
 
 ## 目录
 
-[思维导图](mind-maps.md) / [归档 ](archive.md)/ [博客](blog/) 
+[思维导图](mind-maps.md) / [归档 ](archive.md)/ [博客](blog/)&#x20;
 
 ### 🎃CSS
 
 [CSS 基础 ](css/css-basis/)/ [CSS3](css/css3/) / [SCSS](css/scss/)
 
-####  🎉JavaScript 
+#### &#x20;🎉JavaScript&#x20;
 
 [JS 概念](javascript/js-concept/) / [JS 陷阱](javascript/js-trap/) / [JS 开发知识点](javascript/js-kai-fa-zhi-shi-dian/) / [实现 JS 常见函数](javascript/chang-jian-han-shu/) / [JS Worker](javascript/js-worker/) / [ES6](javascript/es6-1/) / [ES6 函数](javascript/es6-han-shu/) / [TypeScript](javascript/typescript/) / [V8](javascript/v8/)
 
@@ -34,7 +34,7 @@ description: 给岁月以文明，而不是给文明以岁月
 
 ### 🥊前端生态
 
-[Webpack](frontend-ecosystem/webpack/) / [Babel](frontend-ecosystem/babel.md) / [Fetch](frontend-ecosystem/fetch/) / [Axios](frontend-ecosystem/axios-1/) / [Npm](frontend-ecosystem/npm/) / [Yarn](frontend-ecosystem/yarn/) / [开源项目](open-source/open-source-project/) / [业务开发](frontend-ecosystem/ye-wu-kai-fa/) / [微前端](frontend-ecosystem/wei-qian-duan/) / [Hexo](frontend-ecosystem/hexo-1/) 
+[Webpack](frontend-ecosystem/webpack/) / [Babel](frontend-ecosystem/babel.md) / [Fetch](frontend-ecosystem/fetch/) / [Axios](frontend-ecosystem/axios-1/) / [Npm](frontend-ecosystem/npm/) / [Yarn](frontend-ecosystem/yarn/) / [开源项目](open-source/open-source-project/) / [业务开发](frontend-ecosystem/ye-wu-kai-fa/) / [微前端](frontend-ecosystem/wei-qian-duan/) / [Hexo](frontend-ecosystem/hexo-1/)&#x20;
 
 ### 🏀后端
 
@@ -62,7 +62,7 @@ description: 给岁月以文明，而不是给文明以岁月
 
 Gitbook 基于树形结构组织文档，方便系统性的知识梳理。
 
-## 关于知食 
+## 关于知食&#x20;
 
 知“识”应该是知“食”，从“识”到“食”即是一个看到到咀嚼和品尝的过程。
 
@@ -70,7 +70,7 @@ Gitbook 基于树形结构组织文档，方便系统性的知识梳理。
 
 ## 关于积累
 
-为什么会有这个站？ 
+为什么会有这个站？&#x20;
 
 涉猎的东西越来越多后，发现过去的记忆变得模糊。
 
@@ -79,4 +79,3 @@ Gitbook 基于树形结构组织文档，方便系统性的知识梳理。
 > 给岁月以文明，而不是给文明以岁月
 
 这里在岁月中一点一滴地篆刻知识的文明吧。
-

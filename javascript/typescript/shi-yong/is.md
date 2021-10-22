@@ -19,4 +19,3 @@ example('hello world');
 由于使用`is` 关键字，则能推导foo为`string` 类型。那么`foo.length` 就不会报错。
 
 如果把`test is string` 改为`boolean` ，那么`foo.length`会直接报错
-

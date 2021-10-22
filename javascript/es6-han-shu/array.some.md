@@ -19,4 +19,3 @@ console.log(array.some(even));
 {% hint style="info" %}
 如果用一个空数组进行测试，在任何情况下它返回的都是`false`。
 {% endhint %}
-

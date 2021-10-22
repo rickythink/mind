@@ -99,4 +99,3 @@ obj.deb() // Should log -> My name is foo
 obj.deb = debounce(obj.sayMyName.bind(obj), 1000)
 obj.deb() // now -> My name is foo 
 ```
-

@@ -1,6 +1,6 @@
 # Dynamic Ref
 
-在dom结构不固定的情况下，需要使用`Dynamic Ref` 
+在dom结构不固定的情况下，需要使用`Dynamic Ref`&#x20;
 
 > [https://stackoverflow.com/questions/52448143/dealing-with-ref-within-a-loop-in-react](https://stackoverflow.com/questions/52448143/dealing-with-ref-within-a-loop-in-react)
 
@@ -55,4 +55,3 @@ class TestRef extends React.Component {
 
 ReactDOM.render(<TestRef />, document.getElementById("root"));
 ```
-

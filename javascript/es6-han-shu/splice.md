@@ -6,7 +6,7 @@
 
 ## 语法
 
-```text
+```
 array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
 ```
 
@@ -17,7 +17,7 @@ array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
 ### deleteCount 可选
 
 * 整数，表示要移除的数组元素的个数。如果 `deleteCount` 大于 `start` 之后的元素的总数，则从 `start` 后面的元素都将被删除（含第 `start` 位）。
-* 如果 `deleteCount` 被省略了，或者它的值大于等于`array.length - start`\(也就是说，如果它大于或者等于`start`之后的所有元素的数量\)，那么`start`之后数组的所有元素都会被删除。
+* 如果 `deleteCount` 被省略了，或者它的值大于等于`array.length - start`(也就是说，如果它大于或者等于`start`之后的所有元素的数量)，那么`start`之后数组的所有元素都会被删除。
 * 如果 `deleteCount` 是 0 或者负数，则不移除元素。这种情况下，至少应添加一个新元素。
 
 ### item1, item2 .. 可选
@@ -42,4 +42,3 @@ var removed = myFish.splice(3, 1);
 // 被删除的元素: ["mandarin"]
 // 删除了一个元素
 ```
-

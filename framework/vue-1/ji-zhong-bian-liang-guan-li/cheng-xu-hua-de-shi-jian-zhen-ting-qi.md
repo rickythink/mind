@@ -33,4 +33,3 @@ mounted: function () {
   })
 }
 ```
-

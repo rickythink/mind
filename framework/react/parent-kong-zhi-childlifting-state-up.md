@@ -1,6 +1,6 @@
-# Parent控制Child\(Lifting state up\)
+# Parent控制Child(Lifting state up)
 
-React的设计哲学就是各自负责自己的state，当parent需要控制child时，这时要用到的设计概念叫`Lifting state up` 
+React的设计哲学就是各自负责自己的state，当parent需要控制child时，这时要用到的设计概念叫`Lifting state up`&#x20;
 
 Demo: [https://codesandbox.io/s/z3431proxl?from-embed](https://codesandbox.io/s/z3431proxl?from-embed)
 
@@ -38,4 +38,3 @@ function App() {
   );
 }
 ```
-

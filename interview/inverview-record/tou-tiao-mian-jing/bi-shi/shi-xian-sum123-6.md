@@ -1,4 +1,4 @@
-# 实现sum\(1\)\(2\)\(3\) = 6
+# 实现sum(1)(2)(3) = 6
 
 这是一个柯里化题
 
@@ -18,4 +18,3 @@ const sum = curry(add)
 let ret = sum(1)(2)(3)
 console.log(ret) // 6
 ```
-

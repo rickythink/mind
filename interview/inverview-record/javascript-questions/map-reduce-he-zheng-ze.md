@@ -34,9 +34,9 @@ function get(data, ...args) {
 
 缺陷在于没有考虑`target[0]` 的情况。
 
-题目关键在于如何从字符串"target\[2\].name"，切分成数组\["target", "2", "name"\]。
+题目关键在于如何从字符串"target\[2].name"，切分成数组\["target", "2", "name"]。
 
-切分？那可是正则的强项，使用正则/\\[\|\\]\|\./即可，即以 **\[ \] .** 这三个字符为分隔符，比如：
+切分？那可是正则的强项，使用正则/\\\[|\\]|\\./即可，即以 **\[ ] .** 这三个字符为分隔符，比如：
 
 ```javascript
 "target[2].name".split(/\[|\]|\./)
@@ -55,7 +55,7 @@ function get(data, ...args) {
 // => 'byted'
 ```
 
-注意，上面的代码很健壮的，也考虑到"targetxxx\[3\].name1"这种不存在的情形。
+注意，上面的代码很健壮的，也考虑到"targetxxx\[3].name1"这种不存在的情形。
 
 ### 改进后的解法
 
@@ -73,4 +73,3 @@ const obj = { selector: { to: { toutiao: "FE Coder"} }, target: [1, 2, { name: '
 console.log(get(obj, 'selector.to.toutiao', 'target[0]', 'target[2].name'));
 // => [ 'FE Coder', 1, 'byted']
 ```
-

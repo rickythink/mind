@@ -21,9 +21,9 @@ const Home = () => import('path路径')
  }
 ```
 
-## require.context\(\)
+## require.context()
 
-> require.context\(directory,useSubdirectories,regExp\)
+> require.context(directory,useSubdirectories,regExp)
 
 > * directory：说明需要检索的目录
 > * useSubdirectories：是否检索子目录
@@ -50,4 +50,3 @@ files.keys().forEach(key => {
 })
 components: modules
 ```
-

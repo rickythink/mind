@@ -33,9 +33,9 @@ let arr = [1, 2, 3]
 
 * 对数据的删除和插入不是很友好
 
-**查找：** 根据下标随机访问的时间复杂度为 O\(1\)；
+**查找：** 根据下标随机访问的时间复杂度为 O(1)；
 
-**插入或删除：** 时间复杂度为 O\(n\)；
+**插入或删除：** 时间复杂度为 O(n)；
 
 在 JavaScript 中的数组几乎是万能的，它不光可以作为一个普通的数组使用，可以作为栈或队列使用。
 
@@ -146,7 +146,7 @@ class EXPORT_TEMPLATE_DECLARE(V8_EXPORT_PRIVATE) Dictionary
 
 当处于以下情况时，快数组会被转变为慢数组：
 
-* 当加入的索引值 index 比当前容量 capacity 差值大于等于 1024 时（index - capacity &gt;= 1024）
+* 当加入的索引值 index 比当前容量 capacity 差值大于等于 1024 时（index - capacity >= 1024）
 * 快数组新容量是扩容后的容量 3 倍之多时
 
 例如：向快数组里增加一个大索引同类型值
@@ -251,4 +251,3 @@ JavaScript 中， `JSArray` 继承自 `JSObject` ，或者说它就是一个特�
 ## 参考
 
 1. [https://juejin.im/post/5e84ae366fb9a03c840d564f](https://juejin.im/post/5e84ae366fb9a03c840d564f)
-

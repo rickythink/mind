@@ -2,9 +2,9 @@
 
 WebSocket 协议在2008年诞生，2011年成为国际标准。所有浏览器都已经支持了。
 
-它的最大特点就是，服务器可以主动向客户端推送信息，客户端也可以主动向服务器发送信息，是真正的双向平等对话，属于[服务器推送技术](https://en.wikipedia.org/wiki/Push_technology)的一种。
+它的最大特点就是，服务器可以主动向客户端推送信息，客户端也可以主动向服务器发送信息，是真正的双向平等对话，属于[服务器推送技术](https://en.wikipedia.org/wiki/Push\_technology)的一种。
 
-![](../../.gitbook/assets/image%20%28170%29.png)
+![](<../../.gitbook/assets/image (166).png>)
 
 特点包括：
 
@@ -15,11 +15,11 @@ WebSocket 协议在2008年诞生，2011年成为国际标准。所有浏览器�
 5. 没有同源限制，客户端可以与任意服务器通信。
 6. 协议标识符是`ws`（如果加密，则为`wss`），服务器网址就是 URL。
 
-```text
+```
 ws://example.com:80/some/path
 ```
 
-![](../../.gitbook/assets/image%20%28180%29.png)
+![](<../../.gitbook/assets/image (167).png>)
 
 ## 示例
 
@@ -44,4 +44,3 @@ ws.onclose = function(evt) {
 ## websocket 连接建立
 
 建立TCP连接之后，开始建立WebSocket连接，上文说过WebSocket连接只需一次成功握手即可建立。
-

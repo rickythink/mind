@@ -8,13 +8,13 @@
 
 js中有几种数据类型：
 
-* null\(空\)
-* undefined\(未声明\)
-* number\(数字\)
-* string\(字符串\)
-* object\(对象\)
-* boolean\(布尔值\)
-* symbol\(符号，es6新增\)
+* null(空)
+* undefined(未声明)
+* number(数字)
+* string(字符串)
+* object(对象)
+* boolean(布尔值)
+* symbol(符号，es6新增)
 
 {% hint style="info" %}
 js中只有这7种数据类型，其他的都是对象的子类型（数组不是js的数据类型）
@@ -33,20 +33,20 @@ typeof {a : 1};    // "object";
 
 以上都是可靠正确而且易于理解的，接下来我们一起看几个正确的，但似乎不是我们期望的结果的例子：
 
-```text
+```
 typeof null === "object"; // true
 typeof function () {} === "function"; // true
 ```
 
-![](../../.gitbook/assets/image%20%2858%29.png)
+![](<../../.gitbook/assets/image (6).png>)
 
 ### 为什么 typeof null === 'object'
 
 在 JavaScript 最初的实现中，JavaScript 中的值是由一个表示类型的标签和实际数据值表示的。对象的类型标签是 0。由于 null 代表的是空指针（大多数平台下值为 0x00），因此，null的类型标签也成为了 0，typeof null就错误的返回了"object"。
 
-### 为什么 typeof function\(\){} === 'function'
+### 为什么 typeof function(){} === 'function'
 
-函数是对象的子类型，按道理来说"typeof function \(\) {} === 'object'"才对，但是结果却是"function"。这是因为，**函数是一个“特殊的对象”，它特殊就特殊在它内部有一个属性\[\[call\]\]，这个属性使它变成一个“可调用的对象”。**而根据规范，实现了\[\[call\]\]属性的对象，typeof的结果是“function”。也因为这个，new出来的function对象也是返回function
+函数是对象的子类型，按道理来说"typeof function () {} === 'object'"才对，但是结果却是"function"。这是因为，**函数是一个“特殊的对象”，它特殊就特殊在它内部有一个属性\[\[call]]，这个属性使它变成一个“可调用的对象”。**而根据规范，实现了\[\[call]]属性的对象，typeof的结果是“function”。也因为这个，new出来的function对象也是返回function
 
 ```javascript
 typeof new Function("console.log(123);") === 'function'; // true
@@ -77,12 +77,12 @@ function checkType() {
 checkType(number, string, boolean, und, nul, obj, array, date, error, reg, func)
 ```
 
-![](../../.gitbook/assets/image%20%28156%29.png)
+![](<../../.gitbook/assets/image (7).png>)
 
 ## 实现
 
 {% hint style="info" %}
-在 IE6 中，null 和 undefined 会被 Object.prototype.toString 识别成 \[object Object\]！
+在 IE6 中，null 和 undefined 会被 Object.prototype.toString 识别成 \[object Object]！
 {% endhint %}
 
 ```javascript
@@ -114,5 +114,4 @@ function type(obj) {
 
 ### 判断是否为数组？
 
- `Array.isArray` 原生方法
-
+&#x20;`Array.isArray` 原生方法

@@ -25,5 +25,3 @@ var constantize = (obj) => {
 };
 ```
 
-
-

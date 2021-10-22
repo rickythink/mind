@@ -12,7 +12,6 @@
 
 DNS prefetching 允许浏览器在用户浏览页面时在后台运行 DNS 的解析。如此一来，DNS 的解析在用户点击一个链接时已经完成，所以可以减少延迟。
 
-```text
+```
 <link rel=“dns-prefetch” href="//www.google-analytics.com">
 ```
-

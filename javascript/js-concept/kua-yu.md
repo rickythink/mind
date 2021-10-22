@@ -1,8 +1,8 @@
 # 跨域
 
-##  域
+## &#x20;域
 
-![](../../.gitbook/assets/image%20%2867%29.png)
+![](<../../.gitbook/assets/image (33).png>)
 
 ## 跨域
 
@@ -10,7 +10,7 @@
 
 所谓同源是指，协议，域名，端口均相同。
 
-![](../../.gitbook/assets/image%20%28183%29.png)
+![](<../../.gitbook/assets/image (34).png>)
 
 ## JSONP
 
@@ -116,7 +116,7 @@ JSONP只支持`GET`请求，CORS支持所有类型的HTTP请求。JSONP的优势
 
 ## location.hash
 
-在 url 中，`http://www.baidu.com#helloworld` 的 "\#helloworld" 就是 location.hash，改变 hash 值不会导致页面刷新，所以可以利用 hash 值来进行数据的传递，当然数据量是有限的。
+在 url 中，`http://www.baidu.com#helloworld` 的 "#helloworld" 就是 location.hash，改变 hash 值不会导致页面刷新，所以可以利用 hash 值来进行数据的传递，当然数据量是有限的。
 
 假设 `localhost:8080` 下有文件 index.html 要和 `localhost:8081` 下的 data.html 传递消息，index.html 首先创建一个隐藏的 iframe，iframe 的 src 指向 `localhost:8081/data.html`，这时的 hash 值就可以做参数传递。
 
@@ -226,13 +226,13 @@ window.location = "http://www.baidu.com"
 </script>
 ```
 
-`localhost:8080index.html` 在请求数据端 `localhost:8081/data.html` 时，我们可以在该页面新建一个 iframe，该 iframe 的 src 指向数据端地址\(利用 iframe 标签的跨域能力\)，数据端文件设置好 window.name 的值。
+`localhost:8080index.html` 在请求数据端 `localhost:8081/data.html` 时，我们可以在该页面新建一个 iframe，该 iframe 的 src 指向数据端地址(利用 iframe 标签的跨域能力)，数据端文件设置好 window.name 的值。
 
 但是由于 index.html 页面与该页面 iframe 的 src 如果不同源的话，则无法操作 iframe 里的任何东西，所以就取不到 iframe 的 name 值，所以我们需要在 data.html 加载完后重新换个 src 去指向一个同源的 html 文件，或者设置成 'about:blank;' 都行，这时候我只要在 index.html 相同目录下新建一个 proxy.html 的空页面即可。
 
 ## postMessage
 
-postMessage 是 HTML5 新增加的一项功能，跨文档消息传输\(Cross Document Messaging\)，目前：Chrome 2.0+、Internet Explorer 8.0+, Firefox 3.0+, Opera 9.6+, 和 Safari 4.0+ 都支持这项功能，使用起来也特别简单。
+postMessage 是 HTML5 新增加的一项功能，跨文档消息传输(Cross Document Messaging)，目前：Chrome 2.0+、Internet Explorer 8.0+, Firefox 3.0+, Opera 9.6+, 和 Safari 4.0+ 都支持这项功能，使用起来也特别简单。
 
 前端逻辑：
 
@@ -272,11 +272,11 @@ postMessage 是 HTML5 新增加的一项功能，跨文档消息传输\(Cross Do
 
 对于主域相同而子域不同的情况下，可以通过设置 document.domain 的办法来解决，具体做法是可以在 `http://www.example.com/index.html` 和 `http://sub.example.com/data.html` 两个文件分别加上 `document.domain = "example.com"` 然后通过 index.html 文件创建一个 iframe，去控制 iframe 的 window，从而进行交互，当然这种方法只能解决主域相同而二级域名不同的情况，如果你异想天开的把 script.example.com 的 domain 设为 qq.com 显然是没用的，那么如何测试呢？
 
-测试的方式稍微复杂点，需要安装 nginx 做域名映射，如果你电脑没有安装 nginx，请先去安装一下: [nginx](http://nginx.org/)
+测试的方式稍微复杂点，需要安装 nginx 做域名映射，如果你电脑没有安装 nginx，请先去安装一下: [nginx](http://nginx.org)
 
 前端逻辑：
 
-```text
+```
 // domain/client/index.html 对应 sub1.example.com/index.html
 <script>
 	document.domain = 'example.com';
@@ -293,7 +293,7 @@ postMessage 是 HTML5 新增加的一项功能，跨文档消息传输\(Cross Do
 
 数据端逻辑：
 
-```text
+```
 // domain/server/data 对应 sub2.example.com/data.html
 <script>
 	document.domain = 'example.com';
@@ -303,14 +303,14 @@ postMessage 是 HTML5 新增加的一项功能，跨文档消息传输\(Cross Do
 
 打开操作系统下的 hosts 文件：mac 是位于 /etc/hosts 文件，并添加：
 
-```text
+```
 127.0.0.1 sub1.example.com
 127.0.0.1 sub2.example.com
 ```
 
 之后打开 nginx 的配置文件：/usr/local/etc/nginx/nginx.conf，并在 http 模块里添加，记得输入 nginx 启动 nginx 服务：
 
-```text
+```
 /usr/local/etc/nginx/nginx.conf
 http {
     // ...
@@ -335,4 +335,3 @@ http {
 相当于是讲 `sub1.example.com` 和 `sub2.example.com` 这些域名地址指向本地 `127.0.0.1:80`，然后用 nginx 做反向代理分别映射到 8080 和 8081 端口。
 
 这样访问 `sub1(2).example.com` 等于访问 `127.0.0.1:8080(1)`
-

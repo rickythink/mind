@@ -26,5 +26,3 @@ function getArrayLength<T>(arg: Array<T>) {
 }
 ```
 
-
-

@@ -40,4 +40,3 @@ HTTP 协议在请求（request）的头信息里面，设计了一个`Referer`�
 ```markup
 <a  href="/exit.php?url=http%3A%2F%2Fexample.com">Example.com</a>
 ```
-

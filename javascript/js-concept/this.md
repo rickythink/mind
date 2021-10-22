@@ -65,11 +65,11 @@ o.foo(); // 3
 (p.foo = o.foo)(); // 2
 ```
 
-赋值表达式 p.foo = o.foo 的 返回值 是目标函数的引用， 因此调用位置是 foo\(\) 而不是 p.foo\(\) 或者 o.foo\(\) 。
+赋值表达式 p.foo = o.foo 的 返回值 是目标函数的引用， 因此调用位置是 foo() 而不是 p.foo() 或者 o.foo() 。
 
 ## Method Invocation Pattern
 
-诸如`foo.bar()`的调用形式被称为Method Invocation Pattern，注意其特点是被调用的函数作为一个对象的属性出现，必然会有“.”或者“\[\]”这样的关键符号。在这种模式下，bar函数体中的this永远为“.”或“\[”前的那个对象，如上例中就一定是foo对象。
+诸如`foo.bar()`的调用形式被称为Method Invocation Pattern，注意其特点是被调用的函数作为一个对象的属性出现，必然会有“.”或者“\[]”这样的关键符号。在这种模式下，bar函数体中的this永远为“.”或“\[”前的那个对象，如上例中就一定是foo对象。
 
 ```javascript
 function foo(){
@@ -108,7 +108,7 @@ obj1.obj2.foo(); // 42
 
 ## Constructor Pattern
 
-`new foo()`这种形式的调用被称为Constructor Pattern，其关键字`new`就很能说明问题，非常容易识别。 在这种模式下，foo函数内部的this永远是new foo\(\)返回的对象。
+`new foo()`这种形式的调用被称为Constructor Pattern，其关键字`new`就很能说明问题，非常容易识别。 在这种模式下，foo函数内部的this永远是new foo()返回的对象。
 
 ```javascript
 function foo(a) {
@@ -153,7 +153,7 @@ console.log(b); // 5
 
 ## 严格模式
 
-如果使用严格模式（ strict mode ），那么全局对象将无法使用默认绑定，因此 全局this 会绑定 到 undefined 
+如果使用严格模式（ strict mode ），那么全局对象将无法使用默认绑定，因此 全局this 会绑定 到 undefined&#x20;
 
 ## 优先级
 
@@ -162,7 +162,7 @@ console.log(b); // 5
 3. **Method Invocation Pattern**
 4. **Function Invocation Pattern**
 
-### Apply Pattern &gt; Method Invocation Pattern
+### Apply Pattern > Method Invocation Pattern
 
 ```javascript
 function foo() { console.log( this .a ); }
@@ -178,7 +178,7 @@ obj1.foo.call( obj2 ); // 3
 obj2.foo.call( obj1 ); // 2
 ```
 
-### Constructor Pattern &gt; Apply Pattern
+### Constructor Pattern > Apply Pattern
 
 ```javascript
 function foo(something) { this .a = something; }
@@ -204,23 +204,23 @@ console.log( bar.a ); // 4
 
 1.函数是否在 new 中调用（ new 绑定）？如果是的话 this 绑定的是新创建的对象。
 
-var bar = new foo\(\)
+var bar = new foo()
 
 2.函数是否通过call, apply指定的对象?如果是的话，this 绑定的是指定的对象
 
-var bar = foo.call\(obj2\)
+var bar = foo.call(obj2)
 
 3.函数是否在某个上下文对象中调用？如果是的话， this 绑定的是那个上 下文对象。
 
-var bar = obj1.foo\(\)
+var bar = obj1.foo()
 
 4.如果都不是的话，使用默认绑定。如果在严格模式下，就绑定到 undefined ，否则绑定到 全局对象。
 
-var bar = foo\(\)
+var bar = foo()
 
 ### 记忆
 
-非箭头函数的调用顺序是 NCMD = new &gt; call &gt; method &gt; default
+非箭头函数的调用顺序是 NCMD = new > call > method > default
 
 ## 箭头函数的this
 
@@ -297,4 +297,3 @@ Foo.print() // 1
 Foo.print.call({x:2}) // 2
 Foo.print.call({x:3}) // 3
 ```
-

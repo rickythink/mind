@@ -15,7 +15,7 @@ CSRF（Cross-site request forgery）跨站请求伪造：攻击者诱导受害�
 
 > 实例:
 >
-> 坏蛋 想到使用 CSRF 的攻击方式，他先自己做一个网站，在网站中放入如下代码： src=”[http://bank.example/withdraw?account=bob&amount=1000000&for=Mallory](http://bank.example/withdraw?account=bob&amount=1000000&for=Mallory) ”，并且通过广告等诱使 受害者 来访问他的网站。当 受害者 访问该网站时，上述 url 就会从 受害者 的浏览器发向银行，而这个请求会附带 受害者 浏览器中的 cookie 一起发向银行服务器。大多数情况下，该请求会失败，因为他要求 受害者 的认证信息。但是，如果 受害者 当时恰巧刚访问他的银行后不久，他的浏览器与银行网站之间的 session 尚未过期，浏览器的 cookie 之中含有 受害者 的认证信息。这时，悲剧发生了，这个 url 请求就会得到响应，钱将从 受害者 的账号转移到 坏蛋 的账号，而 受害者 当时毫不知情。
+> 坏蛋 想到使用 CSRF 的攻击方式，他先自己做一个网站，在网站中放入如下代码： src=”[http://bank.example/withdraw?account=bob\&amount=1000000\&for=Mallory](http://bank.example/withdraw?account=bob\&amount=1000000\&for=Mallory) ”，并且通过广告等诱使 受害者 来访问他的网站。当 受害者 访问该网站时，上述 url 就会从 受害者 的浏览器发向银行，而这个请求会附带 受害者 浏览器中的 cookie 一起发向银行服务器。大多数情况下，该请求会失败，因为他要求 受害者 的认证信息。但是，如果 受害者 当时恰巧刚访问他的银行后不久，他的浏览器与银行网站之间的 session 尚未过期，浏览器的 cookie 之中含有 受害者 的认证信息。这时，悲剧发生了，这个 url 请求就会得到响应，钱将从 受害者 的账号转移到 坏蛋 的账号，而 受害者 当时毫不知情。
 
 ## 类型
 
@@ -89,7 +89,7 @@ CSRF 攻击是黑客借助受害者的 cookie 骗取服务器的信任，但是�
 
 2.页面提交的请求携带这个Token
 
-对于GET请求，Token将附在请求地址之后，这样URL 就变成 [http://url?csrftoken=tokenvalue。](http://url?csrftoken=tokenvalue%E3%80%82) 而对于 POST 请求来说，要在 form 的最后加上：
+对于GET请求，Token将附在请求地址之后，这样URL 就变成 [http://url?csrftoken=tokenvalue。](http://url/?csrftoken=tokenvalue%E3%80%82) 而对于 POST 请求来说，要在 form 的最后加上：
 
 ```markup
  <input type=”hidden” name=”csrftoken” value=”tokenvalue”/>
@@ -119,7 +119,7 @@ Token是一个比较有效的CSRF防护方法，只要页面没有XSS漏洞泄�
 
 > 为什么很多银行等网站会要求已经登录的用户在转账时再次输入密码，现在是不是有一定道理了？
 
-  
+\
 我知道但是没怎么用的
 
 * 双重cookie
@@ -131,12 +131,10 @@ Token是一个比较有效的CSRF防护方法，只要页面没有XSS漏洞泄�
 * CSRF主动防御措施：Token验证 或者 双重Cookie验证 以及配合Samesite Cookie。
 * 保证页面的幂等性，后端接口不要在GET页面中做用户操作。
 
-{% embed url="https://juejin.im/post/5bc009996fb9a05d0a055192\#heading-8" %}
+{% embed url="https://juejin.im/post/5bc009996fb9a05d0a055192#heading-8" %}
 
 
 
-  
-
-
+\
 
 

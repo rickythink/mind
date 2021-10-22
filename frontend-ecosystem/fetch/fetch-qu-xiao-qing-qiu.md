@@ -29,4 +29,3 @@ function abortFetching() {
     controller.abort()
 }
 ```
-

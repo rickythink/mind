@@ -50,4 +50,3 @@ let oops = getProperty(x, "wargarbl"); // 错误！"wargarbl"不存在"foo" | "b
 
 setProperty(x, "foo", "string"); // 错误！, 类型是number而非string
 ```
-

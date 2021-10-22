@@ -42,5 +42,3 @@ SingleDog.getInstance = (function() {
 })()
 ```
 
-
-

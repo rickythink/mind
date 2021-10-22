@@ -28,4 +28,3 @@ var isUnaryTag = makeMap(
 // 查找 area 标签是否存在 上面保存过的 字符串中
 isUnaryTag('area')
 ```
-

@@ -22,7 +22,7 @@ secure选项用来设置cookie只在确保安全的请求中才会发送。当�
 
 HTML5新方法，不过**IE8及以上**浏览器都兼容。
 
-#### 特点 <a id="item-3-13"></a>
+#### 特点 <a href="item-3-13" id="item-3-13"></a>
 
 * 生命周期：持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。
 * 存储的信息在同一域中是共享的。
@@ -36,7 +36,7 @@ HTML5新方法，不过**IE8及以上**浏览器都兼容。
 
 其实跟localStorage差不多，也是本地存储，会话本地存储
 
-#### 特点： <a id="item-4-18"></a>
+#### 特点： <a href="item-4-18" id="item-4-18"></a>
 
 * 用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。也就是说只要这个浏览器窗口没有关闭，即使刷新页面或进入同源另一页面，数据仍然存在。关闭窗口后，sessionStorage即被销毁，或者在新窗口打开同源的另一个页面，sessionStorage也是没有的。
 
@@ -60,7 +60,7 @@ HTML5新方法，不过**IE8及以上**浏览器都兼容。
 
 ## indexedDB
 
-来自MDN的解释： indexedDB 是一种低级API，用于客户端存储大量结构化数据\(包括, 文件/ blobs\)。该API使用索引来实现对该数据的高性能搜索。
+来自MDN的解释： indexedDB 是一种低级API，用于客户端存储大量结构化数据(包括, 文件/ blobs)。该API使用索引来实现对该数据的高性能搜索。
 
 `indexedDB` 是一个基于JavaScript的面向对象的数据库。 `IndexedDB`允许你存储和检索用键索引的对象;
 
@@ -81,8 +81,6 @@ Application Cache 已经开始慢慢被弃用，被 Service Worker 取代。
 ## cacheStorage
 
 cacheStorage是在ServiceWorker规范中定义的，可用于保存每个ServiceWorker声明的Cache对象，是未来可能用来代替Application Cache的离线方案。
-
-
 
 
 

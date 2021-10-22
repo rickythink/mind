@@ -9,19 +9,19 @@
 5. 浏览器解析渲染
 6. 结束
 
-![](../../.gitbook/assets/image%20%2837%29.png)
+![](<../../.gitbook/assets/image (80).png>)
 
 ## 具体
 
 ### DNS查询
 
-![](../../.gitbook/assets/image%20%28191%29.png)
+![](<../../.gitbook/assets/image (78).png>)
 
-网址的解析是一个从右向左的过程: com -&gt; google.com -&gt; www.google.com。但是你是否发现少了点什么，根域名服务器的解析过程呢？事实上，真正的网址是www.google.com.，并不是我多打了一个.，这个.对应的就是根域名服务器，默认情况下所有的网址的最后一位都是.，既然是默认情况下，为了方便用户，通常都会省略，浏览器在请求DNS的时候会自动加上，所有网址真正的解析过程为: . -&gt; .com -&gt; google.com. -&gt; www.google.com.。
+网址的解析是一个从右向左的过程: com -> google.com -> www.google.com。但是你是否发现少了点什么，根域名服务器的解析过程呢？事实上，真正的网址是www.google.com.，并不是我多打了一个.，这个.对应的就是根域名服务器，默认情况下所有的网址的最后一位都是.，既然是默认情况下，为了方便用户，通常都会省略，浏览器在请求DNS的时候会自动加上，所有网址真正的解析过程为: . -> .com -> google.com. -> www.google.com.。
 
 #### DNS缓存
 
-DNS存在着多级缓存，从离浏览器的距离排序的话，有以下几种: 
+DNS存在着多级缓存，从离浏览器的距离排序的话，有以下几种:&#x20;
 
 * 浏览器缓存
 * 系统缓存
@@ -33,7 +33,7 @@ DNS存在着多级缓存，从离浏览器的距离排序的话，有以下几�
 
 #### DNS负载均衡
 
-DNS可以返回一个合适的机器的IP给用户，例如可以根据每台机器的负载量，该机器离用户地理位置的距离等等，这种过程就是DNS负载均衡，又叫做DNS重定向。大家耳熟能详的CDN\(Content Delivery Network\)就是利用DNS的重定向技术，DNS服务器会返回一个跟用户最接近的点的IP地址给用户，CDN节点的服务器负责响应用户的请求。
+DNS可以返回一个合适的机器的IP给用户，例如可以根据每台机器的负载量，该机器离用户地理位置的距离等等，这种过程就是DNS负载均衡，又叫做DNS重定向。大家耳熟能详的CDN(Content Delivery Network)就是利用DNS的重定向技术，DNS服务器会返回一个跟用户最接近的点的IP地址给用户，CDN节点的服务器负责响应用户的请求。
 
 ### TCP连接
 
@@ -59,9 +59,9 @@ DNS可以返回一个合适的机器的IP给用户，例如可以根据每台机
 
 其中请求头与响应头有
 
-* **Last-Modify\(响应头\) + If-Modified-Since（请求头）**
+* **Last-Modify(响应头) + If-Modified-Since（请求头）**
 * **ETag（响应头） + If-None-Match（请求头）**
-* **Cache-Control/Expires\(响应头\)**
+* **Cache-Control/Expires(响应头)**
 
 ### **页面渲染**
 
@@ -82,7 +82,5 @@ DNS可以返回一个合适的机器的IP给用户，例如可以根据每台机
 7. 渲染页面，构建DOM树。
 8. 关闭TCP连接（四次挥手）。
 
-![](../../.gitbook/assets/image%20%28192%29.png)
-
-
+![](<../../.gitbook/assets/image (106).png>)
 

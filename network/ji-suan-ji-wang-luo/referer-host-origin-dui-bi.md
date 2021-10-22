@@ -19,7 +19,7 @@ Host 请求头指明了请求服务器的域名/IP地址和端口号。
 * 来源页面采用的协议为表示本地文件的 "file" 或者 "data" URI；
 * 当前请求页面采用的是非安全协议，而来源页面采用的是安全协议（HTTPS）；
 * 直接输入网址或通过浏览器书签访问；
-* 使用 JavaScript 的 Location.href 或者是 Location.replace\(\)；
+* 使用 JavaScript 的 Location.href 或者是 Location.replace()；
 * 使用 html5 中 noreferrer
 
 ## origin
@@ -30,6 +30,4 @@ Host 请求头指明了请求服务器的域名/IP地址和端口号。
 
 
 
-  
-
-
+\

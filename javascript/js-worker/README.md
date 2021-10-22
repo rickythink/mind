@@ -32,7 +32,7 @@ Worker 线程无法读取本地文件，即不能打开本机的文件系统（`
 
 主线程与 Worker 之间的通信内容，可以是文本，也可以是对象。需要注意的是，**这种通信是拷贝关系，即是传值而不是传址**，Worker 对通信内容的修改，不会影响到主线程。
 
-主线程与 Worker 之间也可以交换二进制数据，比如 File、Blob、ArrayBuffer 等类型，也可以在线程之间发送。  
+主线程与 Worker 之间也可以交换二进制数据，比如 File、Blob、ArrayBuffer 等类型，也可以在线程之间发送。\
 
 
 ```javascript
@@ -103,4 +103,3 @@ webpack有专门支持读取worker的loader： webpack-loader
 具体使用见文档：[https://webpack.docschina.org/loaders/worker-loader/](https://webpack.docschina.org/loaders/worker-loader/)
 
 为了在typescript中使用，参见issue: [https://github.com/webpack-contrib/worker-loader/issues/94](https://github.com/webpack-contrib/worker-loader/issues/94)
-

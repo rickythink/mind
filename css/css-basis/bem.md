@@ -5,7 +5,7 @@ BEM = Block + Element + Modify
 {% hint style="info" %}
 在选择器中，由以下三种符号来表示扩展的关系：
 
-```text
+```
 -   中划线 ：仅作为连字符使用，表示某个块或者某个子元素的多单词之间的连接记号。
 __  双下划线：双下划线用来连接块和块的子元素
 _   单下划线：单下划线用来描述一个块或者块的子元素的一种状态
@@ -20,7 +20,7 @@ type-block__element_modifier
 
 在大多数情况下，任何独立的页面元素（或复杂或简单）都可以被视作一个块。它的HTML容器会有一个唯一的CSS类名，也就是这个块的名字。
 
-针对块的CSS类名会加一些前缀（ `ui-`），这些前缀在CSS中有类似 [命名空间](https://github.com/Tencent/tmt-workflow/wiki/%E2%92%9B-%5B%E8%A7%84%E8%8C%83%5D--CSS-BEM-%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83) 的作用。
+针对块的CSS类名会加一些前缀（ `ui-`），这些前缀在CSS中有类似 [命名空间](https://github.com/Tencent/tmt-workflow/wiki/%E2%92%9B-\[%E8%A7%84%E8%8C%83]--CSS-BEM-%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83) 的作用。
 
 一个块的正式（实际上是半正式的）定义有下面三个基本原则：
 
@@ -69,6 +69,4 @@ type-block__element_modifier
 .list__item{}
 .list__item_active{}
 ```
-
-
 

@@ -29,7 +29,7 @@ if (Array.isArray(value)) {
 其中
 
 {% code title="hasProto" %}
-```text
+```
 export const hasProto = '__proto__' in {}
 ```
 {% endcode %}
@@ -50,7 +50,7 @@ function copyAugment (target: Object, src: Object, keys: Array<string>) {
 }
 ```
 
-根据根据能力检测结果选择不同的数组劫持方法，如果浏览器支持隐式原型，则调用 `protoAugment` 函数作为数组劫持的方法\( 原型链继承），反之则使用 `copyAugment` .`copyAugment` 函数就很清晰了，将所有变异数组中的方法，直接定义在数组实例本身，相当于变相的实现了数组的劫持。
+根据根据能力检测结果选择不同的数组劫持方法，如果浏览器支持隐式原型，则调用 `protoAugment` 函数作为数组劫持的方法( 原型链继承），反之则使用 `copyAugment` .`copyAugment` 函数就很清晰了，将所有变异数组中的方法，直接定义在数组实例本身，相当于变相的实现了数组的劫持。
 
 ## 功能拓展
 
@@ -110,4 +110,3 @@ methodsToPatch.forEach(function (method) {
 #### 总结
 
 `Vue` 的变异数组从本质上是来说是一种**装饰器模式**，通过学习它的原理，我们在实际工作中可以轻松处理这类保持原有功能不变的前提下对其进行功能拓展的需求。
-

@@ -103,4 +103,3 @@ function handleFetchQueue(urls, max, callback) {
   handleRequest(urls[i])
 }
 ```
-

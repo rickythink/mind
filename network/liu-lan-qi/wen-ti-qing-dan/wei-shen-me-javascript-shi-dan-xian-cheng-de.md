@@ -24,30 +24,28 @@ Chrome 为例,它由多个进程组成,每个进程都有自己核心的职责,�
 
 每个进程中又包含多个线程,一个进程内的多个线程也会协同工作,配合完成所在进程的职责。
 
-Chrome 采用多进程架构,其顶层存在一个 Browser process 用以协调浏览器的其它进程。  
+Chrome 采用多进程架构,其顶层存在一个 Browser process 用以协调浏览器的其它进程。\
 
 
-![](../../../.gitbook/assets/image%20%2810%29.png)
+![](<../../../.gitbook/assets/image (145).png>)
 
 如上图所示有
 
 1. Network Process
-2. Browser Process
+2.  Browser Process
 
-   负责浏览器界面的显示与交互。各个页面的管理,创建和销毁其他进程。网络的资源管理、下载等。
-
+    负责浏览器界面的显示与交互。各个页面的管理,创建和销毁其他进程。网络的资源管理、下载等。
 3. UI Process
-4. GPU Process
+4.  GPU Process
 
-   用于3D绘制
-
+    用于3D绘制
 5. Device Process
 6. Plugin Process
-7. Renderer Process
+7.  Renderer Process
 
-   浏览器渲染进程或浏览器内核,内部是多线程的。主要负责页面渲染,脚本执行,事件处理等
+    浏览器渲染进程或浏览器内核,内部是多线程的。主要负责页面渲染,脚本执行,事件处理等
 
-![](../../../.gitbook/assets/image%20%28194%29.png)
+![](<../../../.gitbook/assets/image (146).png>)
 
 ## Renderer Process 渲染进程
 
@@ -55,7 +53,7 @@ Chrome 采用多进程架构,其顶层存在一个 Browser process 用以协调�
 
 1. GUI 渲染线程
    * 负责渲染浏览器界面,解析 HTML,CSS,构建 DOM 树和 RenderObject 树,布局和绘制等
-   * 当界面需要重绘（Repaint）或由于某种操作引发回流\(reflow\)时,该线程就会执行
+   * 当界面需要重绘（Repaint）或由于某种操作引发回流(reflow)时,该线程就会执行
    * **GUI 渲染线程与 JS 引擎线程是互斥的**,当 JS 引擎执行时 GUI 线程会被挂起（相当于被冻结了）,GUI 更新会被保存在一个队列中等到 JS 引擎空闲时立即被执行
 2. JS 引擎线程
    * JS 引擎线程负责解析 Javascript 脚本,运行代码
@@ -70,6 +68,4 @@ Chrome 采用多进程架构,其顶层存在一个 Browser process 用以协调�
    1. setInterval 与 setTimeout 所在线程
 5. 异步 http 请求线程
    1. XMLHttpRequest 在连接后是通过浏览器新开一个线程请求
-
-
 

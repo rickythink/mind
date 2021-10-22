@@ -16,6 +16,4 @@ Promise.reject = function (reason) {
 };
 ```
 
-  
-
-
+\

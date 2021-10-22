@@ -6,7 +6,7 @@
 
 假设有两个同级文件夹 `react` and `react-relay` ，要在`react-relay` 中使用`react` 包
 
-```text
+```
 $ cd react
 $ yarn link
 yarn link vx.x.x
@@ -14,7 +14,7 @@ success Registered "react".
 info You can now run `yarn link "react"` in the projects where you want to use this module and it will be used instead.
 ```
 
-```text
+```
 $ cd ../react-relay
 $ yarn link react
 yarn link vx.x.x
@@ -25,7 +25,5 @@ success Registered "react".
 
 链接注册在 `~/.config/yarn/link`.
 
-取消这个任务，则分别在两个文件夹使用 `yarn unlink` 或者 `yarn unlink [package]`. 
-
-
+取消这个任务，则分别在两个文件夹使用 `yarn unlink` 或者 `yarn unlink [package]`.&#x20;
 

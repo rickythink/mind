@@ -24,5 +24,3 @@
 !![] === true  // an (empty) array is truthy; PHP programmers beware!
 ```
 
-
-

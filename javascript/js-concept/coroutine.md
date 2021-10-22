@@ -33,10 +33,10 @@ console.log(gen.next().value)
 console.log('main 4')
 ```
 
-执行过程如下图所示，可以重点关注协程之间的切换  
+执行过程如下图所示，可以重点关注协程之间的切换\
 
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/366ae82a000d4b158397832df8016407~tplv-k3u1fbpfcp-watermark.image)
+![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/366ae82a000d4b158397832df8016407\~tplv-k3u1fbpfcp-watermark.image)
 
 从图中可以看出来协程的四点规则：
 
@@ -50,8 +50,6 @@ console.log('main 4')
 * `gen` 协程和父协程是在主线程上交互执行的，并不是并发执行的，它们之前的切换是 **通过 `yield` 和 `gen.next` 来配合完成** 的。
 * 当在 `gen` 协程中调用了 `yield` 方法时，JS 引擎会保存 `gen` 协程当前的调用栈信息，并恢复父协程的调用栈信息。同样，当在父协程中执行 `gen.next` 时，JS 引擎会保存父协程的调用栈信息，并恢复 `gen` 协程的调用栈信息。
 
-![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3f53f90242af45e1a639e0cb19f0b4db~tplv-k3u1fbpfcp-watermark.image)
+![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3f53f90242af45e1a639e0cb19f0b4db\~tplv-k3u1fbpfcp-watermark.image)
 
-其实在 JS 中，`Generator` 生成器就是协程的一种实现方式。  
-
-
+其实在 JS 中，`Generator` 生成器就是协程的一种实现方式。\

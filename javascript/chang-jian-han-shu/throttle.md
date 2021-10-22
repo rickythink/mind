@@ -27,4 +27,3 @@ function throttle(fn, wait) {
     }
 }
 ```
-

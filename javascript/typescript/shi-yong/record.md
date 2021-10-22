@@ -16,4 +16,3 @@ const cars: CarList = {
     MercedesBenz: { age: 133 },
 }
 ```
-

@@ -1,4 +1,4 @@
-# Object.create\(null\)与{}
+# Object.create(null)与{}
 
 ## Object.create实现
 
@@ -10,7 +10,7 @@ Object.create = funtion(o){
 }
 ```
 
-## Object.create\(null\)输出
+## Object.create(null)输出
 
 ```javascript
 let a = Object.create(null)
@@ -54,4 +54,3 @@ var a=Object.create(null)
 //你可以直接使用下面这种方式判断，因为存在的属性，都将定义在a上面，除非手动指定原型：
 if(a.toString){}
 ```
-

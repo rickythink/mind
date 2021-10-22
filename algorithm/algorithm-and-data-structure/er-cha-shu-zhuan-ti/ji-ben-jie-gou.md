@@ -1,6 +1,6 @@
 # 基本结构
 
-二叉树的基本结构包括`插入` ,`遍历` 和`深度` 
+二叉树的基本结构包括`插入` ,`遍历` 和`深度`&#x20;
 
 ```javascript
 function Node(data, left, right) {
@@ -97,4 +97,3 @@ Tree.prototype = {
     }
 }
 ```
-

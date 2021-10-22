@@ -34,4 +34,3 @@
     transform: translate(-50%, -50%);
 }
 ```
-

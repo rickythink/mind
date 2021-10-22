@@ -18,7 +18,7 @@ var maxInNumbers = Math.max.apply(Math, numbers),   //458
     maxInNumbers = Math.max.call(Math,5, 458 , 120 , -215); //458
 ```
 
- 举例 面试题 定义一个 log 方法，让它可以代理 console.log 方法
+&#x20;举例 面试题 定义一个 log 方法，让它可以代理 console.log 方法
 
 ```javascript
 function log(){
@@ -28,7 +28,7 @@ log(1);    //1
 log(1,2);    //1 2
 ```
 
-接下来的要求是给每一个 log 消息添加一个"\(app\)"的前辍
+接下来的要求是给每一个 log 消息添加一个"(app)"的前辍
 
 ```javascript
 function log(){
@@ -41,7 +41,7 @@ function log(){
 
 ## Bind
 
-bind的定义是，bind\(\)方法会创建一个新函数，称为绑定函数，当调用这个绑定函数时，绑定函数会以创建它时传入 bind\(\)方法的第一个参数作为 this，传入 bind\(\) 方法的第二个以及以后的参数加上绑定函数运行时本身的参数按照顺序作为原函数的参数来调用原函数。
+bind的定义是，bind()方法会创建一个新函数，称为绑定函数，当调用这个绑定函数时，绑定函数会以创建它时传入 bind()方法的第一个参数作为 this，传入 bind() 方法的第二个以及以后的参数加上绑定函数运行时本身的参数按照顺序作为原函数的参数来调用原函数。
 
 ```javascript
 var bar = function(){
@@ -75,15 +75,15 @@ console.log(foo.getX.call(obj));    //81
 console.log(foo.getX.apply(obj));   //81
 ```
 
-三个输出的都是81，但是注意看使用 bind\(\) 方法的，他后面多了对括号。
+三个输出的都是81，但是注意看使用 bind() 方法的，他后面多了对括号。
 
-也就是说，区别是，当你希望改变上下文环境之后并非立即执行，而是回调执行的时候，使用 bind\(\) 方法。而 apply/call 则会立即执行函数。
+也就是说，区别是，当你希望改变上下文环境之后并非立即执行，而是回调执行的时候，使用 bind() 方法。而 apply/call 则会立即执行函数。
 
 ## 实现
 
 ### Bind
 
-参考链接 
+参考链接&#x20;
 
 * [https://github.com/mqyqingfeng/Blog/issues/12](https://github.com/mqyqingfeng/Blog/issues/12)
 
@@ -171,7 +171,7 @@ var args = [arguments[1], arguments[2], ...]
  var result = eval('context.fn(' + args +')');
 ```
 
-在eval中，args 自动调用 args.toString\(\)方法，eval的效果如 jawil所说，最终的效果相当于：
+在eval中，args 自动调用 args.toString()方法，eval的效果如 jawil所说，最终的效果相当于：
 
 ```javascript
  var result = context.fn(arguments[1], arguments[2], ...);
@@ -179,7 +179,7 @@ var args = [arguments[1], arguments[2], ...]
 
 #### call 第二种实现方式
 
-```javascript
+````javascript
 Function.prototype.call = function (context, ...args) {
   // 检查调用```call```的对象是否为函数
   if (typeof this !== 'function') {
@@ -194,7 +194,7 @@ Function.prototype.call = function (context, ...args) {
   // 不要忘了调用之后删除该属性
   delete context[fn]
 }
-```
+````
 
 ### Apply
 
@@ -222,7 +222,7 @@ Function.prototype.apply = function (context, arr) {
 
 #### apply 第二种实现方式
 
-```javascript
+````javascript
 Function.prototype.apply = function (context, args) {
   // 检查调用```apply```的对象是否为函数
   if (typeof this !== 'function') {
@@ -237,5 +237,4 @@ Function.prototype.apply = function (context, args) {
   // 不要忘了调用之后删除该属性
   delete context[fn]
 }
-```
-
+````

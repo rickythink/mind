@@ -29,4 +29,3 @@ sayHi.bind(person, 21)
 `.bind` 返回函数的**副本**，但带有绑定上下文！它不是立即执行的。
 {% endtab %}
 {% endtabs %}
-

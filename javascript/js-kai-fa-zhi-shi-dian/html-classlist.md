@@ -10,4 +10,3 @@ classList.contains('is-clipped')
 classList.add('is-clipped')
 classList.remove('is-clipped')
 ```
-

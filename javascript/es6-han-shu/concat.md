@@ -38,4 +38,3 @@ num1[0].push(4);
 console.log(numbers);
 // results in [[1, 4], 2, [3]]
 ```
-

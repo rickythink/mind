@@ -12,13 +12,13 @@ ES6 新增的一种新的数据结构，类似于数组，但成员是唯一且�
 
 **Set 本身是一种构造函数，用来生成 Set 数据结构。**
 
-```text
+```
 new Set([iterable])
 ```
 
 举个例子：
 
-```text
+```
 const s = new Set()
 [1, 2, 3, 4, 3, 2, 1].forEach(x => s.add(x))
 
@@ -35,7 +35,7 @@ Set 对象允许你储存任何类型的唯一值，无论是原始值或者是�
 
 向 Set 加入值的时候，不会发生类型转换，所以`5`和`"5"`是两个不同的值。Set 内部判断两个值是否不同，使用的算法叫做“Same-value-zero equality”，它类似于**精确相等**运算符（`===`），主要的区别是\*\*`NaN`等于自身，而精确相等运算符认为`NaN`不等于自身。\*\*
 
-```text
+```
 let set = new Set();
 let a = NaN;
 let b = NaN;
@@ -51,97 +51,97 @@ console.log([...set1])	// [5, "5"]
 
 * Set 实例属性
   * constructor： 构造函数
-  * size：元素数量
+  *   size：元素数量
 
-    ```text
-    let set = new Set([1, 2, 3, 2, 1])
+      ```
+      let set = new Set([1, 2, 3, 2, 1])
 
-    console.log(set.length)	// undefined
-    console.log(set.size)	// 3
-    ```
+      console.log(set.length)	// undefined
+      console.log(set.size)	// 3
+      ```
 * Set 实例方法
   * 操作方法
-    * add\(value\)：新增，相当于 array里的push
-    * delete\(value\)：存在即删除集合中value
-    * has\(value\)：判断集合中是否存在 value
-    * clear\(\)：清空集合
+    * add(value)：新增，相当于 array里的push
+    * delete(value)：存在即删除集合中value
+    * has(value)：判断集合中是否存在 value
+    *   clear()：清空集合
 
-      ```text
-      let set = new Set()
-      set.add(1).add(2).add(1)
+        ```
+        let set = new Set()
+        set.add(1).add(2).add(1)
 
-      set.has(1)	// true
-      set.has(3)	// false
-      set.delete(1)	
-      set.has(1)	// false
-      ```
+        set.has(1)	// true
+        set.has(3)	// false
+        set.delete(1)	
+        set.has(1)	// false
+        ```
 
-      `Array.from` 方法可以将 Set 结构转为数组
+        `Array.from` 方法可以将 Set 结构转为数组
 
-      ```text
-      const items = new Set([1, 2, 3, 2])
-      const array = Array.from(items)
-      console.log(array)	// [1, 2, 3]
-      // 或
-      const arr = [...items]
-      console.log(arr)	// [1, 2, 3]
-      ```
+        ```
+        const items = new Set([1, 2, 3, 2])
+        const array = Array.from(items)
+        console.log(array)	// [1, 2, 3]
+        // 或
+        const arr = [...items]
+        console.log(arr)	// [1, 2, 3]
+        ```
   * 遍历方法（遍历顺序为插入顺序）
-    * keys\(\)：返回一个包含集合中所有键的迭代器
-    * values\(\)：返回一个包含集合中所有值得迭代器
-    * entries\(\)：返回一个包含Set对象中所有元素得键值对迭代器
-    * forEach\(callbackFn, thisArg\)：用于对集合成员执行callbackFn操作，如果提供了 thisArg 参数，回调中的this会是这个参数，**没有返回值**
+    * keys()：返回一个包含集合中所有键的迭代器
+    * values()：返回一个包含集合中所有值得迭代器
+    * entries()：返回一个包含Set对象中所有元素得键值对迭代器
+    *   forEach(callbackFn, thisArg)：用于对集合成员执行callbackFn操作，如果提供了 thisArg 参数，回调中的this会是这个参数，**没有返回值**
 
-      ```text
-      let set = new Set([1, 2, 3])
-      console.log(set.keys())	// SetIterator {1, 2, 3}
-      console.log(set.values())	// SetIterator {1, 2, 3}
-      console.log(set.entries())	// SetIterator {1, 2, 3}
+        ```
+        let set = new Set([1, 2, 3])
+        console.log(set.keys())	// SetIterator {1, 2, 3}
+        console.log(set.values())	// SetIterator {1, 2, 3}
+        console.log(set.entries())	// SetIterator {1, 2, 3}
 
-      for (let item of set.keys()) {
-        console.log(item);
-      }	// 1	2	 3
-      for (let item of set.entries()) {
-        console.log(item);
-      }	// [1, 1]	[2, 2]	[3, 3]
+        for (let item of set.keys()) {
+          console.log(item);
+        }	// 1	2	 3
+        for (let item of set.entries()) {
+          console.log(item);
+        }	// [1, 1]	[2, 2]	[3, 3]
 
-      set.forEach((value, key) => {
-          console.log(key + ' : ' + value)
-      })	// 1 : 1	2 : 2	3 : 3
-      console.log([...set])	// [1, 2, 3]
-      ```
+        set.forEach((value, key) => {
+            console.log(key + ' : ' + value)
+        })	// 1 : 1	2 : 2	3 : 3
+        console.log([...set])	// [1, 2, 3]
+        ```
 
-      Set 可默认遍历，默认迭代器生成函数是 values\(\) 方法
+        Set 可默认遍历，默认迭代器生成函数是 values() 方法
 
-      ```text
-      Set.prototype[Symbol.iterator] === Set.prototype.values	// true
-      ```
+        ```
+        Set.prototype[Symbol.iterator] === Set.prototype.values	// true
+        ```
 
-      所以， Set可以使用 map、filter 方法
+        所以， Set可以使用 map、filter 方法
 
-      ```text
-      let set = new Set([1, 2, 3])
-      set = new Set([...set].map(item => item * 2))
-      console.log([...set])	// [2, 4, 6]
+        ```
+        let set = new Set([1, 2, 3])
+        set = new Set([...set].map(item => item * 2))
+        console.log([...set])	// [2, 4, 6]
 
-      set = new Set([...set].filter(item => (item >= 4)))
-      console.log([...set])	//[4, 6]
-      ```
+        set = new Set([...set].filter(item => (item >= 4)))
+        console.log([...set])	//[4, 6]
+        ```
 
-      因此，Set 很容易实现交集（Intersect）、并集（Union）、差集（Difference）
+        因此，Set 很容易实现交集（Intersect）、并集（Union）、差集（Difference）
 
-      ```text
-      let set1 = new Set([1, 2, 3])
-      let set2 = new Set([4, 3, 2])
+        ```
+        let set1 = new Set([1, 2, 3])
+        let set2 = new Set([4, 3, 2])
 
-      let intersect = new Set([...set1].filter(value => set2.has(value)))
-      let union = new Set([...set1, ...set2])
-      let difference = new Set([...set1].filter(value => !set2.has(value)))
+        let intersect = new Set([...set1].filter(value => set2.has(value)))
+        let union = new Set([...set1, ...set2])
+        let difference = new Set([...set1].filter(value => !set2.has(value)))
 
-      console.log(intersect)	// Set {2, 3}
-      console.log(union)		// Set {1, 2, 3, 4}
-      console.log(difference)	// Set {1}
-      ```
+        console.log(intersect)	// Set {2, 3}
+        console.log(union)		// Set {1, 2, 3, 4}
+        console.log(difference)	// Set {1}
+        ```
 
 #### 2. WeakSet
 
@@ -154,24 +154,24 @@ WeakSet 与 Set 的区别：
 
 属性：
 
-* constructor：构造函数，任何一个具有 Iterable 接口的对象，都可以作参数
+*   constructor：构造函数，任何一个具有 Iterable 接口的对象，都可以作参数
 
-  ```text
-  const arr = [[1, 2], [3, 4]]
-  const weakset = new WeakSet(arr)
-  console.log(weakset)
-  ```
+    ```
+    const arr = [[1, 2], [3, 4]]
+    const weakset = new WeakSet(arr)
+    console.log(weakset)
+    ```
 
 [![](https://user-images.githubusercontent.com/19721451/54000884-27290900-4184-11e9-92f0-4d19ac6d080b.png)](https://user-images.githubusercontent.com/19721451/54000884-27290900-4184-11e9-92f0-4d19ac6d080b.png)
 
 方法：
 
-* add\(value\)：在WeakSet 对象中添加一个元素value
-* has\(value\)：判断 WeakSet 对象中是否包含value
-* delete\(value\)：删除元素 value
-* clear\(\)：清空所有元素，**注意该方法已废弃**
+* add(value)：在WeakSet 对象中添加一个元素value
+* has(value)：判断 WeakSet 对象中是否包含value
+* delete(value)：删除元素 value
+* clear()：清空所有元素，**注意该方法已废弃**
 
-```text
+```
 var ws = new WeakSet()
 var obj = {}
 var foo = {}
@@ -191,9 +191,9 @@ ws.has(window)	// false
 集合 与 字典 的区别：
 
 * 共同点：集合、字典 可以储存不重复的值
-* 不同点：集合 是以 \[value, value\]的形式储存元素，字典 是以 \[key, value\] 的形式储存
+* 不同点：集合 是以 \[value, value]的形式储存元素，字典 是以 \[key, value] 的形式储存
 
-```text
+```
 const m = new Map()
 const o = {p: 'haha'}
 m.set(o, 'content')
@@ -206,7 +206,7 @@ m.has(o)	// false
 
 **任何具有 Iterator 接口、且每个成员都是一个双元素的数组的数据结构**都可以当作`Map`构造函数的参数，例如：
 
-```text
+```
 const set = new Set([
   ['foo', 1],
   ['bar', 2]
@@ -221,14 +221,14 @@ m3.get('baz') // 3
 
 如果读取一个未知的键，则返回`undefined`。
 
-```text
+```
 new Map().get('asfddfsasadf')
 // undefined
 ```
 
 注意，只有对同一个对象的引用，Map 结构才将其视为同一个键。这一点要非常小心。
 
-```text
+```
 const map = new Map();
 
 map.set(['a'], 555);
@@ -241,7 +241,7 @@ map.get(['a']) // undefined
 
 如果 Map 的键是一个简单类型的值（数字、字符串、布尔值），则只要两个值严格相等，Map 将其视为一个键，比如`0`和`-0`就是一个键，布尔值`true`和字符串`true`则是两个不同的键。另外，`undefined`和`null`也是两个不同的键。虽然`NaN`不严格相等于自身，但 Map 将其视为同一个键。
 
-```text
+```
 let map = new Map();
 
 map.set(-0, 123);
@@ -264,33 +264,33 @@ Map 的属性及方法
 属性：
 
 * constructor：构造函数
-* size：返回字典中所包含的元素个数
+*   size：返回字典中所包含的元素个数
 
-  ```text
-  const map = new Map([
-    ['name', 'An'],
-    ['des', 'JS']
-  ]);
+    ```
+    const map = new Map([
+      ['name', 'An'],
+      ['des', 'JS']
+    ]);
 
-  map.size // 2
-  ```
+    map.size // 2
+    ```
 
 操作方法：
 
-* set\(key, value\)：向字典中添加新元素
-* get\(key\)：通过键查找特定的数值并返回
-* has\(key\)：判断字典中是否存在键key
-* delete\(key\)：通过键 key 从字典中移除对应的数据
-* clear\(\)：将这个字典中的所有元素删除
+* set(key, value)：向字典中添加新元素
+* get(key)：通过键查找特定的数值并返回
+* has(key)：判断字典中是否存在键key
+* delete(key)：通过键 key 从字典中移除对应的数据
+* clear()：将这个字典中的所有元素删除
 
 遍历方法
 
-* Keys\(\)：将字典中包含的所有键名以迭代器形式返回
-* values\(\)：将字典中包含的所有数值以迭代器形式返回
-* entries\(\)：返回所有成员的迭代器
-* forEach\(\)：遍历字典的所有成员
+* Keys()：将字典中包含的所有键名以迭代器形式返回
+* values()：将字典中包含的所有数值以迭代器形式返回
+* entries()：返回所有成员的迭代器
+* forEach()：遍历字典的所有成员
 
-```text
+```
 const map = new Map([
             ['name', 'An'],
             ['des', 'JS']
@@ -301,7 +301,7 @@ console.log(map.keys()) // MapIterator {"name", "des"}
 
 Map 结构的默认遍历器接口（`Symbol.iterator`属性），就是`entries`方法。
 
-```text
+```
 map[Symbol.iterator] === map.entries
 // true
 ```
@@ -310,7 +310,7 @@ Map 结构转为数组结构，比较快速的方法是使用扩展运算符（`
 
 对于 forEach ，看一个例子
 
-```text
+```
 const reporter = {
   report: function(key, value) {
     console.log("Key: %s, Value: %s", key, value);
@@ -332,70 +332,65 @@ map.forEach(function(value, key, map) {
 
 **与其他数据结构的相互转换**
 
-1. Map 转 Array
+1.  Map 转 Array
 
-   ```text
-   const map = new Map([[1, 1], [2, 2], [3, 3]])
-   console.log([...map])	// [[1, 1], [2, 2], [3, 3]]
-   ```
+    ```
+    const map = new Map([[1, 1], [2, 2], [3, 3]])
+    console.log([...map])	// [[1, 1], [2, 2], [3, 3]]
+    ```
+2.  Array 转 Map
 
-2. Array 转 Map
+    ```
+    const map = new Map([[1, 1], [2, 2], [3, 3]])
+    console.log(map)	// Map {1 => 1, 2 => 2, 3 => 3}
+    ```
+3.  Map 转 Object
 
-   ```text
-   const map = new Map([[1, 1], [2, 2], [3, 3]])
-   console.log(map)	// Map {1 => 1, 2 => 2, 3 => 3}
-   ```
+    因为 Object 的键名都为字符串，而Map 的键名为对象，所以转换的时候会把非字符串键名转换为字符串键名。
 
-3. Map 转 Object
+    ```
+    function mapToObj(map) {
+        let obj = Object.create(null)
+        for (let [key, value] of map) {
+            obj[key] = value
+        }
+        return obj
+    }
+    const map = new Map().set('name', 'An').set('des', 'JS')
+    mapToObj(map)  // {name: "An", des: "JS"}
+    ```
+4.  Object 转 Map
 
-   因为 Object 的键名都为字符串，而Map 的键名为对象，所以转换的时候会把非字符串键名转换为字符串键名。
+    ```
+    function objToMap(obj) {
+        let map = new Map()
+        for (let key of Object.keys(obj)) {
+            map.set(key, obj[key])
+        }
+        return map
+    }
 
-   ```text
-   function mapToObj(map) {
-       let obj = Object.create(null)
-       for (let [key, value] of map) {
-           obj[key] = value
-       }
-       return obj
-   }
-   const map = new Map().set('name', 'An').set('des', 'JS')
-   mapToObj(map)  // {name: "An", des: "JS"}
-   ```
+    objToMap({'name': 'An', 'des': 'JS'}) // Map {"name" => "An", "des" => "JS"}
+    ```
+5.  Map 转 JSON
 
-4. Object 转 Map
+    ```
+    function mapToJson(map) {
+        return JSON.stringify([...map])
+    }
 
-   ```text
-   function objToMap(obj) {
-       let map = new Map()
-       for (let key of Object.keys(obj)) {
-           map.set(key, obj[key])
-       }
-       return map
-   }
+    let map = new Map().set('name', 'An').set('des', 'JS')
+    mapToJson(map)	// [["name","An"],["des","JS"]]
+    ```
+6.  JSON 转 Map
 
-   objToMap({'name': 'An', 'des': 'JS'}) // Map {"name" => "An", "des" => "JS"}
-   ```
+    ```
+    function jsonToStrMap(jsonStr) {
+      return objToMap(JSON.parse(jsonStr));
+    }
 
-5. Map 转 JSON
-
-   ```text
-   function mapToJson(map) {
-       return JSON.stringify([...map])
-   }
-
-   let map = new Map().set('name', 'An').set('des', 'JS')
-   mapToJson(map)	// [["name","An"],["des","JS"]]
-   ```
-
-6. JSON 转 Map
-
-   ```text
-   function jsonToStrMap(jsonStr) {
-     return objToMap(JSON.parse(jsonStr));
-   }
-
-   jsonToStrMap('{"name": "An", "des": "JS"}') // Map {"name" => "An", "des" => "JS"}
-   ```
+    jsonToStrMap('{"name": "An", "des": "JS"}') // Map {"name" => "An", "des" => "JS"}
+    ```
 
 #### 4. WeakMap
 
@@ -411,12 +406,12 @@ WeakMap 中，每个键对自己所引用对象的引用都是弱引用，在没
 
 方法：
 
-* has\(key\)：判断是否有 key 关联对象
-* get\(key\)：返回key关联对象（没有则则返回 undefined）
-* set\(key\)：设置一组key关联对象
-* delete\(key\)：移除 key 的关联对象
+* has(key)：判断是否有 key 关联对象
+* get(key)：返回key关联对象（没有则则返回 undefined）
+* set(key)：设置一组key关联对象
+* delete(key)：移除 key 的关联对象
 
-```text
+```
 let myElement = document.getElementById('logo');
 let myWeakmap = new WeakMap();
 
@@ -432,7 +427,7 @@ myElement.addEventListener('click', function() {
 
 * Set
   * 成员唯一、无序且不重复
-  * \[value, value\]，键值与键名是一致的（或者说只有键值，没有键名）
+  * \[value, value]，键值与键名是一致的（或者说只有键值，没有键名）
   * 可以遍历，方法有：add、delete、has
 * WeakSet
   * 成员都是对象
@@ -448,28 +443,27 @@ myElement.addEventListener('click', function() {
 
 #### 6. 扩展：Object与Set、Map
 
-1. Object 与 Set
+1.  Object 与 Set
 
-   ```text
-   // Object
-   const properties1 = {
-       'width': 1,
-       'height': 1
-   }
-   console.log(properties1['width']? true: false) // true
+    ```
+    // Object
+    const properties1 = {
+        'width': 1,
+        'height': 1
+    }
+    console.log(properties1['width']? true: false) // true
 
-   // Set
-   const properties2 = new Set()
-   properties2.add('width')
-   properties2.add('height')
-   console.log(properties2.has('width')) // true
-   ```
-
+    // Set
+    const properties2 = new Set()
+    properties2.add('width')
+    properties2.add('height')
+    console.log(properties2.has('width')) // true
+    ```
 2. Object 与 Map
 
 JS 中的对象（Object），本质上是键值对的集合（hash 结构）
 
-```text
+```
 const data = {};
 const element = document.getElementsByClassName('App');
 
@@ -477,5 +471,4 @@ data[element] = 'metadata';
 console.log(data['[object HTMLCollection]']) // "metadata"
 ```
 
-但当以一个DOM节点作为对象 data 的键，对象会被自动转化为字符串\[Object HTMLCollection\]，所以说，Object 结构提供了 **字符串-值** 对应，Map则提供了 **值-值** 的对应
-
+但当以一个DOM节点作为对象 data 的键，对象会被自动转化为字符串\[Object HTMLCollection]，所以说，Object 结构提供了 **字符串-值** 对应，Map则提供了 **值-值** 的对应

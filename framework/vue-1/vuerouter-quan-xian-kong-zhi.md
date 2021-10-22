@@ -1,6 +1,6 @@
 # vue-router权限控制
 
-### 路由元信息\(meta\)+全局导航守卫
+### 路由元信息(meta)+全局导航守卫
 
 ```javascript
 router.beforeEach((to,from,next)=>{
@@ -30,4 +30,3 @@ export const createRouter = routes => new VueRouter({
 
 router.match = createRouter(constantRoutes).match;
 ```
-

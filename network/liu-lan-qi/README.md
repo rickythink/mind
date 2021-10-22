@@ -8,7 +8,7 @@
 4. 接着进入布局（Layout）阶段，也就是为每个节点分配一个应出现在屏幕上的确切坐标
 5. 随后调用GPU进行绘制（Paint），遍历Render Tree的节点，并将元素呈现出来
 
-![Webkit &#x6D41;&#x7A0B;&#x793A;&#x610F;&#x56FE;](../../.gitbook/assets/image%20%2870%29.png)
+![Webkit 流程示意图](../../.gitbook/assets/image.png)
 
 ## 浏览器如何解析CSS？
 
@@ -16,11 +16,11 @@
 
 DOM Tree与Style Rules合成为 Render Tree，实际上是需要将_Style Rules_附着到DOM Tree上，因此需要根据选择器提供的信息对DOM Tree进行遍历，才能将样式附着到对应的DOM元素上。
 
-```text
+```
 .mod-nav h3 span {font-size: 16px;}
 ```
 
-![&#x5BF9;&#x5E94;&#x7684;DOM Tree](../../.gitbook/assets/image%20%2869%29.png)
+![对应的DOM Tree](<../../.gitbook/assets/image (2).png>)
 
 从右至左的匹配过程是：
 
@@ -35,7 +35,7 @@ DOM Tree与Style Rules合成为 Render Tree，实际上是需要将_Style Rules_
 3. 构建Nodes: 对Node添加特定的属性，通过指针确定 Node 的父、子、兄弟关系和所属 treeScope
 4. 生成DOM Tree: 通过node包含的指针确定的关系构建出DOM Tree
 
-![](../../.gitbook/assets/image%20%28104%29.png)
+![](<../../.gitbook/assets/image (3).png>)
 
 ## 浏览器重绘与重排的区别？
 
@@ -56,9 +56,9 @@ DOM Tree与Style Rules合成为 Render Tree，实际上是需要将_Style Rules_
 * 移动或者给页面中的DOM节点添加动画
 * 添加一个样式表，调整样式属性
 * 用户行为，例如调整窗口大小，改变字号，或者滚动。
-* 查询某些属性或调用某些方法。比如说：
+*   查询某些属性或调用某些方法。比如说：
 
-  offsetTop、offsetLeft、 offsetWidth、offsetHeight、scrollTop、scrollLeft、scrollWidth、scrollHeight、clientTop、clientLeft、clientWidth、clientHeight
+    offsetTop、offsetLeft、 offsetWidth、offsetHeight、scrollTop、scrollLeft、scrollWidth、scrollHeight、clientTop、clientLeft、clientWidth、clientHeight
 
 ## 如何避免重绘或者重排？
 
@@ -66,14 +66,12 @@ DOM Tree与Style Rules合成为 Render Tree，实际上是需要将_Style Rules_
 2. 使用DocumentFragment
 3. 提升为合成层
 
-![](../../.gitbook/assets/image%20%2843%29.png)
+![](<../../.gitbook/assets/image (8).png>)
 
 
 
 
 
-  
-
-
+\
 
 

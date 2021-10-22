@@ -54,9 +54,9 @@ class Watcher {
 }
 ```
 
-5. new Watcher 首次进来，lazy = dirty = true, this.value = undefined
+5\. new Watcher 首次进来，lazy = dirty = true, this.value = undefined
 
-6. 因为key不在vm上，会defineComputed, 把computed的所有属性都响应式
+6\. 因为key不在vm上，会defineComputed, 把computed的所有属性都响应式
 
 ```javascript
 const sharedPropertyDefinition = {
@@ -126,9 +126,9 @@ const sharedPropertyDefinition = {
     }
 ```
 
-7. 待到视图渲染时，会读取这个computed属性，由于设置了响应式，会触发上面的 `watcher.evaluate` 
+7\. 待到视图渲染时，会读取这个computed属性，由于设置了响应式，会触发上面的 `watcher.evaluate`&#x20;
 
-8. evaluate 中又调用了`this.get` 
+8\. evaluate 中又调用了`this.get`&#x20;
 
 {% code title="watcher.js" %}
 ```javascript
@@ -158,7 +158,7 @@ get () {
 ```
 {% endcode %}
 
-这个get，会执行 this.getter.call\(vm,vm\)。
+这个get，会执行 this.getter.call(vm,vm)。
 
 由于当前的props, datas 已经都响应式了，这样会触发他们的get进行依赖收集
 
@@ -211,21 +211,19 @@ addSub (sub: Watcher) {
 
 如此就把所有的computed的属性依赖收集完毕。最后返回dirty=false 和新值。下次直接读取缓存。
 
-9. 紧着着。因为现在是render-watcher。所有Dep.target变回render，接下来的watcher.depend。会把computed所有依赖都逐一dep.depend到render-watcher中。也即，所有的computed依赖变化后，也会通知render-watcher
+9\. 紧着着。因为现在是render-watcher。所有Dep.target变回render，接下来的watcher.depend。会把computed所有依赖都逐一dep.depend到render-watcher中。也即，所有的computed依赖变化后，也会通知render-watcher
 
 ## 依赖变化
 
 依赖变化后，如果computed-watcher的subs为0，那么仅需把dirty再置为true即可。因为没有render-watcher使用它，自然不需要刷新视图。
 
-如果有render-watcher监听。那么在nextTick后，对所有的wacher queue进行排序。因为render-watcher id一定大于computed, 会在computed-watcher反复进行watch.run后（也仅设置dirty为true）最后的render-watch执行evaluate, 完成this.get\(\)的读取。
+如果有render-watcher监听。那么在nextTick后，对所有的wacher queue进行排序。因为render-watcher id一定大于computed, 会在computed-watcher反复进行watch.run后（也仅设置dirty为true）最后的render-watch执行evaluate, 完成this.get()的读取。
 
 ## 参考
 
-> [https://juejin.im/post/5d538d27f265da03e3697803\#heading-6](https://juejin.im/post/5d538d27f265da03e3697803#heading-6)
+> [https://juejin.im/post/5d538d27f265da03e3697803#heading-6](https://juejin.im/post/5d538d27f265da03e3697803#heading-6)
 >
-> [https://ustbhuangyi.github.io/vue-analysis/v2/reactive/computed-watcher.html\#computed](https://ustbhuangyi.github.io/vue-analysis/v2/reactive/computed-watcher.html#computed)
-
-
+> [https://ustbhuangyi.github.io/vue-analysis/v2/reactive/computed-watcher.html#computed](https://ustbhuangyi.github.io/vue-analysis/v2/reactive/computed-watcher.html#computed)
 
 
 

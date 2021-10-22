@@ -1,14 +1,14 @@
 # 合并多个commit
 
-文件少的话可以先: `git reset --soft` 然后重新 `git commit`  , 这样又简单又好理解。
+文件少的话可以先: `git reset --soft` 然后重新 `git commit ` , 这样又简单又好理解。
 
- `rebase -i` 合并比较麻烦，利用 rebase 做分支之间的变基会比较好；
+&#x20;`rebase -i `合并比较麻烦，利用 rebase 做分支之间的变基会比较好；
 
 下面还是介绍一下rebase的用法：
 
 ### 查看版本历史
 
-```text
+```
 git log
 
 * b1b8189 - (HEAD -> master) Commit-3
@@ -21,7 +21,7 @@ git log
 
 `-i` 实际上就是 `--interactive` 的简写，在使用 `git rebase -i` 时，我们要在后面再添加一个参数，这个参数应该是 **最新的一个想保留的 Commit**。这句话读起来有点坳口，所以这个情况下通常需要举个例子。就我们前面提到的那个例子中，这个「最新的一个想保留的 Commit」就是 `5d39ff2(Commit-0)`，于是我们的命令看起来就长这样：
 
-```text
+```
 git rebase -i 5d39ff2
 ```
 
@@ -31,7 +31,7 @@ git rebase -i 5d39ff2
 
 上一步操作按下回车键后会出现
 
-```text
+```
 pick e7ba81d Commit-1
 pick 5756e15 Commit-2
 pick b1b8189 Commit-3
@@ -42,9 +42,9 @@ pick b1b8189 Commit-3
 * `squash`：使用该 Commit，但会被合并到前一个 Commit 当中
 * `fixup`：就像 `squash` 那样，但会抛弃这个 Commit 的 Commit message
 
-由于我们是想把三个 Commit 都合并在一起，并且使 Commit Message 写成 Commit-1，所以我们需要把 5756e15\(Commit-2\) 和 b1b8189\(Commit-3\) 前面的 pick 都改为squash，于是它看起来像这样：
+由于我们是想把三个 Commit 都合并在一起，并且使 Commit Message 写成 Commit-1，所以我们需要把 5756e15(Commit-2) 和 b1b8189(Commit-3) 前面的 pick 都改为squash，于是它看起来像这样：
 
-```text
+```
 pick e7ba81d Commit-1
 squash 5756e15 Commit-2
 squash b1b8189 Commit-3
@@ -52,7 +52,7 @@ squash b1b8189 Commit-3
 
 也可以用缩写
 
-```text
+```
 pick e7ba81d Commit-1
 s 5756e15 Commit-2
 s b1b8189 Commit-3
@@ -62,14 +62,14 @@ s b1b8189 Commit-3
 
 上一步操作完保存退出后，Git会压缩提交历史，如果有冲突，需要修改，修改的时候要注意，保留最新的历史，不然我们的修改就丢弃了。修改以后要记得敲下面的命令：
 
-```text
+```
 git add .  
 git rebase --continue  
 ```
 
 如果要放弃的话，则使用
 
-```text
+```
 git rebase --abort
 ```
 
@@ -77,7 +77,7 @@ git rebase --abort
 
 推荐使用
 
-```text
+```
 git push --force-with-lease
 ```
 
@@ -94,4 +94,3 @@ git push --force-with-lease
 {% hint style="info" %}
 GitHub 的工作流或者 GitLab 的工作流中，都有一种行为是 `rebase` 自己的分支到 `origin/master` 上，以保证 `master` 分支上的提交是纯粹的干净的。也就是说，本意是禁止对合并到 `master` 或 `develop` 分支上的提交进行 `rebase`；但对于自己的 `temp` 分支或者 `feature` 分支，因为提交还没有合并到主干中，随时删除掉或者将历史进行美化也不会造成太大的问题。
 {% endhint %}
-

@@ -59,4 +59,3 @@ class newStarFactory extends MobilePhoneFactory {
 ```
 
 这么个操作，**对原有的系统不会造成任何潜在影响** 所谓的“对拓展开放，对修改封闭”就这么圆满实现了。前面我们之所以要实现**抽象产品类**，也是同样的道理。
-

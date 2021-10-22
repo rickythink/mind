@@ -28,10 +28,9 @@ undefined
 * `null`
 * `NaN`
 * `0`
-* `''` \(empty string\)
+* `''` (empty string)
 * `false`
 
 `Function` 构造函数, 比如 `new Number` 和 `new Boolean`，是 [truthy](https://developer.mozilla.org/zh-CN/docs/Glossary/Truthy)。
 {% endtab %}
 {% endtabs %}
-

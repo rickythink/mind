@@ -12,7 +12,7 @@
 
 样例：
 
-```text
+```
 输入
 ABC
 BAC
@@ -24,12 +24,12 @@ BCA
 XEDGAF
 ```
 
-### 思路 <a id="&#x601D;&#x8DEF;-2"></a>
+### 思路 <a href="si-lu-2" id="si-lu-2"></a>
 
 和上面题目的思路基本相同
 
 * 前序遍历找到根结点`root`
-* 找到`root`在中序遍历的位置 -&gt; 左子树的长度和右子树的长度
+* 找到`root`在中序遍历的位置 -> 左子树的长度和右子树的长度
 * 截取左子树的中序遍历、右子树的中序遍历
 * 截取左子树的前序遍历、右子树的前序遍历
 * 递归拼接二叉树的后序遍历
@@ -61,4 +61,3 @@ function getPostOrder(pre, vin) {
   return getPostOrder(preLeft, vinLeft) + getPostOrder(preRight, vinRight) + head;
 }
 ```
-

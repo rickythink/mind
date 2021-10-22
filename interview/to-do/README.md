@@ -28,17 +28,17 @@ description: 需要整理的知识清单
 * [x] ES8
 * [x] ES9
 * [x] ES10
-* [ ] ~~koa2 + ts~~ **了解**[**daruk**](https://github.com/darukjs/daruk)\*\*\*\*
+* [ ] ~~koa2 + ts ~~**了解**[**daruk**](https://github.com/darukjs/daruk)****
 * [x] 浏览器的本地存储
 * [x] URL到页面发生了什么
 * [x] HTTPS与HTTP
 * [x] 图片懒加载
 * [ ] service worker
 * [ ] Deno
-* [ ] 实现destructuringArray：destructuringArray\( \[1,\[2,4\],3\], "\[a,\[b\],c\]" \) ==&gt; { a:1, b:2, c:3 }
+* [ ] 实现destructuringArray：destructuringArray( \[1,\[2,4],3], "\[a,\[b],c]" ) ==> { a:1, b:2, c:3 }
 * [ ] jest
 * [ ] nuxt
-* [ ] 整理 [30s JS ](https://www.30secondsofcode.org/)
+* [ ] 整理 [30s JS ](https://www.30secondsofcode.org)
 * [x] 手写 Promise
 * [x] 手写 new
 * [ ] 了解一下 bluebird
@@ -66,12 +66,12 @@ description: 需要整理的知识清单
 * [ ] OKR
 * [x] 文件上传断点、续传 [掘金连接](https://juejin.im/post/5dff8a26e51d4558105420ed#heading-26)
 * [x] !!
-* [x] 性能优化\(重要\)
+* [x] 性能优化(重要)
 * [x] 正则
 * [ ] 蒙版的css
 * [ ] Array.reduce实现一个Array.map和Array.filter
 * [ ] vue与react对比
-* [x] 0.1 + 0.2 
+* [x] 0.1 + 0.2&#x20;
   * [ ] 学习理解 [number-precision](https://github.com/nefe/number-precision)
 * [ ] osi 七层模型
 * [ ] tcp拥塞控制和流量控制
@@ -89,16 +89,14 @@ description: 需要整理的知识清单
 * [x] 100 \* 100 的 Canvas 占内存多大？
 * [x] 路由守卫
 * [x] `(a ==1 && a== 2 && a==3)` 可能为 true 吗
-* [x] 用正则实现trim\(\) 清除字符串两端空格
-* [x] CORS ****更深入的了解
+* [x] 用正则实现trim() 清除字符串两端空格
+* [x] CORS** **更深入的了解
 * [x] OPTION请求
 * [x] 如何阻止表单重复提交
 * [x] SEO
 * [x] Referer
 * [x] 证书和证书中心
 * [ ] JSONP 安全
-
-
 
 
 

@@ -6,17 +6,17 @@
 
 ## 上面参考中递进的图片实例
 
-![&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x5B9E;&#x4F8B;&#x539F;&#x578B;](../../.gitbook/assets/image%20%28119%29.png)
+![构造函数和实例原型](<../../.gitbook/assets/image (126).png>)
 
-![&#x6BCF;&#x4E00;&#x4E2A;JavaScript&#x5BF9;&#x8C61;\(&#x9664;&#x4E86; null \)&#x90FD;&#x5177;&#x6709;&#x7684;\_\_proto\_\_&#x5C5E;&#x6027; \| person.\_\_proto\_\_ === Person.prototype](../../.gitbook/assets/image%20%2877%29.png)
+![每一个JavaScript对象(除了 null )都具有的\_\_proto\_\_属性 | person.\_\_proto\_\_ === Person.prototype](<../../.gitbook/assets/image (127).png>)
 
-![&#x6BCF;&#x4E2A;&#x539F;&#x578B;&#x90FD;&#x6709;&#x4E00;&#x4E2A; constructor &#x5C5E;&#x6027;&#x6307;&#x5411;&#x5173;&#x8054;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570; \| Person === Person.prototype.constructor](../../.gitbook/assets/image%20%2894%29.png)
+![每个原型都有一个 constructor 属性指向关联的构造函数 | Person === Person.prototype.constructor](<../../.gitbook/assets/image (128).png>)
 
 > 一个构造函数可以生成多个实例, 因此没有原型指向实例的箭头
 
-![&#x539F;&#x578B;&#x7684;&#x539F;&#x578B; \| Person.prototype.\_\_proto\_\_ === Object.prototype](../../.gitbook/assets/image%20%2831%29.png)
+![原型的原型 | Person.prototype.\_\_proto\_\_ === Object.prototype](<../../.gitbook/assets/image (129).png>)
 
-![&#x84DD;&#x8272;&#x7EBF;&#x5C31;&#x662F;&#x539F;&#x578B;&#x94FE; \| Object&#x7684;&#x539F;&#x578B;&#x7684;&#x539F;&#x578B;&#x4E3A;&#x7A7A; \| Object.prototype.\_\_proto\_\_ === null](../../.gitbook/assets/image%20%28154%29.png)
+![蓝色线就是原型链 | Object的原型的原型为空 | Object.prototype.\_\_proto\_\_ === null](<../../.gitbook/assets/image (130).png>)
 
 ## 真的是继承吗？
 
@@ -26,7 +26,7 @@
 
 
 
-![](../../.gitbook/assets/image%20%2819%29.png)
+![](<../../.gitbook/assets/image (5).png>)
 
 
 
@@ -93,7 +93,7 @@ console.log(a.prototype) // undefined
 console.log(b.prototype) // { constructor: function(){...} }
 ```
 
-## 不要再使用 \_\_proto\_\_ 
+## 不要再使用 \_\_proto\_\_&#x20;
 
 `__proto__`属性没有写入 ES6 的正文，而是写入了附录。
 
@@ -104,6 +104,4 @@ console.log(b.prototype) // { constructor: function(){...} }
 ### 推荐使用 Object.getPrototypeOf  Object.setPrototypeOf Object.create
 
 所以无论从语义的角度，还是从兼容性的角度，都不要使用这个属性，应该使用：`Object.getPrototypeOf(target)`（读操作）、`Object.setPrototypeOf(target)`（写操作）、`Object.create(target)`（生成操作）代替
-
-
 

@@ -23,4 +23,3 @@ function doStuff(arg: Foo | Bar) {
   }
 }
 ```
-

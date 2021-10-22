@@ -46,5 +46,3 @@ const show = (time, fn) => {
 }
 ```
 
-
-

@@ -8,8 +8,8 @@
 4. 函数参数默认值
 5. 模板字符串
 6. 解构赋值 destructing assignment
-7. 模块化 module 
-8. 扩展操作符 spread operator 
+7. 模块化 module&#x20;
+8. 扩展操作符 spread operator&#x20;
 9. 对象简写
 10. Promise
 11. for ... of
@@ -72,8 +72,6 @@
 ## 参考
 
 [https://juejin.im/post/5dfa5cb86fb9a0165721db1d](https://juejin.im/post/5dfa5cb86fb9a0165721db1d)
-
-
 
 
 

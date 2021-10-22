@@ -13,14 +13,14 @@ DOM 中事件委托的实现是利用事件冒泡的机制。
 {% hint style="info" %}
 addEventListener有三个参数：
 
-> element.addEventListener\(event, function, useCapture\)
+> element.addEventListener(event, function, useCapture)
 
-第一个参数是需要绑定的事件  
-第二个参数是触发事件后要执行的函数  
+第一个参数是需要绑定的事件\
+第二个参数是触发事件后要执行的函数\
 第三个参数默认值是false，表示在**事件冒泡阶段**调用事件处理函数，如果参数为true，则表示在**事件捕获阶段**调用处理函数。
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%2888%29.png)
+![](<../../.gitbook/assets/image (84).png>)
 
 ## 事件委托的优点
 
@@ -70,6 +70,4 @@ delegate(list,'click','#l2',function(e){
 ```
 
 关于`target` 和`currentTarget` , **currentTarget始终是监听事件者，而target是事件的真正发出者**。
-
-
 

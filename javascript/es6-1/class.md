@@ -17,7 +17,7 @@ class Dog {
 }
 ```
 
-其实完全等价于写了这么一个构造函数: 
+其实完全等价于写了这么一个构造函数:&#x20;
 
 ```javascript
 function Dog(name, age) {
@@ -41,7 +41,7 @@ typeof Point // "function"
 Point === Point.prototype.constructor // true
 ```
 
-## 不存在变量提升\(hoist\)
+## 不存在变量提升(hoist)
 
 类不存在变量提升
 
@@ -218,6 +218,4 @@ b.m // undefined
 ```
 
 上面代码中，`p`是父类`A`实例的属性，`super.p`就引用不到它。
-
-
 

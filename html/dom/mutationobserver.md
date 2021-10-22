@@ -29,4 +29,3 @@ const observer = el[scope].observer = new MutationObserver(onScroll);
 // 设置监听
 observer.observe(container, { childList: true, subtree: true });
 ```
-

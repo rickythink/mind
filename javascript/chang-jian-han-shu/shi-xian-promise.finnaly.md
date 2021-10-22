@@ -9,4 +9,3 @@ Promise.prototype.finally = function (callback) {
   )
 }
 ```
-

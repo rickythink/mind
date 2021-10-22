@@ -6,7 +6,7 @@ lighten($color, $amount) //=> color
 
 Makes `$color` lighter.
 
-The `$amount` must be a number between `0%` and `100%` \(inclusive\). Increases the HSL lightness of `$color` by that amount.
+The `$amount` must be a number between `0%` and `100%` (inclusive). Increases the HSL lightness of `$color` by that amount.
 
 #### ⚠️ Heads up!
 
@@ -26,4 +26,3 @@ Because `lighten()` is usually not the best way to make a color lighter, it’s 
 // scale() instead makes it 30% lighter than it was originally.
 @debug color.scale(#e1d7d2, $lightness: 30%); // #eae3e0
 ```
-

@@ -22,7 +22,7 @@ let name: string = "bob";
 name = "smith";
 ```
 
-## \[ \] 与数组泛型
+## \[ ] 与数组泛型
 
 ```javascript
 let list: number[] = [1, 2, 3];
@@ -63,7 +63,7 @@ function warnUser(): void {
 
 声明一个`void`类型的变量没有什么大用，因为你只能为它赋予`undefined`和`null`：
 
-```text
+```
 let unusable: void = undefined;
 ```
 
@@ -108,4 +108,3 @@ create(null); // OK
 
 create(42); // Error
 ```
-

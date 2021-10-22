@@ -1,4 +1,4 @@
-# 设计工具类型\(重要）
+# 设计工具类型(重要）
 
 ```javascript
 interface Part {
@@ -38,6 +38,4 @@ type R = {
 {% endhint %}
 
 但是我们的的要求是取出老interface Part的key,这个时候再次用`[keyof T]`作为key依次取出新interface的value,但是由于`id` `name`和`subparts`的value为`never`就不会返回任何类型了,所以只返回了`'updatePart'`.
-
-
 

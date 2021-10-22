@@ -26,5 +26,3 @@ console.log(num)
 {% endtab %}
 {% endtabs %}
 
-
-

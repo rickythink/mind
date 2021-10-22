@@ -20,5 +20,3 @@ type DeepPartial<T> = {
 type R2 = DeepPartial<Person>
 ```
 
-
-

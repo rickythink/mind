@@ -16,7 +16,7 @@
 <p>inline elements <span>like this one</span> and <span>this one</span> sit on the same line as one another, and adjacent text nodes, if there is space on the same line. Overflowing inline elements will <span>wrap onto a new line if possible (like this one containing text)</span>, or just go on to a new line if not, much like this image will do: <img src="https://mdn.mozillademos.org/files/13360/long.jpg"></p>
 ```
 
-![](../../.gitbook/assets/image%20%28117%29.png)
+![](<../../.gitbook/assets/image (65).png>)
 
 `static`定位所导致的元素位置，是浏览器自主决定的，所以这时`top`、`bottom`、`left`、`right`这四个属性无效。
 
@@ -24,12 +24,12 @@
 
 与静态定位非常相似，但是可以通过`top` `left` `right` `bottom` 更改最终位置
 
-```text
+```
 top: 30px;
 left: 30px;
 ```
 
-![](../../.gitbook/assets/image%20%28113%29.png)
+![](<../../.gitbook/assets/image (66).png>)
 
 ## absolute
 
@@ -54,4 +54,3 @@ left: 30px;
 浮动定位，和绝对定位一样，会脱离文档流。
 
 浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。
-

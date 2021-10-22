@@ -13,4 +13,3 @@ interface ReturnItemFn<T> {
 ```javascript
 const returnItem: ReturnItemFn<number> = para => para
 ```
-

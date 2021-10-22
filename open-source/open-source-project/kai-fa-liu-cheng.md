@@ -12,5 +12,3 @@
 
 {% embed url="https://github.com/eslint/eslint" %}
 
-
-

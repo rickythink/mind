@@ -22,7 +22,7 @@ for (let a in arr) {
 }
 ```
 
-### entries返回遍历\[键名，键值\]组成的数组
+### entries返回遍历\[键名，键值]组成的数组
 
 ```javascript
 let arr = ['a', 'b', 'c'];
@@ -82,4 +82,3 @@ for (let [key, value] of entries(obj)) {
     consoloe.log(key, '->', value)
 }
 ```
-

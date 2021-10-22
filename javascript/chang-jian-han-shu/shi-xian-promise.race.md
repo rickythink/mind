@@ -9,4 +9,3 @@ Promise.race = function (promises) {
     })
 };
 ```
-
