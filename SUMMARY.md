@@ -74,7 +74,7 @@
   * [改变数组的length](javascript/js-trap/gai-bian-shu-zu-de-length.md)
   * [引用传参](javascript/js-trap/yin-yong-chuan-can.md)
   * [new Number vs Number](javascript/js-trap/new-number-vs-number.md)
-  * [new Object vs Object vs Object.create\(null\)](javascript/js-trap/new-object-vs-object-vs-object.create-null.md)
+  * [new Object vs Object vs Object.create(null)](javascript/js-trap/new-object-vs-object-vs-object.create-null.md)
 * [JS开发知识点](javascript/js-kai-fa-zhi-shi-dian/README.md)
   * [html classlist](javascript/js-kai-fa-zhi-shi-dian/html-classlist.md)
   * [图片懒加载](javascript/js-kai-fa-zhi-shi-dian/tu-pian-lan-jia-zai.md)
@@ -96,7 +96,7 @@
   * [模拟new](javascript/chang-jian-han-shu/mo-ni-new.md)
   * [模拟实现async](javascript/chang-jian-han-shu/mo-ni-shi-xian-async.md)
   * [模拟instance of](javascript/chang-jian-han-shu/mo-ni-instance-of.md)
-  * [Object.create\(null\)与{}](javascript/chang-jian-han-shu/object.createnull-yu.md)
+  * [Object.create(null)与{}](javascript/chang-jian-han-shu/object.createnull-yu.md)
   * [实现promisify](javascript/chang-jian-han-shu/shi-xian-promisify.md)
   * [实现Promise.all](javascript/chang-jian-han-shu/shi-xian-promise.all.md)
   * [实现Promise.race](javascript/chang-jian-han-shu/shi-xian-promise.race.md)
@@ -163,12 +163,14 @@
     * [类型断言](javascript/typescript/shi-yong/lei-xing-duan-yan.md)
   * [编译原理](javascript/typescript/bian-yi-yuan-li/README.md)
     * [编译器](javascript/typescript/bian-yi-yuan-li/bian-yi-qi.md)
-  * [设计工具类型\(重要）](javascript/typescript/she-ji-gong-ju-lei-xing-zhong-yao.md)
+  * [设计工具类型(重要）](javascript/typescript/she-ji-gong-ju-lei-xing-zhong-yao.md)
 * [V8](javascript/v8/README.md)
   * [JS 数组](javascript/v8/v8-js-array.md)
   * [垃圾回收](javascript/v8/la-ji-hui-shou.md)
+* [JS 常见操作函数](javascript/common-js-func/README.md)
+  * [JS Safe Get](javascript/common-js-func/js-safe-get.md)
 
-## 🕹️框架 <a id="framework"></a>
+## 🕹️框架 <a href="framework" id="framework"></a>
 
 * [Vue](framework/vue-1/README.md)
   * [基础知识](framework/vue-1/ji-chu-zhi-shi.md)
@@ -199,7 +201,7 @@
   * [Object.defineProperty与Proxy区别](framework/vue3/object.defineproperty-yu-proxy-qu-bie.md)
 * [React](framework/react/README.md)
   * [无法preventDefault](framework/react/wu-fa-preventdefault.md)
-  * [Parent控制Child\(Lifting state up\)](framework/react/parent-kong-zhi-childlifting-state-up.md)
+  * [Parent控制Child(Lifting state up)](framework/react/parent-kong-zhi-childlifting-state-up.md)
   * [Dynamic Ref](framework/react/dynamic-ref.md)
   * [useRef warning](framework/react/useref-warning.md)
   * [定义固定长度的数组](framework/react/ding-yi-gu-ding-chang-du-de-shu-zu.md)
@@ -219,7 +221,7 @@
 * [Koa2](framework/koa2/README.md)
   * [compose](framework/koa2/compose.md)
 
-## 🎯算法 <a id="algorithm"></a>
+## 🎯算法 <a href="algorithm" id="algorithm"></a>
 
 * [算法与数据结构](algorithm/algorithm-and-data-structure/README.md)
   * [基础知识](algorithm/algorithm-and-data-structure/ji-chu-zhi-shi/README.md)
@@ -287,7 +289,7 @@
   * [实现缩放](html/svg/shi-xian-suo-fang.md)
   * [react typescript svg相关](html/svg/react-typescript-svg-xiang-guan.md)
 
-## 🏈计算机网络 <a id="network"></a>
+## 🏈计算机网络 <a href="network" id="network"></a>
 
 * [浏览器](network/liu-lan-qi/README.md)
   * [浏览器与JS 线程](network/liu-lan-qi/liu-lan-qi-yu-js-xian-cheng.md)
@@ -325,7 +327,7 @@
   * [websocket](network/ji-suan-ji-wang-luo/websocket.md)
   * [CDN](network/ji-suan-ji-wang-luo/cdn.md)
 
-## 🥊前端生态 <a id="frontend-ecosystem"></a>
+## 🥊前端生态 <a href="frontend-ecosystem" id="frontend-ecosystem"></a>
 
 * [Webpack](frontend-ecosystem/webpack/README.md)
   * [基础概念](frontend-ecosystem/webpack/ji-chu-gai-nian.md)
@@ -369,7 +371,7 @@
 * [Hexo](frontend-ecosystem/hexo-1/README.md)
   * [常用Hexo插件记录](frontend-ecosystem/hexo-1/chang-yong-hexo-cha-jian-ji-lu.md)
 
-## 🏀后端 <a id="backend"></a>
+## 🏀后端 <a href="backend" id="backend"></a>
 
 * [Node](backend/node/README.md)
   * [nodejs的应用](backend/node/nodejs-de-ying-yong.md)
@@ -379,7 +381,7 @@
 * [Python](backend/python/README.md)
   * [Pyenv](backend/python/pyenv.md)
 
-## 🕹️面试 <a id="interview"></a>
+## 🕹️面试 <a href="interview" id="interview"></a>
 
 * [面试真经](interview/inverview-record/README.md)
   * [Set、Map、WeakSet 和 WeakMap 的区别？](interview/inverview-record/setmapweakset-he-weakmap-de-qu-bie.md)
@@ -400,7 +402,7 @@
     * [笔试](interview/inverview-record/tou-tiao-mian-jing/bi-shi/README.md)
       * [153812.7 转化153,812.7](interview/inverview-record/tou-tiao-mian-jing/bi-shi/153812.7-zhuan-hua-153812.7.md)
       * [日期转化为2小时前，1分钟前等](interview/inverview-record/tou-tiao-mian-jing/bi-shi/ri-qi-zhuan-hua-wei-2-xiao-shi-qian-1-fen-zhong-qian-deng.md)
-      * [实现sum\(1\)\(2\)\(3\) = 6](interview/inverview-record/tou-tiao-mian-jing/bi-shi/shi-xian-sum123-6.md)
+      * [实现sum(1)(2)(3) = 6](interview/inverview-record/tou-tiao-mian-jing/bi-shi/shi-xian-sum123-6.md)
       * [最多频次](interview/inverview-record/tou-tiao-mian-jing/bi-shi/zui-duo-pin-ci.md)
       * [类继承面试](interview/inverview-record/tou-tiao-mian-jing/bi-shi/lei-ji-cheng-mian-shi.md)
       * [前端请求并发控制](interview/inverview-record/tou-tiao-mian-jing/bi-shi/qian-duan-qing-qiu-bing-fa-kong-zhi.md)
@@ -425,7 +427,7 @@
 * [To-do](interview/to-do/README.md)
   * [axios 重放多种策略](interview/to-do/axios-zhong-fang-duo-zhong-ce-lve.md)
 
-## 🤖开源 <a id="open-source"></a>
+## 🤖开源 <a href="open-source" id="open-source"></a>
 
 * [开源项目](open-source/open-source-project/README.md)
   * [Hooks](open-source/open-source-project/hooks.md)
@@ -435,7 +437,7 @@
   * [模板](open-source/open-source-project/mo-ban.md)
   * [svg](open-source/open-source-project/svg.md)
 
-## 🧸其他 <a id="other"></a>
+## 🧸其他 <a href="other" id="other"></a>
 
 * [Linux](other/linux/README.md)
   * [免密登陆](other/linux/mian-mi-deng-lu.md)
@@ -451,7 +453,7 @@
     * [转换为驼峰命名法](other/zheng-ze/ti-mu/zhuan-huan-wei-tuo-feng-ming-ming-fa.md)
     * [JS实现千位分隔符](other/zheng-ze/ti-mu/js-shi-xian-qian-wei-fen-ge-fu.md)
     * [获取 url 参数](other/zheng-ze/ti-mu/huo-qu-url-can-shu.md)
-    * [用正则实现trim\(\) 清除字符串两端空格](other/zheng-ze/ti-mu/yong-zheng-ze-shi-xian-trim-qing-chu-zi-fu-chuan-liang-duan-kong-ge.md)
+    * [用正则实现trim() 清除字符串两端空格](other/zheng-ze/ti-mu/yong-zheng-ze-shi-xian-trim-qing-chu-zi-fu-chuan-liang-duan-kong-ge.md)
 * [设计模式](other/she-ji-mo-shi-1/README.md)
   * [简单工厂模式](other/she-ji-mo-shi-1/jian-dan-gong-chang-mo-shi.md)
   * [抽象工厂模式](other/she-ji-mo-shi-1/chou-xiang-gong-chang-mo-shi.md)
@@ -467,9 +469,10 @@
   * [享元模式](other/she-ji-mo-shi-1/xiang-yuan-mo-shi.md)
 * [计算机理论](other/ji-suan-ji-li-lun/README.md)
   * [solid原则](other/ji-suan-ji-li-lun/solid-yuan-ze/README.md)
-    * [SRP \| The Single Responsibility Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/srp.md)
-    * [OCP \| The Open Closed Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/ocp.md)
-    * [LSP \| The Liskov Substitution Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/lsp-or-the-liskov-substitution-principle.md)
-    * [ISP \| The interface Segregation Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/isp-or-the-interface-segregation-principle.md)
-    * [DIP \| The Dependency Inversion Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/dip-or-the-dependency-inversion-principle.md)
+    * [SRP | The Single Responsibility Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/srp.md)
+    * [OCP | The Open Closed Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/ocp.md)
+    * [LSP | The Liskov Substitution Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/lsp-or-the-liskov-substitution-principle.md)
+    * [ISP | The interface Segregation Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/isp-or-the-interface-segregation-principle.md)
+    * [DIP | The Dependency Inversion Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/dip-or-the-dependency-inversion-principle.md)
 
+## Group 1
