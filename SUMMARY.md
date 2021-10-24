@@ -105,6 +105,8 @@
   * [实现Promise](javascript/chang-jian-han-shu/shi-xian-promise.md)
   * [实现foreach](javascript/chang-jian-han-shu/shi-xian-foreach.md)
   * [实现parseInt](javascript/chang-jian-han-shu/shi-xian-parseint.md)
+* [实现JS 常见操作函数](javascript/common-js-func/README.md)
+  * [JS Safe Get](javascript/common-js-func/js-safe-get.md)
 * [JS Worker](javascript/js-worker/README.md)
   * [Cloudflare Worker](javascript/js-worker/cloudflare-worker.md)
 * [ES6](javascript/es6-1/README.md)
@@ -167,8 +169,6 @@
 * [V8](javascript/v8/README.md)
   * [JS 数组](javascript/v8/v8-js-array.md)
   * [垃圾回收](javascript/v8/la-ji-hui-shou.md)
-* [JS 常见操作函数](javascript/common-js-func/README.md)
-  * [JS Safe Get](javascript/common-js-func/js-safe-get.md)
 
 ## 🕹️框架 <a href="framework" id="framework"></a>
 
