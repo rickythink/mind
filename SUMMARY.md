@@ -106,6 +106,7 @@
   * [实现foreach](javascript/chang-jian-han-shu/shi-xian-foreach.md)
   * [实现parseInt](javascript/chang-jian-han-shu/shi-xian-parseint.md)
 * [实现JS 常见操作函数](javascript/common-js-func/README.md)
+  * [JS  Empty](javascript/common-js-func/js-empty.md)
   * [JS Safe Get](javascript/common-js-func/js-safe-get.md)
 * [JS Worker](javascript/js-worker/README.md)
   * [Cloudflare Worker](javascript/js-worker/cloudflare-worker.md)
