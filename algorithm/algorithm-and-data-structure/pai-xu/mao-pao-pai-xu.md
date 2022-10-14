@@ -56,3 +56,28 @@ function bubbleSort(arr){
   return arr
 }
 ```
+
+## 优化1： 记录最后交换的位置
+
+设置一标志性变量 `pos`,用于_记录每趟排序中最后一次进行交换的位置_。 由于 `pos` 位置之后的记录均已交换到位,故_在进行下一趟排序时只要扫描到 `pos` 位置即可_。
+
+```javascript
+function bubbleSort2(arr) {
+  let i = arr.length - 1;
+
+  while (i > 0) {
+    let pos = 0;
+
+    for (let j = 0; j < i; j++) {
+      if (arr[j] > arr[j + 1]) {
+        pos = j;
+        [arr[j],arr[j+1]] = [arr[j+1],arr[j]]
+      }
+    }
+    i = pos;
+  }
+
+  return arr;
+}
+```
+
