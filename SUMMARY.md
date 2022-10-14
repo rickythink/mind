@@ -230,7 +230,7 @@
     * [大O表示法](algorithm/algorithm-and-data-structure/ji-chu-zhi-shi/daobiao-shi-fa.md)
   * [排序](algorithm/algorithm-and-data-structure/pai-xu/README.md)
     * [基础知识](algorithm/algorithm-and-data-structure/pai-xu/basic-knowledge.md)
-    * [冒泡排序](algorithm/algorithm-and-data-structure/pai-xu/mao-pao-pai-xu.md)
+    * [冒泡排序 bubble sort](algorithm/algorithm-and-data-structure/pai-xu/mao-pao-pai-xu.md)
     * [选择排序](algorithm/algorithm-and-data-structure/pai-xu/xuan-ze-pai-xu.md)
     * [插入排序](algorithm/algorithm-and-data-structure/pai-xu/cha-ru-pai-xu.md)
     * [前三种总结](algorithm/algorithm-and-data-structure/pai-xu/qian-san-zhong-zong-jie.md)
