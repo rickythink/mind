@@ -172,7 +172,7 @@
   * [JS 数组](javascript/v8/v8-js-array.md)
   * [垃圾回收](javascript/v8/la-ji-hui-shou.md)
 
-## 🕹️框架 <a href="framework" id="framework"></a>
+## 🕹️框架 <a href="#framework" id="framework"></a>
 
 * [Vue](framework/vue-1/README.md)
   * [基础知识](framework/vue-1/ji-chu-zhi-shi.md)
@@ -223,12 +223,13 @@
 * [Koa2](framework/koa2/README.md)
   * [compose](framework/koa2/compose.md)
 
-## 🎯算法 <a href="algorithm" id="algorithm"></a>
+## 🎯算法 <a href="#algorithm" id="algorithm"></a>
 
 * [算法与数据结构](algorithm/algorithm-and-data-structure/README.md)
   * [基础知识](algorithm/algorithm-and-data-structure/ji-chu-zhi-shi/README.md)
     * [大O表示法](algorithm/algorithm-and-data-structure/ji-chu-zhi-shi/daobiao-shi-fa.md)
   * [排序](algorithm/algorithm-and-data-structure/pai-xu/README.md)
+    * [基础知识](algorithm/algorithm-and-data-structure/pai-xu/basic-knowledge.md)
     * [冒泡排序](algorithm/algorithm-and-data-structure/pai-xu/mao-pao-pai-xu.md)
     * [选择排序](algorithm/algorithm-and-data-structure/pai-xu/xuan-ze-pai-xu.md)
     * [插入排序](algorithm/algorithm-and-data-structure/pai-xu/cha-ru-pai-xu.md)
@@ -291,7 +292,7 @@
   * [实现缩放](html/svg/shi-xian-suo-fang.md)
   * [react typescript svg相关](html/svg/react-typescript-svg-xiang-guan.md)
 
-## 🏈计算机网络 <a href="network" id="network"></a>
+## 🏈计算机网络 <a href="#network" id="network"></a>
 
 * [浏览器](network/liu-lan-qi/README.md)
   * [浏览器与JS 线程](network/liu-lan-qi/liu-lan-qi-yu-js-xian-cheng.md)
@@ -329,7 +330,7 @@
   * [websocket](network/ji-suan-ji-wang-luo/websocket.md)
   * [CDN](network/ji-suan-ji-wang-luo/cdn.md)
 
-## 🥊前端生态 <a href="frontend-ecosystem" id="frontend-ecosystem"></a>
+## 🥊前端生态 <a href="#frontend-ecosystem" id="frontend-ecosystem"></a>
 
 * [Webpack](frontend-ecosystem/webpack/README.md)
   * [基础概念](frontend-ecosystem/webpack/ji-chu-gai-nian.md)
@@ -373,7 +374,7 @@
 * [Hexo](frontend-ecosystem/hexo-1/README.md)
   * [常用Hexo插件记录](frontend-ecosystem/hexo-1/chang-yong-hexo-cha-jian-ji-lu.md)
 
-## 🏀后端 <a href="backend" id="backend"></a>
+## 🏀后端 <a href="#backend" id="backend"></a>
 
 * [Node](backend/node/README.md)
   * [nodejs的应用](backend/node/nodejs-de-ying-yong.md)
@@ -383,7 +384,7 @@
 * [Python](backend/python/README.md)
   * [Pyenv](backend/python/pyenv.md)
 
-## 🕹️面试 <a href="interview" id="interview"></a>
+## 🕹️面试 <a href="#interview" id="interview"></a>
 
 * [面试真经](interview/inverview-record/README.md)
   * [Set、Map、WeakSet 和 WeakMap 的区别？](interview/inverview-record/setmapweakset-he-weakmap-de-qu-bie.md)
@@ -429,7 +430,7 @@
 * [To-do](interview/to-do/README.md)
   * [axios 重放多种策略](interview/to-do/axios-zhong-fang-duo-zhong-ce-lve.md)
 
-## 🤖开源 <a href="open-source" id="open-source"></a>
+## 🤖开源 <a href="#open-source" id="open-source"></a>
 
 * [开源项目](open-source/open-source-project/README.md)
   * [Hooks](open-source/open-source-project/hooks.md)
@@ -439,7 +440,7 @@
   * [模板](open-source/open-source-project/mo-ban.md)
   * [svg](open-source/open-source-project/svg.md)
 
-## 🧸其他 <a href="other" id="other"></a>
+## 🧸其他 <a href="#other" id="other"></a>
 
 * [Linux](other/linux/README.md)
   * [免密登陆](other/linux/mian-mi-deng-lu.md)
