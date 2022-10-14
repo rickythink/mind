@@ -81,3 +81,31 @@ function bubbleSort2(arr) {
 }
 ```
 
+## 优化2： 正反同时冒泡
+
+传统冒泡排序中每一趟排序操作只能找到一个最大值或最小值, 我们可以 **在每趟排序中进行正向和反向两遍冒泡** ， 一次可以得到两个最终值（最大和最小） , 从而_使外排序趟数几乎减少了一半_。
+
+```javascript
+function bubbleSort3(arr) {
+  let start = 0;
+  let end = arr.length - 1;
+
+  while (start < end) {
+    for (let i = start; i < end; i++) {
+      if (arr[i] > arr[i + 1]) {
+        [arr[j],arr[j+1]] = [arr[j+1],arr[j]];
+      }
+    }
+    end -= 1;
+    for (let i = end; i > start; i--) {
+      if (arr[i - 1] > arr[i]) {
+        [arr[j],arr[j+1]] = [arr[j+1],arr[j]];
+      }
+    }
+    start += 1;
+  }
+
+  return arr;
+}
+
+```
