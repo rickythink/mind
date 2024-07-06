@@ -27,7 +27,7 @@ Chrome 为例,它由多个进程组成,每个进程都有自己核心的职责,�
 Chrome 采用多进程架构,其顶层存在一个 Browser process 用以协调浏览器的其它进程。\
 
 
-![](<../../../.gitbook/assets/image (145).png>)
+![](<../../../.gitbook/assets/image (138).png>)
 
 如上图所示有
 
@@ -45,7 +45,7 @@ Chrome 采用多进程架构,其顶层存在一个 Browser process 用以协调�
 
     浏览器渲染进程或浏览器内核,内部是多线程的。主要负责页面渲染,脚本执行,事件处理等
 
-![](<../../../.gitbook/assets/image (146).png>)
+![](<../../../.gitbook/assets/image (19).png>)
 
 ## Renderer Process 渲染进程
 

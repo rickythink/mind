@@ -20,7 +20,7 @@ DOM Tree与Style Rules合成为 Render Tree，实际上是需要将_Style Rules_
 .mod-nav h3 span {font-size: 16px;}
 ```
 
-![对应的DOM Tree](<../../.gitbook/assets/image (2).png>)
+![对应的DOM Tree](<../../.gitbook/assets/image (44).png>)
 
 从右至左的匹配过程是：
 
@@ -35,7 +35,7 @@ DOM Tree与Style Rules合成为 Render Tree，实际上是需要将_Style Rules_
 3. 构建Nodes: 对Node添加特定的属性，通过指针确定 Node 的父、子、兄弟关系和所属 treeScope
 4. 生成DOM Tree: 通过node包含的指针确定的关系构建出DOM Tree
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (144).png>)
 
 ## 浏览器重绘与重排的区别？
 
@@ -66,7 +66,7 @@ DOM Tree与Style Rules合成为 Render Tree，实际上是需要将_Style Rules_
 2. 使用DocumentFragment
 3. 提升为合成层
 
-![](<../../.gitbook/assets/image (8).png>)
+![](<../../.gitbook/assets/image (133).png>)
 
 
 

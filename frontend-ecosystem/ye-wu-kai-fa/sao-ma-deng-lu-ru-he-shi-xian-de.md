@@ -1,6 +1,6 @@
 # 扫码登录如何实现的
 
-![](<../../.gitbook/assets/image (192).png>)
+![](<../../.gitbook/assets/image (113).png>)
 
 ①：用户 A 访问微信网页版，微信服务器为这个会话生成一个全局唯一的 ID，上面的 URL 中 `obsbQ-Dzag==` 就是这个 ID，此时系统并不知道访问者是谁。
 

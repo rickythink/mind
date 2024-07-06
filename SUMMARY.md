@@ -4,6 +4,7 @@
 * [思维导图](mind-maps.md)
 * [归档](archive.md)
 * [博客](blog/README.md)
+  * [理解 CAP 理论，以开一家餐厅为例](blog/cap-understanding.md)
   * [TypeScript tsconfig.json 整理](blog/tsonfig.json.md)
   * [this 陷阱与原理](blog/trap-and-principle-of-this.md)
   * [时间戳与时区](blog/timestamp-timezone.md)

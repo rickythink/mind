@@ -2,7 +2,7 @@
 
 ## 题目
 
-#### ``[`['1', '2', '3'].map(parseInt)` what & why ?](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/4)
+#### [`['1', '2', '3'].map(parseInt)` what & why ?](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/4)
 
 ## 解析1
 

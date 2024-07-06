@@ -1,6 +1,6 @@
 # readystate
 
-一个[`document`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document) 的 **Document.readyState **属性描述了文档的加载状态。
+一个[`document`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document) 的 **Document.readyState** 属性描述了文档的加载状态。
 
 当该属性值发生变化时，会在[`document`](https://developer.mozilla.org/zh-CN/docs/Web/API/Document) 对象上触发`readystatechange`事件。
 

@@ -1,6 +1,6 @@
 # 上报
 
-![](<../../../.gitbook/assets/image (183).png>)
+![](<../../../.gitbook/assets/image (47).png>)
 
 性能指标收集注意项：
 

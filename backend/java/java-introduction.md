@@ -17,7 +17,7 @@ SUN给Java又分出了三个不同版本：
 * Java EE：Enterprise Edition
 * Java ME：Micro Edition
 
-![](<../../.gitbook/assets/image (203).png>)
+![](<../../.gitbook/assets/image (130).png>)
 
 Java SE就是标准版，包含标准的JVM和标准库，而Java EE是企业版，它只是在Java SE的基础上加上了大量的API和库，以便方便开发Web应用、数据库、消息服务等，Java EE的应用使用的虚拟机和Java SE完全相同。
 

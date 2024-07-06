@@ -27,4 +27,4 @@
 2. 按下 Cmd + Shift + P or Ctrl + Shift + P ;
 3. 输入 Coverage，并选择第一个出现的选项；
 
-![](<../../.gitbook/assets/image (202).png>)
+![](<../../.gitbook/assets/image (86).png>)

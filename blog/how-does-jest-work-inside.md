@@ -2,11 +2,11 @@
 
 
 
-![](<../.gitbook/assets/image (204).png>)
+![](<../.gitbook/assets/image (151).png>)
 
-Jest 是 Facebook 开源的一个 JavaScript 测试框架，已经应用在  [Babel](https://babeljs.io) / [TypeScript](https://www.typescriptlang.org) / [Node](https://nodejs.org/en/) /  [React](https://reactjs.org) /  [Angular](https://angular.io) /  [Vue](https://vuejs.org) 等项目中。
+Jest 是 Facebook 开源的一个 JavaScript 测试框架，已经应用在  [Babel](https://babeljs.io/) / [TypeScript](https://www.typescriptlang.org/) / [Node](https://nodejs.org/en/) /  [React](https://reactjs.org/) /  [Angular](https://angular.io/) /  [Vue](https://vuejs.org/) 等项目中。
 
-在愉悦地编写 Jest 测试代码后，你是否会好奇 `test` / ` expect` / `mock` / `spyOn` 这些内置方法是如何实现的呢？下面我们一起来看一下。
+在愉悦地编写 Jest 测试代码后，你是否会好奇 `test` / `expect` / `mock` / `spyOn` 这些内置方法是如何实现的呢？下面我们一起来看一下。
 
 ## Test
 

@@ -77,6 +77,6 @@ HTTP状态码列表:
 
 &#x20;
 
-![](<../../.gitbook/assets/image (103).png>)
+![](<../../.gitbook/assets/image (146).png>)
 
-![](<../../.gitbook/assets/image (105).png>)
+![](<../../.gitbook/assets/image (48).png>)

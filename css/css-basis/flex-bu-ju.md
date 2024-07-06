@@ -24,6 +24,6 @@ Flex 布局是轴线布局，只能指定"项目"针对轴线的位置，可以�
 
 容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）
 
-![](<../../.gitbook/assets/image (163).png>)
+![](<../../.gitbook/assets/image (156).png>)
 
 ![](<../../.gitbook/assets/flex 布局.png>)

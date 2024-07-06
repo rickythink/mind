@@ -2,7 +2,7 @@
 
 performance.getEntriesByType("navigation");
 
-![记下这种图，对理解前端性能帮助很大](<../../../.gitbook/assets/image (181).png>)
+![记下这种图，对理解前端性能帮助很大](<../../../.gitbook/assets/image (174).png>)
 
 不同阶段之间是连续的吗? —— 不连续&#x20;
 

@@ -14,7 +14,7 @@ Retained Size=当前对象大小+当前对象可直接或间接引用到的对�
 
 ## 看图理解
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../.gitbook/assets/image (98).png>)
 
 上图中，GC Roots直接引用了A和B两个对象。\
 \
@@ -25,6 +25,6 @@ B对象的Retained Size=B对象的Shallow Size + C对象的Shallow Size\
 如果GC Roots不引用D对象呢？\
 
 
-![](<../../.gitbook/assets/image (17).png>)
+![](<../../.gitbook/assets/image (208).png>)
 
 此时, B对象的Retained Size=B对象的Shallow Size + C对象的Shallow Size + D对象的Shallow Size

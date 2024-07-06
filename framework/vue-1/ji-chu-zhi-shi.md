@@ -2,7 +2,7 @@
 
 ## MVC
 
-![](<../../.gitbook/assets/image (141).png>)
+![](<../../.gitbook/assets/image (212).png>)
 
 MVC允许在不改变视图的情况下改变视图对用户输入的响应方式，用户把对View的操作交给了Controller处理，在Controller中响应View的事件调用Model的接口对数据进行操作，一旦Model发生变化便通知相关视图进行更新。
 
@@ -11,10 +11,10 @@ MVC允许在不改变视图的情况下改变视图对用户输入的响应方�
 
 ## MVVM
 
-![](<../../.gitbook/assets/image (142).png>)
+![](<../../.gitbook/assets/image (178).png>)
 
 MVVM与MVC两者之间最大的区别就是：MVVM实现了对View和Model的自动同步，也就是当Model的属性改变时，我们不用再自己手动操作Dom元素来改变View的变化，而是改变其属性后，该属性对应的View层数据会自动改变。&#x20;
 
 ## vue 源码目录
 
-![](<../../.gitbook/assets/image (143).png>)
+![](<../../.gitbook/assets/image (92).png>)

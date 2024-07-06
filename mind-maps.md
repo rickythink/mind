@@ -4,7 +4,7 @@ gitbook是抽屉状的思维结构，比较适合日常的知识结构化整理�
 
 xmind是树状的思维结构，比较适合知识的体系化构建。
 
-![](<.gitbook/assets/image (180).png>)
+![](<.gitbook/assets/image (60).png>)
 
 我用 xmind 画了一波前端的知识体系图，包括
 

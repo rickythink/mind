@@ -4,13 +4,13 @@
 
 ## 单向循环链表
 
-![](<../../../../.gitbook/assets/image (124).png>)
+![](<../../../../.gitbook/assets/image (205).png>)
 
 单向循环链表的实现方法和单向链表几乎一样，但在增加和头部和尾部节点的时候需要注意设置`current.next = this.head`，篇幅所限这里不再累述。
 
 ## 双向循环链表
 
-![](<../../../../.gitbook/assets/image (125).png>)
+![](<../../../../.gitbook/assets/image (107).png>)
 
 双向循环链表的实现方法和双向链表也大同小异，这里也不再累述。
 

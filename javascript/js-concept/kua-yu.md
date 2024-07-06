@@ -2,7 +2,7 @@
 
 ## &#x20;域
 
-![](<../../.gitbook/assets/image (33).png>)
+![](<../../.gitbook/assets/image (111).png>)
 
 ## 跨域
 
@@ -10,7 +10,7 @@
 
 所谓同源是指，协议，域名，端口均相同。
 
-![](<../../.gitbook/assets/image (34).png>)
+![](<../../.gitbook/assets/image (132).png>)
 
 ## JSONP
 
@@ -272,7 +272,7 @@ postMessage 是 HTML5 新增加的一项功能，跨文档消息传输(Cross Doc
 
 对于主域相同而子域不同的情况下，可以通过设置 document.domain 的办法来解决，具体做法是可以在 `http://www.example.com/index.html` 和 `http://sub.example.com/data.html` 两个文件分别加上 `document.domain = "example.com"` 然后通过 index.html 文件创建一个 iframe，去控制 iframe 的 window，从而进行交互，当然这种方法只能解决主域相同而二级域名不同的情况，如果你异想天开的把 script.example.com 的 domain 设为 qq.com 显然是没用的，那么如何测试呢？
 
-测试的方式稍微复杂点，需要安装 nginx 做域名映射，如果你电脑没有安装 nginx，请先去安装一下: [nginx](http://nginx.org)
+测试的方式稍微复杂点，需要安装 nginx 做域名映射，如果你电脑没有安装 nginx，请先去安装一下: [nginx](http://nginx.org/)
 
 前端逻辑：
 

@@ -1,6 +1,6 @@
 # 利用 Cloudflare Worker 定制 Gitbook
 
-![](<../.gitbook/assets/image (199).png>)
+![](<../.gitbook/assets/image (135).png>)
 
 支撑本站背后的是 Gitbook v2 版本，曾经开源产品的闭源商业化分支。Gitbook 暂时不提供定制 CSS 的特性。因此我们对于左栏一定会出现的 " Powered by Gitbook "无法做出隐藏的修改。
 

@@ -18,7 +18,7 @@
 * 截取左子树的前序遍历、右子树的前序遍历
 * 递归重建二叉树
 
-![](<../../../.gitbook/assets/image (159).png>)
+![](<../../../.gitbook/assets/image (163).png>)
 
 ```javascript
 // pre 是前序数组 

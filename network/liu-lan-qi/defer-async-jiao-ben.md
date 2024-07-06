@@ -1,6 +1,6 @@
 # defer, async 脚本
 
-![蓝色线代表网络读取，红色线代表执行时间，绿色线代表 HTML 解析。](<../../.gitbook/assets/image (149).png>)
+![蓝色线代表网络读取，红色线代表执行时间，绿色线代表 HTML 解析。](<../../.gitbook/assets/image (126).png>)
 
 ## defer
 

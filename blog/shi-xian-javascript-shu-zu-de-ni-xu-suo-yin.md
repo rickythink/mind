@@ -20,7 +20,7 @@ arr[-3] = 1
 
 数组( Array )在内存中用一串连续的区域来存放一些值。注意「连续」一词，它至关重要。
 
-![](<../.gitbook/assets/image (205).png>)
+![](<../.gitbook/assets/image (80).png>)
 
 上图表示存储在内存中的一个数组。存储4个4 bit 的元素,一共需要16 bit 存储区域，每个元素顺序保持一致。
 
@@ -28,7 +28,7 @@ arr[-3] = 1
 
 However，JavaScript 的内存数据结构并不是连续的，而是链表结构。如果在 JavaScript 中声明var arr = new Array(4)；它会产生类似下图的结构。
 
-![](<../.gitbook/assets/image (206).png>)
+![](<../.gitbook/assets/image (150).png>)
 
 因此，如果你想在程序中某一处读取a\[2]，它必须从1201位置开始溯寻a\[2]的位置。
 

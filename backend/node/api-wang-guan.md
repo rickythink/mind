@@ -2,7 +2,7 @@
 
 > [https://segmentfault.com/a/1190000010669382](https://segmentfault.com/a/1190000010669382)
 
-在 Node.js 中，您可以使用 [http-proxy](https://www.npmjs.com/package/http-proxy) 软件包简单地代理对特定服务的请求，也可以使用更多丰富功能的 [express-gateway](http://www.express-gateway.io) 来创建 API 网关。
+在 Node.js 中，您可以使用 [http-proxy](https://www.npmjs.com/package/http-proxy) 软件包简单地代理对特定服务的请求，也可以使用更多丰富功能的 [express-gateway](http://www.express-gateway.io/) 来创建 API 网关。
 
 在我们的第一个 API 网关示例中，我们在将代码委托给 **user** 服务之前验证请求。
 

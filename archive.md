@@ -1,5 +1,13 @@
 # 归档
 
+{% content-ref url="blog/cap-understanding.md" %}
+[cap-understanding.md](blog/cap-understanding.md)
+{% endcontent-ref %}
+
+{% content-ref url="blog/tsonfig.json.md" %}
+[tsonfig.json.md](blog/tsonfig.json.md)
+{% endcontent-ref %}
+
 {% content-ref url="blog/trap-and-principle-of-this.md" %}
 [trap-and-principle-of-this.md](blog/trap-and-principle-of-this.md)
 {% endcontent-ref %}

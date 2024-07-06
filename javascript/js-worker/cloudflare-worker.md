@@ -16,7 +16,7 @@ Cloudflare Workers的名称来自Web Workers，更具体地说是Service Workers
 
 Gitbook 目前并不支持定制 CSS。因此我们可以考虑借助 Cloudflare Worker 的力量注入我们自己的 CSS，从而达到覆盖原样式的目的。
 
-这里在 [Worker](https://workers.cloudflare.com) 页面创建新的 Worker，名称记为 `mind-ricky-css-inject` 。添加的 script 如下：
+这里在 [Worker](https://workers.cloudflare.com/) 页面创建新的 Worker，名称记为 `mind-ricky-css-inject` 。添加的 script 如下：
 
 ```javascript
 addEventListener('fetch', event => {

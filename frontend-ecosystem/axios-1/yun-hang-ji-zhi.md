@@ -1,6 +1,6 @@
 # 运行机制
 
-![](<../../.gitbook/assets/image (70).png>)
+![](<../../.gitbook/assets/image (192).png>)
 
 ## promise链
 

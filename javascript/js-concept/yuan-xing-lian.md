@@ -6,17 +6,17 @@
 
 ## 上面参考中递进的图片实例
 
-![构造函数和实例原型](<../../.gitbook/assets/image (126).png>)
+![构造函数和实例原型](<../../.gitbook/assets/image (152).png>)
 
 ![每一个JavaScript对象(除了 null )都具有的\_\_proto\_\_属性 | person.\_\_proto\_\_ === Person.prototype](<../../.gitbook/assets/image (127).png>)
 
-![每个原型都有一个 constructor 属性指向关联的构造函数 | Person === Person.prototype.constructor](<../../.gitbook/assets/image (128).png>)
+![每个原型都有一个 constructor 属性指向关联的构造函数 | Person === Person.prototype.constructor](<../../.gitbook/assets/image (9).png>)
 
 > 一个构造函数可以生成多个实例, 因此没有原型指向实例的箭头
 
-![原型的原型 | Person.prototype.\_\_proto\_\_ === Object.prototype](<../../.gitbook/assets/image (129).png>)
+![原型的原型 | Person.prototype.\_\_proto\_\_ === Object.prototype](<../../.gitbook/assets/image (202).png>)
 
-![蓝色线就是原型链 | Object的原型的原型为空 | Object.prototype.\_\_proto\_\_ === null](<../../.gitbook/assets/image (130).png>)
+![蓝色线就是原型链 | Object的原型的原型为空 | Object.prototype.\_\_proto\_\_ === null](<../../.gitbook/assets/image (168).png>)
 
 ## 真的是继承吗？
 
@@ -26,7 +26,7 @@
 
 
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (51).png>)
 
 
 

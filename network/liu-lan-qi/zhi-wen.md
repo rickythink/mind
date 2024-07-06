@@ -68,14 +68,14 @@ function getCanvasFingerprint () {
 }
 ```
 
-![](<../../.gitbook/assets/image (51).png>)
+![](<../../.gitbook/assets/image (125).png>)
 
 在画布上渲染一些文字，再用**toDataURL**转换出来，即便开启了隐私模式一样可以相同的值\
 
 
 **AudioContex指纹**
 
-AudioContext指纹和Cavans类似也是基于硬件设备或者软件的差别，来产生不同的音频输出，然后计算得到不同的hash来作为标志，当然这里的音频并没有直接在浏览器中播放出来，只需要拿到播放前的处理数据就行，音频指纹测试地址：[audiofingerprint.openwpm.com/](https://audiofingerprint.openwpm.com)
+AudioContext指纹和Cavans类似也是基于硬件设备或者软件的差别，来产生不同的音频输出，然后计算得到不同的hash来作为标志，当然这里的音频并没有直接在浏览器中播放出来，只需要拿到播放前的处理数据就行，音频指纹测试地址：[audiofingerprint.openwpm.com/](https://audiofingerprint.openwpm.com/)
 
 **WebRTC**
 
@@ -85,5 +85,5 @@ WebRTC（网页实时通信，Web Real Time Communication），是可以让浏�
 
 综上提到的浏览器指纹都是从同一个浏览器上获得。但是很多特征值都是不稳定的，例如UA、cavans指纹在相同设备的不同浏览器打开会完全不一样。 同一套浏览器指纹算法在不同浏览器（本小结所说的不同浏览器是指同一台设备上的不同浏览器）上也就不可用了。
 
-![](<../../.gitbook/assets/image (45).png>)
+![](<../../.gitbook/assets/image (93).png>)
 

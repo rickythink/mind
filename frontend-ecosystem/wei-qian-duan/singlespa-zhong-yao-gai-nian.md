@@ -6,7 +6,7 @@
 
 ## app状态
 
-![](<../../.gitbook/assets/image (132).png>)
+![](<../../.gitbook/assets/image (118).png>)
 
 **状态说明（app和service在下表统称为app）：**
 
@@ -26,21 +26,21 @@
 
 **load、mount、unmount条件** 判断需要被加载(load)的App：
 
-![](<../../.gitbook/assets/image (133).png>)
+![](<../../.gitbook/assets/image (159).png>)
 
 判断需要被挂载(mount)的App：
 
-![](<../../.gitbook/assets/image (134).png>)
+![](<../../.gitbook/assets/image (27).png>)
 
 判断需要被卸载(unmount)的App：
 
-![](<../../.gitbook/assets/image (135).png>)
+![](<../../.gitbook/assets/image (69).png>)
 
 ## app生命周期递归调用
 
 app的生命周期函数可以传入数组或函数，但是它们都必须返回一个Promise，为了方便处理，所以我们会判断：如果传入的不是Array，就会用数组将传入的函数包裹起来。
 
-![](<../../.gitbook/assets/image (136).png>)
+![](<../../.gitbook/assets/image (66).png>)
 
 ## 路由拦截
 
@@ -50,7 +50,7 @@ app的生命周期函数可以传入数组或函数，但是它们都必须返�
 
 ## 执行流程
 
-![](<../../.gitbook/assets/image (137).png>)
+![](<../../.gitbook/assets/image (40).png>)
 
 **触发时机**
 

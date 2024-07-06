@@ -51,7 +51,7 @@ Window ... // 严格模式下指向 undefined
 const obj = { foo: 5 }
 ```
 
-![](<../.gitbook/assets/image (207).png>)
+![](<../.gitbook/assets/image (35).png>)
 
 JavaScript 引擎会先在内存里面，生成一个对象{ foo: 5 }，然后把这个对象的内存地址赋值给变量obj
 
@@ -59,7 +59,7 @@ JavaScript 引擎会先在内存里面，生成一个对象{ foo: 5 }，然后�
 
 原始的对象以字典结构保存，每一个属性名都对应一个属性描述对象。举例来说，上面例子的foo属性，实际上是以下面的形式保存的。
 
-![](<../.gitbook/assets/image (208).png>)
+![](<../.gitbook/assets/image (112).png>)
 
 {% hint style="info" %}
 在 ES5 中模拟实现 const，也即通过 Object.defineProperty 来改变 writable 属性
@@ -71,7 +71,7 @@ JavaScript 引擎会先在内存里面，生成一个对象{ foo: 5 }，然后�
 const obj = { foo: function () {} }
 ```
 
-![](<../.gitbook/assets/image (209).png>)
+![](<../.gitbook/assets/image (167).png>)
 
 ### 实际示例
 
@@ -95,11 +95,11 @@ obj.f() // 2
 
 #### 单独运行
 
-![](<../.gitbook/assets/image (210).png>)
+![](<../.gitbook/assets/image (10).png>)
 
 #### 对象运行
 
-![](<../.gitbook/assets/image (211).png>)
+![](<../.gitbook/assets/image (77).png>)
 
 ## 总结
 

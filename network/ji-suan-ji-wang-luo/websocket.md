@@ -4,7 +4,7 @@ WebSocket 协议在2008年诞生，2011年成为国际标准。所有浏览器�
 
 它的最大特点就是，服务器可以主动向客户端推送信息，客户端也可以主动向服务器发送信息，是真正的双向平等对话，属于[服务器推送技术](https://en.wikipedia.org/wiki/Push\_technology)的一种。
 
-![](<../../.gitbook/assets/image (166).png>)
+![](<../../.gitbook/assets/image (169).png>)
 
 特点包括：
 
@@ -19,7 +19,7 @@ WebSocket 协议在2008年诞生，2011年成为国际标准。所有浏览器�
 ws://example.com:80/some/path
 ```
 
-![](<../../.gitbook/assets/image (167).png>)
+![](<../../.gitbook/assets/image (184).png>)
 
 ## 示例
 
