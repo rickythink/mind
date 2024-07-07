@@ -1,5 +1,8 @@
 ---
 description: 给岁月以文明，而不是给文明以岁月
+cover: >-
+  https://images.unsplash.com/photo-1533135091724-62cc5402aa20?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw4fHxsaW5lfGVufDB8fHx8MTcyMDMzNzcxNnww&ixlib=rb-4.0.3&q=85
+coverY: 0
 ---
 
 # 知食记
