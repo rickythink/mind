@@ -478,5 +478,3 @@
     * [LSP | The Liskov Substitution Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/lsp-or-the-liskov-substitution-principle.md)
     * [ISP | The interface Segregation Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/isp-or-the-interface-segregation-principle.md)
     * [DIP | The Dependency Inversion Principle](other/ji-suan-ji-li-lun/solid-yuan-ze/dip-or-the-dependency-inversion-principle.md)
-
-## Group 1
